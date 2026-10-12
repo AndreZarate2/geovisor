@@ -1,0 +1,1067 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 125.7807,
+        "centro": {
+            "lat": -8.496724,
+            "lng": -74.710284
+        },
+        "demanda_kw_estimada": 16294,
+        "demanda_kw_usada": 16294,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 65,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 150,
+            "max_m": 178,
+            "promedio_m": 163.3,
+            "rango_m": 28,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 28 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "CAMPO VERDE",
+                "empresa": "",
+                "lat": -8.47474,
+                "lng": -74.80505,
+                "distancia_km": 10.7,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: CAMPO VERDE"
+            },
+            {
+                "nombre": "PUCALLPA",
+                "empresa": "INTERCONEXIÓN ELÉCTRICA ISA PERÚ S.A.",
+                "lat": -8.40023,
+                "lng": -74.61561,
+                "distancia_km": 14.95,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO UCAYALI.xlsx",
+                "capacidad_total_mva": 113,
+                "demanda_total_mva": 85.548,
+                "disponible_total_mva": 27.452,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TPTR05",
+                        "capacidad_total_mva": 58,
+                        "demanda_total_mva": 38.6793,
+                        "disponible_total_mva": 19.3207,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "TPTR06",
+                        "capacidad_total_mva": 55,
+                        "demanda_total_mva": 46.8687,
+                        "disponible_total_mva": 8.1313,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "PARQUE INDUSTRIAL",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.39962,
+                "lng": -74.61552,
+                "distancia_km": 15.01,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 155,
+                "demanda_total_mva": 207.3611,
+                "disponible_total_mva": -52.3611,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T4-103",
+                        "capacidad_total_mva": 75,
+                        "demanda_total_mva": 131.2627,
+                        "disponible_total_mva": -56.2627,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "T41-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 39.8654,
+                        "disponible_total_mva": 0.1346,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T42-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 36.233,
+                        "disponible_total_mva": 3.767,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "MANANTAY",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.41724,
+                "lng": -74.5789,
+                "distancia_km": 16.94,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: MANANTAY"
+            },
+            {
+                "nombre": "YARINA",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.35291,
+                "lng": -74.58218,
+                "distancia_km": 21.31,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO UCAYALI.xlsx",
+                "capacidad_total_mva": 86,
+                "demanda_total_mva": 38.4191,
+                "disponible_total_mva": 47.5809,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TPTR01",
+                        "capacidad_total_mva": 28,
+                        "demanda_total_mva": 0,
+                        "disponible_total_mva": 28,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "TPTR02",
+                        "capacidad_total_mva": 28,
+                        "demanda_total_mva": 25.3754,
+                        "disponible_total_mva": 2.6246,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "TPTR03",
+                        "capacidad_total_mva": 30,
+                        "demanda_total_mva": 13.0437,
+                        "disponible_total_mva": 16.9563,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 8,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PUCALLPA",
+                "CAMPO VERDE",
+                "CAMPO VERDE",
+                "PUCALLPA",
+                "PUCALLPA",
+                "CAMPO VERDE"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: PUCALLPA, CAMPO VERDE, CAMPO VERDE",
+            "La zona cruza informacion externa registrada: Limites departamentales",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 28 m.",
+            "SET con disponibilidad referencial cercana: PUCALLPA (27.452 MVA libres), YARINA (47.5809 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-09 19:30:32\nArea: 125.7807 km2\nDemanda usada: 16294 kW (manual)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (65\/100)\nRelieve: bajo a moderado, con variacion aproximada de 28 m. Elevacion min\/max: 150\/178 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":8,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- CAMPO VERDE (sin empresa), 10.7 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- PUCALLPA (INTERCONEXIÓN ELÉCTRICA ISA PERÚ S.A.), 14.95 km, cap. 113 MVA, demanda 85.548 MVA, disponible 27.452 MVA, estado Disponible.\n- PARQUE INDUSTRIAL (ELECTRO UCAYALI S.A.), 15.01 km, cap. 155 MVA, demanda 207.3611 MVA, disponible -52.3611 MVA, estado Sobrecarga.\n- MANANTAY (ELECTRO UCAYALI S.A.), 16.94 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- YARINA (ELECTRO UCAYALI S.A.), 21.31 km, cap. 86 MVA, demanda 38.4191 MVA, disponible 47.5809 MVA, estado Disponible.\nRazones:\n- Hay SET cercanas o dentro del poligono: PUCALLPA, CAMPO VERDE, CAMPO VERDE\n- La zona cruza informacion externa registrada: Limites departamentales\n- Relieve estimado: bajo a moderado, con variacion aproximada de 28 m.\n- SET con disponibilidad referencial cercana: PUCALLPA (27.452 MVA libres), YARINA (47.5809 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "Informe ejecutivo para decisión de trámite: concesión de distribución o convenio municipal\n\nConclusión ejecutiva\nLa zona sí es dable, en principio, para orientar el trámite a concesión de distribución y no a convenio municipal, porque la demanda usada es 16,294 kW, muy por encima del umbral de 500 kW. Además, la disponibilidad eléctrica referencial de SET cercanas es positiva en Pucallpa y Yarina. Sin embargo, el análisis es preliminar y no sustituye un estudio eléctrico ni la revisión legal de superposiciones y servidumbres.\n\nHallazgos principales\n\n1) Umbral regulatorio de 500 kW\nLa demanda estimada usada es 16,294 kW.\nEsto excede ampliamente el umbral de 500 kW.\nPor criterio operativo, esto orienta a concesión de distribución, no a convenio municipal.\n\n2) SET cercanas y capacidad disponible\nSe identifican SET cercanas relevantes:\nPucallpa, a 14.95 km, con 113 MVA de capacidad total, 85.548 MVA de demanda total y 27.452 MVA disponibles. Estado: disponible.\nYarina, a 21.31 km, con 86 MVA de capacidad total, 38.4191 MVA de demanda total y 47.5809 MVA disponibles. Estado: disponible.\nParque Industrial, a 15.01 km, con 155 MVA de capacidad total, 207.3611 MVA de demanda total y -52.3611 MVA disponibles. Estado: sobrecarga.\n\nInterpretación técnica:\nSí existe oferta de transformación cercana con holgura en Pucallpa y Yarina.\nParque Industrial no debe tomarse como respaldo de capacidad inmediata, porque figura sobrecargada.\nNo se puede concluir capacidad firme de suministro para la zona sin modelamiento de red, flujo de carga y evaluación de alimentadores.\n\n3) Líneas, MT y SED\nNo se registran intersecciones con líneas de transmisión o media tensión.\nNo hay SET dentro del polígono.\nNo hay SED dentro del polígono.\nNo se reportan concesiones intersectando el área.\n\nInterpretación:\nLa ausencia de cruces directos reduce complejidad de interferencias, pero no elimina la necesidad de verificar servidumbres, accesos, puntos de conexión y topología real de alimentadores.\n\n4) Relieve\nRelieve reportado como bajo a moderado.\nElevación mínima: 150 m.\nElevación máxima: 178 m.\nPromedio: 163.3 m.\nRango: 28 m.\nRiesgo: bajo.\n\nInterpretación:\nDesde el punto de vista topográfico, el relieve no aparece como una barrera principal para despliegue de red.\nEl nivel de variación es compatible con expansión de distribución, sujeto a diseño de obra y accesibilidad local.\n\n5) Concesiones y trámites\nNo se registran concesiones intersectando el polígono.\nLa recomendación automática del sistema es: Concesión de distribución.\nTambién se indica que la zona cruza información externa registrada: límites departamentales.\n\nInterpretación:\nNo se observan superposiciones directas con concesiones existentes en el dato entregado.\nLa presencia de límites departamentales exige revisar competencia territorial, catastro y articulación con la autoridad local y regional antes de cerrar el expediente.\n\nRiesgos identificados\n\nRiesgo regulatorio\nLa superposición con límites departamentales puede requerir validación jurídica y cartográfica adicional.\nSin esa revisión, no puede descartarse conflicto de competencia o ajuste de ámbito.\n\nRiesgo técnico de red\nAunque hay SET cercanas con disponibilidad, no se dispone de:\nruta de línea óptima,\ncapacidad de alimentadores,\ncálculo de caída de tensión,\ncoordinación de protecciones,\nni margen de crecimiento futuro.\nPor tanto, la disponibilidad es referencial, no definitiva.\n\nRiesgo de consistencia de datos\nAlgunas SET cercanas aparecen con estado error por no encontrarse en el maestro: Campo Verde y Manantay.\nEsto limita la trazabilidad completa del catastro y obliga a confirmar la información en fuente oficial antes de decidir.\n\nDisponibilidad eléctrica\nResumen:\nPucallpa: disponible, 27.452 MVA libres.\nYarina: disponible, 47.5809 MVA libres.\nParque Industrial: sobrecargada, no recomendable como punto de respaldo inmediato.\n\nLectura ejecutiva:\nSí hay disponibilidad eléctrica referencial suficiente para sustentar continuidad del análisis de concesión.\nNo obstante, la magnitud de la demanda de 16.294 MW-equivalente en kW requiere verificación de factibilidad de conexión y refuerzos.\n\nRelieve\nEl terreno presenta condición favorable.\nRiesgo bajo.\nVariación altimétrica acotada.\nNo se observa limitante topográfica severa en el dato disponible.\n\nPosible utilidad agrícola\nHay una capa externa registrada: Predios, pero no se entregan atributos agrícolas, uso de suelo, cultivos, suelos, o aptitud agrológica.\nPor tanto, no es posible concluir utilidad agrícola con este insumo.\nSí puede decirse que el dato externo de límites departamentales está presente, pero eso no equivale a aptitud agrícola.\nSi se desea evaluar potencial agrícola, harían falta capas de uso actual del suelo, catastro rural, aptitud de suelos, cobertura vegetal o información de PRODUCE\/MIDAGRI y catastro predial.\n\nDecisión sugerida\nRecomendar trámite de concesión de distribución.\nNo recomendar convenio municipal como figura principal, porque la demanda supera claramente 500 kW.\nLa viabilidad preliminar es media, con score 65\/100, suficiente para continuar con estudio, pero no para aprobación sin validaciones adicionales.\n\nSiguientes pasos recomendados\n1. Confirmar demanda sustentada y su metodología de cálculo.\n2. Verificar en catastro oficial la condición territorial y la superposición con límites departamentales.\n3. Realizar estudio de factibilidad eléctrica:\n   punto de conexión,\n   capacidad de alimentadores,\n   flujo de carga,\n   pérdidas,\n   protecciones,\n   expansión futura.\n4. Revisar servidumbres, accesos y posibles interferencias no capturadas en el polígono.\n5. Confirmar en fuente oficial la situación de las SET con estado error.\n6. Si el objetivo incluye desarrollo productivo, incorporar capas de uso de suelo y aptitud agrícola antes de emitir conclusión territorial definitiva.\n\nDictamen final\nCon la información disponible, la zona se perfila para concesión de distribución, no para convenio municipal.\nLa decisión es técnicamente favorable en forma preliminar, pero requiere validación eléctrica y legal antes de asumir factibilidad definitiva."
+        }
+    },
+    "polygon": [
+        [
+            -8.458449411790506,
+            -74.75046157836915
+        ],
+        [
+            -8.458789000002396,
+            -74.75046157836915
+        ],
+        [
+            -8.461845280438451,
+            -74.74891662597658
+        ],
+        [
+            -8.464731745247192,
+            -74.74805831909181
+        ],
+        [
+            -8.46642965561436,
+            -74.74805831909181
+        ],
+        [
+            -8.46710881766422,
+            -74.74805831909181
+        ],
+        [
+            -8.46795776854124,
+            -74.74857330322267
+        ],
+        [
+            -8.468976507121624,
+            -74.74943161010744
+        ],
+        [
+            -8.470334821033353,
+            -74.75234985351564
+        ],
+        [
+            -8.47101397619095,
+            -74.75458145141603
+        ],
+        [
+            -8.471693130149566,
+            -74.75629806518556
+        ],
+        [
+            -8.473560797352846,
+            -74.75732803344728
+        ],
+        [
+            -8.4750888819549,
+            -74.75818634033205
+        ],
+        [
+            -8.476447174280977,
+            -74.7612762451172
+        ],
+        [
+            -8.478145032940077,
+            -74.76299285888673
+        ],
+        [
+            -8.480182453431315,
+            -74.7641944885254
+        ],
+        [
+            -8.481540727757807,
+            -74.76453781127931
+        ],
+        [
+            -8.482898997282643,
+            -74.76505279541017
+        ],
+        [
+            -8.484766610037713,
+            -74.76556777954103
+        ],
+        [
+            -8.485785304076504,
+            -74.76625442504884
+        ],
+        [
+            -8.486973777039733,
+            -74.76711273193361
+        ],
+        [
+            -8.487992465223263,
+            -74.76779937744142
+        ],
+        [
+            -8.488501808301441,
+            -74.76797103881837
+        ],
+        [
+            -8.491048513554995,
+            -74.76797103881837
+        ],
+        [
+            -8.494274315949125,
+            -74.76573944091798
+        ],
+        [
+            -8.49699076008565,
+            -74.76367950439455
+        ],
+        [
+            -8.498858304268838,
+            -74.76282119750978
+        ],
+        [
+            -8.500386288198538,
+            -74.76282119750978
+        ],
+        [
+            -8.501744491023299,
+            -74.76247787475587
+        ],
+        [
+            -8.504460882233829,
+            -74.76144790649415
+        ],
+        [
+            -8.505649297333354,
+            -74.76007461547853
+        ],
+        [
+            -8.505819070618072,
+            -74.75818634033205
+        ],
+        [
+            -8.505819070618072,
+            -74.75612640380861
+        ],
+        [
+            -8.506158616961825,
+            -74.75475311279298
+        ],
+        [
+            -8.50666793591317,
+            -74.75337982177736
+        ],
+        [
+            -8.508874976876665,
+            -74.75217819213869
+        ],
+        [
+            -8.510912234169329,
+            -74.75131988525392
+        ],
+        [
+            -8.512779710498336,
+            -74.75097656250001
+        ],
+        [
+            -8.514307638900219,
+            -74.75046157836915
+        ],
+        [
+            -8.515496023440084,
+            -74.7499465942383
+        ],
+        [
+            -8.51685417268087,
+            -74.74960327148439
+        ],
+        [
+            -8.518042549311803,
+            -74.74960327148439
+        ],
+        [
+            -8.519230922251104,
+            -74.74960327148439
+        ],
+        [
+            -8.52058905823217,
+            -74.74960327148439
+        ],
+        [
+            -8.521098357981653,
+            -74.74943161010744
+        ],
+        [
+            -8.521777423259167,
+            -74.74925994873048
+        ],
+        [
+            -8.522456487330741,
+            -74.74891662597658
+        ],
+        [
+            -8.52279601891428,
+            -74.74822998046876
+        ],
+        [
+            -8.522456487330741,
+            -74.74754333496095
+        ],
+        [
+            -8.52160765705285,
+            -74.74599838256837
+        ],
+        [
+            -8.521437890771155,
+            -74.74462509155275
+        ],
+        [
+            -8.521098357981653,
+            -74.74359512329103
+        ],
+        [
+            -8.520928591473858,
+            -74.74273681640626
+        ],
+        [
+            -8.520758824890697,
+            -74.74153518676759
+        ],
+        [
+            -8.520758824890697,
+            -74.73999023437501
+        ],
+        [
+            -8.522286721425916,
+            -74.73913192749025
+        ],
+        [
+            -8.523475081176755,
+            -74.73878860473634
+        ],
+        [
+            -8.524833202083125,
+            -74.73793029785158
+        ],
+        [
+            -8.525002966857148,
+            -74.73758697509767
+        ],
+        [
+            -8.52534249617898,
+            -74.736385345459
+        ],
+        [
+            -8.52534249617898,
+            -74.73569869995119
+        ],
+        [
+            -8.525002966857148,
+            -74.73501205444337
+        ],
+        [
+            -8.52636108233482,
+            -74.73295211791994
+        ],
+        [
+            -8.528058719894872,
+            -74.73243713378908
+        ],
+        [
+            -8.528737772807077,
+            -74.73226547241212
+        ],
+        [
+            -8.529756349912406,
+            -74.73226547241212
+        ],
+        [
+            -8.53026563744665,
+            -74.73192214965822
+        ],
+        [
+            -8.530774924301898,
+            -74.73175048828126
+        ],
+        [
+            -8.531284210478109,
+            -74.73140716552736
+        ],
+        [
+            -8.531793495975245,
+            -74.7308921813965
+        ],
+        [
+            -8.531963257656715,
+            -74.72986221313478
+        ],
+        [
+            -8.531453972385943,
+            -74.72883224487306
+        ],
+        [
+            -8.531453972385943,
+            -74.72694396972658
+        ],
+        [
+            -8.531453972385943,
+            -74.72419738769533
+        ],
+        [
+            -8.532642303627968,
+            -74.7202491760254
+        ],
+        [
+            -8.5334911093941,
+            -74.7199058532715
+        ],
+        [
+            -8.53552823553429,
+            -74.71939086914064
+        ],
+        [
+            -8.536546794528116,
+            -74.71801757812501
+        ],
+        [
+            -8.537225832347405,
+            -74.71664428710939
+        ],
+        [
+            -8.537904868958616,
+            -74.71681594848634
+        ],
+        [
+            -8.539602455200765,
+            -74.7173309326172
+        ],
+        [
+            -8.54248833447883,
+            -74.7173309326172
+        ],
+        [
+            -8.5445254125888,
+            -74.71664428710939
+        ],
+        [
+            -8.54486492454927,
+            -74.71595764160158
+        ],
+        [
+            -8.546222969368248,
+            -74.71595764160158
+        ],
+        [
+            -8.549787814001663,
+            -74.71544265747072
+        ],
+        [
+            -8.551994605874942,
+            -74.71509933471681
+        ],
+        [
+            -8.552503863722983,
+            -74.71492767333986
+        ],
+        [
+            -8.552503863722983,
+            -74.71818923950197
+        ],
+        [
+            -8.552843368576834,
+            -74.72436904907228
+        ],
+        [
+            -8.554371136674945,
+            -74.72677230834962
+        ],
+        [
+            -8.560651896687705,
+            -74.72608566284181
+        ],
+        [
+            -8.563028373453648,
+            -74.72505569458009
+        ],
+        [
+            -8.565404835377441,
+            -74.72505569458009
+        ],
+        [
+            -8.566932553060452,
+            -74.72436904907228
+        ],
+        [
+            -8.56761153672768,
+            -74.72162246704103
+        ],
+        [
+            -8.568120773682582,
+            -74.72042083740236
+        ],
+        [
+            -8.568290519182673,
+            -74.72042083740236
+        ],
+        [
+            -8.56879975522833,
+            -74.71492767333986
+        ],
+        [
+            -8.567951028106705,
+            -74.70994949340822
+        ],
+        [
+            -8.56761153672768,
+            -74.70479965209962
+        ],
+        [
+            -8.566932553060452,
+            -74.69741821289064
+        ],
+        [
+            -8.566932553060452,
+            -74.69089508056642
+        ],
+        [
+            -8.566593060772274,
+            -74.68849182128908
+        ],
+        [
+            -8.564725847771095,
+            -74.6872901916504
+        ],
+        [
+            -8.563028373453648,
+            -74.68711853027345
+        ],
+        [
+            -8.560482147779448,
+            -74.68711853027345
+        ],
+        [
+            -8.557256904140532,
+            -74.68780517578126
+        ],
+        [
+            -8.55488039134598,
+            -74.68900680541994
+        ],
+        [
+            -8.550976088136867,
+            -74.68866348266603
+        ],
+        [
+            -8.548260027526727,
+            -74.68780517578126
+        ],
+        [
+            -8.5453741919232,
+            -74.68866348266603
+        ],
+        [
+            -8.54248833447883,
+            -74.69020843505861
+        ],
+        [
+            -8.536886313588766,
+            -74.68917846679689
+        ],
+        [
+            -8.535188715265752,
+            -74.68317031860353
+        ],
+        [
+            -8.531284210478109,
+            -74.66995239257814
+        ],
+        [
+            -8.528737772807077,
+            -74.66119766235353
+        ],
+        [
+            -8.527379665775877,
+            -74.65381622314455
+        ],
+        [
+            -8.526530846430202,
+            -74.65089797973634
+        ],
+        [
+            -8.525172731555767,
+            -74.64403152465822
+        ],
+        [
+            -8.524154142233074,
+            -74.64128494262697
+        ],
+        [
+            -8.521098357981653,
+            -74.63956832885744
+        ],
+        [
+            -8.518042549311803,
+            -74.63922500610353
+        ],
+        [
+            -8.515665792358815,
+            -74.64076995849611
+        ],
+        [
+            -8.513289020643334,
+            -74.64145660400392
+        ],
+        [
+            -8.510063378281268,
+            -74.63956832885744
+        ],
+        [
+            -8.5073470267949,
+            -74.63802337646486
+        ],
+        [
+            -8.503781786236305,
+            -74.63768005371095
+        ],
+        [
+            -8.500556063814805,
+            -74.63819503784181
+        ],
+        [
+            -8.498858304268838,
+            -74.63871002197267
+        ],
+        [
+            -8.49580231814307,
+            -74.63973999023439
+        ],
+        [
+            -8.493934759079503,
+            -74.64059829711915
+        ],
+        [
+            -8.492916086667504,
+            -74.64094161987306
+        ],
+        [
+            -8.492576528595823,
+            -74.64111328125001
+        ],
+        [
+            -8.488162246324409,
+            -74.64145660400392
+        ],
+        [
+            -8.483408347116384,
+            -74.64214324951173
+        ],
+        [
+            -8.479503314467676,
+            -74.64214324951173
+        ],
+        [
+            -8.477805461808186,
+            -74.64179992675783
+        ],
+        [
+            -8.476107601649316,
+            -74.64111328125001
+        ],
+        [
+            -8.472881646691865,
+            -74.64076995849611
+        ],
+        [
+            -8.469655664676889,
+            -74.64076995849611
+        ],
+        [
+            -8.465410910292714,
+            -74.64197158813478
+        ],
+        [
+            -8.45963796922255,
+            -74.64523315429689
+        ],
+        [
+            -8.451657584713066,
+            -74.64660644531251
+        ],
+        [
+            -8.447922028821816,
+            -74.64677810668947
+        ],
+        [
+            -8.44673343526984,
+            -74.64712142944337
+        ],
+        [
+            -8.445205238179888,
+            -74.64712142944337
+        ],
+        [
+            -8.44384683568601,
+            -74.64729309082033
+        ],
+        [
+            -8.443507234315492,
+            -74.64763641357423
+        ],
+        [
+            -8.442488428411199,
+            -74.64900970458986
+        ],
+        [
+            -8.440450808536344,
+            -74.65038299560548
+        ],
+        [
+            -8.436035928589,
+            -74.65278625488283
+        ],
+        [
+            -8.432300221532854,
+            -74.6543312072754
+        ],
+        [
+            -8.430092741299212,
+            -74.65776443481447
+        ],
+        [
+            -8.430432354463354,
+            -74.66119766235353
+        ],
+        [
+            -8.43247002718249,
+            -74.66600418090822
+        ],
+        [
+            -8.434677493838242,
+            -74.66720581054689
+        ],
+        [
+            -8.43671514417318,
+            -74.66737747192384
+        ],
+        [
+            -8.439771599521729,
+            -74.66737747192384
+        ],
+        [
+            -8.442828030678074,
+            -74.66583251953126
+        ],
+        [
+            -8.444186436757734,
+            -74.66514587402345
+        ],
+        [
+            -8.44622403691235,
+            -74.6649742126465
+        ],
+        [
+            -8.448261626306905,
+            -74.6649742126465
+        ],
+        [
+            -8.450808597914914,
+            -74.66548919677736
+        ],
+        [
+            -8.45216697589473,
+            -74.66669082641603
+        ],
+        [
+            -8.453525349089034,
+            -74.67098236083986
+        ],
+        [
+            -8.453525349089034,
+            -74.67372894287111
+        ],
+        [
+            -8.453695145401793,
+            -74.67458724975587
+        ],
+        [
+            -8.453695145401793,
+            -74.67544555664064
+        ],
+        [
+            -8.453695145401793,
+            -74.67681884765626
+        ],
+        [
+            -8.453695145401793,
+            -74.67784881591798
+        ],
+        [
+            -8.453695145401793,
+            -74.68128204345705
+        ],
+        [
+            -8.454204533891373,
+            -74.6840286254883
+        ],
+        [
+            -8.456411876234077,
+            -74.69141006469728
+        ],
+        [
+            -8.457430645359022,
+            -74.69570159912111
+        ],
+        [
+            -8.457430645359022,
+            -74.7008514404297
+        ],
+        [
+            -8.457430645359022,
+            -74.70394134521486
+        ],
+        [
+            -8.457430645359022,
+            -74.70685958862306
+        ],
+        [
+            -8.456921261133218,
+            -74.70771789550783
+        ],
+        [
+            -8.456581671275277,
+            -74.70788955688478
+        ],
+        [
+            -8.456242081118072,
+            -74.70788955688478
+        ],
+        [
+            -8.454034737802969,
+            -74.70823287963869
+        ],
+        [
+            -8.450808597914914,
+            -74.70943450927736
+        ],
+        [
+            -8.445884437633733,
+            -74.71115112304689
+        ],
+        [
+            -8.445035438129645,
+            -74.71166610717775
+        ],
+        [
+            -8.44299783169948,
+            -74.71372604370119
+        ],
+        [
+            -8.441639421436957,
+            -74.71939086914064
+        ],
+        [
+            -8.445035438129645,
+            -74.72488403320314
+        ],
+        [
+            -8.446903234572893,
+            -74.72557067871095
+        ],
+        [
+            -8.450638800331001,
+            -74.72780227661134
+        ],
+        [
+            -8.451827381848394,
+            -74.72848892211915
+        ],
+        [
+            -8.453015959702016,
+            -74.72917556762697
+        ],
+        [
+            -8.454374329904983,
+            -74.73037719726564
+        ],
+        [
+            -8.45590249066164,
+            -74.73278045654298
+        ],
+        [
+            -8.456921261133218,
+            -74.73775863647462
+        ],
+        [
+            -8.45777023446882,
+            -74.73981857299806
+        ],
+        [
+            -8.458958793996086,
+            -74.74376678466798
+        ],
+        [
+            -8.458109823279313,
+            -74.74462509155275
+        ],
+        [
+            -8.455732695321213,
+            -74.74411010742189
+        ],
+        [
+            -8.45488371749706,
+            -74.74393844604494
+        ],
+        [
+            -8.454374329904983,
+            -74.7447967529297
+        ],
+        [
+            -8.454544125843798,
+            -74.747371673584
+        ],
+        [
+            -8.455393104415954,
+            -74.74960327148439
+        ],
+        [
+            -8.45590249066164,
+            -74.74960327148439
+        ],
+        [
+            -8.456921261133218,
+            -74.7502899169922
+        ],
+        [
+            -8.457940028911477,
+            -74.75097656250001
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

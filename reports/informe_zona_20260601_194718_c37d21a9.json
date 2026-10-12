@@ -1,0 +1,209 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 1.8732,
+        "centro": {
+            "lat": -8.209042,
+            "lng": -77.990975
+        },
+        "demanda_kw_estimada": 1025,
+        "demanda_kw_usada": 1025,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 67,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 2071,
+            "max_m": 2860,
+            "promedio_m": 2451.2,
+            "rango_m": 789,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 789 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PALLASCA",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -8.25607,
+                "lng": -77.99363,
+                "distancia_km": 5.24,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 20.5,
+                "demanda_total_mva": 6.4366,
+                "disponible_total_mva": 14.0634,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TP-6015",
+                        "capacidad_total_mva": 20.5,
+                        "demanda_total_mva": 6.4366,
+                        "disponible_total_mva": 14.0634,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "LA RAMADA",
+                "empresa": "EMPRESA DE ENERGÍA YAMOBAMBA S.A.C.",
+                "lat": -7.91316,
+                "lng": -78.1535,
+                "distancia_km": 37.45,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: LA RAMADA"
+            },
+            {
+                "nombre": "SET proyectada",
+                "empresa": "",
+                "lat": -7.906158,
+                "lng": -78.142779,
+                "distancia_km": 37.6,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: SET proyectada"
+            },
+            {
+                "nombre": "ALTO CHICAMA",
+                "empresa": "MINERA BARRICK MISQUICHILCA S.A.",
+                "lat": -7.95812,
+                "lng": -78.24043,
+                "distancia_km": 39.15,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: ALTO CHICAMA"
+            },
+            {
+                "nombre": "QUIRUVILCA",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -8.00387,
+                "lng": -78.31423,
+                "distancia_km": 42.27,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 0.5,
+                "demanda_total_mva": 1.1994,
+                "disponible_total_mva": -0.6994,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3014",
+                        "capacidad_total_mva": 0.5,
+                        "demanda_total_mva": 1.1994,
+                        "disponible_total_mva": -0.6994,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 2,
+            "lineas_intersectan": 4,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "API externa: MIDAGRI - Superficie Agricola Nacional 2024": 1000,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2692,
+                "API externa: Predios Moquegua": 1000
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PALLASCA",
+                "SET local"
+            ],
+            "lineas": [
+                "LT KIMAN AYLLU-LA RAMADA",
+                "LT KIMAN AYLLU-LA RAMADA",
+                "LT local",
+                "LT local"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "API externa: MIDAGRI - Superficie Agricola Nacional 2024"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: PALLASCA, SET local",
+            "Cruzan o tocan lineas de transmision relevantes: LT KIMAN AYLLU-LA RAMADA, LT KIMAN AYLLU-LA RAMADA, LT local",
+            "La zona cruza informacion externa registrada: API externa: MIDAGRI - Superficie Agricola Nacional 2024",
+            "Relieve estimado: alto, con variacion aproximada de 789 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-01 19:47:05\nArea: 1.8732 km2\nDemanda usada: 1025 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (67\/100)\nRelieve: alto, con variacion aproximada de 789 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 2071\/2860 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":2,\"lineas_intersectan\":4,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"API externa: MIDAGRI - Superficie Agricola Nacional 2024\":1000,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2692,\"API externa: Predios Moquegua\":1000}}\nSET cercanas:\n- PALLASCA (HIDRANDINA S.A.), 5.24 km, cap. 20.5 MVA, demanda 6.4366 MVA, disponible 14.0634 MVA, estado Disponible.\n- LA RAMADA (EMPRESA DE ENERGÍA YAMOBAMBA S.A.C.), 37.45 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- SET proyectada (sin empresa), 37.6 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- ALTO CHICAMA (MINERA BARRICK MISQUICHILCA S.A.), 39.15 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- QUIRUVILCA (HIDRANDINA S.A.), 42.27 km, cap. 0.5 MVA, demanda 1.1994 MVA, disponible -0.6994 MVA, estado Sobrecarga.\nRazones:\n- Hay SET cercanas o dentro del poligono: PALLASCA, SET local\n- Cruzan o tocan lineas de transmision relevantes: LT KIMAN AYLLU-LA RAMADA, LT KIMAN AYLLU-LA RAMADA, LT local\n- La zona cruza informacion externa registrada: API externa: MIDAGRI - Superficie Agricola Nacional 2024\n- Relieve estimado: alto, con variacion aproximada de 789 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "## Informe ejecutivo para decisión: concesión de distribución o convenio municipal\n\n### 1) Conclusión ejecutiva\nCon la información disponible, **la zona se orienta a una concesión de distribución y no a un convenio municipal**, porque la **demanda estimada usada es 1,025 kW**, es decir, **supera el umbral de 500 kW** definido para preferir concesión.\n\n**Nivel de viabilidad:** Media (67\/100)  \n**Recomendación preliminar:** **Concesión de distribución**\n\n---\n\n### 2) Hallazgos principales\n\n#### A. Demanda eléctrica\n- **Demanda estimada usada:** **1,025 kW**\n- **Origen:** estimada por capas\n- **Comparación con umbral:** **supera 500 kW**\n- **Interpretación:** la magnitud de demanda justifica evaluar una **concesión de distribución**.  \n  Un **convenio municipal** quedaría, en principio, más alineado con zonas de menor demanda, y aquí no se cumple ese supuesto.\n\n#### B. SET cercanas\nSe identifican **2 SET cercanas** y ninguna dentro del polígono.\n\n1. **PALLASCA** – HIDRANDINA S.A.\n   - Distancia: **5.24 km**\n   - Estado: **Disponible**\n   - Capacidad total: **20.5 MVA**\n   - Demanda total: **6.4366 MVA**\n   - Disponible: **14.0634 MVA**\n   - Lectura: es la **referencia más favorable** de abastecimiento cercano.\n\n2. **QUIRUVILCA** – HIDRANDINA S.A.\n   - Distancia: **42.27 km**\n   - Estado: **Sobrecarga**\n   - Capacidad total: **0.5 MVA**\n   - Demanda total: **1.1994 MVA**\n   - Disponible: **-0.6994 MVA**\n   - Lectura: **no es una alternativa favorable** por estar sobrecargada.\n\n**Otras SET reportadas**\n- **LA RAMADA**: 37.45 km, sin datos de capacidad en el maestro.\n- **SET proyectada**: 37.6 km, sin datos.\n- **ALTO CHICAMA**: 39.15 km, sin datos en el maestro.\n\n#### C. Líneas y servidumbres\n- **Líneas de transmisión que intersectan o tocan la zona:** **4**\n- **MT que intersecta:** **0**\n- **SED dentro:** **0**\n- **Concesiones que intersectan:** **0**\n- **Interpretación:** sí existe **presencia de infraestructura eléctrica relevante**, especialmente en transmisión, lo que puede facilitar o condicionar el diseño del acceso, pero también implica revisar servidumbres, compatibilidades y derechos de paso.\n\n#### D. Relieve\n- **Elevación mínima:** 2,071 m\n- **Elevación máxima:** 2,860 m\n- **Promedio:** 2,451.2 m\n- **Rango:** **789 m**\n- **Riesgo:** **alto**\n\n**Lectura técnica:**\n- El relieve es **accidentado**, con alta variación altitudinal.\n- Esto puede **encarecer accesos, obras civiles, servidumbres y tendido eléctrico**.\n- En términos de despliegue, el relieve **no descarta** la concesión, pero sí aumenta la complejidad y el costo de implementación.\n\n#### E. Capas externas \/ utilidad agrícola\n- Se reporta que la zona **cruza información externa** de:\n  - **MIDAGRI – Superficie Agrícola Nacional 2024**\n- No se entregan en los datos:\n  - área agrícola exacta,\n  - clasificación de uso,\n  - productividad,\n  - o incompatibilidades territoriales específicas.\n\n**Conclusión sobre utilidad agrícola:**  \nSolo puede decirse que **hay presencia de información agrícola externa**, pero **no es posible cuantificar ni afirmar utilidad agrícola concreta** con estos datos. Debe verificarse en capa completa si existen suelos agrícolas relevantes, restricciones de uso o impactos por servidumbre.\n\n---\n\n### 3) Riesgos relevantes\n\n1. **Riesgo eléctrico \/ de abastecimiento**\n   - Aunque **PALLASCA** está disponible, se requiere confirmar en campo y en expediente:\n     - capacidad real utilizable,\n     - punto de conexión,\n     - niveles de tensión,\n     - y margen operativo para atender 1,025 kW.\n\n2. **Riesgo por relieve alto**\n   - El rango altimétrico de **789 m** puede elevar costos y tiempos.\n\n3. **Riesgo por infraestructura cruzada**\n   - Hay **4 intersecciones con líneas de transmisión**, por lo que debe evaluarse:\n     - compatibilidad,\n     - distancias de seguridad,\n     - servidumbres,\n     - y trazado de redes.\n\n4. **Riesgo por sustento de demanda**\n   - La demanda está **estimada por capas**, no sustentada con medición o padrón de usuarios.\n   - Para trámite formal, la demanda debe estar **técnicamente respaldada**.\n\n---\n\n### 4) Disponibilidad eléctrica\n**Sí existe disponibilidad referencial cercana**, principalmente por:\n- **PALLASCA**: **14.0634 MVA libres**\n\nPero esta disponibilidad es **referencial** y debe validarse con:\n- estudio de factibilidad de conexión,\n- capacidad de reserva efectiva,\n- análisis de expansión,\n- y confirmación de titularidad\/operación.\n\n**Importante:**  \nLa cercanía de PALLASCA es un punto a favor, pero **no basta por sí sola** para asegurar suministro o definición regulatoria definitiva.\n\n---\n\n### 5) Concesiones y trámites\n- **Trámite recomendado por el sistema:** **Concesión de distribución**\n- **Concesiones vigentes o en trámite que intersectan:** **0**\n- **Interpretación:** no se observa, con la data cargada, una superposición directa con concesiones existentes; eso **mejora la elegibilidad preliminar** para evaluar un nuevo esquema concesional.\n\n---\n\n### 6) Dictamen preliminar\nCon base en:\n- **demanda > 500 kW**,\n- **SET cercana con capacidad disponible**,\n- **presencia de líneas de transmisión**,\n- **relieve alto**,\n- y **ausencia de concesiones superpuestas**,\n\nla zona es **más dable para concesión de distribución** que para convenio municipal.\n\n---\n\n### 7) Siguientes pasos recomendados\n1. **Confirm"
+        }
+    },
+    "polygon": [
+        [
+            -8.206755,
+            -77.982544
+        ],
+        [
+            -8.21334,
+            -77.986402
+        ],
+        [
+            -8.217457,
+            -77.989544
+        ],
+        [
+            -8.215117,
+            -77.996338
+        ],
+        [
+            -8.210252,
+            -77.997975
+        ],
+        [
+            -8.205161,
+            -77.995529
+        ],
+        [
+            -8.20161,
+            -77.991679
+        ],
+        [
+            -8.202645,
+            -77.987789
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

@@ -1,0 +1,479 @@
+[
+    {
+        "id": "MIDAGRI_Departamentos",
+        "nombre": "Limites departamentales",
+        "tipo": "polygon",
+        "color": "#84cc16",
+        "grupo": "Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": true
+    },
+    {
+        "id": "MIDAGRI_Dep_AMAZONAS",
+        "nombre": "Amazonas",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_ANCASH",
+        "nombre": "Ancash",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_APURIMAC",
+        "nombre": "Apurimac",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_AREQUIPA",
+        "nombre": "Arequipa",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_AYACUCHO",
+        "nombre": "Ayacucho",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_CAJAMARCA",
+        "nombre": "Cajamarca",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_CUSCO",
+        "nombre": "Cusco",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_HUANCAVELICA",
+        "nombre": "Huancavelica",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_HUANUCO",
+        "nombre": "Huanuco",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_ICA",
+        "nombre": "Ica",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_JUNIN",
+        "nombre": "Junin",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_LA_LIBERTAD",
+        "nombre": "La_Libertad",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_LAMBAYEQUE",
+        "nombre": "Lambayeque",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_LIMA",
+        "nombre": "Lima",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_LORETO",
+        "nombre": "Loreto",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_MADRE_DE_DIOS",
+        "nombre": "Madre_De_Dios",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_MOQUEGUA",
+        "nombre": "Moquegua",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_PASCO",
+        "nombre": "Pasco",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_PIURA",
+        "nombre": "Piura",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_PUNO",
+        "nombre": "Puno",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_SAN_MARTIN",
+        "nombre": "San_Martin",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_TACNA",
+        "nombre": "Tacna",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_TUMBES",
+        "nombre": "Tumbes",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "MIDAGRI_Dep_UCAYALI",
+        "nombre": "Ucayali",
+        "tipo": "polygon",
+        "color": "#22c55e",
+        "grupo": "MIDAGRI \/ Departamentos",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "PRODUCE_AreasDerechosAcuicolas",
+        "nombre": "PRODUCE AreasDerechosAcuicolas",
+        "tipo": "polygon",
+        "color": "#06b6d4",
+        "grupo": "PRODUCE Acuicultura",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "PRODUCE_AreasDisponibles",
+        "nombre": "PRODUCE AreasDisponibles",
+        "tipo": "polygon",
+        "color": "#06b6d4",
+        "grupo": "PRODUCE Acuicultura",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "PRODUCE_AreasPotencialesAcuicultura",
+        "nombre": "PRODUCE AreasPotencialesAcuicultura",
+        "tipo": "polygon",
+        "color": "#06b6d4",
+        "grupo": "PRODUCE Acuicultura",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "PRODUCE_BancosNaturalesEspecies",
+        "nombre": "PRODUCE BancosNaturalesEspecies",
+        "tipo": "polygon",
+        "color": "#06b6d4",
+        "grupo": "PRODUCE Acuicultura",
+        "menu": "Agricola y Acuicultura",
+        "activa": false
+    },
+    {
+        "id": "ANPNacionalDefinitivas",
+        "nombre": "ANP nacionales",
+        "tipo": "polygon",
+        "color": "#38bdf8",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "Ecosistemas_fragiles_v2__1_",
+        "nombre": "Ecosistemas frágiles",
+        "tipo": "polygon",
+        "color": "#903af8",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "Sitios_Prioritarios_Nivel_Nacional",
+        "nombre": "Sitios prioritarios nacionales",
+        "tipo": "polygon",
+        "color": "#f83a3a",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "ZonasdeAmortiguamiento",
+        "nombre": "Zonas de amortiguamiento",
+        "tipo": "polygon",
+        "color": "#f83a3a",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "ZonasReservadas",
+        "nombre": "Zonas reservadas",
+        "tipo": "polygon",
+        "color": "#3a47f8",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "AreasdeConservacionPrivada",
+        "nombre": "Áreas de conservación privada",
+        "tipo": "polygon",
+        "color": "#90f83a",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "AreasdeConservacionRegional",
+        "nombre": "Áreas de conservación regional",
+        "tipo": "polygon",
+        "color": "#38bdf8",
+        "grupo": "AMBIENTAL",
+        "menu": "Ambiental",
+        "activa": false
+    },
+    {
+        "id": "SED_Esc_1_30000",
+        "nombre": "SED Escala 1:30 000",
+        "tipo": "point",
+        "color": "#a78bfa",
+        "grupo": "Distribucion",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "SED_Esc_1_9000",
+        "nombre": "SED Escala 1:9 000",
+        "tipo": "point",
+        "color": "#818cf8",
+        "grupo": "Distribucion",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Salida_MT_SET",
+        "nombre": "Salidas MT desde SET",
+        "tipo": "point",
+        "color": "#f472b6",
+        "grupo": "Distribucion",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Tramo_media_tension",
+        "nombre": "Tramos Media Tension",
+        "tipo": "line",
+        "color": "#49fb3c",
+        "grupo": "Distribucion",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Qhapaq_Nan_PQN_CAM_SIGDA",
+        "nombre": "Qhapaq Ñam",
+        "tipo": "line",
+        "color": "#3a83f8",
+        "grupo": "Zonas arqueologicas",
+        "menu": "Zonas Arqueologicas",
+        "activa": false
+    },
+    {
+        "id": "SET_Proyectadas",
+        "nombre": "SET Proyectadas",
+        "tipo": "point",
+        "color": "#ff9d00",
+        "grupo": "Subestaciones",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "SET_Operacion",
+        "nombre": "SET en Operacion",
+        "tipo": "point",
+        "color": "#00d4ff",
+        "grupo": "Subestaciones",
+        "menu": "Electricidad",
+        "activa": true
+    },
+    {
+        "id": "SET_Operacion_join",
+        "nombre": "SET en Operacion join",
+        "tipo": "point",
+        "color": "#38bdf8",
+        "grupo": "Subestaciones",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "LT_Proyectadas",
+        "nombre": "LT Proyectadas",
+        "tipo": "line",
+        "color": "#ffcc00",
+        "grupo": "Transmision",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "LT_Operacionm",
+        "nombre": "LT en Operacion",
+        "tipo": "line",
+        "color": "#00ff88",
+        "grupo": "Transmision",
+        "menu": "Electricidad",
+        "activa": true
+    },
+    {
+        "id": "Concesiones_Distribucion_tramite_definitiva",
+        "nombre": "Definitivas",
+        "tipo": "polygon",
+        "color": "#f59e0b",
+        "grupo": "Áreas de concesión \/ En trámite",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Concesiones_Distribucion_tramite_rural",
+        "nombre": "Rurales",
+        "tipo": "polygon",
+        "color": "#a855f7",
+        "grupo": "Áreas de concesión \/ En trámite",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Concesiones_Distribucion_vigente_definitiva",
+        "nombre": "Definitivas",
+        "tipo": "polygon",
+        "color": "#16a34a",
+        "grupo": "Áreas de concesión \/ Vigentes",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "Concesiones_Distribucion_vigente_rural",
+        "nombre": "Rurales",
+        "tipo": "polygon",
+        "color": "#06b6d4",
+        "grupo": "Áreas de concesión \/ Vigentes",
+        "menu": "Electricidad",
+        "activa": false
+    },
+    {
+        "id": "declarados",
+        "nombre": "Sitios arqueológicos declarados",
+        "tipo": "polygon",
+        "color": "#3d3af8",
+        "grupo": "Zonas arqueologicas",
+        "menu": "Zonas arqueologicas",
+        "activa": false
+    },
+    {
+        "id": "delimitados",
+        "nombre": "Sitios arqueológicos delimitados",
+        "tipo": "polygon",
+        "color": "#f83a3a",
+        "grupo": "Zonas arqueologicas",
+        "menu": "Zonas arqueologicas",
+        "activa": false
+    },
+    {
+        "id": "CULTURA",
+        "nombre": "Zonas arqueologicas CULTURA",
+        "tipo": "polygon",
+        "color": "#a855f7",
+        "grupo": "Zonas arqueologicas",
+        "menu": "Zonas arqueologicas",
+        "activa": false
+    }
+]

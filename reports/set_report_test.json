@@ -1,0 +1,369 @@
+{
+  "status": "success",
+  "subestacion": {
+    "codigo": "S00316",
+    "nombre": "ZORRITOS"
+  },
+  "empresa_consulta": "REP",
+  "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+  "hojas": [
+    "REP_2025P2_MedicionTransformado",
+    "REP_2025P3_MedicionTransformado"
+  ],
+  "filas": [
+    {
+      "transformador": "T116-262",
+      "transformador_mapa": "T116-262",
+      "empresa_capacidad": "REP",
+      "subestacion_capacidad": "ZORRITOS",
+      "barra": "B0083",
+      "tension_kv": "220",
+      "tension_transformador_kv": "220",
+      "potencia_transformador_mva": "65",
+      "capacidad_mva": 65.0,
+      "capacidad_total_mva": 143.0,
+      "capacidad_modo": "excel_per_winding",
+      "lado_transformador": "Primaria",
+      "capacidad_nota": "Potencia nominal por barra (Primaria)",
+      "demanda_max_mva": 48.6008,
+      "demanda_max_mw": 46.569,
+      "factor_potencia": 0.9582,
+      "fecha_maxima": "2025-08-12 18:45",
+      "disponible_mva": 16.3992,
+      "estado": "Disponible",
+      "fuente_capacidad": "EquiposTransformadores.xlsx"
+    },
+    {
+      "transformador": "T116-262",
+      "transformador_mapa": "T116-262",
+      "empresa_capacidad": "REP",
+      "subestacion_capacidad": "ZORRITOS",
+      "barra": "B0168",
+      "tension_kv": "60",
+      "tension_transformador_kv": "60",
+      "potencia_transformador_mva": "65",
+      "capacidad_mva": 65.0,
+      "capacidad_total_mva": 143.0,
+      "capacidad_modo": "excel_per_winding",
+      "lado_transformador": "Secundaria",
+      "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+      "demanda_max_mva": 47.2127,
+      "demanda_max_mw": 46.4206,
+      "factor_potencia": 0.9832,
+      "fecha_maxima": "2025-08-12 18:45",
+      "disponible_mva": 17.7873,
+      "estado": "Disponible",
+      "fuente_capacidad": "EquiposTransformadores.xlsx"
+    },
+    {
+      "transformador": "T116-262",
+      "transformador_mapa": "T116-262",
+      "empresa_capacidad": "REP",
+      "subestacion_capacidad": "ZORRITOS",
+      "barra": "B0963",
+      "tension_kv": "22.9",
+      "tension_transformador_kv": "22.9",
+      "potencia_transformador_mva": "13",
+      "capacidad_mva": 13.0,
+      "capacidad_total_mva": 143.0,
+      "capacidad_modo": "excel_per_winding",
+      "lado_transformador": "Terciaria",
+      "capacidad_nota": "Potencia nominal por barra (Terciaria)",
+      "demanda_max_mva": 0.1498,
+      "demanda_max_mw": 0.146,
+      "factor_potencia": 0.9742,
+      "fecha_maxima": "2025-11-30 19:15",
+      "disponible_mva": 12.8502,
+      "estado": "Disponible",
+      "fuente_capacidad": "EquiposTransformadores.xlsx"
+    },
+    {
+      "transformador": "T33-261",
+      "transformador_mapa": "T33-261",
+      "empresa_capacidad": "REP",
+      "subestacion_capacidad": "ZORRITOS",
+      "barra": "B0083",
+      "tension_kv": "220",
+      "tension_transformador_kv": "220",
+      "potencia_transformador_mva": "65",
+      "capacidad_mva": 65.0,
+      "capacidad_total_mva": 143.0,
+      "capacidad_modo": "excel_per_winding",
+      "lado_transformador": "Primaria",
+      "capacidad_nota": "Potencia nominal por barra (Primaria)",
+      "demanda_max_mva": 41.1409,
+      "demanda_max_mw": 40.0515,
+      "factor_potencia": 0.9735,
+      "fecha_maxima": "2025-08-13 14:00",
+      "disponible_mva": 23.8591,
+      "estado": "Disponible",
+      "fuente_capacidad": "EquiposTransformadores.xlsx"
+    },
+    {
+      "transformador": "T33-261",
+      "transformador_mapa": "T33-261",
+      "empresa_capacidad": "REP",
+      "subestacion_capacidad": "ZORRITOS",
+      "barra": "B0168",
+      "tension_kv": "60",
+      "tension_transformador_kv": "60",
+      "potencia_transformador_mva": "65",
+      "capacidad_mva": 65.0,
+      "capacidad_total_mva": 143.0,
+      "capacidad_modo": "excel_per_winding",
+      "lado_transformador": "Secundaria",
+      "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+      "demanda_max_mva": 40.4013,
+      "demanda_max_mw": 39.9909,
+      "factor_potencia": 0.9898,
+      "fecha_maxima": "2025-08-13 14:00",
+      "disponible_mva": 24.5987,
+      "estado": "Disponible",
+      "fuente_capacidad": "EquiposTransformadores.xlsx"
+    }
+  ],
+  "resumen_transformadores": [
+    {
+      "transformador": "T116-262",
+      "transformador_mapa": "T116-262",
+      "capacidad_total_mva": 143.0,
+      "demanda_total_mva": 95.9633,
+      "disponible_total_mva": 47.0367,
+      "estado": "Disponible",
+      "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+    },
+    {
+      "transformador": "T33-261",
+      "transformador_mapa": "T33-261",
+      "capacidad_total_mva": 130.0,
+      "demanda_total_mva": 81.5422,
+      "disponible_total_mva": 48.4578,
+      "estado": "Disponible",
+      "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+    }
+  ],
+  "transformadores_maestro": [
+    {
+      "codigo_transformador": "1TP3019",
+      "subestacion": "ZORRITOS",
+      "empresa": "Electronoroeste"
+    },
+    {
+      "codigo_transformador": "1TP3020",
+      "subestacion": "ZORRITOS",
+      "empresa": "Electronoroeste"
+    },
+    {
+      "codigo_transformador": "1TP3022",
+      "subestacion": "ZORRITOS",
+      "empresa": "Electronoroeste"
+    },
+    {
+      "codigo_transformador": "1TP3028-R",
+      "subestacion": "ZORRITOS",
+      "empresa": "Electronoroeste"
+    },
+    {
+      "codigo_transformador": "T116-262",
+      "subestacion": "ZORRITOS",
+      "empresa": "Red de Energía del Perú"
+    },
+    {
+      "codigo_transformador": "T33-261",
+      "subestacion": "ZORRITOS",
+      "empresa": "Red de Energía del Perú"
+    },
+    {
+      "codigo_transformador": "T95-261",
+      "subestacion": "ZORRITOS",
+      "empresa": "Red de Energía del Perú"
+    }
+  ],
+  "barras_maestro": [
+    {
+      "codigo_barra": "B0083",
+      "nombre_barra": "Zorritos",
+      "tension": "220"
+    },
+    {
+      "codigo_barra": "B0168",
+      "nombre_barra": "Zorritos",
+      "tension": "60"
+    },
+    {
+      "codigo_barra": "B0201",
+      "nombre_barra": "Nueva Zorritos",
+      "tension": "60"
+    },
+    {
+      "codigo_barra": "B0228",
+      "nombre_barra": "Zorritos",
+      "tension": "33"
+    },
+    {
+      "codigo_barra": "B0963",
+      "nombre_barra": "Zorritos",
+      "tension": "22.9"
+    },
+    {
+      "codigo_barra": "B1487",
+      "nombre_barra": "ZORRITOS",
+      "tension": "10"
+    }
+  ],
+  "capacidad_excel_transformadores": [
+    {
+      "empresa": "REP",
+      "empresa_norm": "rep",
+      "subestacion": "ZORRITOS",
+      "subestacion_norm": "zorritos",
+      "codigo": "T33-261",
+      "codigo_norm": "t33 261",
+      "devanados": [
+        {
+          "lado": "Primaria",
+          "tension_kv": 220.0,
+          "tension_texto": "220",
+          "potencia_mva": 65.0,
+          "potencia_texto": "65"
+        },
+        {
+          "lado": "Secundaria",
+          "tension_kv": 60.0,
+          "tension_texto": "60",
+          "potencia_mva": 65.0,
+          "potencia_texto": "65"
+        },
+        {
+          "lado": "Terciaria",
+          "tension_kv": 10.0,
+          "tension_texto": "10",
+          "potencia_mva": 13.0,
+          "potencia_texto": "13"
+        }
+      ],
+      "hoja": "EquiposTransformadores"
+    },
+    {
+      "empresa": "REP",
+      "empresa_norm": "rep",
+      "subestacion": "ZORRITOS",
+      "subestacion_norm": "zorritos",
+      "codigo": "T116-262",
+      "codigo_norm": "t116 262",
+      "devanados": [
+        {
+          "lado": "Primaria",
+          "tension_kv": 220.0,
+          "tension_texto": "220",
+          "potencia_mva": 65.0,
+          "potencia_texto": "65"
+        },
+        {
+          "lado": "Secundaria",
+          "tension_kv": 60.0,
+          "tension_texto": "60",
+          "potencia_mva": 65.0,
+          "potencia_texto": "65"
+        },
+        {
+          "lado": "Terciaria",
+          "tension_kv": 22.9,
+          "tension_texto": "22.9",
+          "potencia_mva": 13.0,
+          "potencia_texto": "13"
+        }
+      ],
+      "hoja": "EquiposTransformadores"
+    }
+  ],
+  "capacidad_mapa_sein": {
+    "id_se": "322",
+    "nombre": "ZORRITOS",
+    "empresa": "REP",
+    "tension": "",
+    "lat": "-3.646215",
+    "lng": "-80.603677",
+    "transformadores": [
+      {
+        "codigo": "T33-261",
+        "tipo": "",
+        "anio_poc": "1999",
+        "tension_kv": "220/60/10",
+        "potencia_mva": "65",
+        "fuente": "MapaSEIN OSINERGMIN"
+      },
+      {
+        "codigo": "T116-262",
+        "tipo": "Trifasico",
+        "anio_poc": "2017",
+        "tension_kv": "220/60/23",
+        "potencia_mva": "65",
+        "fuente": "MapaSEIN OSINERGMIN"
+      }
+    ],
+    "nombre_norm": "zorritos",
+    "empresa_norm": "rep"
+  },
+  "consumo_serie": [],
+  "consumo_mensual": [
+    {
+      "periodo": "2025-05",
+      "mes": "Mayo 2025",
+      "fecha": "2025-05-02 19:45",
+      "mva": 103.6522
+    },
+    {
+      "periodo": "2025-06",
+      "mes": "Junio 2025",
+      "fecha": "2025-06-02 20:45",
+      "mva": 97.6943
+    },
+    {
+      "periodo": "2025-07",
+      "mes": "Julio 2025",
+      "fecha": "2025-07-26 19:15",
+      "mva": 98.1694
+    },
+    {
+      "periodo": "2025-08",
+      "mes": "Agosto 2025",
+      "fecha": "2025-08-13 19:45",
+      "mva": 100.7831
+    },
+    {
+      "periodo": "2025-09",
+      "mes": "Setiembre 2025",
+      "fecha": "2025-09-09 19:30",
+      "mva": 102.7778
+    },
+    {
+      "periodo": "2025-10",
+      "mes": "Octubre 2025",
+      "fecha": "2025-10-10 19:15",
+      "mva": 107.1946
+    },
+    {
+      "periodo": "2025-11",
+      "mes": "Noviembre 2025",
+      "fecha": "2025-11-22 19:00",
+      "mva": 83.3589
+    },
+    {
+      "periodo": "2025-12",
+      "mes": "Diciembre 2025",
+      "fecha": "2025-12-31 19:45",
+      "mva": 86.3237
+    }
+  ],
+  "ultimo_registro": {
+    "fecha": "2025-12-31 23:45",
+    "mva": 71.7926
+  },
+  "pdf": {
+    "archivo": "UNIFILAR_ABRIL_2026.pdf",
+    "url": "uploads/pdf/UNIFILAR_ABRIL_2026.pdf",
+    "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+    "busqueda": "ZORRITOS"
+  }
+}

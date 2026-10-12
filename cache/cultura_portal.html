@@ -1,0 +1,2471 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>MINISTERIO DE CULTURA - GEOPORTAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://geoportal.cultura.gob.pe/resources/img/favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap CSS 5.0.2 -->
+    <link href="https://geoportal.cultura.gob.pe/resources/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- fontawesome 6.0.0 -->
+    <link href="https://geoportal.cultura.gob.pe/resources/fonts/fontawesome-free-6.0.0-beta2-web/css/all.css" rel="stylesheet" />
+    <link href="https://geoportal.cultura.gob.pe/resources/css/icon.css" rel="stylesheet" />
+
+    <!-- fontawesome Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap" rel="stylesheet">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <!-- Animation-->
+    <link href="https://geoportal.cultura.gob.pe/resources/plugins/animate/animate.css" rel="stylesheet" />
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/wow/wow.min.js"></script>
+
+    <!-- SCROLL BAR-->
+    <link href="https://geoportal.cultura.gob.pe/resources/plugins/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+    <!--Stylos -->
+    <link href="https://geoportal.cultura.gob.pe/resources/css/mc.css?id=1780674928" rel="stylesheet" />
+    
+    <style>
+
+        
+        #map {
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: 0;
+        }
+
+        .clsFiltro {
+            -webkit-transition: all ease-out .9s !important;
+            transition: all ease-out .9s !important;
+            -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+            align-items: center !important;
+            -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+            padding: 0 !important;
+            height: 45px !important;
+            width: 45px !important;
+            color: white !important;
+            background-color: #1bc5bd !important;
+            border: 1px solid #1bc5bd !important;
+            border-radius: 50% !important;
+            display: block !important;
+            margin: auto !important;
+            text-align: center !important;
+            line-height: 43px !important;
+            font-size: 18px !important;
+            margin-bottom: 5px !important;
+            cursor: pointer !important;
+        }
+
+        .offcanvas {
+            position: fixed;
+            bottom: 0;
+            z-index: 105000;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            visibility: hidden;
+            background-color: #fff;
+            background-clip: padding-box;
+            outline: 0;
+            transition: transform .3s ease-in-out;
+        }
+
+
+        div#info_ventana_poly {
+            max-height: 350px !important;
+        }
+
+        div#info_ventana .titulo,
+        div#info_ventana_poly .titulo {
+            border-left: 7px solid #0b4265;
+            color: #0b4265;
+            border-bottom: 1px solid;
+            padding-left: 5px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-align: left;
+        }
+
+
+        img.img_museo {
+            width: 100%;
+        }
+
+
+        .row_img {
+            width: 90%;
+            margin: auto;
+            margin-bottom: 4%;
+            margin-top: 4%;
+        }
+
+        img.btn_ver_virtual {
+            width: 10%;
+            cursor: pointer;
+        }
+
+
+        .label_data {
+            width: 35%;
+            float: left;
+        }
+
+        #imag_descrip {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info div {
+            margin-bottom: 2px;
+        }
+
+        #tabs ul.ui-tabs-nav {
+            margin-bottom: 3%;
+        }
+
+        div#estadisticas div {
+            width: 100% !important;
+        }
+
+
+        .item .etiqueta {
+            width: 100%;
+            float: left;
+            font-weight: 500;
+        }
+
+        .info .item {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        .row_ubigeo .info .item div.etiqueta {
+            width: 23%;
+            float: left;
+        }
+
+        .etiqueta_2 {
+            float: left;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+
+        div#btn_intro, div#btn_descrip {
+            text-align: center;
+        }
+        #btn_descrip, #btn_intro {
+            overflow: hidden;
+            margin-top: 5px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        .colorWarning{
+            color: #eb990f;
+        }
+
+        .colorInfo{
+            color: #0dcaf0;
+        }
+
+
+        .draggable .modal-header {
+            cursor:move !important;
+        }
+        .table tbody tr:nth-of-type(odd) {
+    background-color: #EBEDF3;
+}
+
+.offcanvas.acerca, .offcanvas.glosario {
+      background-color: #fff;
+    background-image: url('../resources/img/bg_trama.png');
+}
+
+#left-panel-5 {
+    z-index: 4;
+    position: fixed !important;
+    margin-top: 220px;
+    -webkit-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+    background-position: -540px -2px;
+}
+
+aside#left-panel-2-side {
+    padding-top: 9em;
+}
+
+.modal-content {
+    width: 200%;
+}
+    </style>
+
+    <!-- Leaflet -->
+    <!-- Load Leaflet from CDN -->
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.draw.css" />
+
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/proj4.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Leaflet-WMS.js"></script>
+
+    <script type="text/javascript" src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/L.KML.js"></script>
+    <script type="text/javascript" src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.shpfile.js"></script>
+    <script type="text/javascript" src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/shp.js"></script>
+
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/GeometryUtil.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.geometryutil.js"></script>
+    
+    <link href="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Control.Measure.css?id=1780674928" rel="stylesheet" />
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Control.Measure.js?id=1780674928"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/proj4.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/L.LatLng.UTM.js"></script>
+
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/MarkerCluster.Default.css" />
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.markercluster-src.js"></script>
+
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/leaflet.draw.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Leaflet.Draw.Event.js"></script>
+
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Polygon.Intersect.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Polyline.Intersect.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Draw.Feature.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Draw.Polyline.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Draw.Polygon.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/Leaflet.Editable.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/leaflet/tokml.js"></script>
+
+
+    <!-- Export XLSX -->
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/xlsx/alasql.min.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/xlsx/xlsx.core.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="preloader" style="display:block !important">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+        <img class="logo-preloading position-absolute  wow flash animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="5s" src="https://geoportal.cultura.gob.pe/resources/img/logo-circle.png" />
+    </div>
+
+    <section id="ghMain" class="w-100 vh-100 m-0 p-0 gh-content  bg-dark">
+        <div class="container-fluid p-0 vh-100 bg-gradient">
+            <div class="overflow-hidden  w-100   vh-100  ">
+                <div id="map"></div>
+                <div class="position-fixed   top-0 w-100 navbar  wow animated  fadeInRight m-0 " data-wow-delay="0.2s">
+
+                    <div class="d-flex w-100 ">
+                        <div class="me-auto   ">
+                            <h5 class="navbar-text text-white text-logo ">
+                                Geo Portal - Ministerio de Cultura
+                            </h5>
+                        </div>
+                        <div>
+                            <a class="link-light link-nav" data-bs-toggle="offcanvas" href="#offcanvasAcerca" role="button" aria-controls="offcanvasAcerca">Acerca</a>
+                        </div>
+                        <div>
+                            <a class="link-light link-nav" data-bs-toggle="offcanvas" href="#offcanvasGlosario" role="button" aria-controls="offcanvasGlosario">Glosario</a>
+
+                        </div>
+                        <div>
+            <a class="link-light link-nav" data-bs-toggle="collapse" href="#Mapa-Login" role="button"
+            aria-expanded="true" aria-controls="Mapa-Login">Acceder</a>
+    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-fixed z-index-1   gh-logo w-auto">
+                    <div class="wow animated  fadeInLeft m-0 " data-wow-delay="0.2s">
+                        <div class="py-1 ">
+                            <a class="logo" href="index.php">
+                                <img class="img-brand" src="https://geoportal.cultura.gob.pe/resources/img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="position-fixed  end-0  wow animated  fadeInRight  m-0  gh-mapa-base " data-wow-delay="0.2s">
+                    <nav class="navbar-expand-md  d-flex  ">
+                        <div class="collapse " id="navbarMapaBase" data-bs-toggle="tooltip" data-bs-placement="left" title="Al hacer click, podrás elegir mapas base como referencia para visualizar la información geográfica.">
+                            <ul class="p-1 navbar-nav  flex-column flex-md-row m-0 p-0">
+                                <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-mapa="Satelite" data-wow-delay="0.4s">
+                                    <a class="link-basemap Mapa-BaseMap" data-mapa="Satelite" href="#" title="Mapa Satelital">
+                                        <div class="overflow-hidden rounded-circle gh-thumbnail-map m-auto" data-mapa="Satelite">
+                                            <img class="gh-thumbnail-img" alt="Mapa Satelital" data-mapa="Satelite" title="Mapa Satelital" src="https://geoportal.cultura.gob.pe/resources/img/maps/esrisatellite.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-mapa="OSM" data-wow-delay="0.5s">
+                                    <a class="link-basemap Mapa-BaseMap" data-mapa="OSM" href="#" data-mapa="OSM" title="Mapa Open Street Map">
+
+                                        <div class="overflow-hidden rounded-circle gh-thumbnail-map m-auto" data-mapa="OSM">
+                                            <img class="gh-thumbnail-img" alt="Mapa Open Street Map" data-mapa="OSM" title="Mapa Open Street Map" src="https://geoportal.cultura.gob.pe/resources/img/maps/osmmapnik.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-mapa="Topo" data-wow-delay="0.6s">
+                                    <a class="link-basemap Mapa-BaseMap" data-mapa="Topo" href="#" data-mapa="Topo" title="Mapa Esri">
+
+
+                                        <div class="overflow-hidden rounded-circle gh-thumbnail-map m-auto" data-mapa="Topo">
+                                            <img class="gh-thumbnail-img" alt="Topográfico" data-mapa="Topo" title="Topográfico" src="https://geoportal.cultura.gob.pe/resources/img/maps/esriroad.png" alt="">
+                                        </div>
+
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a class="btn-mapabase  wow animated  fadeInDown" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#navbarMapaBase" role="button" aria-expanded="false" aria-controls="navbarMapaBase">
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="position-fixed  end-0  wow animated  fadeInRight  m-0  gh-btn-top " data-wow-delay="0.2s">
+
+                    <a class="btn btn-tool wow animated fadeInUp" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Contacto" role="button" aria-expanded="true" aria-controls="Mapa-Contacto">
+                        <div data-bs-toggle="tooltip" data-bs-placement="right" title="Contacténos">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </a>
+
+                    <a class="btn btn-tool wow animated fadeInUp mb-1" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Leyenda" role="button" aria-expanded="true" aria-controls="Mapa-Leyenda">
+                        <div data-bs-toggle="tooltip" data-bs-placement="right" title="Mostrar Leyenda">
+                            <i class="fas fa-list-dots"></i>
+                        </div>
+                    </a>
+
+                    <a class="btn btn-tool wow animated fadeInUp mb-1 clsFiltro" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Filter" role="button" aria-expanded="true" aria-controls="Mapa-Filtros">
+                        <div data-bs-toggle="tooltip" data-bs-placement="right" title="Mostrar Filtros">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div style="transform: translateX(0px);" class="map-buttons position-fixed right bottom  wow animated  fadeInRight " data-wow-delay="0.2s">
+                    <div class="collapse " id="navbartool">
+
+
+                        <a class="btn-tool  wow animated  fadeInUp" data-wow-delay="0.2s"  id="Mapa-Inicial">
+                            <div data-bs-toggle="tooltip" title="Mapa inicial">
+                                <i class="fas fa-home" ></i>
+                            </div>
+                        </a>
+                        
+                        
+                        <a class="btn-tool  wow animated  fadeInUp" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Download" role="button" aria-expanded="true" aria-controls="Mapa-Download">
+                            <div data-bs-toggle="tooltip" data-bs-placement="left" title="Descargar información">
+                                <i class="fas fa-download"></i>
+                            </div>
+                        </a>
+
+
+
+                        <a class="btn-tool  wow animated  fadeInUp"  data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Shape" role="button" aria-expanded="true" aria-controls="Mapa-Shape">
+                            <div data-bs-toggle="tooltip" data-bs-placement="left" title="Aquí podrás subir un archivo en formato shapefile y comprimido en formato zip para visualizarlo en el mapa">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                        </a>
+
+
+                        <a class="btn-tool  wow animated  fadeInUp" id="btn-Coordenadas" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Coordenadas" role="button" aria-expanded="true" aria-controls="Mapa-Coordenadas">
+                            <div data-bs-toggle="tooltip" data-bs-placement="right" title="Plotear puntos">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                        </a>
+
+
+                        <div class="d-flex">
+                            <div class="collapse  position-absolute" style="right:50px" id="navbarZoom" data-bs-toggle="tooltip" data-bs-placement="left" title="Seleccionar herramienta">
+                                <ul class="navbar-nav  flex-column flex-md-row m-0 p-0">
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-wow-delay="0.2s">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="Mapa-Acercar" data-bs-toggle="tooltip" data-bs-placement="top" title="Aumentar"> <i class="fas fa-search-plus"></i></a>
+                                    </li>
+
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-wow-delay="0.4s">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="Mapa-Alejar" data-bs-toggle="tooltip" data-bs-placement="top" title="Reducir"> <i class="fas fa-search-minus"></i></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <a data-bs-toggle="collapse" href="#navbarZoom" role="button" aria-expanded="false" aria-controls="navbarzoom" class="btn-tool  wow animated  fadeInUp" data-wow-delay="0.2s" id="btn-navbarZoom">
+                                <div data-bs-toggle="tooltip" data-bs-placement="left" title="Con esta herramienta podrás acercarte o alejarte del área consultada">
+                                    <i class="fas fa-search-location"></i>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <!--<a class="btn-tool  wow animated  fadeInUp" id="btn-imprimir" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#Mapa-Imprimir" role="button" aria-expanded="true" aria-controls="Mapa-Imprimir">
+                            <div data-bs-toggle="tooltip" data-bs-placement="right" title="Con esta herramienta puedes imprimir el área consultada">
+                                <i class="fas fa-print"></i>
+                            </div>
+                        </a>-->
+
+                        <a class="btn-tool  wow animated  fadeInUp" data-wow-delay="0.2s" id="Mapa-Medir" data-activo="0" data-bs-toggle="tooltip" data-bs-placement="left" title="Esta herramienta te servirá para medir distancias"><i class="fas fa-ruler"></i></a>
+                        <div class="d-flex">
+                            <div class="collapse  position-absolute" style="right:50px" id="navbarDibujar" data-bs-toggle="tooltip" data-bs-placement="left" title="Seleccionar herramienta">
+
+                                <ul class="navbar-nav  flex-column flex-md-row m-0 p-0">
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight item-tool-draw" data-wow-delay="0.2s" data-tool="line">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="btn-linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dibujar linea" data-tool="line"> <span class="icon-draw polyline" data-tool="line"></span></a>
+                                    </li>
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight item-tool-draw" data-wow-delay="0.3s" data-tool="poly">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="btn-poligono" data-bs-toggle="tooltip" data-bs-placement="top" title="Dibujar polígono" data-tool="poly"> <span class="icon-draw polygon" data-tool="poly"></span></a>
+                                    </li>
+
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight item-tool-draw" data-wow-delay="0.4s" data-tool="point">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="btn-eitar" data-bs-toggle="tooltip" data-bs-placement="top" title="Dibujar punto" data-tool="point"> <span class="icon-draw edit" data-tool="point"></span></a>
+
+                                    </li>
+
+                                    <!-- <li class="mx-1 my-0 p-0 wow animated  fadeInRight" data-wow-delay="0.5s">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="btn-mover" data-bs-toggle="tooltip" data-bs-placement="top" title="Mover objeto"> <span class="icon-draw drag"></span></a>
+
+                                    </li>-->
+                                    <li class="mx-1 my-0 p-0 wow animated  fadeInRight item-tool-draw" data-wow-delay="0.6s" data-tool="remove">
+                                        <a class="btn-draw  wow animated  fadeInRight" data-wow-delay="0.2s" id="btn-remover" data-bs-toggle="tooltip" data-bs-placement="top" title="Remover objeto" data-tool="remove"> <span class="icon-draw delete" data-tool="remove"></span></a>
+                                    </li> 
+                                </ul>
+
+                            </div>
+                            <a data-bs-toggle="collapse" href="#navbarDibujar" role="button" aria-expanded="false" aria-controls="navbarDibujar" class="btn-tool  wow animated  fadeInUp" data-wow-delay="0.2s" id="Mapa-Dibujar"  >
+                                <div data-bs-toggle="tooltip" data-bs-placement="left" title="Con este conjunto de herramientas podrás dibujar y editar el área o polígono de interés. También podrás descargar información del área dibujada" >
+                                    <i class="fas fa-edit" data-activo="0"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a class="btn wow animated  fadeInDown btn-gear" data-wow-delay="0.2s" data-bs-toggle="collapse" href="#navbartool" role="button" aria-expanded="false" aria-controls="navbartool">
+                        <div data-bs-toggle="tooltip" data-bs-placement="left" title="Opciones">
+                            <i class="fas fa-gear"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <aside id="left-panel-1-side" class="left-panel displayed pb-5 bg-white h-100" style="left: 0px;">
+                    <a id="left-panel-1" class="left-panel-section-open-label left-panel-open-close   wow animated  fadeInLeft active" data-wow-delay="0.1s" data-bs-toggle="tooltip" data-bs-placement="right" title="Capas disponibles">
+                        <div class="efect-round"></div>
+                    </a>
+
+                    
+                    <section id="left-panel-1-content" class="left-panel-section     js-scrollbar h-100 collapse  wow animated  fadeInLeft " data-wow-delay="0.1s">
+                        <header class="left-panel-section-header d-flex">
+                            <div class="flex-grow-1 pl-1 text-uppercase">
+                                Capas disponibles
+                            </div>
+                            <div>
+                                <button type="button" class="btn-close btn-close-white" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar"></button>
+                                <a class="gh-btn-max" data-wow-delay="0.2s" data-bs-toggle="tooltip" data-bs-placement="right" title="Expandir">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </header>
+                        <div class="accordion" id="Mapa-Layers">
+                        </div>
+                    </section>
+
+                </aside>
+
+   
+         
+
+                <aside id="left-4-side" class="left-panel displayed" style="left: 0px;">
+                    <a id="left-panel-4" class="left-panel-section-open-label left-panel-open-close  wow animated  fadeInLeft  " data-wow-delay="0.4s" data-bs-toggle="tooltip" data-bs-placement="right" title="Visores">
+                    </a>
+
+                    <section id="left-panel-4-content" class="left-panel-section     collapse  wow animated  fadeInLeft  overflow-visible " data-wow-delay="0.1s">
+                        <header class="left-panel-section-header d-flex">
+                            <div class="flex-grow-1 pl-1">
+                                VISORES
+                            </div>
+                            <div class="d-flex">
+                                <a class="gh-return" style="z-index: 9999;left: 0; top: 37px;" data-wow-delay="0.2s" data-bs-toggle="tooltip" data-bs-placement="right" title="Volver a las aplicaciones">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+
+                                <button type="button" class="btn-close btn-close-white" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar"></button>
+
+
+                                <a class="gh-btn-max" data-wow-delay="0.2s" data-bs-toggle="tooltip" data-bs-placement="right" title="Expandir">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+
+                            </div>
+                        </header>
+                        <div class="row h-100">
+                            <div id="list-app" class="col-12">
+                                <div class="list-group list-aplication">
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/audiovisual/')" id="aplicacion-1"><i class="far fa-window-restore mr-1 text-light"></i>Mapa Audiovisual</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/audiovisual"><i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/mapa_etnolinguistico/')" id="aplicacion-2"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Etnolingüístico</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/mapa_etnolinguistico/"><i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/mapa_afroperuano/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Afroperuano</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/mapa_afroperuano/"><i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/mapa_cultural_del_sur/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Cultural de Sur</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/mapa_cultural_del_sur/"> <i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/mapa_paisajes_culturales/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Paisajes Culturales</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/mapa_paisajes_culturales/"> <i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/mapa_sonoro/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Sonoro</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/mapa_sonoro/"> <i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/participacion/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa Ciudadanía y Patrimonio Cultural</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/participacion/"> <i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                    <div class="d-flex w-100">
+                                        <a class="list-group-item list-group-item-action" onclick="changeURL('https://geoportal.cultura.gob.pe/sitios_del_patrimonio_mundial/')"> <i class="far fa-window-restore  mr-1 text-light"></i>Mapa de Sitios de Patrimonio Mundial</a>
+                                        <a class="list-group-item text-primary" target="_blank" href="https://geoportal.cultura.gob.pe/sitios_del_patrimonio_mundial/"> <i class="fas fa-external-link-alt   text-danger"></i></a>
+                                    </div>
+                                   
+
+
+                                </div>
+
+                            </div>
+                            <div id="content-iframe" class="col-12 collapse">
+
+                                <iframe id="idframe" class="w-100  h-100 " src="" frameborder="0" style="pointer-events: auto;"></iframe>
+
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+
+     <div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Tipo-Documentos">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Tipo-Documentos-Label">Administración de Tipo de Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Tipo-Documentos" aria-expanded="true"
+                aria-controls="Mapa-Tipo-Documentos">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 js-scrollbarModulo" data-wow-delay="0.2s">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="Mapa-Tipo-Documentos-Nombre">Nombre:</label>
+                            <input type="text" class="form-control input-sm" id="Mapa-Tipo-Documentos-Nombre"
+                                value="" placeholder="Tipo Documento" autocomplete="off">
+                        </div>
+                        <div class="col-sm-2">
+                            <br>
+                            <button type="button" class="btn btn-sm btn-info  hover-animation"
+                                id="Mapa-Tipo-Documentos-Buscar"><i class="fas fa-search"></i> Buscar</button>
+                        </div>
+                    </div>
+                    <p class="m-0 p-0 mt-2 text-secondary" style="font-size: 12px">Se encontraton <span id="tipo-documentos-contador"></span> registros</p>
+                    <table class="table table-bordered" id="Mapa-Tipo-Documentos-Tabla">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Abreviatura</th>
+                                <th>Estado</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Tipo-Documentos" aria-expanded="true"
+                aria-controls="Mapa-Tipo-Documentos">Cerrar</button>
+            <button type="button" data-bs-toggle="collapse" href="#Mapa-Tipo-Documentos-Edit" role="button"
+                aria-expanded="true" aria-controls="Mapa-Tipo-Documentos-Edit" id="Mapa-Tipo-Documentos-Agregar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Agregar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Tipo-Documentos-Edit"
+data-modo="insert" data-ide="0">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Tipo-Documentos-Edit-Label">Administración de Tipo Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" href="#Mapa-Tipo-Documentos-Edit" aria-expanded="true"
+                aria-controls="Mapa-Tipo-Documentos-Edit">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                    <div class="row">
+                        <!--<div class="col-sm-4">
+                            <label for="Mapa-Documentos-Edit-Codigo">Código:</label>
+                            <input type="text" class="form-control " id="Mapa-Documentos-Edit-Codigo" value=""
+                                placeholder="Código" autocomplete="off">
+                        </div>-->
+                        <div class="col-sm-8">
+                            <label for="Mapa-Tipo-Documentos-Edit-Nombre">Nombre:</label>
+                            <input type="text" class="form-control " id="Mapa-Tipo-Documentos-Edit-Nombre" value=""
+                                placeholder="Nombre" autocomplete="off">
+                        </div>
+
+                        <div class="col-sm-8">
+                            <label for="Mapa-Tipo-Documentos-Edit-Abreviatura">Abreviatura:</label>
+                            <input type="text" class="form-control " id="Mapa-Tipo-Documentos-Edit-Abreviatura" value=""
+                                placeholder="Abreviatura" autocomplete="off">
+                        </div>
+               
+    </div>
+    <div class="row">
+
+    <div class="col-sm-4">
+                            <label for="Mapa-Tipo-Documentos-Edit-Estado">Estado:</label>
+                            <select class="form-select" id="Mapa-Tipo-Documentos-Edit-Estado">
+                                <option selected="" value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                            </select>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Tipo-Documentos-Edit" aria-expanded="true"
+                aria-controls="Mapa-Tipo-Documentos-Edit" id="Mapa-Tipo-Documentos-Edit-Cerrar">Cerrar</button>
+            <button type="button" id="Mapa-Tipo-Documentos-Edit-Guardar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Guardar</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Documentos">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Documentos-Label">Administración de Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos" aria-expanded="true"
+                aria-controls="Mapa-Documentos">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 js-scrollbarModulo" data-wow-delay="0.2s">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="Mapa-Documentos-Nombre">Nombre:</label>
+                            <input type="text" class="form-control input-sm" id="Mapa-Documentos-Nombre"
+                                value="" placeholder="Nombre de Documento" autocomplete="off">
+                        </div>
+                        <div class="col-sm-2">
+                            <br>
+                            <button type="button" class="btn btn-sm btn-info  hover-animation"
+                                id="Mapa-Documentos-Buscar"><i class="fas fa-search"></i> Buscar</button>
+                        </div>
+                    </div>
+                    <p class="m-0 p-0 mt-2 text-secondary" style="font-size: 12px">Se encontraton <span id="documentos-contador"></span> registros</p>
+                    <table class="table table-bordered" id="Mapa-Documentos-Tabla">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nro.Documentos</th>
+                                <th>Nombre</th>
+                                <th>Tipo Categoria</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos" aria-expanded="true"
+                aria-controls="Mapa-Documentos">Cerrar</button>
+            <button type="button" data-bs-toggle="collapse" href="#Mapa-Documentos-Edit" role="button"
+                aria-expanded="true" aria-controls="Mapa-Documentos-Edit" id="Mapa-Documentos-Agregar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Agregar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Documentos-Edit"
+data-modo="insert" data-ide="0">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Documentos-Edit-Label">Administración de Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" href="#Mapa-Documentos-Edit" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Edit">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <label for="Mapa-Documentos-Edit-NroDocumento">Numero de Documento:</label>
+                            <input type="text" class="form-control " id="Mapa-Documentos-Edit-NroDocumento" value=""
+                                placeholder="Nro.Doc" autocomplete="off">
+                        </div>
+
+                        <div class="col-sm-8">
+                            <label for="Mapa-Documentos-Edit-Nombre">Nombre:</label>
+                            <input type="text" class="form-control " id="Mapa-Documentos-Edit-Nombre" value=""
+                                placeholder="Nombre" autocomplete="off">
+                        </div>
+            
+                        <div class="col-sm-8">
+                            <label for="Mapa-Documentos-Edit-Descripcion">Descripción:</label>
+                            <input type="text" class="form-control " id="Mapa-Documentos-Edit-Descripcion" value=""
+                                placeholder="Descripcion" autocomplete="off">
+                        </div>
+
+                        <div class="col-sm-8">
+                    <label for="Mapa-Documentos-Edit-TipoCategoria">Tipo Categoria:</label>
+                    <select class="form-select" id="Mapa-Documentos-Edit-TipoCategoria">
+                        <option value="">Seleccione</option>
+                    </select>
+                    </div>
+                    
+                        <div class="col-sm-8">
+                    <label for="Mapa-Documentos-Edit-TipoDocumento">Tipo Documento:</label>
+                    <select class="form-select" id="Mapa-Documentos-Edit-TipoDocumento">
+                        <option value="">Seleccione</option>
+                    </select>
+                    </div>
+
+                    
+    </div>
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <label for="Mapa-Documentos-Edit-Estado">Estado:</label>
+                            <select class="form-select" id="Mapa-Documentos-Edit-Estado">
+                                <option selected="" value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                            </select>
+                        </div>
+
+                        <div class="row mt-3" id="Mapa-Documentos-Edit-Archivo">
+    <div class="col-sm-12">
+        <label for="Mapa-Documentos-Edit-ArchivoInput">Subir Archivos o Videos:</label>
+        <input type="file" class="form-control" id="Mapa-Documentos-Edit-ArchivoInput"
+            accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.mp4,.avi,.mov,.wmv"
+            multiple>
+        <small class="form-text text-muted">
+        </small>
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos-Edit" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Edit" id="Mapa-Documentos-Edit-Cerrar">Cerrar</button>
+            <button type="button" id="Mapa-Documentos-Edit-Guardar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Guardar</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>  
+<!--ADMINISTRACIÓN DOCUMENTOS CATEOGRIA-->
+
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Documentos-Categoria">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Documentos-Categoria-Label">Administración Categoria de Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos-Categoria" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Categoria">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 js-scrollbarModulo" data-wow-delay="0.2s">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="Mapa-Documentos-Categoria-Nombre">Nombre:</label>
+                            <input type="text" class="form-control input-sm" id="Mapa-Documentos-Categoria-Nombre"
+                                value="" placeholder="Nombre Categoria" autocomplete="off">
+                        </div>
+                        <div class="col-sm-2">
+                            <br>
+                            <button type="button" class="btn btn-sm btn-info  hover-animation"
+                            id="Mapa-Documentos-Categoria-Buscar"><i class="fas fa-search"></i> Buscar</button>
+                        </div>
+                    </div>
+                    <p class="m-0 p-0 mt-2 text-secondary" style="font-size: 12px">Se encontraton <span id="documentos-categoria-contador"></span> registros</p>
+                    <table class="table table-bordered" id="Mapa-Documentos-Categoria-Tabla">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos-Categoria" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Categoria">Cerrar</button>
+            <button type="button" data-bs-toggle="collapse" href="#Mapa-Documentos-Categoria-Edit" role="button"
+                aria-expanded="true" aria-controls="Mapa-Documentos-Categoria-Edit" id="Mapa-Documentos-Categoria-Agregar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Agregar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Documentos-Categoria-Edit"
+data-modo="insert" data-ide="0">
+<div class="modal-dialog modal-dialog-centered  modal-xl">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h4 class="modal-title px-1" id="Mapa-Documentos-Categoria-Edit-Label">Administración de Categoria de  Documentos</h4>
+
+            <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                data-bs-toggle="collapse" href="#Mapa-Documentos-Categoria-Edit" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Categoria-Edit">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                    <div class="row">
+                     
+                        <div class="col-sm-8">
+                            <label for="Mapa-Documentos-Categoria-Edit-Nombre">Nombre:</label>
+                            <input type="text" class="form-control " id="Mapa-Documentos-Categoria-Edit-Nombre" value=""
+                                placeholder="Nombre" autocomplete="off">
+                        </div>
+    </div>
+
+    <div class="row">
+
+<div class="col-sm-4">
+    <label for="Mapa-Documentos-Categoria-Edit-Estado">Estado:</label>
+    <select class="form-select" id="Mapa-Documentos-Categoria-Edit-Estado">
+        <option selected="" value="1">Activo</option>
+        <option value="0">Inactivo</option>
+    </select>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                data-bs-toggle="collapse" data-bs-target="#Mapa-Documentos-Categoria-Edit" aria-expanded="true"
+                aria-controls="Mapa-Documentos-Categoria-Edit" id="Mapa-Documentos-Categoria-Edit-Cerrar">Cerrar</button>
+            <button type="button" id="Mapa-Documentos-Categoria-Edit-Guardar"
+                class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Guardar</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--END-->
+
+
+<!--LOGIN-->
+<div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Login">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title px-1" id="Mapa-Login-Label">Iniciar sesión</h4>
+
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close"
+                        data-bs-toggle="collapse" data-bs-target="#Mapa-Login" aria-expanded="true"
+                        aria-controls="Mapa-Imprimir">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                            <div class="row">
+                                <img src="https://geoportal.cultura.gob.pe/resources/img/logo_defensores_2021.png" alt=""
+                                    style="width: 80%">
+                            </div>
+                            <div class="row">
+                                <form>
+                                    <div class="form-floating mb-3 px-2">
+                                        <input type="text" class="form-control bg-light" id="Mapa-Login-Usuario"
+                                            value="" placeholder="Usuario" autocomplete="off">
+                                        <label for="Mapa-Login-Usuario">Usuario:</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3 px-2">
+                                        <input type="password" class="form-control bg-light" id="Mapa-Login-Clave"
+                                            value="" placeholder="Contrasena" autocomplete="off">
+                                        <label for="Mapa-Login-Clave">Contraseña:</label>
+                                    </div>
+
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close"
+                        data-bs-toggle="collapse" data-bs-target="#Mapa-Login" aria-expanded="true"
+                        aria-controls="Mapa-Login">Cerrar</button>
+                    <button type="button" id="Mapa-Login-Ingresar" class="btn btn-sm btn-primary  hover-animation"
+                        onClick="Mapa.Login();"><i class="fa fa-gear"></i> Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!--END-->
+        
+
+              
+
+
+<aside id="left-panel-5-side" class="left-panel displayed pb-5 bg-white h-100" style="left: 0px;">
+    <a id="left-panel-5"
+       class="left-panel-section-open-label left-panel-open-close wow animated fadeInLeft"
+       data-bs-toggle="offcanvas" href="#Mapa-Estadistica" role="button"
+       aria-controls="Mapa-Estadistica" title="Descargar">
+    </a>
+</aside>
+
+
+
+        
+
+<!-- Offcanvas: Panel de Geoservicios -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="Mapa-Estadistica" aria-labelledby="Mapa-Estadistica-Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="Mapa-Estadistica-Label">GEOSERVICIOS</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container wow animated fadeIn m-0 js-scrollbar" data-wow-delay="0.2s">
+            <h2 style="color: #bf0909;">Sección de Geoservicios</h2>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="col-sm-12">
+                                </div>
+                            </div>
+                          
+                            <br>
+                            <div class="row">
+    <div class="col-sm-12">
+        <ul class="nav nav-pills mb-0" role="tablist" id="Mapa-Estadistica-Tab01-Boton">
+        <li class="nav-item" role="presentation">
+    <button class="nav-link rounded-0 active" id="Mapa-Estadistica-Tab01-Boton"
+            data-bs-toggle="pill" data-bs-target="#Mapa-Estadistica-Tab01"
+            type="button" role="tab" aria-controls="Mapa-Estadistica-Tab01"
+            aria-selected="true" title="Servicios de descarga">
+      Servicios de descarga (WFS)
+    </button>
+</li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-0" id="Mapa-Estadistica-Tab02-Boton"
+                        data-bs-toggle="pill" data-bs-target="#Mapa-Estadistica-Tab02"
+                        type="button" role="tab" aria-controls="Mapa-Estadistica-Tab02"
+                        aria-selected="false" title="Servicios de visualización">
+                    Servicios de visualización (WMS)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-0" id="Mapa-Estadistica-Tab03-Boton"
+                        data-bs-toggle="pill" data-bs-target="#Mapa-Estadistica-Tab03"
+                        type="button" role="tab" aria-controls="Mapa-Estadistica-Tab03"
+                        aria-selected="false" title="Documentación">
+                    Documentación
+                </button>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+                            
+                          
+<div class="tab-content border-top border-danger" id="Mapa-Estadistica-Tab-Contenido">
+<div class="tab-pane fade show active p-2" id="Mapa-Estadistica-Tab01" role="tabpanel" aria-labelledby="Mapa-Estadistica-Tab01-Boton">
+    <p class="mb-3"><strong>Seleccionar el patrimonio cultural, formato y filtro de descarga</strong></p>
+
+    <div class="row mb-3">
+        <!-- Patrimonio Cultural -->
+        <div class="col-md-6">
+    <label for="patrimonioCulturalWFS">Patrimonio Cultural</label>
+    <select class="form-select" id="patrimonioCulturalWFS">
+        <option selected disabled>Seleccionar</option>
+    </select>
+</div>
+
+<div class="col-md-6">
+    <label for="formatoDescargaWFS">Formato WFS</label>
+    <select class="form-select" id="formatoDescargaWFS" disabled>
+        <option disabled selected>Seleccionar formato WFS</option>
+    </select>
+</div>
+
+
+
+    </div>
+
+    <p class="mt-4 mb-2"><strong>Filtros de descarga</strong></p>
+
+    <div class="row">
+    <div class="col-md-4">
+        <label for="departamento" class="form-label">Departamento</label>
+        <select class="form-select" id="departamento">
+        <option value="" selected disabled>Seleccionar</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="provincia" class="form-label">Provincia</label>
+        <select class="form-select" id="provincia">
+        <option value="" selected disabled>Seleccionar</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="distrito" class="form-label">Distrito</label>
+        <select class="form-select" id="distrito">
+        <option value="" selected disabled>Seleccionar</option>
+        </select>
+    </div>
+</div>
+
+
+    <!-- Botón para generar WFS -->
+    <div class="mt-4 text-end">
+    <button class="btn btn-danger px-4" onclick="generarWFS()">GENERAR WFS</button>
+    <button class="btn btn-secondary px-4 ms-2" onclick="limpiarFiltros()">Limpiar</button>
+</div>
+
+<div id="wfsLinkResultado" class="mt-3 text-break"></div>
+
+</div>
+
+
+<div class="tab-pane p-2" id="Mapa-Estadistica-Tab02" role="tabpanel" aria-labelledby="Mapa-Estadistica-Tab02-Boton">
+    <p class="mb-3"><strong>Seleccionar el patrimonio cultural</strong></p>
+
+    <div class="row mb-3">
+        <!-- Patrimonio Cultural -->
+        <div class="col-md-6">
+            <label for="patrimonioCulturalWMS" class="form-label">Patrimonio Cultural</label>
+            <select class="form-select" id="patrimonioCulturalWMS">
+                <option selected disabled>Seleccionar</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+    <label for="formatoDescargaWMS" class="form-label">Formato WMS</label>
+    <select class="form-select" id="formatoDescargaWMS" disabled>
+        <option disabled selected>Seleccionar formato WMS</option>
+    </select>
+</div>
+    </div>
+
+    <p class="mt-4 mb-2"><strong>Filtros de visualización</strong></p>
+
+    <!-- Filtros de Ubigeo -->
+    <div class="row">
+    <div class="col-md-4">
+    <label for="departamentoWMS" class="form-label">Departamento</label>
+    <select class="form-select" id="departamentoWMS">
+        <option selected disabled>Seleccionar</option>
+    </select>
+</div>
+
+<div class="col-md-4">
+    <label for="provinciaWMS" class="form-label">Provincia</label>
+    <select class="form-select" id="provinciaWMS">
+        <option selected disabled>Seleccionar</option>
+    </select>
+</div>
+
+<div class="col-md-4">
+    <label for="distritoWMS" class="form-label">Distrito</label>
+    <select class="form-select" id="distritoWMS">
+        <option selected disabled>Seleccionar</option>
+    </select>
+</div>
+
+
+
+    <!-- Botón para generar WMS -->
+    <div class="mt-4 text-end">
+    <button class="btn btn-danger px-4" onclick="generarWMS()">GENERAR WMS</button>
+    <button class="btn btn-secondary px-4 ms-2" onclick="limpiarFiltros()">Limpiar</button>
+</div>
+
+<div id="wmsLinkResultado" class="mt-3 text-break" style="word-wrap: break-word;"></div>
+
+</div>
+</div>
+
+<div class="tab-pane p-2" id="Mapa-Estadistica-Tab03" role="tabpanel" aria-labelledby="Mapa-Estadistica-Tab03-Boton">
+    <div id="contenedor-mapa-documentos"></div>
+</div>
+
+
+
+</div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+                            <!--FIN-->
+
+
+                <div style="position: fixed; bottom: 0; left: 0; padding: 10px; display: flex; flex-direction: column;">
+                    <a href="https://geoportal.cultura.gob.pe/assets/doc/1_Geoportal_CULTURA.pdf" target="_blank" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_manual" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Manual" data-tippy-content="Manual">
+                        <span class="svg-icon svg-icon-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="30" height="30"></rect>
+                                    <path d="M4.5,3 L19.5,3 C20.3284271,3 21,3.67157288 21,4.5 L21,19.5 C21,20.3284271 20.3284271,21 19.5,21 L4.5,21 C3.67157288,21 3,20.3284271 3,19.5 L3,4.5 C3,3.67157288 3.67157288,3 4.5,3 Z M8,5 C7.44771525,5 7,5.44771525 7,6 C7,6.55228475 7.44771525,7 8,7 L16,7 C16.5522847,7 17,6.55228475 17,6 C17,5.44771525 16.5522847,5 16,5 L8,5 Z" fill="#888888"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="https://geoportal.cultura.gob.pe/assets/doc/1_GEOPORTAL_CULTURA.mp4" target="_blank" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_manual" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Video Instructivo" data-tippy-content="Manual">
+                        <span class="svg-icon svg-icon-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <rect x="0" y="0" width="24" height="24"></rect>
+                                        <circle fill="#000000" opacity="0.3" cx="12" cy="12" r="9"></circle>
+                                        <path d="M11.1582329,15.8732969 L15.1507272,12.3908445 C15.3588289,12.2093278 15.3803803,11.8934798 15.1988637,11.6853781 C15.1842721,11.6686494 15.1685826,11.652911 15.1518994,11.6382673 L11.1594051,8.13385466 C10.9518699,7.95169059 10.6359562,7.97225796 10.4537922,8.17979317 C10.3737213,8.27101604 10.3295679,8.388251 10.3295679,8.5096304 L10.3295679,15.4964955 C10.3295679,15.7726378 10.5534255,15.9964955 10.8295679,15.9964955 C10.950411,15.9964955 11.0671652,15.9527307 11.1582329,15.8732969 Z" fill="#000000"></path>
+                                    </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="offcanvas glosario offcanvas-start opacity-9 overflow-hidden" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasGlosario" aria-labelledby="offcanvasGlosarioLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasGlosarioLabel">Glosario</h5>
+            <button type="button" class="btn-close-new btn-close-gray" data-bs-dismiss="offcanvas" aria-label="Close">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="offcanvas-body    js-scrollbar">
+            <div class="pb-4 ">
+      
+                <table class="table " style="vertical-align: auto;">
+                <thead>
+                <tr>
+                <th style="width: 30%;"><b>Concepto</b></th>
+                <th style="width: 5%;"></th>
+                <th style="width: 65%;"><b>Definición</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Hito geocultural</td><td></td><td style='text-align: justify;'>Son aquellos elementos físico-geográficos presentes en el territorio que tienen una importancia significativa por su asociación simbólica y espiritual con la población local, e incluso a nivel regional, en torno al cual se han generado prácticas culturales en una o más sociedades a lo largo del tiempo.</tr><tr><td>Paisaje cultural</td><td></td><td style='text-align: justify;'>Bienes culturales que representan las obras conjuntas de la sociedad y la naturaleza, ilustran la evolución de la sociedad humana y sus asentamientos a lo largo del tiempo, condicionados por las limitaciones y/o oportunidades físicas que presenta su entorno natural y por las sucesivas fuerzas sociales, económicas y culturales tanto externas como internas.</tr><tr><td>Categoría de paisaje</td><td></td><td style='text-align: justify;'>Tipología del paisaje cultural sobre la base de los valores culturales que argumentan su declaratoria. De acuerdo a lo establecido en el Decreto Supremo N° 002-2011-MC, Reglamento para la Declaratoria y Gestión de los Paisajes Culturales, y pueden ser:<br/>
+<b>Paisaje cultural asociativo:</b> Es aquel que representa la fuerza de evocación de asociaciones religiosas, artísticas o culturales del elemento natural, más que por huellas culturales tangibles, que pueden ser insignificantes o incluso inexistentes.<br/>
+<b>Paisaje diseñado (paisaje claramente definido, concebido y creado intencionalmente por el hombre):</b> Comprende los paisajes de jardines y parques creados por razones estéticas, que con frecuencia (pero no siempre) están asociados a construcciones o a conjuntos religiosos o monumentales.<br/>
+<b>Paisaje evolutivo continuo: relicto (paisaje evolucionado orgánicamente/paisaje relicto o fósil):</b> Es aquel que ha experimentado un proceso evolutivo que se ha detenido en algún momento del pasado, ya sea bruscamente o a lo largo de un periodo. Sus características esenciales siguen siendo, empero, materialmente visibles.<br/>
+<b>Paisaje evolucionado orgánicamente: paisaje vivo:</b> Es el que conserva una función social activa en la sociedad contemporánea, estrechamente vinculada al modo de vida tradicional, y en el cual prosigue el proceso evolutivo. Al mismo tiempo, presenta pruebas materiales manifiestas de su evolución en el transcurso del tiempo.</tr><tr><td>Ámbito</td><td></td><td style='text-align: justify;'>Establece el nivel de influencia o valor simbólico en el territorio que ostenta un hito geocultural en el país. Puede ser a nivel local, regional o nacional.</tr><tr><td>Estado Situacional</td><td></td><td style='text-align: justify;'>Situación en el proceso de declaratoria de un paisaje cultural como Patrimonio Cultural de la Nación, y pueden ser:<br/>
+<b>Área potencial:</b> Espacio físico delimitado, que contiene una importante concentración de patrimonio cultural material e inmaterial y que, por sus características, constituyen un área que podría merecer un reconocimiento como Patrimonio Cultural de la Nación. Fueron identificadas a través del proyecto de Catalogación de Paisajes Culturales, realizado en el periodo 2007-2010.<br/>
+<b>Declarado:</b> Paisaje cultural se encuentra declarado como Patrimonio Cultural de la Nación.  Cuenta con Resolución Viceministerial.<br/>
+<b>Proceso de declaratoria:</b> Estado técnico o administrativo de un paisaje cultural, que cuenta con ficha técnica de declaratoria, propuesta de declaración, propuesta de delimitación. En algunos casos, el paisaje cultural cuenta con Resolución Directoral de inicio de procedimiento, emitido por la Dirección General de Patrimonio Cultural.</tr> 
+                </tbody>
+                </table>
+ 
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas  acerca offcanvas-start opacity-9 overflow-hidden" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasAcerca" aria-labelledby="offcanvasAcercaLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasAcercaLabel">Acerca</h5>
+            <button type="button" class="btn-close-new btn-close-gray" data-bs-dismiss="offcanvas" aria-label="Close">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="offcanvas-body  js-scrollbar">
+            <div class="pb-4 ">
+            El Geoportal Estadistico, es parte de la Infraestructura de Datos Espaciales del Ministerio de Cultura, que integra la información geográfica y estadística del sector, de una forma amigable y dinámica. La información del Geoportal es de libre acceso y contribuye a la toma de decisiones para diferentes proyectos públicos y privados, salvaguardando nuestro patrimonio cultural nacional y de la humanidad.<br>
+En el Geoportal podras encontrar información relacionada a pueblos indigenas, Bienes Materiales con valor arqueológico del patrimonio cultural, museos, patrimonio cultural inmaterial, población afroperuana, entre diversa información del sector. Asi mismo podras acceder a visores espcializados de cada temática de nuestra Cultura.<br><br><p><strong>Oficina responsable:</strong></p><p>Oficina General de Estadística y Tecnologías de la Información y Comunicaciones</p>            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-white offcanvas offcanvas-start overflow-hidden" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="Mapa-Contenido" aria-labelledby="Mapa-Contenido-Label" style="visibility: visible;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="Mapa-Contenido-Label" data-categoria="">....</h5>
+            <button type="button" class="btn-close-new btn-close-gray" data-bs-dismiss="offcanvas" aria-label="Close">
+                <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                </div>
+            </button>
+        </div>
+        <div class="offcanvas-body bg-light p-2" id="Mapa-Contenido-Contenedor" style="overflow: auto !important;">
+
+        </div>
+    </div>
+
+
+    <div class="position-absolute fade collapse" data-bs-backdrop="static" id="Mapa-Contacto">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title px-1" id="Mapa-Contacto-Label">Contacto</h4>
+
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Contacto" aria-expanded="true" aria-controls="Mapa-Contacto">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                            <div class="form-floating mb-2 px-2 w-100">
+                                <input type="text" class="form-control bg-light" id="Mapa-Contacto-Nombre" value="" placeholder="Nombre y apellidos" autocomplete="off">
+                                <label for="nombre-mapa">Nombre y apellidos:</label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-100">
+                                <input type="text" class="form-control bg-light" id="Mapa-Contacto-Correo" value="" placeholder="Correo electrónico" autocomplete="off">
+                                <label for="nombre-mapa">Correo electrónico:</label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-100">
+                                <input type="text" class="form-control bg-light" id="Mapa-Contacto-Asunto" value="" placeholder="Asunto" autocomplete="off">
+                                <label for="nombre-mapa">Asunto:</label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-100" style="height:120px">
+                                <textarea class="form-control  bg-light w-100" style="height:120px" placeholder="" id="Mapa-Contacto-Mensaje">Mensaje</textarea>
+                                <label for="floatingTextarea">Mensaje</label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-100">
+                                <div class="g-recaptcha" data-sitekey="6Ldox2kdAAAAAO0-t9mxuhc8AQQlJABTdX-CA_ZC"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Contacto" aria-expanded="true" aria-controls="Mapa-Contacto">Cerrar</button>
+                    <button type="button" class="btn btn-sm btn-primary  hover-animation" id="Mapa-Contacto-Procesar"><i class="fa fa-envelope "></i> Envíar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="position-absolute  fade  draggable collapse" id="Mapa-Leyenda">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div id="headerLegend" class="modal-header  ">
+                    <h4 class="modal-title px-1" id="Mapa-Leyenda-Label">Leyenda</h4>
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Leyenda" aria-expanded="true" aria-controls="Mapa-Leyenda">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+
+                <div class="modal-body no-drag js-scrollbar h-350">
+                    <div class="content">
+                        <ul class="nav nav-pills mb-0" role="tablist" id="Mapa-Leyenda-Tab">
+                        </ul>
+                        <div class="tab-content border-top border-danger" id="Mapa-Leyenda-Tab-Contenido">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Leyenda" aria-expanded="true" aria-controls="Mapa-Leyenda">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="position-absolute  fade  draggable collapse show" id="Mapa-Filter">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div id="headerFilter" class="modal-header  ">
+                    <h4 class="modal-title px-1" id="Mapa-Filter-Label">Filtros por ubigeo</h4>
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Filter" aria-expanded="true" aria-controls="Mapa-Filter">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-body no-drag">
+                    <div class="content">
+                        <div class="modal-body p-2">
+                            <small for="Mapa-Filter-Departamento">Departamento</small>
+                            <select id="Mapa-Filter-Departamento" class="form-select form-control-sm"></select>
+                            <small for="Mapa-Filter-Provincia">Provincia</small>
+                            <select id="Mapa-Filter-Provincia" class="form-select form-control-sm"></select>
+                            <small for="Mapa-Filter-Distrito">Distrito</small>
+                            <select id="Mapa-Filter-Distrito" class="form-select form-control-sm"></select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="position-absolute  fade  draggable collapse" id="Mapa-Download">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div id="headerDownload" class="modal-header  ">
+                    <h4 class="modal-title px-1" id="Mapa-Download-Label">Descargar información</h4>
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Download" aria-expanded="true" aria-controls="Mapa-Download">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+
+                <div class="modal-body no-drag">
+                <div class="content">
+                        <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                            <div class="row">
+                                <div class="form-floating mb-2 px-2 w-100">
+                                    <div class="form-control">
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Download-Modo" id="Mapa-Download-Modo-Dibujo" value="Dibujo" checked>
+                                            <label class="form-check-label" for="Mapa-Download-Modo-Dibujo">
+                                                Dibujar en mapa
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Download-Modo" id="Mapa-Download-Modo-Shape" value="Shape">
+                                            <label class="form-check-label" for="Mapa-Download-Modo-Shape">
+                                                Cargar un archivo shapefile
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label for="Mapa-Download-Modo">Dibuje o cargue el ámbito de análisis de descarga</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2 w-100">
+                                    <div class="form-control">
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Download-Formato" id="Mapa-Download-Formato-JSON" value="json" checked>
+                                            <label class="form-check-label" for="Mapa-Download-Formato-JSON">
+                                                GeoJSON
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Download-Formato" id="Mapa-Download-Formato-KML" value="kml">
+                                            <label class="form-check-label" for="Mapa-Download-Formato-KML">
+                                                KML
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Download-Formato" id="Mapa-Download-Formato-SHAPE" value="shp">
+                                            <label class="form-check-label" for="Mapa-Download-Formato-SHAPE">
+                                                Shapefile
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <label for="Mapa-Download-Ambito">Seleccion el formato de descarga</label>
+                                </div>
+
+                                <div class="form-floating mb-1 px-2 mb-1" style="display: none;">
+                                    <input type="file" class="form-control form-control-file" id="Mapa-Download-File" accept=".zip" />
+                                    <label for="Mapa-Download-File">Importar Shapefile</label>
+                                </div>
+
+                                <div class="mb-1">
+                                    <div class="only-alert  alert alert-warning alert-dismissible fade show p-2 " role="alert">
+                                        <small id="Mapa-Download-Ambito-Label"> (*) La carga de ámbito shapefile es en formato .zip<br>El archivo solo debe contener 1 polígono</small>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Download" aria-expanded="true" aria-controls="Mapa-Download">Cerrar</button>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-info  hover-animation" id="Mapa-Download-Establecer"><i class="fas fa-edit"></i> Establecer ámbito</button>
+                        <button type="button" class="btn btn-sm btn-primary  hover-animation" id="Mapa-Download-Procesar"><i class="fas fa-download"></i> Descargar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="position-absolute  fade  collapse" data-bs-backdrop="static" id="Mapa-Shape">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title px-1" id="Mapa-Shape-Label">Subir Shape</h4>
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Shape" aria-expanded="true" aria-controls="Mapa-Shape">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="content wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                        <div class="d-flex w-100">
+                            <div class="form-floating mb-2 px-2 w-50">
+                                <input type="color" class="form-control " id="Mapa-Shape-Fondo" value="#ffffff" title="Cambiar color de fondo">
+                                <label for="Mapa-Shape-Fondo" class="form-label">Color de fondo</label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-50">
+                                <input type="color" class="form-control " id="Mapa-Shape-Borde" value="#000000" title="Cambiar color de borde">
+                                <label for="Mapa-Shape-Borde" class="form-label">Color de Borde</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex w-100">
+                            <div class="form-floating mb-2 px-2 w-50">
+                                <input type="range" class="form-control form-range" min="1" max="20" value="2" id="Mapa-Shape-Ancho">
+                                <label for="Mapa-Shape-Ancho" class="form-label">Ancho de borde <span class="badge bg-secondary" id="Mapa-Shape-Ancho-Label">2</span></label>
+                            </div>
+
+                            <div class="form-floating mb-2 px-2 w-50">
+                                <input type="range" class="form-control form-range" min="0" max="100" value="50" id="Mapa-Shape-Opacidad">
+                                <label for="Mapa-Shape-Opacidad" class="form-label">Opacidad de fondo <span class="badge bg-secondary" id="Mapa-Shape-Opacidad-Label">50</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-1 px-2 mb-1">
+                            <input type="file" class="form-control form-control-file" id="Mapa-Shape-File" accept=".zip" />
+                            <label for="Mapa-Shape-File">Importar Shapefile</label>
+                        </div>
+
+                        <div class="p-2 mb-1">
+                            <div class="only-alert  alert alert-warning alert-dismissible fade show p-2 " role="alert">
+                                <small> (*) Solo archivos en formato .zip<br>El archivo no debe superar 1MB de peso</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Shape" aria-expanded="true" aria-controls="Mapa-Shape">Cerrar</button>
+
+                    <div>
+                        <button type="button" class="btn btn-sm btn-info  hover-animation" id="Mapa-Shape-Limpiar"><i class="fa fa-eraser"></i> Limpiar</button>
+                        <button type="button" class="btn btn-sm btn-primary  hover-animation" id="Mapa-Shape-Procesar"><i class="fa fa-upload"></i> Subir Shape</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Coordenadas">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title px-1">Plotear puntos</h4>
+
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Coordenadas" aria-expanded="true" aria-controls="Mapa-Coordenadas">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                            <div class="row">
+                                <div class="form-floating mb-2 px-2">
+                                    <select id="Mapa-Coordenadas-Sistema" class="form-select">
+                                        <option value="4326">WGS84 Geográfica</option>
+                                        <option value="32717">17S UTM WGS84</option>
+                                        <option value="32718">18S UTM WGS84</option>
+                                        <option value="32719">19S UTM WGS84</option>
+                                    </select>
+                                    <label for="Mapa-Coordenadas-Sistema">Seleccione un sistema:</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2">
+                                    <input type="number" class="form-control bg-light" id="Mapa-Coordenadas-Este" value="-8.75" placeholder="Ingrese coordenada">
+                                    <label for="Mapa-Coordenadas-Este">Este (x):</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2">
+                                    <input type="number" class="form-control bg-light" id="Mapa-Coordenadas-Norte" value="-77.51" placeholder="Ingrese coordenada">
+                                    <label for="Mapa-Coordenadas-Este">Norte (y):</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2">
+                                    <input type="text" class="form-control bg-light" id="Mapa-Coordenadas-Descripcion" value="" placeholder="Ingrese una descripción">
+                                    <label for="Mapa-Coordenadas-Descripcion">Descripción:</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Coordenadas" aria-expanded="true" aria-controls="Mapa-Coordenadas">Cerrar</button>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-info  hover-animation" id="Mapa-Coordenadas-Limpiar"><i class="fa fa-eraser"></i> Limpiar</button>
+                        <button type="button" class="btn btn-sm btn-primary  hover-animation" id="Mapa-Coordenadas-Procesar"><i class="fa fa-map-pin"></i> Plotear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Imprimir">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title px-1" id="Mapa-Imprimir-Label">Generar mapa</h4>
+
+                    <button type="button" class="btn-close-new  btn-close-white " aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Imprimir" aria-expanded="true" aria-controls="Mapa-Imprimir">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="container  wow animated  fadeIn m-0 " data-wow-delay="0.2s">
+                            <div class="row">
+                                <div class="form-floating mb-1 px-2">
+                                    <input type="text" class="form-control bg-light" id="Mapa-Imprimir-Nombre" value="" placeholder="Nombre del mapa" autocomplete="off">
+                                    <label for="Mapa-Imprimir-Nombre">Nombre del mapa:</label>
+                                </div>
+
+                                <div class="form-floating mb-1 px-2">
+                                    <input type="text" class="form-control bg-light" id="Mapa-Imprimir-Descripcion" value="" placeholder="Descripcion" autocomplete="off">
+                                    <label for="Mapa-Imprimir-Descripcion">Descripcion</label>
+                                </div>
+
+                                <div class="form-floating mb-1 px-2">
+                                    <input type="text" class="form-control bg-light" id="Mapa-Imprimir-Nota" value="" autocomplete="off" placeholder="Nota">
+                                    <label for="Mapa-Imprimir-Nota">Nota</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2 w-50">
+                                    <select class="form-select" id="Mapa-Imprimir-Formato">
+                                        <option selected="" value="A4H">A4 Horizontal</option>
+                                        <option value="A4V">A4 Vertical</option>
+                                        <option value="A3H">A3 Horizontal</option>
+                                        <option value="A3V">A3 Vertical</option>
+
+                                    </select>
+                                    <label for="Mapa-Imprimir-Formato">Formato de salida</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2 w-50">
+                                    <div class="form-control">
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Imprimir-Mapa" id="Mapa-Imprimir-Mapa-Si" value="Base" checked>
+                                            <label class="form-check-label" for="Mapa-Imprimir-Mapa-Si">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Mapa-Imprimir-Mapa" id="Mapa-Imprimir-Mapa-No" value="Select">
+                                            <label class="form-check-label" for="Mapa-Imprimir-Mapa-No">
+                                                No
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+                                    <label for="formato-salida">Imprimir Mapa Base</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2 w-50">
+                                    <div class="form-control" style="height: 80px;">
+                                        <div class="form-check  form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Print-TipoEscala" id="Mapa-Imprimir-TipoEscala-Mapa" value="Mapa" checked>
+                                            <label class="form-check-label" for="Mapa-Imprimir-TipoEscala-Mapa">
+                                                Del mapa
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Print-TipoEscala" id="Mapa-Imprimir-TipoEscala-Select" value="Select">
+                                            <label class="form-check-label" for="Mapa-Imprimir-TipoEscala-Select">
+                                                Seleccionar
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+                                    <label for="formato-salida">Escala</label>
+                                </div>
+
+                                <div class="form-floating mb-2 px-2 w-50">
+                                    <select class="form-select" id="Mapa-Imprimir-Escala" disabled>
+                                        <option selected="" value="10000">1/10,000</option>
+                                        <option value="25000">1/25,000</option>
+                                        <option value="50000">1/50,000</option>
+                                        <option value="100000">1/100,000</option>
+                                        <option value="125000">1/125,000</option>
+                                        <option value="150000">1/150,000</option>
+                                        <option value="200000">1/200,000</option>
+                                        <option value="250000">1/250,000</option>
+                                    </select>
+                                    <label for="Mapa-Imprimir-Escala">Escala de impresión</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-sm btn-secondary  hover-animation" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Imprimir" aria-expanded="true" aria-controls="Mapa-Imprimir">Cerrar</button>
+                    <button type="button" id="Mapa-Imprimir-Procesar" class="btn btn-sm btn-primary  hover-animation"><i class="fa fa-gear"></i> Generar mapa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="position-absolute  fade  collapse modal-standar" data-bs-backdrop="static" id="Mapa-Dibujar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myChart-Titulo">Configuración de dibujo</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="col s12">
+                            <h6>Seleccione el ancho de la línea</h6>
+                        </div>
+
+                        <div class="col s12 center">
+                            <a href="#"><img class="myDraw-ancho" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/ancho_1.png" data-ancho="3"></a>
+                            <a href="#"><img class="myDraw-ancho" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/ancho_2.png" data-ancho="6"></a>
+                            <a href="#"><img class="myDraw-ancho" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/ancho_3.png" data-ancho="9"></a>
+                        </div>
+
+                        <div class="col s12">
+                            <h6>Seleccione un color</h6>
+                        </div>
+
+                        <div class="col s12 center">
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/01.png" data-color="#333333"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/02.png" data-color="#4F4F4F"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/03.png" data-color="#828282"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/04.png" data-color="#E0E0E0"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/05.png" data-color="#F2F2F2"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/06.png" data-color="#EB5757"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/07.png" data-color="#F2994A"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/08.png" data-color="#F2C94C"></a>
+                            <br>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/09.png" data-color="#219653"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/10.png" data-color="#27AE60"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/11.png" data-color="#6FCF97"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/12.png" data-color="#2F80ED"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/13.png" data-color="#2D9CDB"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/14.png" data-color="#56CCF2"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/15.png" data-color="#9B51E0"></a>
+                            <a href="#"><img class="myDraw-color" alt="" src="https://geoportal.cultura.gob.pe/resources/img/draw/16.png" data-color="#DF3EA9"></a>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Mapa-Mensaje" class="position-fixed toast hide" role="alert" aria-live="assertive" aria-atomic="true" style="top: 20px; right: 20px; z-index: 1000000;">
+        <div class="toast-header">
+            <div class="d-flex align-items-center flex-grow-1">
+
+                <div class="flex-grow-1">
+                    <i class="bi-bell"></i>
+                    <h6 class="mb-0 text-danger" id="Mapa-Mensaje-Titulo"></h6>
+
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn-close-new btn-close-gray" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#Mapa-Mensaje" aria-expanded="true" aria-controls="Mapa-Mensaje">
+                        <div class="icon-close" data-bs-toggle="tooltip" data-bs-placement="right" title="Cerrar">
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="toast-body">
+            <p id="Mapa-Mensaje-Cuerpo"> </p>
+        </div>
+    </div>
+    
+
+
+    <!-- Modal para mostrar imagen -->
+<div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imagenModalLabel">Vista previa de la imagen</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="imagenModalSrc" src="" class="img-fluid" alt="Imagen">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://geoportal.cultura.gob.pe/resources/js/shpwrite.js"></script>
+    <script src="https://geoportal.cultura.gob.pe/resources/js/FileSaver.js"></script>
+    <!-- jQuery -->
+    <script src="https://geoportal.cultura.gob.pe/resources/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/lightbox/css/lightbox.min.css">
+	<script src="https://geoportal.cultura.gob.pe/resources/plugins/lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!--  Scrollbar -->
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--  Datatable -->
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+    <!--  Moveable -->
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/drag/jquery.draggableTouch.js"></script>
+
+    <script src="https://geoportal.cultura.gob.pe/resources/js/init.js?id=1780674928"></script>
+
+    <script src="https://geoportal.cultura.gob.pe/resources/js/map.js?id=1780674928"></script>
+
+    <link href="https://geoportal.cultura.gob.pe/resources/plugins/select2/select2.min.css" rel="stylesheet" />
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/select2/select2.min.js"></script>
+
+    <script>
+        Mapa.BasePath = "https://geoportal.cultura.gob.pe/";
+        $(function() {
+            "use strict";                    
+            Mapa.Init();    
+        });
+   
+    </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-50125036-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50125036-1');
+</script>
+
+    <!--Reportes HigtChart-->
+    <script src="https://geoportal.cultura.gob.pe/resources/js/highcharts.js"></script>
+    <!--Fin Reportes-->
+
+    <link rel="stylesheet" href="https://geoportal.cultura.gob.pe/resources/plugins/fancybox/jquery.fancybox.min.css" />
+    <script src="https://geoportal.cultura.gob.pe/resources/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+
+    <script>
+  window.addEventListener("load", function () {
+    // Mostrar el panel automáticamente
+    document.querySelector("#left-panel-1-content").classList.add("show");
+
+    // Opcional: si tienes una capa que debe activarse al inicio
+    if (Mapa?.LayerInicio) {
+      const layerBtn = document.getElementById(Mapa.LayerInicio);
+      if (layerBtn) {
+        layerBtn.click();
+      }
+    }
+
+    // Si tienes un loader o preloader
+    const preloader = document.querySelector(".preloader");
+    if (preloader) preloader.style.display = "none";
+  });
+
+//UBIGEOS
+
+$(document).ready(function () {
+    function cargarDepartamentos(selectorDepartamento) {
+    $.ajax({
+        url: Mapa.BasePath + 'dgm/json_departamentos',
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            $(selectorDepartamento).html('<option selected disabled>Seleccionar</option>');
+            $.each(data, function(index, value) {
+                $(selectorDepartamento).append('<option value="'+value.iddpto+'">'+value.nomdpto+'</option>');  // Usar iddpto
+            });
+        }
+    });
+}
+
+
+function cargarProvincias(selectorDepartamento, selectorProvincia) {
+    $(selectorDepartamento).on('change', function() {
+        var departamento = $(this).val(); // Aquí ya obtenemos el iddpto
+        $.ajax({
+            url: Mapa.BasePath + 'dgm/json_provincias',
+            data: { iddpto: departamento },  // Usamos iddpto en lugar de nombre
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $(selectorProvincia).html('<option selected disabled>Seleccionar</option>');
+                $.each(data, function(index, value) {
+                    $(selectorProvincia).append('<option value="'+value.idprov+'">'+value.nomprov+'</option>');  // Usar idprov
+                });
+            }
+        });
+    });
+}
+
+function cargarDistritos(selectorProvincia, selectorDistrito) {
+    $(selectorProvincia).on('change', function() {
+        var provincia = $(this).val();  // Aquí ya obtenemos el idprov
+        $.ajax({
+            url: Mapa.BasePath + 'dgm/json_distritos',
+            data: { idprov: provincia },  // Usamos idprov
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $(selectorDistrito).html('<option selected disabled>Seleccionar</option>');
+                $.each(data, function(index, value) {
+                    $(selectorDistrito).append('<option value="'+value.iddist+'">'+value.nomdist+'</option>');  // Usar iddist
+                });
+            }
+        });
+    });
+}
+
+
+    // Inicializar para Tab 1
+    cargarDepartamentos('#departamento');
+    cargarProvincias('#departamento', '#provincia');
+    cargarDistritos('#provincia', '#distrito');
+
+    // Inicializar para Tab 2
+    cargarDepartamentos('#departamentoWMS');
+    cargarProvincias('#departamentoWMS', '#provinciaWMS');
+    cargarDistritos('#provinciaWMS', '#distritoWMS');
+});
+
+
+
+
+
+/*function cargarFormatos(selector) {
+    $.ajax({
+        url: Mapa.BasePath + 'dgm/json_formatos',  // Cambiar por la URL correcta de la API
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            console.log(data);  // Verificar la respuesta del servidor
+
+            var selectWFS = $('#formatoDescargaWFS');  // Selector para WFS
+            var selectWMS = $('#formatoDescargaWMS');  // Selector para WMS
+
+            // Limpiar los select y habilitarlos
+            selectWFS.prop('disabled', false).empty();
+            selectWMS.prop('disabled', false).empty();
+
+            // Agregar la opción "Seleccionar"
+            selectWFS.append('<option disabled selected>Seleccionar formato WFS</option>');
+            selectWMS.append('<option disabled selected>Seleccionar formato WMS</option>');
+
+            // Agregar los formatos WFS
+            if (data.wfs && data.wfs.length > 0) {
+                $.each(data.wfs, function(index, formato) {
+                    selectWFS.append('<option value="' + formato.scodigo + '">' + formato.snombre + '</option>');
+                });
+            } else {
+                selectWFS.append('<option disabled>No hay formatos WFS disponibles</option>');
+            }
+
+            // Agregar los formatos WMS
+            if (data.wms && data.wms.length > 0) {
+                $.each(data.wms, function(index, formato) {
+                    selectWMS.append('<option value="' + formato.scodigo + '">' + formato.snombre + '</option>');
+                });
+            } else {
+                selectWMS.append('<option disabled>No hay formatos WMS disponibles</option>');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error al cargar los formatos:', xhr.responseText);
+            // En caso de error, mostrar mensaje en los selects
+            $('#formatoDescargaWFS').html('<option>Error al cargar formatos WFS</option>');
+            $('#formatoDescargaWMS').html('<option>Error al cargar formatos WMS</option>');
+        }
+    });
+}
+
+$(document).ready(function () {
+    cargarFormatos();  // Llamamos a la función para cargar los formatos al cargar la página
+});
+*/
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch(Mapa.BasePath + 'dgm/json_geoservicios_con_formatos')
+    .then(r => r.json())
+    .then(data => {
+      // Referencias
+      const wfsSel = document.getElementById('patrimonioCulturalWFS');
+      const wmsSel = document.getElementById('patrimonioCulturalWMS');
+      const selFmtWFS = document.getElementById('formatoDescargaWFS');
+      const selFmtWMS = document.getElementById('formatoDescargaWMS');
+
+      // Limpiar selects y dejar opción inicial
+      wfsSel.innerHTML = '<option selected disabled>Seleccionar</option>';
+      wmsSel.innerHTML = '<option selected disabled>Seleccionar</option>';
+      selFmtWFS.innerHTML = '<option disabled selected>Seleccionar formato WFS</option>';
+      selFmtWMS.innerHTML = '<option disabled selected>Seleccionar formato WMS</option>';
+
+      // Diccionarios de formatos por ID
+      const formatosWFS = {};
+      const formatosWMS = {};
+
+      const idsWFS = new Set();
+      const idsWMS = new Set();
+
+      // Poblar WFS
+      data.wfs.forEach(g => {
+        const id = g.nidgeoservicio;
+        if (!id || idsWFS.has(id)) return;
+        idsWFS.add(id);
+
+        const opt = document.createElement('option');
+        opt.value = id;
+        opt.textContent = g.patrimonio;
+        opt.dataset.scodigo = g.scodigo;
+        wfsSel.appendChild(opt);
+
+        formatosWFS[id] = g.formatos;
+      });
+
+      // Poblar WMS
+      data.wms.forEach(g => {
+        const id = g.nidgeoservicio;
+        if (!id || idsWMS.has(id)) return;
+        idsWMS.add(id);
+
+        const opt = document.createElement('option');
+        opt.value = id;
+        opt.textContent = g.patrimonio;
+        opt.dataset.scodigo = g.scodigo;
+        wmsSel.appendChild(opt);
+
+        formatosWMS[id] = g.formatos;
+      });
+
+      // Evento: seleccionar patrimonio WFS → cargar formatos WFS
+      wfsSel.addEventListener('change', function () {
+        const id = this.value;
+        const formatos = formatosWFS[id] || [];
+
+        selFmtWFS.innerHTML = '<option disabled selected>Seleccionar formato WFS</option>';
+        selFmtWFS.disabled = false;
+
+        formatos.forEach(f => {
+          const o = document.createElement('option');
+          o.value = f.scodigo;
+          o.textContent = f.snombre;
+          selFmtWFS.appendChild(o);
+        });
+      });
+
+      // Evento: seleccionar patrimonio WMS → cargar formatos WMS
+      wmsSel.addEventListener('change', function () {
+        const id = this.value;
+        const formatos = formatosWMS[id] || [];
+
+        selFmtWMS.innerHTML = '<option disabled selected>Seleccionar formato WMS</option>';
+        selFmtWMS.disabled = false;
+
+        formatos.forEach(f => {
+          const o = document.createElement('option');
+          o.value = f.scodigo;
+          o.textContent = f.snombre;
+          selFmtWMS.appendChild(o);
+        });
+      });
+    })
+    .catch(e => console.error('Error cargando geoservicios:', e));
+});
+
+
+
+
+
+/*function generarWFS() {
+    var departamento = $('#departamento').val();
+    var provincia = $('#provincia').val();
+    var distrito = $('#distrito').val();
+    var formatoDescarga = $('#formatoDescargaWFS').val();
+
+    var patrimonioSelect = $('#patrimonioCulturalWFS option:selected');
+    var scodigo = patrimonioSelect.data('scodigo'); // Ya contiene la URL base
+
+    if (!scodigo) {
+        $('#wfsLinkResultado').html('<p class="text-danger">Por favor, seleccione un patrimonio cultural válido (WFS).</p>');
+        return;
+    }
+
+    if (!formatoDescarga) {
+        $('#wfsLinkResultado').html('<p class="text-danger">Por favor, seleccione un formato de descarga.</p>');
+        return;
+    }
+
+    var ubigeo = "";
+    if (distrito) {
+        ubigeo = distrito;
+    } else if (provincia) {
+        ubigeo = provincia;
+    } else if (departamento) {
+        ubigeo = departamento;
+    }
+ 
+
+    // Construir el link final
+    var wfsLink = scodigo + formatoDescarga;
+
+    if (ubigeo) {
+        wfsLink += "&cql_filter=ubigeo='" + ubigeo + "'";
+    }
+
+    $('#wfsLinkResultado').html('<a href="' + wfsLink + '" target="_blank" class="text-decoration-none">' + wfsLink + '</a>');
+}
+*/
+
+function generarWFS() {
+    var departamento = $('#departamento').val(); 
+    var provincia = $('#provincia').val();      
+    var distrito = $('#distrito').val();         
+    var formatoDescarga = $('#formatoDescargaWFS').val();
+
+    var patrimonioSelect = $('#patrimonioCulturalWFS option:selected');
+    var scodigo = patrimonioSelect.data('scodigo');
+
+    if (!scodigo) {
+        $('#wfsLinkResultado').html('<p class="text-danger">Seleccione un patrimonio cultural válido (WFS).</p>');
+        return;
+    }
+
+    if (!formatoDescarga) {
+        $('#wfsLinkResultado').html('<p class="text-danger">Seleccione un formato de descarga.</p>');
+        return;
+    }
+
+    let cqlFilter = "";
+
+    if (distrito) {
+        cqlFilter = "ubigeo like '" + distrito + "'";
+    } else if (provincia) {
+        cqlFilter = "ubigeo like '" + provincia + "%'";
+    } else if (departamento) {
+        cqlFilter = "ubigeo like '" + departamento + "%'";
+    }
+
+    let wfsLink = scodigo + formatoDescarga;
+    if (cqlFilter) {
+        wfsLink += "&cql_filter=" + encodeURIComponent(cqlFilter);
+    }
+
+    $('#wfsLinkResultado').html('<a href="' + wfsLink + '" target="_blank" class="text-decoration-none">' + wfsLink + '</a>');
+}
+
+function generarWMS() {
+    var departamento = $('#departamentoWMS').val();
+    var provincia = $('#provinciaWMS').val();
+    var distrito = $('#distritoWMS').val();
+    var formatoDescarga = $('#formatoDescargaWMS').val();
+
+    var patrimonioSelect = $('#patrimonioCulturalWMS option:selected');
+    var scodigo = patrimonioSelect.data('scodigo'); // URL base del WMS aquí
+
+    if (!scodigo) {
+        $('#wmsLinkResultado').html('<p class="text-danger">Por favor, seleccione un patrimonio cultural válido (WMS).</p>');
+        return;
+    }
+
+    if (!formatoDescarga) {
+        $('#wmsLinkResultado').html('<p class="text-danger">Por favor, seleccione un formato de descarga.</p>');
+        return;
+    }
+
+    var ubigeo = "";
+    if (distrito) {
+        ubigeo = distrito;
+    } else if (provincia) {
+        ubigeo = provincia;
+    } else if (departamento) {
+        ubigeo = departamento;
+    }
+
+       // Construir el link final
+       var wmsLink = scodigo + formatoDescarga;
+
+       if (ubigeo) {
+        wmsLink += "&viewparams=ubigeo:" + ubigeo;
+       }
+   
+
+    $('#wmsLinkResultado').html('<a href="' + wmsLink + '" target="_blank" class="text-decoration-none">' + wmsLink + '</a>');
+}
+
+
+
+function limpiarFiltros() {
+    // IDs comunes para WFS y WMS
+    const selects = [
+        'patrimonioCulturalWFS',
+        'formatoDescargaWFS',
+        'departamento',
+        'provincia',
+        'distrito',
+        'patrimonioCulturalWMS',
+        'formatoDescargaWMS',
+        'departamentoWMS',
+        'provinciaWMS',
+        'distritoWMS'
+    ];
+
+    selects.forEach(id => {
+        const select = document.getElementById(id);
+        if (select) {
+            select.selectedIndex = 0; // Selecciona la primera opción (deshabilitada o placeholder)
+            if (select.disabled) select.disabled = false; // Habilita el select si estaba deshabilitado
+        }
+    });
+
+    // Limpiar resultados de WFS y WMS generados
+    document.getElementById('wfsLinkResultado').innerHTML = '';
+    document.getElementById('wmsLinkResultado').innerHTML = '';
+}
+
+/*function limpiarFiltros() {
+    // Limpiar los selects de ambos formularios
+    $('#departamento').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+    $('#provincia').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+    $('#distrito').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+
+    $('#departamentoWMS').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+    $('#provinciaWMS').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+    $('#distritoWMS').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+
+ // Limpiar los resultados de los links generados
+    $('#wfsLinkResultado').html('');
+    $('#wmsLinkResultado').html('');
+
+    // Limpiar los resultados de los links generados
+    $('#formatoDescargaWMS').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+    $('#formatoDescargaWFS').val('').change().prepend('<option selected disabled>Seleccionar</option>');
+}*/
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const contenedor = document.getElementById("contenedor-mapa-documentos");
+
+    fetch(Mapa.BasePath + "dgdp/json_documentosyvideos")
+        .then(response => response.json())
+        .then(data => {
+            let html = '';
+
+            for (const [categoria, documentos] of Object.entries(data)) {
+                html += `<h5 class="mt-4"><strong>${categoria}:</strong></h5>`;
+                html += '<ul class="list-unstyled">';
+
+                documentos.forEach(doc => {
+                    // Detectar extensión del archivo
+                    const extension = doc.enlace.split('.').pop().toLowerCase();
+
+                    let icono = '<i class="bi bi-file-earmark-text-fill text-secondary"></i>'; 
+                    if (extension === 'mp4') {
+                        icono = '<i class="bi bi-play-circle-fill text-success"></i>';
+                    }
+
+                    html += `
+                        <li class="mb-3">
+                            <a href="${Mapa.BasePath}${doc.enlace}" target="_blank" class="text-decoration-none">
+                                ${icono} ${doc.descripcion}
+                            </a>
+                        </li>`;
+                });
+
+                html += '</ul>';
+            }
+
+            contenedor.innerHTML = html || '<div>No hay documentos disponibles.</div>';
+        })
+        .catch(error => {
+            contenedor.innerHTML = '<div class="alert alert-danger">Error al cargar documentos.</div>';
+            console.error("Error al obtener documentos:", error);
+        });
+});
+
+
+/*document.addEventListener("DOMContentLoaded", function () {
+    fetch(Mapa.BasePath + 'dgm/json_patrimonio') 
+        .then(response => response.json())
+        .then(data => {
+            const wfsSelect = document.getElementById('patrimonioCulturalWFS');
+            const wmsSelect = document.getElementById('patrimonioCulturalWMS');
+
+            const wfsPatrimonios = new Set();
+            const wmsPatrimonios = new Set();
+
+            // Llenar WFS
+            data.wfs.forEach(item => {
+                if (!wfsPatrimonios.has(item.nidpatrimonio)) {
+                    const option = document.createElement('option');
+                    option.value = item.nidpatrimonio; // id solo
+                    option.textContent = item.patrimonio;
+                    option.setAttribute('data-scodigo', item.scodigo); // url base como atributo
+                    wfsSelect.appendChild(option);
+                    wfsPatrimonios.add(item.nidpatrimonio);
+                }
+            });
+
+            // Llenar WMS
+            data.wms.forEach(item => {
+                if (!wmsPatrimonios.has(item.nidpatrimonio)) {
+                    const option = document.createElement('option');
+                    option.value = item.nidpatrimonio; // id solo
+                    option.textContent = item.patrimonio;
+                    option.setAttribute('data-scodigo', item.scodigo); // url base como atributo
+                    wmsSelect.appendChild(option);
+                    wmsPatrimonios.add(item.nidpatrimonio);
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar datos de patrimonio:', error);
+        });
+});*/
+
+
+function cargarTipoDocumentos(selectId) {
+    return $.ajax({
+        url: Mapa.BasePath + 'Dgdp/tipodocumento',
+        method: 'GET',
+        dataType: 'json',
+        success: function(response) {
+            var select = $(selectId);
+            select.empty();
+            select.append('<option value="">Seleccione</option>');
+
+            if (response.status === 'success' && response.data.length > 0) {
+                $.each(response.data, function(index, item) {
+                    select.append('<option value="' + item.nidtdocumento + '">' + item.snombre + '</option>');
+                });
+            } else {
+                console.warn(response.msg || 'No se encontraron tipo documentos.');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error al cargar los tipos de documentos:', xhr.responseText);
+        }
+    });
+}
+
+/*$(document).ready(function() {
+    function cargarTipoDocumentos(selectId) {
+        $.ajax({
+            url: Mapa.BasePath + 'Dgdp/tipodocumento',
+            method: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                var select = $(selectId);
+                select.empty();
+                select.append('<option value="">Seleccione</option>');
+
+                if (response.status === 'success' && response.data.length > 0) {
+                    $.each(response.data, function(index, item) {
+                        select.append('<option value="' + item.nidtdocumento + '">' + item.snombre + '</option>');
+
+                    });
+                } else {
+                    console.warn(response.msg || 'No se encontraron  tipo documentos.');
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error al cargar los peligros:', xhr.responseText);
+            }
+        });
+    }
+
+    $('#Mapa-Documentos-Edit').on('shown.bs.collapse', function() {
+        cargarTipoDocumentos('#Mapa-Documentos-Edit-TipoDocumento');
+    });
+
+  
+});*/
+</script>
+<script>
+
+function cargarTipoCategoria(selectId) {
+    return $.ajax({
+        url: Mapa.BasePath + 'Dgdp/categoria_documento',
+        method: 'GET',
+        dataType: 'json',
+        success: function(response) {
+            var select = $(selectId);
+            select.empty();
+            select.append('<option value="">Seleccione</option>');
+
+            if (response.status === 'success' && response.data.length > 0) {
+                $.each(response.data, function(index, item) {
+                    select.append('<option value="' + item.nidcategoria + '">' + item.snombre + '</option>');
+                });
+            } else {
+                console.warn(response.msg || 'No se encontraron tipo categoria.');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error al cargar los categorias:', xhr.responseText);
+        }
+    });
+}
+
+/*$(document).ready(function() {
+    function cargarTipoCategoria(selectId) {
+        $.ajax({
+            url: Mapa.BasePath + 'Dgdp/categoria_documento',
+            method: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                var select = $(selectId);
+                select.empty();
+                select.append('<option value="">Seleccione</option>');
+
+                if (response.status === 'success' && response.data.length > 0) {
+                    $.each(response.data, function(index, item) {
+                        select.append('<option value="' + item.nidcategoria + '">' + item.snombre + '</option>');
+                    });
+                } else {
+                    console.warn(response.msg || 'No se encontraron  tipo categoria.');
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error al cargar los categorias:', xhr.responseText);
+            }
+        });
+    }
+
+    $('#Mapa-Documentos-Edit').on('shown.bs.collapse', function() {
+        cargarTipoCategoria('#Mapa-Documentos-Edit-TipoCategoria');
+    });
+
+  
+});*/
+</script>
+
+
+
+</body>
+
+</html>

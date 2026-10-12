@@ -1,0 +1,227 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 12.021,
+        "centro": {
+            "lat": -15.775676,
+            "lng": -69.967068
+        },
+        "demanda_kw_estimada": 2343,
+        "demanda_kw_usada": 2343,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 43,
+            "nivel": "Baja"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 3810,
+            "max_m": 3811,
+            "promedio_m": 3810.8,
+            "rango_m": 1,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 1 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "BELLAVISTA",
+                "empresa": "ELECTRO PUNO S.A.A.",
+                "lat": -15.83256,
+                "lng": -70.0265,
+                "distancia_km": 8.97,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO ORIENTE.xlsx",
+                "capacidad_total_mva": 5.5,
+                "demanda_total_mva": 20.8634,
+                "disponible_total_mva": -15.3634,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T-10",
+                        "capacidad_total_mva": 5.5,
+                        "demanda_total_mva": 20.8634,
+                        "disponible_total_mva": -15.3634,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "PUNO",
+                "empresa": "RED ELÉCTRICA DEL SUR S.A.",
+                "lat": -15.83107,
+                "lng": -70.05136,
+                "distancia_km": 10.92,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "REDESUR.xlsx",
+                "capacidad_total_mva": 240,
+                "demanda_total_mva": 90.0403,
+                "disponible_total_mva": 149.9597,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "AT-1",
+                        "capacidad_total_mva": 240,
+                        "demanda_total_mva": 90.0403,
+                        "disponible_total_mva": 149.9597,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PUNO",
+                "empresa": "RED DE ENERGÍA DEL PERÚ S.A.",
+                "lat": -15.83216,
+                "lng": -70.05166,
+                "distancia_km": 11.02,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "REDESUR.xlsx",
+                "capacidad_total_mva": 240,
+                "demanda_total_mva": 90.0403,
+                "disponible_total_mva": 149.9597,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "AT-1",
+                        "capacidad_total_mva": 240,
+                        "demanda_total_mva": 90.0403,
+                        "disponible_total_mva": 149.9597,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PUNO SUR",
+                "empresa": "ELECTRO PUNO S.A.A.",
+                "lat": -15.87801,
+                "lng": -69.98166,
+                "distancia_km": 11.49,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PUNO SUR"
+            },
+            {
+                "nombre": "CARACOTO",
+                "empresa": "ELECTRO PUNO S.A.A.",
+                "lat": -15.56881,
+                "lng": -70.0959,
+                "distancia_km": 26.82,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: CARACOTO"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 8,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 3,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "Media tension": 1000,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "API externa: MIDAGRI - Superficie Agricola Nacional 2024": 1000,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2692,
+                "API externa: Prediccion agricola Piura": 194,
+                "API externa: Predios Olmos": 129,
+                "API externa: Predios Moquegua": 1000
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PUNO",
+                "BELLAVISTA",
+                "PUNO",
+                "PUNO SUR",
+                "SET local",
+                "SET local"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [
+                "Concesion OSINERGMIN",
+                "Concesion OSINERGMIN",
+                "Concesion OSINERGMIN"
+            ],
+            "externas": []
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: PUNO, BELLAVISTA, PUNO",
+            "Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 1 m.",
+            "SET con disponibilidad referencial cercana: PUNO (149.9597 MVA libres), PUNO (149.9597 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-01 19:20:30\nArea: 12.021 km2\nDemanda usada: 2343 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Baja (43\/100)\nRelieve: bajo a moderado, con variacion aproximada de 1 m. Elevacion min\/max: 3810\/3811 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":8,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":3,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"Media tension\":1000,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"API externa: MIDAGRI - Superficie Agricola Nacional 2024\":1000,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2692,\"API externa: Prediccion agricola Piura\":194,\"API externa: Predios Olmos\":129,\"API externa: Predios Moquegua\":1000}}\nSET cercanas:\n- BELLAVISTA (ELECTRO PUNO S.A.A.), 8.97 km, cap. 5.5 MVA, demanda 20.8634 MVA, disponible -15.3634 MVA, estado Sobrecarga.\n- PUNO (RED ELÉCTRICA DEL SUR S.A.), 10.92 km, cap. 240 MVA, demanda 90.0403 MVA, disponible 149.9597 MVA, estado Disponible.\n- PUNO (RED DE ENERGÍA DEL PERÚ S.A.), 11.02 km, cap. 240 MVA, demanda 90.0403 MVA, disponible 149.9597 MVA, estado Disponible.\n- PUNO SUR (ELECTRO PUNO S.A.A.), 11.49 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- CARACOTO (ELECTRO PUNO S.A.A.), 26.82 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Hay SET cercanas o dentro del poligono: PUNO, BELLAVISTA, PUNO\n- Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.\n- Relieve estimado: bajo a moderado, con variacion aproximada de 1 m.\n- SET con disponibilidad referencial cercana: PUNO (149.9597 MVA libres), PUNO (149.9597 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "# Informe ejecutivo para decisión: concesión de distribución vs. convenio municipal\n\n## 1) Conclusión ejecutiva\nCon la información disponible, **la zona se perfila más para una concesión de distribución que para un convenio municipal**, porque la **demanda estimada usada es 2,343 kW**, muy por encima del **umbral de 500 kW**.  \nSin embargo, la **viabilidad global es baja (43\/100)** por dos factores principales:\n\n1. **Superposición con concesiones vigentes o en trámite**: esto exige verificación legal y de titularidad antes de proponer cualquier trámite.\n2. **Soporte eléctrico y territorial no completamente cerrado**: hay SET cercanas con capacidad disponible relevante, pero también existe al menos una SET cercana en **sobrecarga** y **no se identifican líneas\/MT\/SED intersectando el polígono** en los indicadores entregados.\n\n**Decisión preliminar:**  \n- **Sí orienta a concesión de distribución** por demanda.\n- **No parece recomendable un convenio municipal** si la demanda sustentada se mantiene en 2,343 kW.\n- **Antes de avanzar**, se requiere confirmar superposiciones legales, servidumbres, infraestructura real y sustento de demanda.\n\n---\n\n## 2) Hallazgos principales\n\n### 2.1 Demanda y umbral regulatorio\n- **Demanda estimada usada:** 2,343 kW\n- **Umbral de referencia:** 500 kW\n- **Resultado:** **supera ampliamente el umbral**\n- **Implicancia:** el caso **se alinea con concesión de distribución**, no con convenio municipal.\n\n### 2.2 SET cercanas y capacidad disponible\nSe reportan SET cercanas con distinta situación:\n\n#### SET con disponibilidad\n- **PUNO** – RED ELÉCTRICA DEL SUR S.A.\n  - Distancia: **10.92 km**\n  - Capacidad total: **240 MVA**\n  - Demanda total: **90.0403 MVA**\n  - Disponible: **149.9597 MVA**\n  - Estado: **Disponible**\n\n- **PUNO** – RED DE ENERGÍA DEL PERÚ S.A.\n  - Distancia: **11.02 km**\n  - Capacidad total: **240 MVA**\n  - Demanda total: **90.0403 MVA**\n  - Disponible: **149.9597 MVA**\n  - Estado: **Disponible**\n\n#### SET en sobrecarga\n- **BELLAVISTA** – ELECTRO PUNO S.A.A.\n  - Distancia: **8.97 km**\n  - Capacidad total: **5.5 MVA**\n  - Demanda total: **20.8634 MVA**\n  - Disponible: **-15.3634 MVA**\n  - Estado: **Sobrecarga**\n\n**Lectura técnica:**  \nHay una fuente cercana con margen suficiente en las SET PUNO, pero la existencia de una SET cercana en sobrecarga evidencia que la red local no es homogéneamente holgada. Esto no impide la iniciativa, pero **sí obliga a estudio de conexión y refuerzo**.\n\n### 2.3 Líneas, MT y SED\nIndicadores entregados:\n- **Líneas intersectan:** 0\n- **Media tensión intersecta:** 0\n- **SED dentro:** 0\n\n**Lectura técnica:**  \nNo se identifica, con las capas entregadas, infraestructura eléctrica atravesando el polígono. Eso **no descarta factibilidad**, pero sí indica que el abastecimiento requerirá probablemente **nuevas derivaciones, ampliaciones o alimentadores** y no una simple conexión directa desde infraestructura existente dentro del área.\n\n### 2.4 Concesiones y trámites\nIndicadores:\n- **Concesiones intersectan:** 3\n- **Externas intersectan:** 0\n\nAdemás, el sistema ya sugiere:\n- **Trámite recomendado: Concesión de distribución**\n\n**Lectura regulatoria:**  \nLa superposición con concesiones vigentes o en trámite es un **riesgo legal crítico**. Antes de definir el camino, debe revisarse:\n- titularidad de la concesión,\n- ámbito de cobertura,\n- expedientes en trámite,\n- posibles servidumbres y exclusividades.\n\n### 2.5 Relieve\nResultado del relieve:\n- **Fuente:** Open-Meteo Elevation\n- **Altitud mínima:** 3810 m\n- **Altitud máxima:** 3811 m\n- **Promedio:** 3810.8 m\n- **Rango:** 1 m\n- **Riesgo:** bajo\n- **Descripción:** bajo a moderado, con variación aproximada de 1 m\n\n**Lectura técnica:**  \nEl relieve **no representa una restricción importante** para la decisión preliminar. El terreno es bastante uniforme según la capa disponible.\n\n---\n\n## 3) Evaluación por criterio\n\n### A. Disponibilidad eléctrica\n**Favorables:**\n- Existen SET cercanas con disponibilidad referencial alta en PUNO (**149.9597 MVA libres**).\n\n**Desfavorables:**\n- Una SET cercana aparece en **sobrecarga**.\n- No hay evidencia, en las capas entregadas, de líneas\/MT\/SED dentro del polígono.\n- La disponibilidad referencial no sustituye un **estudio de factibilidad eléctrica**.\n\n**Dictamen eléctrico preliminar:**  \n**Potencialmente viable**, pero requiere confirmación técnica de punto de conexión, distancia efectiva, capacidad de alimentadores y pérdidas.\n\n### B. Relieve\n**Favorables:**\n- Rango altimétrico muy bajo.\n- Riesgo de relieve reportado como bajo.\n\n**Dictamen territorial preliminar:**  \n**Sin restricción relevante** en esta etapa.\n\n### C. Concesiones \/ legal\n**Desfavorable:**\n- Hay **3 intersecciones con concesiones**.\n- Esto puede bloquear, condicionar o encarecer el trámite.\n\n**Dictamen legal preliminar:**  \n**Riesgo alto** hasta revisar expedientes y titularidad.\n\n### D. Umbral de 500 kW\n- Demanda usada: **2,343 kW**\n- Excede el umbral de 500 kW\n\n**Dictamen regulatorio preliminar:**  \nCorresponde **concesión de distribución**.\n\n---\n\n## 4) Riesgos identificados\n\n1. **Riesgo legal por superposición con concesiones**\n   - Puede existir conflicto de ámbito o exclusividad.\n\n2. **Riesgo de infraestructura insuficiente en el entorno inmediato**\n   - No hay líneas\/MT\/SED intersectando el políg"
+        }
+    },
+    "polygon": [
+        [
+            -15.762031,
+            -69.978076
+        ],
+        [
+            -15.762565,
+            -69.963052
+        ],
+        [
+            -15.761812,
+            -69.949485
+        ],
+        [
+            -15.777744,
+            -69.946177
+        ],
+        [
+            -15.792986,
+            -69.957764
+        ],
+        [
+            -15.790984,
+            -69.967524
+        ],
+        [
+            -15.786319,
+            -69.98718
+        ],
+        [
+            -15.77097,
+            -69.987288
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

@@ -1,0 +1,192 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-2192",
+    "nombre_consulta": "LT CAJAMARCA NORTE - CÁCLIC",
+    "empresa_consulta": "CONCESIONARIA LINEA DE TRANSMISION CCNCM S.A.C.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "CCN",
+        "nombre_linea": "L-2192 -> De \"CAJAMARCA NORTE\" a \"CACLIC\"",
+        "codigo_linea": "L-2192",
+        "tension_nominal_kv": 220,
+        "mva_nominal": 220,
+        "carga_mva": 86.49,
+        "carga_amperaje": 210.07,
+        "fac_uso_pot": 39.314,
+        "fecha_maxima_demanda": "2025-10-23",
+        "hora_maxima_demanda": "19:15:00",
+        "periodo": "10\/2025",
+        "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor.",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "CCN",
+        "nombre_linea": "L-2192 -> De \"CAJAMARCA NORTE\" a \"CACLIC\"",
+        "codigo_linea": "L-2192",
+        "tension_nominal_kv": 220,
+        "mva_nominal": 220,
+        "carga_mva": 86.49,
+        "carga_amperaje": 210.07,
+        "fac_uso_pot": 39.314,
+        "fecha_maxima_demanda": "2025-10-23",
+        "hora_maxima_demanda": "19:15:00",
+        "periodo": "10\/2025",
+        "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor.",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-14",
+            "mva": 60.05,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-27",
+            "mva": 74.66,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-31",
+            "mva": 73.27,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-03",
+            "mva": 73.43,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-28",
+            "mva": 66.85,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-25",
+            "mva": 68.83,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-16",
+            "mva": 71.42,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-21",
+            "mva": 82.33,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-03",
+            "mva": 81.54,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-23",
+            "mva": 86.49,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "Para el cálculo de MVACAR  se ha considerado la Potencia activa (P) y la Potencia reactiva (Q) registrada por el medidor."
+        }
+    ],
+    "registros": 10,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "success",
+        "message": "",
+        "file_count": 24,
+        "matches": [
+            {
+                "titulo": "ITC-11_2do Circuito LT 220 kV Cajamarca - Caclic -Moyobamba",
+                "codigo": "23",
+                "tipo": "Linea de transmision",
+                "tension_kv": "220",
+                "archivo": "23. ITC-11_2do Circuito LT 220 kV Cajamarca - Caclic -Moyobamba.pdf",
+                "archivo_rel": "PT COES  2027 - 2036\/Anteproyectos\/23. ITC-11_2do Circuito LT 220 kV Cajamarca - Caclic -Moyobamba.pdf",
+                "url": "uploads\/pt_coes\/PT COES  2027 - 2036\/Anteproyectos\/23. ITC-11_2do Circuito LT 220 kV Cajamarca - Caclic -Moyobamba.pdf",
+                "size_mb": 3.51,
+                "score": 54,
+                "razones": [
+                    "Coincide: caclic, cajamarca",
+                    "Tipo linea"
+                ]
+            },
+            {
+                "titulo": "Equipo de comp. react-Reactor de 50 MVAR_SE Cajamarca Norte",
+                "codigo": "20",
+                "tipo": "Subestacion",
+                "tension_kv": "",
+                "archivo": "20. Equipo de comp. react-Reactor de 50 MVAR_SE Cajamarca Norte.pdf",
+                "archivo_rel": "PT COES  2027 - 2036\/Anteproyectos\/20. Equipo de comp. react-Reactor de 50 MVAR_SE Cajamarca Norte.pdf",
+                "url": "uploads\/pt_coes\/PT COES  2027 - 2036\/Anteproyectos\/20. Equipo de comp. react-Reactor de 50 MVAR_SE Cajamarca Norte.pdf",
+                "size_mb": 34.54,
+                "score": 44,
+                "razones": [
+                    "Coincide: cajamarca, norte"
+                ]
+            },
+            {
+                "titulo": "ITC-04 Enlace 500 kV Carabayllo – Lima Norte",
+                "codigo": "ITC-04",
+                "tipo": "Linea de transmision",
+                "tension_kv": "500",
+                "archivo": "10. ITC-04 Enlace 500 kV Carabayllo – Lima Norte.pdf",
+                "archivo_rel": "PT COES  2027 - 2036\/Anteproyectos\/10. ITC-04 Enlace 500 kV Carabayllo – Lima Norte.pdf",
+                "url": "uploads\/pt_coes\/PT COES  2027 - 2036\/Anteproyectos\/10. ITC-04 Enlace 500 kV Carabayllo – Lima Norte.pdf",
+                "size_mb": 151.18,
+                "score": 32,
+                "razones": [
+                    "Coincide: norte",
+                    "Tipo linea"
+                ]
+            },
+            {
+                "titulo": "ITC-06 LT 500 kV Lima Norte – Lima Sur",
+                "codigo": "ITC-06",
+                "tipo": "Linea de transmision",
+                "tension_kv": "500",
+                "archivo": "12. ITC-06 LT 500 kV Lima Norte – Lima Sur.pdf",
+                "archivo_rel": "PT COES  2027 - 2036\/Anteproyectos\/12. ITC-06 LT 500 kV Lima Norte – Lima Sur.pdf",
+                "url": "uploads\/pt_coes\/PT COES  2027 - 2036\/Anteproyectos\/12. ITC-06 LT 500 kV Lima Norte – Lima Sur.pdf",
+                "size_mb": 16.38,
+                "score": 32,
+                "razones": [
+                    "Coincide: norte",
+                    "Tipo linea"
+                ]
+            }
+        ]
+    },
+    "generated_at": "2026-06-10 20:42:58"
+}

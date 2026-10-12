@@ -1,0 +1,212 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 83.1811,
+        "centro": {
+            "lat": -6.9715,
+            "lng": -76.694842
+        },
+        "demanda_kw_estimada": 10342,
+        "demanda_kw_usada": 9470,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 49,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 295,
+            "max_m": 1043,
+            "promedio_m": 565.7,
+            "rango_m": 748,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 748 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "BELLAVISTA",
+                "empresa": "ELECTRO ORIENTE S.A.",
+                "lat": -7.05577,
+                "lng": -76.58251,
+                "distancia_km": 15.54,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO ORIENTE.xlsx",
+                "capacidad_total_mva": 20.3,
+                "demanda_total_mva": 20.8634,
+                "disponible_total_mva": -0.5634,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T-10",
+                        "capacidad_total_mva": 20.3,
+                        "demanda_total_mva": 20.8634,
+                        "disponible_total_mva": -0.5634,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "Salidas MT desde SET",
+                "empresa": "",
+                "lat": -7.055959,
+                "lng": -76.582576,
+                "distancia_km": 15.55,
+                "dentro": false,
+                "fuente": "Salidas MT desde SET",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: Salidas MT desde SET"
+            },
+            {
+                "nombre": "JUANJUI",
+                "empresa": "ELECTRO ORIENTE S.A.",
+                "lat": -7.18355,
+                "lng": -76.74051,
+                "distancia_km": 24.11,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO ORIENTE.xlsx",
+                "capacidad_total_mva": 35.3,
+                "demanda_total_mva": 17.5375,
+                "disponible_total_mva": 17.7625,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T-40",
+                        "capacidad_total_mva": 35.3,
+                        "demanda_total_mva": 17.5375,
+                        "disponible_total_mva": 17.7625,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PICOTA",
+                "empresa": "",
+                "lat": -6.917292,
+                "lng": -76.332868,
+                "distancia_km": 40.41,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PICOTA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 2,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "Salidas MT desde SET",
+                "Salidas MT desde SET"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: Salidas MT desde SET, Salidas MT desde SET",
+            "La zona cruza informacion externa registrada: Limites departamentales",
+            "Relieve estimado: alto, con variacion aproximada de 748 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: JUANJUI (17.7625 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-08 20:28:11\nArea: 83.1811 km2\nDemanda usada: 9470 kW (manual)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (49\/100)\nRelieve: alto, con variacion aproximada de 748 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 295\/1043 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":2,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- BELLAVISTA (ELECTRO ORIENTE S.A.), 15.54 km, cap. 20.3 MVA, demanda 20.8634 MVA, disponible -0.5634 MVA, estado Sobrecarga.\n- Salidas MT desde SET (sin empresa), 15.55 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- JUANJUI (ELECTRO ORIENTE S.A.), 24.11 km, cap. 35.3 MVA, demanda 17.5375 MVA, disponible 17.7625 MVA, estado Disponible.\n- PICOTA (sin empresa), 40.41 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Hay SET cercanas o dentro del poligono: Salidas MT desde SET, Salidas MT desde SET\n- La zona cruza informacion externa registrada: Limites departamentales\n- Relieve estimado: alto, con variacion aproximada de 748 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: JUANJUI (17.7625 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": false,
+            "model": "gpt-5.4-mini",
+            "message": "OpenAI no respondio correctamente.",
+            "http_code": 429,
+            "error": ""
+        }
+    },
+    "polygon": [
+        [
+            -6.979404,
+            -76.647774
+        ],
+        [
+            -7.004945,
+            -76.654177
+        ],
+        [
+            -7.016402,
+            -76.687375
+        ],
+        [
+            -7.00831,
+            -76.71898
+        ],
+        [
+            -6.987932,
+            -76.744553
+        ],
+        [
+            -6.948157,
+            -76.740967
+        ],
+        [
+            -6.922468,
+            -76.717398
+        ],
+        [
+            -6.923861,
+            -76.684119
+        ],
+        [
+            -6.952017,
+            -76.658234
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

@@ -1,0 +1,342 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-01",
+    "nombre_consulta": "LT CT.IQUITOS NUEVA - S.E. IQUITOS",
+    "empresa_consulta": "GENRENT DEL PERÚ S.A.C.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "EOR",
+        "nombre_linea": "L-01 -> De \"C.T. IQUITOS\" a \"SANTA ROSA\"",
+        "codigo_linea": "L-01",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 44,
+        "carga_mva": 30.13,
+        "carga_amperaje": 297.12,
+        "fac_uso_pot": 68.477,
+        "fecha_maxima_demanda": "2025-12-10",
+        "hora_maxima_demanda": "18:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "EOR",
+        "nombre_linea": "L-01 -> De \"C.T. IQUITOS\" a \"SANTA ROSA\"",
+        "codigo_linea": "L-01",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 44,
+        "carga_mva": 30.13,
+        "carga_amperaje": 297.12,
+        "fac_uso_pot": 68.477,
+        "fecha_maxima_demanda": "2025-12-10",
+        "hora_maxima_demanda": "18:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "maxima_registrada": {
+        "codigo_empresa": "GEN",
+        "nombre_linea": "L-01 -> De \"CTIN\" a \"CTI\"",
+        "codigo_linea": "L-01",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 150,
+        "carga_mva": 84.16,
+        "carga_amperaje": 772.2,
+        "fac_uso_pot": 56.107,
+        "fecha_maxima_demanda": "2025-12-10",
+        "hora_maxima_demanda": "12:00:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "ultima_es_maxima": false,
+    "mensaje_maxima": null,
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-20",
+            "mva": 29.4,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-26",
+            "mva": 28.08,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-27",
+            "mva": 74.57,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-17",
+            "mva": 27.53,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-02",
+            "mva": 70.76,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-23",
+            "mva": 28.56,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-12",
+            "mva": 72.88,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-20",
+            "mva": 22.57,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-23",
+            "mva": 28.53,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "65%"
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-16",
+            "mva": 27.35,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-30",
+            "mva": 72.62,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-20",
+            "mva": 29.48,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-23",
+            "mva": 29.33,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-01",
+            "mva": 74.84,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-27",
+            "mva": 28.63,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-05",
+            "mva": 72.79,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-12",
+            "mva": 28.58,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-10",
+            "mva": 84.16,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-10",
+            "mva": 30.13,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        }
+    ],
+    "registros": 19,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [],
+        "contexto_departamento_activo": true,
+        "matches": []
+    },
+    "descargas_atmosfericas": {
+        "status": "success",
+        "fuente": "OSINERGMIN CERAUNICO - Descargas atmosfericas",
+        "anio": 2025,
+        "unidad": "rayos totales por km2\/año",
+        "muestras": 10,
+        "min": 0,
+        "promedio": 1.8,
+        "max": 4,
+        "nivel": "bajo",
+        "comentario": "Exposicion baja; mantener criterios normativos de proteccion.",
+        "clase_maxima": "4",
+        "clases": [
+            {
+                "clase": "0",
+                "nivel": "sin registro",
+                "conteo": 3,
+                "porcentaje": 30
+            },
+            {
+                "clase": "1",
+                "nivel": "muy bajo",
+                "conteo": 2,
+                "porcentaje": 20
+            },
+            {
+                "clase": "2",
+                "nivel": "bajo",
+                "conteo": 1,
+                "porcentaje": 10
+            },
+            {
+                "clase": "3",
+                "nivel": "bajo",
+                "conteo": 2,
+                "porcentaje": 20
+            },
+            {
+                "clase": "4",
+                "nivel": "bajo",
+                "conteo": 2,
+                "porcentaje": 20
+            }
+        ],
+        "niveles": [
+            {
+                "nivel": "sin registro",
+                "conteo": 3,
+                "porcentaje": 30
+            },
+            {
+                "nivel": "bajo",
+                "conteo": 5,
+                "porcentaje": 50
+            },
+            {
+                "nivel": "muy bajo",
+                "conteo": 2,
+                "porcentaje": 20
+            }
+        ],
+        "puntos": [
+            {
+                "lat": -3.6413,
+                "lng": -73.2187,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -3.6388,
+                "lng": -73.2223,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -3.6445,
+                "lng": -73.2302,
+                "valor": 3,
+                "nivel": "bajo",
+                "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+            },
+            {
+                "lat": -3.6487,
+                "lng": -73.235,
+                "valor": 1,
+                "nivel": "muy bajo",
+                "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+            },
+            {
+                "lat": -3.6737,
+                "lng": -73.2567,
+                "valor": 2,
+                "nivel": "bajo",
+                "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+            },
+            {
+                "lat": -3.6896,
+                "lng": -73.2521,
+                "valor": 3,
+                "nivel": "bajo",
+                "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+            }
+        ]
+    },
+    "geometria_linea": {
+        "source": "LT_Operacionm.geojson",
+        "codigo": "L-01",
+        "nombre": "LT CT.IQUITOS NUEVA - S.E. IQUITOS",
+        "tension_kv": 60,
+        "longitud_km": 14,
+        "muestras_ceraunico": 14
+    },
+    "generated_at": "2026-07-03 23:53:37",
+    "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

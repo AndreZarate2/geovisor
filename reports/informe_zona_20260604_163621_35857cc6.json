@@ -1,0 +1,244 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 48.46,
+        "centro": {
+            "lat": -5.47757,
+            "lng": -80.806612
+        },
+        "demanda_kw_estimada": 7015,
+        "demanda_kw_usada": 7015,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 77,
+            "nivel": "Alta"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 6,
+            "max_m": 36,
+            "promedio_m": 17,
+            "rango_m": 30,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 30 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "SECHURA",
+                "empresa": "ELECTRONOROESTE S.A.",
+                "lat": -5.55588,
+                "lng": -80.81557,
+                "distancia_km": 8.76,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENOSA.xlsx",
+                "capacidad_total_mva": 7,
+                "demanda_total_mva": 13.1513,
+                "disponible_total_mva": -6.1513,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "1TP6025",
+                        "capacidad_total_mva": 7,
+                        "demanda_total_mva": 13.1513,
+                        "disponible_total_mva": -6.1513,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "LA UNION",
+                "empresa": "ELECTRONOROESTE S.A.",
+                "lat": -5.40444,
+                "lng": -80.76226,
+                "distancia_km": 9.5,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 36,
+                "demanda_total_mva": 19.6748,
+                "disponible_total_mva": 16.3252,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T56-62",
+                        "capacidad_total_mva": 36,
+                        "demanda_total_mva": 19.6748,
+                        "disponible_total_mva": 16.3252,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "CONSTANTE",
+                "empresa": "ELECTRONOROESTE S.A.",
+                "lat": -5.69988,
+                "lng": -80.83147,
+                "distancia_km": 24.87,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENOSA.xlsx",
+                "capacidad_total_mva": 18,
+                "demanda_total_mva": 11.7545,
+                "disponible_total_mva": 6.2455,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "1TP6012",
+                        "capacidad_total_mva": 18,
+                        "demanda_total_mva": 11.7545,
+                        "disponible_total_mva": 6.2455,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "CATACAOS",
+                "empresa": "ELECTRONOROESTE S.A.",
+                "lat": -5.25467,
+                "lng": -80.67869,
+                "distancia_km": 28.55,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENOSA.xlsx",
+                "capacidad_total_mva": 17,
+                "demanda_total_mva": 15.6716,
+                "disponible_total_mva": 1.3284,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "1TP6051",
+                        "capacidad_total_mva": 17,
+                        "demanda_total_mva": 15.6716,
+                        "disponible_total_mva": 1.3284,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "CEMENTOS PIURA",
+                "empresa": "EMPRESA DE TRANSMISIÓN GUADALUPE S.A.C.",
+                "lat": -5.16721,
+                "lng": -80.71327,
+                "distancia_km": 36.02,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: CEMENTOS PIURA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 13,
+            "lineas_intersectan": 2,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319
+            }
+        },
+        "muestras": {
+            "sets": [
+                "SECHURA",
+                "LA UNION",
+                "SECHURA",
+                "LA UNION",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET"
+            ],
+            "lineas": [
+                "LT LA UNIÓN-SECHURA",
+                "LT LA UNIÓN-SECHURA"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": []
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: SECHURA, LA UNION, SECHURA",
+            "Cruzan o tocan lineas de transmision relevantes: LT LA UNIÓN-SECHURA, LT LA UNIÓN-SECHURA",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 30 m.",
+            "SET con disponibilidad referencial cercana: LA UNION (16.3252 MVA libres), CONSTANTE (6.2455 MVA libres), CATACAOS (1.3284 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-04 16:36:06\nArea: 48.46 km2\nDemanda usada: 7015 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Alta (77\/100)\nRelieve: bajo a moderado, con variacion aproximada de 30 m. Elevacion min\/max: 6\/36 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":13,\"lineas_intersectan\":2,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319}}\nSET cercanas:\n- SECHURA (ELECTRONOROESTE S.A.), 8.76 km, cap. 7 MVA, demanda 13.1513 MVA, disponible -6.1513 MVA, estado Sobrecarga.\n- LA UNION (ELECTRONOROESTE S.A.), 9.5 km, cap. 36 MVA, demanda 19.6748 MVA, disponible 16.3252 MVA, estado Disponible.\n- CONSTANTE (ELECTRONOROESTE S.A.), 24.87 km, cap. 18 MVA, demanda 11.7545 MVA, disponible 6.2455 MVA, estado Disponible.\n- CATACAOS (ELECTRONOROESTE S.A.), 28.55 km, cap. 17 MVA, demanda 15.6716 MVA, disponible 1.3284 MVA, estado Disponible.\n- CEMENTOS PIURA (EMPRESA DE TRANSMISIÓN GUADALUPE S.A.C.), 36.02 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Hay SET cercanas o dentro del poligono: SECHURA, LA UNION, SECHURA\n- Cruzan o tocan lineas de transmision relevantes: LT LA UNIÓN-SECHURA, LT LA UNIÓN-SECHURA\n- Relieve estimado: bajo a moderado, con variacion aproximada de 30 m.\n- SET con disponibilidad referencial cercana: LA UNION (16.3252 MVA libres), CONSTANTE (6.2455 MVA libres), CATACAOS (1.3284 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "Informe ejecutivo para decisión: concesión de distribución o convenio municipal\n\nConclusión ejecutiva\nLa zona es, en principio, más dable para concesión de distribución que para convenio municipal, porque la demanda estimada usada es 7015 kW, muy por encima del umbral de 500 kW. Además, hay infraestructura eléctrica cercana y cruza líneas de transmisión relevantes. No obstante, la decisión final no debe cerrarse solo con este preanálisis: faltan validaciones de demanda sustentada, trazado de redes de media tensión, servidumbres, y revisión legal completa del expediente.\n\nHallazgos principales\n1) Demanda y umbral regulatorio\nLa demanda máxima usada es 7015 kW, equivalente a 7.015 MW.\nEl criterio indicado es claro: concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.\nCon los datos disponibles, la zona supera ampliamente el umbral, por lo que corresponde orientar el análisis hacia concesión de distribución.\n\n2) SET cercanas y capacidad\nSe identifican 13 SET cercanas en total, con referencias útiles en el entorno inmediato.\nLas más relevantes por distancia y capacidad son:\nSECHURA, a 8.76 km, con 7 MVA de capacidad total, 13.1513 MVA de demanda y -6.1513 MVA de disponibilidad. Está en sobrecarga.\nLA UNION, a 9.5 km, con 36 MVA de capacidad total, 19.6748 MVA de demanda y 16.3252 MVA disponibles. Está disponible.\nCONSTANTE, a 24.87 km, con 18 MVA de capacidad total, 11.7545 MVA de demanda y 6.2455 MVA disponibles. Está disponible.\nCATACAOS, a 28.55 km, con 17 MVA de capacidad total, 15.6716 MVA de demanda y 1.3284 MVA disponibles. Está disponible.\n\nLectura técnica:\nLa SET LA UNION aparece como la mejor referencia de atención por holgura y distancia relativa.\nSECHURA no ofrece margen, porque figura sobrecargada.\nCONSTANTE y CATACAOS tienen disponibilidad, pero menor atractivo relativo por distancia o margen reducido.\n\n3) Líneas y conexión territorial\nSe reporta que 2 líneas de transmisión intersectan o tocan el polígono.\nLa línea mencionada en muestras es LT LA UNIÓN-SECHURA.\nEsto refuerza la presencia de infraestructura eléctrica cercana y, en principio, favorece la atención futura de la zona, pero también obliga a revisar interferencias, trazos de servidumbre y compatibilidad del proyecto con la red existente.\n\n4) Relieve\nEl relieve fue evaluado con fuente Open-Meteo Elevation.\nMínimo: 6 m\nMáximo: 36 m\nPromedio: 17 m\nRango: 30 m\nRiesgo: bajo\nDescripción: bajo a moderado, con variación aproximada de 30 m.\n\nLectura técnica:\nEl relieve no representa, con esta evidencia, una restricción severa para electrificación de distribución.\nSí puede implicar ajustes de diseño por pequeñas variaciones topográficas, drenaje y ubicación de apoyos, pero no se observa un obstáculo mayor.\n\n5) Concesiones y trámites\nNo se reportan concesiones que intersecten el polígono.\nNo se reportan concesiones en trámite que intersecten el polígono.\nTampoco se reportan elementos externos intersectantes.\n\nLectura técnica:\nNo hay una afectación directa conocida por superposición con concesiones o trámites, según la capa disponible.\nEso reduce el riesgo legal preliminar, aunque no sustituye la revisión registral y cartográfica formal.\n\n6) Posible utilidad agrícola\nHay capas externas de PRODUCE en el insumo, pero no se entregan atributos específicos dentro del polígono para determinar uso agrícola o acuícola con precisión.\nSí existe mención a:\nÁreas derechos acuícolas\nÁreas disponibles\nÁreas potenciales de acuicultura\nBancos naturales de especies\n\nSin embargo, con estos datos no es posible afirmar si la zona tiene utilidad agrícola relevante ni cuantificarla. Se requiere cruce espacial directo con la capa y lectura de atributos.\n\nRiesgos principales\nRiesgo 1: demanda estimada no sustentada\nLa demanda de 7015 kW proviene de capas estimadas. Si al sustentarla en campo o con cartera de usuarios baja por debajo de 500 kW, la recomendación regulatoria podría cambiar.\n\nRiesgo 2: sobrecarga en una SET cercana\nSECHURA está sobrecargada. Si se pretendiera usarla como alternativa, no parece tener margen.\n\nRiesgo 3: falta de detalle de red de media tensión\nNo se tiene inventario completo de alimentadores, cargabilidad real por tramo, ni calidad de servicio. Esto limita el dimensionamiento definitivo.\n\nRiesgo 4: posible interferencia con líneas de transmisión\nLas líneas intersectan o tocan el polígono. Se requiere verificación de distancias, servidumbres y compatibilidad de obras.\n\nRiesgo 5: información agrícola insuficiente\nHay capas externas, pero no atributos suficientes para concluir si existe predominio agrícola o acuícola que justifique otros criterios territoriales.\n\nDisponibilidad eléctrica\nLa disponibilidad eléctrica referencial es favorable en la zona, especialmente por:\nLA UNION, con 16.3252 MVA libres\nCONSTANTE, con 6.2455 MVA libres\nCATACAOS, con 1.3284 MVA libres\n\nInterpretación:\nSí existe capacidad cercana para atender crecimiento, aunque la mejor alternativa sería profundizar el análisis sobre LA UNION por su mayor holgura.\nLa disponibilidad de SECHURA es negativa, por lo que no debería considerarse como punto de soporte inmediato sin refuerzo.\n\nRelieve\nEl terreno es de baja a moderada variación, con 30 m de diferencia entre mínimo y máximo.\nEsto sugiere condiciones relativamente favorables para infraestructura de distribución.\nNo se identifica, con esta capa, una barrera orográfica importante.\n\nConcesiones\nNo se observan concesiones ni trámites superpuestos al polígono.\nEn este preanálisis no aparece restricción territorial directa por concesión vigente o en trámite.\n\nDisponibilidad de información y limitaciones\nLa decisión se apoya en un preanálisis con capas cargadas.\nSí hay datos suficientes para una orientación preliminar.\nNo hay datos suficientes para cerrar una decisión legal definitiva porque faltan:\ndemanda sustentada validada por usuarios y crecimiento\nplano de red de media tensión y baja tensión\ndist"
+        }
+    },
+    "polygon": [
+        [
+            -5.516099,
+            -80.796384
+        ],
+        [
+            -5.498651,
+            -80.828659
+        ],
+        [
+            -5.478008,
+            -80.853981
+        ],
+        [
+            -5.444879,
+            -80.826186
+        ],
+        [
+            -5.443603,
+            -80.801167
+        ],
+        [
+            -5.46686,
+            -80.766854
+        ],
+        [
+            -5.494891,
+            -80.773054
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

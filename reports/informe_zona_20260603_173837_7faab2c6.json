@@ -1,0 +1,203 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 53.5982,
+        "centro": {
+            "lat": -8.163957,
+            "lng": -77.858783
+        },
+        "demanda_kw_estimada": 6792,
+        "demanda_kw_usada": 6792,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 43,
+            "nivel": "Baja"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 2952,
+            "max_m": 4411,
+            "promedio_m": 4011.5,
+            "rango_m": 1459,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 1459 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PALLASCA",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -8.25607,
+                "lng": -77.99363,
+                "distancia_km": 18.03,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 20.5,
+                "demanda_total_mva": 6.4366,
+                "disponible_total_mva": 14.0634,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TP-6015",
+                        "capacidad_total_mva": 20.5,
+                        "demanda_total_mva": 6.4366,
+                        "disponible_total_mva": 14.0634,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "Salidas MT desde SET",
+                "empresa": "",
+                "lat": -8.256051,
+                "lng": -77.993643,
+                "distancia_km": 18.03,
+                "dentro": false,
+                "fuente": "Salidas MT desde SET",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: Salidas MT desde SET"
+            },
+            {
+                "nombre": "NUEVA RAMADA",
+                "empresa": "COMPAÑIA MINERA PODEROSA S.A.",
+                "lat": -7.906158,
+                "lng": -78.142779,
+                "distancia_km": 42.42,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: NUEVA RAMADA"
+            },
+            {
+                "nombre": "PIAS",
+                "empresa": "AGUAS Y ENERGIA PERU S.A.",
+                "lat": -7.89968,
+                "lng": -77.57711,
+                "distancia_km": 42.72,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PIAS"
+            },
+            {
+                "nombre": "LA RAMADA",
+                "empresa": "EMPRESA DE ENERGÍA YAMOBAMBA S.A.C.",
+                "lat": -7.91316,
+                "lng": -78.1535,
+                "distancia_km": 42.79,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: LA RAMADA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 2,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Prediccion agricola Piura": 194
+            }
+        },
+        "muestras": {
+            "sets": [
+                "Salidas MT desde SET",
+                "Salidas MT desde SET"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": []
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: Salidas MT desde SET, Salidas MT desde SET",
+            "Relieve estimado: alto, con variacion aproximada de 1459 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-03 17:38:23\nArea: 53.5982 km2\nDemanda usada: 6792 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Baja (43\/100)\nRelieve: alto, con variacion aproximada de 1459 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 2952\/4411 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":2,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Prediccion agricola Piura\":194}}\nSET cercanas:\n- PALLASCA (HIDRANDINA S.A.), 18.03 km, cap. 20.5 MVA, demanda 6.4366 MVA, disponible 14.0634 MVA, estado Disponible.\n- Salidas MT desde SET (sin empresa), 18.03 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- NUEVA RAMADA (COMPAÑIA MINERA PODEROSA S.A.), 42.42 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- PIAS (AGUAS Y ENERGIA PERU S.A.), 42.72 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LA RAMADA (EMPRESA DE ENERGÍA YAMOBAMBA S.A.C.), 42.79 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Hay SET cercanas o dentro del poligono: Salidas MT desde SET, Salidas MT desde SET\n- Relieve estimado: alto, con variacion aproximada de 1459 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "## Informe ejecutivo para decisión: concesión de distribución vs. convenio municipal\n\n### 1) Conclusión ejecutiva\nCon la información disponible, **la zona se orienta a trámite de concesión de distribución y no a convenio municipal**.\n\n**Razón principal:** la **demanda usada estimada es 6,792 kW**, muy por encima del umbral de **500 kW**. Bajo ese criterio, corresponde **concesión**.  \nSin embargo, la **viabilidad global es baja (43\/100)** por el **relieve alto** y porque **no se identifican líneas, MT, SED ni concesiones intersectando el polígono**. Esto no impide evaluar concesión, pero **sí eleva riesgo técnico y de costos**.\n\n---\n\n## 2) Hallazgos principales\n\n### a) Umbral regulatorio 500 kW\n- **Demanda estimada usada:** **6,792 kW**\n- **Criterio aplicado:**  \n  - > 500 kW → **Concesión de distribución**\n  - < 500 kW → **Convenio municipal**\n- **Resultado:** la zona **supera ampliamente** el umbral, por lo que **corresponde concesión**.\n\n### b) Disponibilidad eléctrica y SET cercanas\nSe identifican SET cercanas relevantes:\n\n1. **PALLASCA – HIDRANDINA S.A.**\n   - Distancia: **18.03 km**\n   - Capacidad total: **20.5 MVA**\n   - Demanda total: **6.4366 MVA**\n   - Disponible: **14.0634 MVA**\n   - Estado: **Disponible**\n\n2. Otras referencias próximas:\n   - **NUEVA RAMADA** – 42.42 km\n   - **PIAS** – 42.72 km\n   - **LA RAMADA** – 42.79 km  \n   Estas aparecen con error de maestro o sin datos completos de capacidad, por lo que **no pueden usarse como soporte firme de capacidad**.\n\n**Lectura técnica:** existe al menos una SET con disponibilidad referencial cercana, pero **la distancia de 18 km** y el relieve pueden encarecer la conexión o extensión.\n\n### c) Líneas, MT, SED y cruces\nIndicadores reportados:\n- **SET dentro del polígono:** 0\n- **SET cercanas:** 2\n- **Líneas intersectan:** 0\n- **MT intersecta:** 0\n- **SED dentro:** 0\n- **Concesiones intersectan:** 0\n- **Externas intersectan:** 0\n\n**Interpretación:** no hay infraestructura eléctrica existente identificada dentro del polígono ni cruces directos detectados. Esto reduce soporte inmediato de atención, y puede implicar necesidad de nuevas extensiones.\n\n### d) Relieve\n- **Altitud mínima:** 2,952 m\n- **Altitud máxima:** 4,411 m\n- **Promedio:** 4,011.5 m\n- **Rango:** 1,459 m\n- **Riesgo:** **alto**\n\n**Implicancia:** el terreno presenta una variación importante de cota, lo que puede:\n- encarecer accesos,\n- complicar servidumbres,\n- elevar costo de tendido,\n- aumentar tiempos de ejecución y mantenimiento.\n\n### e) Concesiones y trámites\n- **Trámite recomendado por el sistema:** **Concesión de distribución**\n- **Concesiones intersectantes:** 0\n- **Concesiones en trámite o vigentes intersectantes:** no se reportan cruces en el polígono\n\n**Lectura:** no se advierte conflicto territorial directo con concesiones existentes en el polígono según los datos cargados, pero **sí debe verificarse legalmente el entorno inmediato** antes de formular expediente.\n\n---\n\n## 3) Riesgos principales\n\n### Riesgo técnico\n- **Alto**\n- Por:\n  - relieve severo,\n  - distancia a SET cercana,\n  - ausencia de infraestructura eléctrica interna identificada,\n  - demanda significativa.\n\n### Riesgo regulatorio\/territorial\n- **Moderado**\n- No se observan intersecciones con concesiones, pero faltaría validación jurídica de:\n  - derechos de vía,\n  - superposición con otras figuras territoriales,\n  - disponibilidad de servidumbres.\n\n### Riesgo de inversión\n- **Alto**\n- La combinación de demanda importante con relieve complejo sugiere costos relevantes de expansión.\n\n---\n\n## 4) Utilidad agrícola \/ capas externas\nSe reporta que existen capas externas cargadas, entre ellas:\n- **API externa: PRODUCE - Catastro Acuícola Nacional**\n- **API externa: Predicción agrícola Piura**\n\nPero en los datos entregados:\n- **no se proporciona resultado específico sobre aptitud agrícola de esta zona**, y\n- la información externa aparece solo como fuente disponible, no como hallazgo interpretado.\n\n**Por tanto:** **no es posible afirmar utilidad agrícola con sustento suficiente** a partir de lo remitido.  \nSi se requiere, debe revisarse el resultado puntual de esa capa para esta ubicación.\n\n---\n\n## 5) Juicio ejecutivo\n### ¿Es dable para concesión de distribución?\n**Sí, por criterio de demanda y escala del proyecto.**  \nLa demanda de **6,792 kW** excede el umbral de 500 kW y justifica analizar concesión.\n\n### ¿Es dable para convenio municipal?\n**No como primera opción.**  \nEl convenio municipal suele ser más consistente con zonas de menor demanda; aquí la carga estimada es significativamente mayor.\n\n### ¿La viabilidad es alta?\n**No.**  \nLa viabilidad reportada es **baja (43\/100)**, principalmente por relieve y ausencia de infraestructura eléctrica inmediata.\n\n---\n\n## 6) Siguientes pasos recomendados\n1. **Validar la demanda estimada**\n   - Confirmar si los 6,792 kW provienen de demanda real sustentada o de estimación por capas.\n   - Requiere verificación con usuarios, cargas y proyección de crecimiento.\n\n2. **Estudio de factibilidad eléctrica**\n   - Revisar alternativa de alimentación desde **PALLASCA** u otra SET relevante.\n   - Evaluar distancia, pérdidas, refuerzos y necesidad de nueva infraestructura.\n\n3. **Análisis topográfico y de servidumbres**\n   - Levantamiento de campo por el relieve alto.\n   - Identificar corredores técnicamente viables.\n\n4. **Revisión legal y territorial**\n   - Confirmar ausencia de superposiciones con concesiones, trámites o restricciones no capturadas"
+        }
+    },
+    "polygon": [
+        [
+            -8.136455,
+            -77.836373
+        ],
+        [
+            -8.154865,
+            -77.815398
+        ],
+        [
+            -8.185424,
+            -77.826098
+        ],
+        [
+            -8.20591,
+            -77.845744
+        ],
+        [
+            -8.193624,
+            -77.869588
+        ],
+        [
+            -8.183418,
+            -77.896647
+        ],
+        [
+            -8.15326,
+            -77.898357
+        ],
+        [
+            -8.138756,
+            -77.88139
+        ],
+        [
+            -8.1239,
+            -77.859452
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

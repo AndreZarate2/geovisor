@@ -1,0 +1,403 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 78.785,
+        "centro": {
+            "lat": -11.405741,
+            "lng": -77.356343
+        },
+        "demanda_kw_estimada": 10654,
+        "demanda_kw_usada": 10654,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 76,
+            "nivel": "Alta"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 0,
+            "max_m": 348,
+            "promedio_m": 142.5,
+            "rango_m": 348,
+            "riesgo": "medio",
+            "descripcion": "medio, con variacion aproximada de 348 m; requiere revisar pendientes y accesos."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "RIO SECO",
+                "empresa": "PROCESADORA INDUSTRIAL RIO SECO S.A.",
+                "lat": -11.36185,
+                "lng": -77.29724,
+                "distancia_km": 8.08,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: RIO SECO"
+            },
+            {
+                "nombre": "LOMERA",
+                "empresa": "CONELSUR LT S.A.C.",
+                "lat": -11.43339,
+                "lng": -77.27469,
+                "distancia_km": 9.42,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "CONELSUR.xlsx; ENEL.xlsx",
+                "capacidad_total_mva": 175,
+                "demanda_total_mva": 112.0515,
+                "disponible_total_mva": 62.9485,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "LM-TR-II-220",
+                        "capacidad_total_mva": 95,
+                        "demanda_total_mva": 58.3993,
+                        "disponible_total_mva": 36.6007,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T1",
+                        "capacidad_total_mva": 80,
+                        "demanda_total_mva": 53.6522,
+                        "disponible_total_mva": 26.3478,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "LOMERA",
+                "empresa": "PLUZ ENERGIA PERU S.A.A.",
+                "lat": -11.43316,
+                "lng": -77.27411,
+                "distancia_km": 9.47,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "CONELSUR.xlsx; ENEL.xlsx",
+                "capacidad_total_mva": 175,
+                "demanda_total_mva": 112.0515,
+                "disponible_total_mva": 62.9485,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "LM-TR-II-220",
+                        "capacidad_total_mva": 95,
+                        "demanda_total_mva": 58.3993,
+                        "disponible_total_mva": 36.6007,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T1",
+                        "capacidad_total_mva": 80,
+                        "demanda_total_mva": 53.6522,
+                        "disponible_total_mva": 26.3478,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "HUARAL",
+                "empresa": "PLUZ ENERGIA PERU S.A.A.",
+                "lat": -11.49347,
+                "lng": -77.19715,
+                "distancia_km": 19.9,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 42.4662,
+                "disponible_total_mva": -0.4662,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "HL-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 25.905,
+                        "disponible_total_mva": -0.905,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "HL-TR-II",
+                        "capacidad_total_mva": 17,
+                        "demanda_total_mva": 16.5612,
+                        "disponible_total_mva": 0.4388,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "NUEVA HUARAL",
+                "empresa": "",
+                "lat": -11.493543,
+                "lng": -77.197068,
+                "distancia_km": 19.92,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 42.4662,
+                "disponible_total_mva": -0.4662,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "HL-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 25.905,
+                        "disponible_total_mva": -0.905,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "HL-TR-II",
+                        "capacidad_total_mva": 17,
+                        "demanda_total_mva": 16.5612,
+                        "disponible_total_mva": 0.4388,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 10,
+            "lineas_intersectan": 6,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "LOMERA",
+                "LOMERA",
+                "RIO SECO",
+                "LOMERA",
+                "RIO SECO",
+                "LOMERA"
+            ],
+            "lineas": [
+                "LT LOMERA-HUACHO",
+                "LT RIO SECO - LOMERA",
+                "LT HUACHO-CHANCAY",
+                "LT LOMERA-HUACHO",
+                "LT RIO SECO - LOMERA",
+                "LT HUACHO-CHANCAY"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: LOMERA, LOMERA, RIO SECO",
+            "Cruzan o tocan líneas de transmisión relevantes: LT LOMERA-HUACHO, LT RIO SECO - LOMERA, LT HUACHO-CHANCAY",
+            "La zona cruza información externa registrada: Limites departamentales",
+            "Relieve estimado: medio, con variacion aproximada de 348 m; requiere revisar pendientes y accesos.",
+            "SET con disponibilidad referencial cercana: LOMERA (62.9485 MVA libres), LOMERA (62.9485 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-13 20:56:50\nÁrea: 78.7847 km2\nDemanda usada: 10654 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Alta (76\/100)\nRelieve: medio, con variacion aproximada de 348 m; requiere revisar pendientes y accesos. Elevación min\/max: 0\/348 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":10,\"lineas_intersectan\":6,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- RIO SECO (PROCESADORA INDUSTRIAL RIO SECO S.A.), 8.08 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LOMERA (CONELSUR LT S.A.C.), 9.42 km, cap. 175 MVA, demanda 112.0515 MVA, disponible 62.9485 MVA, estado Disponible.\n- LOMERA (PLUZ ENERGIA PERU S.A.A.), 9.47 km, cap. 175 MVA, demanda 112.0515 MVA, disponible 62.9485 MVA, estado Disponible.\n- HUARAL (PLUZ ENERGIA PERU S.A.A.), 19.9 km, cap. 42 MVA, demanda 42.4662 MVA, disponible -0.4662 MVA, estado Sobrecarga.\n- NUEVA HUARAL (sin empresa), 19.92 km, cap. 42 MVA, demanda 42.4662 MVA, disponible -0.4662 MVA, estado Sobrecarga.\nRazones:\n- Hay SET cercanas o dentro del polígono: LOMERA, LOMERA, RIO SECO\n- Cruzan o tocan líneas de transmisión relevantes: LT LOMERA-HUACHO, LT RIO SECO - LOMERA, LT HUACHO-CHANCAY\n- La zona cruza información externa registrada: Limites departamentales\n- Relieve estimado: medio, con variacion aproximada de 348 m; requiere revisar pendientes y accesos.\n- SET con disponibilidad referencial cercana: LOMERA (62.9485 MVA libres), LOMERA (62.9485 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "Placemark",
+        "punto_inicio": {
+            "lat": -11.470402,
+            "lng": -77.351144,
+            "referencia": "-11.470402, -77.351144 | SET cercana: LOMERA a 9.29 km",
+            "set_cercana": {
+                "nombre": "LOMERA",
+                "fuente": "SET OSINERGMIN",
+                "lat": -11.43339,
+                "lng": -77.27469,
+                "distancia_km": 9.29
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -11.441348,
+            "lng": -77.391574,
+            "referencia": "-11.441348, -77.391574 | SET cercana: LOMERA a 12.77 km",
+            "set_cercana": {
+                "nombre": "LOMERA",
+                "fuente": "SET en Operacion join",
+                "lat": -11.433394,
+                "lng": -77.274687,
+                "distancia_km": 12.77
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -11.4704017,
+                -77.3511436
+            ],
+            [
+                -11.4732305,
+                -77.3486988
+            ],
+            [
+                -11.4512409,
+                -77.3485172
+            ],
+            [
+                -11.4046498,
+                -77.239592
+            ],
+            [
+                -11.3863102,
+                -77.2669559
+            ],
+            [
+                -11.3817308,
+                -77.2758226
+            ],
+            [
+                -11.382389,
+                -77.2828058
+            ],
+            [
+                -11.3828301,
+                -77.2871404
+            ],
+            [
+                -11.3846656,
+                -77.2953361
+            ],
+            [
+                -11.3808296,
+                -77.3001177
+            ],
+            [
+                -11.3819506,
+                -77.3085482
+            ],
+            [
+                -11.3905987,
+                -77.3167471
+            ],
+            [
+                -11.406759,
+                -77.3327353
+            ],
+            [
+                -11.4108468,
+                -77.3515201
+            ],
+            [
+                -11.4223326,
+                -77.3677431
+            ],
+            [
+                -11.4232327,
+                -77.3740228
+            ],
+            [
+                -11.4160357,
+                -77.3955617
+            ],
+            [
+                -11.4076711,
+                -77.4005566
+            ],
+            [
+                -11.3893783,
+                -77.3995353
+            ],
+            [
+                -11.3898752,
+                -77.4010077
+            ],
+            [
+                -11.3924078,
+                -77.4033748
+            ],
+            [
+                -11.394349,
+                -77.4054965
+            ],
+            [
+                -11.3956427,
+                -77.406951
+            ],
+            [
+                -11.3962783,
+                -77.4090617
+            ],
+            [
+                -11.3966764,
+                -77.4111704
+            ],
+            [
+                -11.397301,
+                -77.4146044
+            ],
+            [
+                -11.3972674,
+                -77.4186945
+            ],
+            [
+                -11.4182514,
+                -77.4289183
+            ],
+            [
+                -11.4413484,
+                -77.391574
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "admin",
+        "name": "Placemark",
+        "line_type": "distribucion",
+        "voltage_kv": 22.9,
+        "circuit": "simple",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-13 20:56:51"
+    }
+}

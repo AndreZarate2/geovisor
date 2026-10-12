@@ -1,0 +1,337 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 77.965,
+        "centro": {
+            "lat": -11.649121,
+            "lng": -77.168773
+        },
+        "demanda_kw_estimada": 10556,
+        "demanda_kw_usada": 10556,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 67,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 0,
+            "max_m": 752,
+            "promedio_m": 304,
+            "rango_m": 752,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 752 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "CHANCAY",
+                "empresa": "PLUZ ENERGIA PERU S.A.A.",
+                "lat": -11.58306,
+                "lng": -77.25958,
+                "distancia_km": 12.32,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 65,
+                "demanda_total_mva": 39.6927,
+                "disponible_total_mva": 25.3073,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "CY-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 31.2694,
+                        "disponible_total_mva": -6.2694,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "CY-TR-II",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 8.4233,
+                        "disponible_total_mva": 31.5767,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PUERTO CHANCAY",
+                "empresa": "CONSORCIO TRANSMANTARO S.A.",
+                "lat": -11.58076,
+                "lng": -77.25812,
+                "distancia_km": 12.35,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 65,
+                "demanda_total_mva": 39.6927,
+                "disponible_total_mva": 25.3073,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "CY-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 31.2694,
+                        "disponible_total_mva": -6.2694,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "CY-TR-II",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 8.4233,
+                        "disponible_total_mva": 31.5767,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "ANCON",
+                "empresa": "PLUZ ENERGIA PERU S.A.A.",
+                "lat": -11.7736,
+                "lng": -77.16823,
+                "distancia_km": 13.84,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 31,
+                "demanda_total_mva": 19.6285,
+                "disponible_total_mva": 11.3715,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "N-TR-I",
+                        "capacidad_total_mva": 6,
+                        "demanda_total_mva": 13.5324,
+                        "disponible_total_mva": -7.5324,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "N-TR-II",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 6.0961,
+                        "disponible_total_mva": 18.9039,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "NUEVA HUARAL",
+                "empresa": "",
+                "lat": -11.493543,
+                "lng": -77.197068,
+                "distancia_km": 17.57,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 42.4662,
+                "disponible_total_mva": -0.4662,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "HL-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 25.905,
+                        "disponible_total_mva": -0.905,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "HL-TR-II",
+                        "capacidad_total_mva": 17,
+                        "demanda_total_mva": 16.5612,
+                        "disponible_total_mva": 0.4388,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "HUARAL",
+                "empresa": "PLUZ ENERGIA PERU S.A.A.",
+                "lat": -11.49347,
+                "lng": -77.19715,
+                "distancia_km": 17.58,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENEL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 42.4662,
+                "disponible_total_mva": -0.4662,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "HL-TR-I",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 25.905,
+                        "disponible_total_mva": -0.905,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "HL-TR-II",
+                        "capacidad_total_mva": 17,
+                        "demanda_total_mva": 16.5612,
+                        "disponible_total_mva": 0.4388,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 34,
+            "lineas_intersectan": 8,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "ANCON",
+                "CHANCAY",
+                "PUERTO CHANCAY",
+                "PUERTO CHANCAY",
+                "ANCON",
+                "CHANCAY"
+            ],
+            "lineas": [
+                "LT ANCON-HUARAL",
+                "LT ZAPALLAL-CHANCAY",
+                "LT ZAPALLAL-LOMERA",
+                "LT CHANCAY-ZAPALLAL",
+                "LT ANCON-HUARAL",
+                "LT ZAPALLAL-CHANCAY"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: ANCON, CHANCAY, PUERTO CHANCAY",
+            "Cruzan o tocan líneas de transmisión relevantes: LT ANCON-HUARAL, LT ZAPALLAL-CHANCAY, LT ZAPALLAL-LOMERA",
+            "La zona cruza información externa registrada: Limites departamentales",
+            "Relieve estimado: alto, con variacion aproximada de 752 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: CHANCAY (25.3073 MVA libres), PUERTO CHANCAY (25.3073 MVA libres), ANCON (11.3715 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-13 21:26:54\nÁrea: 77.9654 km2\nDemanda usada: 10556 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Media (67\/100)\nRelieve: alto, con variacion aproximada de 752 m; puede encarecer accesos, servidumbres y tendido. Elevación min\/max: 0\/752 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":34,\"lineas_intersectan\":8,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- CHANCAY (PLUZ ENERGIA PERU S.A.A.), 12.32 km, cap. 65 MVA, demanda 39.6927 MVA, disponible 25.3073 MVA, estado Disponible.\n- PUERTO CHANCAY (CONSORCIO TRANSMANTARO S.A.), 12.35 km, cap. 65 MVA, demanda 39.6927 MVA, disponible 25.3073 MVA, estado Disponible.\n- ANCON (PLUZ ENERGIA PERU S.A.A.), 13.84 km, cap. 31 MVA, demanda 19.6285 MVA, disponible 11.3715 MVA, estado Disponible.\n- NUEVA HUARAL (sin empresa), 17.57 km, cap. 42 MVA, demanda 42.4662 MVA, disponible -0.4662 MVA, estado Sobrecarga.\n- HUARAL (PLUZ ENERGIA PERU S.A.A.), 17.58 km, cap. 42 MVA, demanda 42.4662 MVA, disponible -0.4662 MVA, estado Sobrecarga.\nRazones:\n- Hay SET cercanas o dentro del polígono: ANCON, CHANCAY, PUERTO CHANCAY\n- Cruzan o tocan líneas de transmisión relevantes: LT ANCON-HUARAL, LT ZAPALLAL-CHANCAY, LT ZAPALLAL-LOMERA\n- La zona cruza información externa registrada: Limites departamentales\n- Relieve estimado: alto, con variacion aproximada de 752 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: CHANCAY (25.3073 MVA libres), PUERTO CHANCAY (25.3073 MVA libres), ANCON (11.3715 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "Propuesta LIMA",
+        "punto_inicio": {
+            "lat": -11.632555,
+            "lng": -77.225779,
+            "referencia": "-11.632555, -77.225779 | SET cercana: Salidas MT desde SET a 6.54 km",
+            "set_cercana": {
+                "nombre": "Salidas MT desde SET",
+                "fuente": "Salidas MT desde SET",
+                "lat": -11.581252,
+                "lng": -77.196355,
+                "distancia_km": 6.54
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -11.589368,
+            "lng": -77.138455,
+            "referencia": "-11.589368, -77.138455 | SET cercana: Salidas MT desde SET a 6.36 km",
+            "set_cercana": {
+                "nombre": "Salidas MT desde SET",
+                "fuente": "Salidas MT desde SET",
+                "lat": -11.581275,
+                "lng": -77.196253,
+                "distancia_km": 6.36
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -11.6325547,
+                -77.2257791
+            ],
+            [
+                -11.6481107,
+                -77.208123
+            ],
+            [
+                -11.6866946,
+                -77.1899358
+            ],
+            [
+                -11.696129,
+                -77.1657689
+            ],
+            [
+                -11.6725779,
+                -77.1358487
+            ],
+            [
+                -11.6184143,
+                -77.1174969
+            ],
+            [
+                -11.5893684,
+                -77.1384552
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "admin",
+        "name": "Propuesta LIMA",
+        "line_type": "transmision",
+        "voltage_kv": 22.9,
+        "circuit": "simple",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-13 21:26:55"
+    }
+}

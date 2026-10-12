@@ -1,0 +1,972 @@
+{
+    "status": "success",
+    "subestacion": {
+        "codigo": "S00294",
+        "nombre": "TOMASIRI"
+    },
+    "empresa_consulta": "ELECTROSUR S.A",
+    "archivo_quinceminutal": "ELECTROSUR.xlsx",
+    "archivos_quinceminutales": [
+        "ELECTROSUR.xlsx"
+    ],
+    "hojas": [
+        "ELECTROSUR.xlsx::ELS_2025P1_MedicionTransformado",
+        "ELECTROSUR.xlsx::ELS_2025P2_MedicionTransformado",
+        "ELECTROSUR.xlsx::ELS_2025P3_MedicionTransformado"
+    ],
+    "filas": [
+        {
+            "transformador": "TOM-01",
+            "transformador_mapa": "TOT1",
+            "empresa_capacidad": null,
+            "subestacion_capacidad": null,
+            "barra": "B1577",
+            "tension_kv": "10",
+            "tension_transformador_kv": "66\/10.5",
+            "potencia_transformador_mva": "3",
+            "capacidad_mva": 3,
+            "capacidad_total_mva": 3,
+            "capacidad_modo": "single",
+            "lado_transformador": null,
+            "capacidad_nota": "",
+            "demanda_max_mva": 1.8297,
+            "demanda_max_mw": 1.8074,
+            "factor_potencia": 0.9878,
+            "fecha_maxima": "2025-05-16 18:45",
+            "archivo_quinceminutal": "ELECTROSUR.xlsx",
+            "disponible_mva": 1.1703,
+            "estado": "Disponible",
+            "fuente_capacidad": "MapaSEIN OSINERGMIN"
+        },
+        {
+            "transformador": "TOT1",
+            "transformador_mapa": "TOT1",
+            "empresa_capacidad": "ELS",
+            "subestacion_capacidad": "TOMASIRI",
+            "barra": "Sin medicion 66 kV",
+            "tension_kv": "66",
+            "tension_transformador_kv": "66",
+            "potencia_transformador_mva": "3",
+            "capacidad_mva": 3,
+            "capacidad_total_mva": 3,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Primaria 66 kV sin medicion quinceminutal",
+            "demanda_max_mva": 0,
+            "demanda_max_mw": 0,
+            "factor_potencia": null,
+            "fecha_maxima": null,
+            "archivo_quinceminutal": null,
+            "disponible_mva": null,
+            "estado": "Sin medicion",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "sin_medicion_quinceminutal": true
+        }
+    ],
+    "resumen_transformadores": [
+        {
+            "transformador": "TOM-01",
+            "transformador_mapa": "TOT1",
+            "capacidad_total_mva": 3,
+            "demanda_total_mva": 1.8297,
+            "disponible_total_mva": 1.1703,
+            "estado": "Disponible",
+            "criterio": "Capacidad por barra\/tension"
+        },
+        {
+            "transformador": "TOT1",
+            "transformador_mapa": "TOT1",
+            "capacidad_total_mva": 3,
+            "demanda_total_mva": 0,
+            "disponible_total_mva": null,
+            "estado": "Sin medicion",
+            "criterio": "Sin demanda quinceminutal util; se conserva capacidad nominal y datos PIT\/PT"
+        }
+    ],
+    "transformadores_maestro": [
+        {
+            "codigo_transformador": "TOM-01",
+            "subestacion": "TOMASIRI",
+            "empresa": "Electrosur"
+        }
+    ],
+    "barras_maestro": [
+        {
+            "codigo_barra": "B0185",
+            "nombre_barra": "Tomasiri",
+            "tension": "66"
+        },
+        {
+            "codigo_barra": "B1577",
+            "nombre_barra": "TOMASIRI",
+            "tension": "10"
+        }
+    ],
+    "capacidad_excel_transformadores": [
+        {
+            "empresa": "ELS",
+            "empresa_norm": "els",
+            "subestacion": "TOMASIRI",
+            "subestacion_norm": "tomasiri",
+            "codigo": "TOT1",
+            "codigo_norm": "tot1",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 66,
+                    "tension_texto": "66",
+                    "potencia_mva": 3,
+                    "potencia_texto": "3"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        }
+    ],
+    "capacidad_mapa_sein": {
+        "id_se": "303",
+        "nombre": "TOMASIRI",
+        "empresa": "ELECTROSUR",
+        "tension": "60",
+        "lat": "-17.847086",
+        "lng": "-70.543964",
+        "transformadores": [
+            {
+                "codigo": "TOT1",
+                "tipo": "Trifasico",
+                "anio_poc": "",
+                "tension_kv": "66\/10.5",
+                "potencia_mva": "3",
+                "fuente": "MapaSEIN OSINERGMIN"
+            }
+        ],
+        "nombre_norm": "tomasiri",
+        "empresa_norm": "electrosur"
+    },
+    "consumo_serie": [],
+    "consumo_mensual": [
+        {
+            "periodo": "2025-01",
+            "mes": "Enero 2025",
+            "fecha": "2025-01-06 19:30",
+            "mva": 1.5476,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-02",
+            "mes": "Febrero 2025",
+            "fecha": "2025-02-25 19:30",
+            "mva": 1.5997,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-03",
+            "mes": "Marzo 2025",
+            "fecha": "2025-03-23 19:45",
+            "mva": 1.6258,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-04",
+            "mes": "Abril 2025",
+            "fecha": "2025-04-02 19:30",
+            "mva": 1.5753,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-05",
+            "mes": "Mayo 2025",
+            "fecha": "2025-05-16 18:45",
+            "mva": 1.8297,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-06",
+            "mes": "Junio 2025",
+            "fecha": "2025-06-17 19:00",
+            "mva": 1.5387,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-07",
+            "mes": "Julio 2025",
+            "fecha": "2025-07-09 19:00",
+            "mva": 1.5163,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-08",
+            "mes": "Agosto 2025",
+            "fecha": "2025-08-17 19:30",
+            "mva": 1.6162,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-09",
+            "mes": "Setiembre 2025",
+            "fecha": "2025-09-10 19:00",
+            "mva": 1.7197,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-10",
+            "mes": "Octubre 2025",
+            "fecha": "2025-10-12 19:00",
+            "mva": 1.7411,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-11",
+            "mes": "Noviembre 2025",
+            "fecha": "2025-11-09 19:15",
+            "mva": 1.6787,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-12",
+            "mes": "Diciembre 2025",
+            "fecha": "2025-12-29 20:15",
+            "mva": 1.8039,
+            "archivos": [
+                "ELECTROSUR.xlsx"
+            ]
+        }
+    ],
+    "consumo_mensual_por_archivo": [
+        {
+            "archivo": "ELECTROSUR.xlsx",
+            "mensual": [
+                {
+                    "periodo": "2025-01",
+                    "mes": "Enero 2025",
+                    "fecha": "2025-01-06 19:30",
+                    "mva": 1.5476
+                },
+                {
+                    "periodo": "2025-02",
+                    "mes": "Febrero 2025",
+                    "fecha": "2025-02-25 19:30",
+                    "mva": 1.5997
+                },
+                {
+                    "periodo": "2025-03",
+                    "mes": "Marzo 2025",
+                    "fecha": "2025-03-23 19:45",
+                    "mva": 1.6258
+                },
+                {
+                    "periodo": "2025-04",
+                    "mes": "Abril 2025",
+                    "fecha": "2025-04-02 19:30",
+                    "mva": 1.5753
+                },
+                {
+                    "periodo": "2025-05",
+                    "mes": "Mayo 2025",
+                    "fecha": "2025-05-16 18:45",
+                    "mva": 1.8297
+                },
+                {
+                    "periodo": "2025-06",
+                    "mes": "Junio 2025",
+                    "fecha": "2025-06-17 19:00",
+                    "mva": 1.5387
+                },
+                {
+                    "periodo": "2025-07",
+                    "mes": "Julio 2025",
+                    "fecha": "2025-07-09 19:00",
+                    "mva": 1.5163
+                },
+                {
+                    "periodo": "2025-08",
+                    "mes": "Agosto 2025",
+                    "fecha": "2025-08-17 19:30",
+                    "mva": 1.6162
+                },
+                {
+                    "periodo": "2025-09",
+                    "mes": "Setiembre 2025",
+                    "fecha": "2025-09-10 19:00",
+                    "mva": 1.7197
+                },
+                {
+                    "periodo": "2025-10",
+                    "mes": "Octubre 2025",
+                    "fecha": "2025-10-12 19:00",
+                    "mva": 1.7411
+                },
+                {
+                    "periodo": "2025-11",
+                    "mes": "Noviembre 2025",
+                    "fecha": "2025-11-09 19:15",
+                    "mva": 1.6787
+                },
+                {
+                    "periodo": "2025-12",
+                    "mes": "Diciembre 2025",
+                    "fecha": "2025-12-29 20:15",
+                    "mva": 1.8039
+                }
+            ]
+        }
+    ],
+    "ultimo_registro": {
+        "fecha": "2025-12-31 23:45",
+        "mva": 1.4236,
+        "archivo": "ELECTROSUR.xlsx"
+    },
+    "medicion_quinceminutal": "ok",
+    "mensaje_medicion": null,
+    "mensaje": null,
+    "pdf": {
+        "archivo": "UNIFILAR_ABRIL_2026.pdf",
+        "url": "uploads\/pdf\/UNIFILAR_ABRIL_2026.pdf",
+        "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+        "busqueda": "TOMASIRI"
+    },
+    "pit": {
+        "status": "success",
+        "message": "",
+        "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+        "file_mtime": "2026-06-01T16:55:18",
+        "sheets_scanned": 8,
+        "total_matches": 12,
+        "criterio": "PIT filtrado por nombre explicito de SET\/instalacion y empresa cuando esta disponible; se excluyen coincidencias bajas.",
+        "departamento_consulta": "TACNA",
+        "summary": {
+            "Sin avance": 3,
+            "En ejecucion de obra fisica": 4,
+            "Sin estado": 5
+        },
+        "future_transformer": true,
+        "future_transformers": [
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 432,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "",
+                "elemento": "Transformador de Potencia de 6 MVA, 60\/23\/10 kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "TP-060023010-006CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 6,
+                "potencias_mva": [
+                    6
+                ],
+                "tension_kv": "60\/23\/10",
+                "tensiones_kv": [
+                    "60\/23\/10",
+                    "60"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 88,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electrosur",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Transformador de Potencia de 6 MVA, 60\/23\/10 kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "TP-060023010-006CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 6,
+                "potencias_mva": [
+                    6
+                ],
+                "tension_kv": "60\/23\/10",
+                "tensiones_kv": [
+                    "60\/23\/10",
+                    "60"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            }
+        ],
+        "matches": [
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 1043,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "4",
+                "elemento": "Celda de Alimentador 23kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT \"Tomasiri\"",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "23",
+                "tensiones_kv": [
+                    "23"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin avance",
+                "estado_raw": "Sin inicio",
+                "avance": "Sin avance",
+                "acta": "",
+                "anio_previsto": "2018",
+                "anio_reprogramado": "2020",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 1044,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "4",
+                "elemento": "Celda de Alimentador 23kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT \"Tomasiri\"",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "23",
+                "tensiones_kv": [
+                    "23"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin avance",
+                "estado_raw": "Sin inicio",
+                "avance": "Sin avance",
+                "acta": "",
+                "anio_previsto": "2018",
+                "anio_reprogramado": "2020",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 432,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "",
+                "elemento": "Transformador de Potencia de 6 MVA, 60\/23\/10 kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "TP-060023010-006CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 6,
+                "potencias_mva": [
+                    6
+                ],
+                "tension_kv": "60\/23\/10",
+                "tensiones_kv": [
+                    "60\/23\/10",
+                    "60"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 433,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "",
+                "elemento": "Celda Transformador",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBTR1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 434,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "",
+                "elemento": "Celda Medición",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBMD1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 435,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ELECTROSUR",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "",
+                "elemento": "Celda Alimentador",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 88,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electrosur",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Transformador de Potencia de 6 MVA, 60\/23\/10 kV",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "TP-060023010-006CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 6,
+                "potencias_mva": [
+                    6
+                ],
+                "tension_kv": "60\/23\/10",
+                "tensiones_kv": [
+                    "60\/23\/10",
+                    "60"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 89,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electrosur",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Celda Transformador",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBTR1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 90,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electrosur",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Celda Medición",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBMD1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 91,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electrosur",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTROSUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Celda Alimentador",
+                "elementos": "",
+                "instalacion": "SET AT\/MT TOMASIRI",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-023COR1C1ESBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 370,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "EGESUR",
+                "empresa_anterior": "",
+                "empresa_norm": "EGESUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "13",
+                "proyecto": "4",
+                "elemento": "Celda 66kV - LI a Los Héroes",
+                "elementos": "",
+                "instalacion": "SET 66\/23\/10 kV Tomasirí",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-060COC1ESBLI",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "66",
+                "tensiones_kv": [
+                    "66",
+                    "66\/23\/10"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin avance",
+                "estado_raw": "Sin avance",
+                "avance": "Sin avance",
+                "acta": "",
+                "anio_previsto": "2023",
+                "anio_reprogramado": "2024",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 5",
+                "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                "fila": 118,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "EGESUR",
+                "empresa_anterior": "",
+                "empresa_norm": "EGESUR",
+                "departamento_consulta": "TACNA",
+                "area_demanda": "",
+                "proyecto": "LT 66 kV Los Héroes Tomasiri y celdas conexas",
+                "elemento": "Celda 66kV - LI a Los Héroes",
+                "elementos": "Celda 66kV - LI a Los Héroes",
+                "instalacion": "SET 66\/23\/10 kV Tomasirí",
+                "subestacion_norm": "TOMASIRI",
+                "modulo": "CE-060COC1ESBLI",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "66",
+                "tensiones_kv": [
+                    "66",
+                    "66\/23\/10"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "",
+                "anio_reprogramado": "",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            }
+        ]
+    },
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "Tacna"
+        ],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-07-09 16:10:03",
+    "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

@@ -1,0 +1,254 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-5010",
+    "nombre_consulta": "LT TRUJILLO NUEVA-LAGUNA LA NIÑA",
+    "empresa_consulta": "CONSORCIO TRANSMANTARO S.A.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "TRM",
+        "nombre_linea": "L-5010 -> De \"TRUJILLO NUEVA\" a \"LAGUNA LA NIÑA\"",
+        "codigo_linea": "L-5010",
+        "tension_nominal_kv": 500,
+        "mva_nominal": 840,
+        "carga_mva": 358.46,
+        "carga_amperaje": 419.91,
+        "fac_uso_pot": 42.674,
+        "fecha_maxima_demanda": "2025-12-06",
+        "hora_maxima_demanda": "12:00:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "TRM",
+        "nombre_linea": "L-5010 -> De \"TRUJILLO NUEVA\" a \"LAGUNA LA NIÑA\"",
+        "codigo_linea": "L-5010",
+        "tension_nominal_kv": 500,
+        "mva_nominal": 840,
+        "carga_mva": 358.46,
+        "carga_amperaje": 419.91,
+        "fac_uso_pot": 42.674,
+        "fecha_maxima_demanda": "2025-12-06",
+        "hora_maxima_demanda": "12:00:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "maxima_registrada": {
+        "codigo_empresa": "TRM",
+        "nombre_linea": "L-5010 -> De \"TRUJILLO NUEVA\" a \"LAGUNA LA NIÑA\"",
+        "codigo_linea": "L-5010",
+        "tension_nominal_kv": 500,
+        "mva_nominal": 840,
+        "carga_mva": 363.52,
+        "carga_amperaje": 416.28,
+        "fac_uso_pot": 43.276,
+        "fecha_maxima_demanda": "2025-10-23",
+        "hora_maxima_demanda": "12:00:00",
+        "periodo": "10\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "ultima_es_maxima": false,
+    "mensaje_maxima": null,
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-31",
+            "mva": 264.42,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-21",
+            "mva": 303.53,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-31",
+            "mva": 323.01,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-01",
+            "mva": 314.37,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-03",
+            "mva": 297.89,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-23",
+            "mva": 295.33,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-19",
+            "mva": 309.99,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-03",
+            "mva": 352.63,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-06",
+            "mva": 308.23,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-23",
+            "mva": 363.52,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-29",
+            "mva": 309.08,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-06",
+            "mva": 358.46,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        }
+    ],
+    "registros": 12,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "La Libertad"
+        ],
+        "contexto_departamento_activo": true,
+        "matches": []
+    },
+    "descargas_atmosfericas": {
+        "status": "success",
+        "fuente": "OSINERGMIN CERAUNICO - Descargas atmosfericas",
+        "anio": 2025,
+        "unidad": "rayos totales por km2\/año",
+        "muestras": 10,
+        "min": 0,
+        "promedio": 0,
+        "max": 0,
+        "nivel": "sin registro",
+        "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO.",
+        "clase_maxima": "0",
+        "clases": [
+            {
+                "clase": "0",
+                "nivel": "sin registro",
+                "conteo": 10,
+                "porcentaje": 100
+            }
+        ],
+        "niveles": [
+            {
+                "nivel": "sin registro",
+                "conteo": 10,
+                "porcentaje": 100
+            }
+        ],
+        "puntos": [
+            {
+                "lat": -8.04859,
+                "lng": -79.02075,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -7.7108,
+                "lng": -79.02013,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -7.60453,
+                "lng": -79.18154,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -7.55052,
+                "lng": -79.24375,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -7.41132,
+                "lng": -79.29177,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            },
+            {
+                "lat": -7.2342,
+                "lng": -79.2923,
+                "valor": 0,
+                "nivel": "sin registro",
+                "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+            }
+        ]
+    },
+    "geometria_linea": {
+        "source": "LT_Operacionm.geojson",
+        "codigo": "L-5010",
+        "nombre": "LT TRUJILLO NUEVA-LAGUNA LA NIÑA",
+        "tension_kv": 500,
+        "longitud_km": 327,
+        "muestras_ceraunico": 14
+    },
+    "generated_at": "2026-07-08 19:12:35",
+    "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

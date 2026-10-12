@@ -1,0 +1,12 @@
+[
+    {
+        "id": "api_40e9e7841842",
+        "name": "Predios",
+        "url": "https:\/\/ebbgigtcgnutzyshbmfo.supabase.co\/functions\/v1\/get_capa",
+        "tipo": "polygon",
+        "color": "#3af83d",
+        "grupo": "APIs de predios",
+        "menu": "Predios",
+        "date": "2026-06-04 17:03:31"
+    }
+]

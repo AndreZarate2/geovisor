@@ -1,0 +1,17 @@
+.runtime/
+.venv/
+.vscode/chrome-debug-profile/
+.vscode/edge-debug-profile/
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.openai_api_key
+.geovisor_auth/
+.geovisor_ai_memory.json
+.vercel/
+*.log
+*.pem.key
+*.key
+users.json

@@ -1,0 +1,151 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-1036",
+    "nombre_consulta": "LT PEDREGAL-CAMANA",
+    "empresa_consulta": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "SEA",
+        "nombre_linea": "L-1036 -> De \"PEDREGAL\" a \"CAMANA\"",
+        "codigo_linea": "L-1036",
+        "tension_nominal_kv": 138,
+        "mva_nominal": 32,
+        "carga_mva": 14.32,
+        "carga_amperaje": 62.5,
+        "fac_uso_pot": 44.75,
+        "fecha_maxima_demanda": "2025-12-31",
+        "hora_maxima_demanda": "20:15:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "SEA",
+        "nombre_linea": "L-1036 -> De \"PEDREGAL\" a \"CAMANA\"",
+        "codigo_linea": "L-1036",
+        "tension_nominal_kv": 138,
+        "mva_nominal": 32,
+        "carga_mva": 14.32,
+        "carga_amperaje": 62.5,
+        "fac_uso_pot": 44.75,
+        "fecha_maxima_demanda": "2025-12-31",
+        "hora_maxima_demanda": "20:15:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-26",
+            "mva": 13.06,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-14",
+            "mva": 13.37,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-01",
+            "mva": 12.62,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-22",
+            "mva": 11.81,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-20",
+            "mva": 11.75,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-03",
+            "mva": 11.54,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-17",
+            "mva": 11.08,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-09",
+            "mva": 15.23,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-30",
+            "mva": 11.48,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-28",
+            "mva": 12.68,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-25",
+            "mva": 13.15,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-31",
+            "mva": 14.32,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        }
+    ],
+    "registros": 12,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-06-15 21:50:45"
+}

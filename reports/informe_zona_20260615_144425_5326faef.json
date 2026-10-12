@@ -1,0 +1,523 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 148.3872,
+        "centro": {
+            "lat": -17.876509,
+            "lng": -70.375648
+        },
+        "demanda_kw_estimada": 18346,
+        "demanda_kw_usada": 18346,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 58,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 545,
+            "max_m": 1066,
+            "promedio_m": 759.1,
+            "rango_m": 521,
+            "riesgo": "medio",
+            "descripcion": "medio, con variacion aproximada de 521 m; requiere revisar pendientes y accesos."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "TACNA SOLAR",
+                "empresa": "TACNA SOLAR S.A.C.",
+                "lat": -17.99496,
+                "lng": -70.33275,
+                "distancia_km": 13.93,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: TACNA SOLAR"
+            },
+            {
+                "nombre": "LOS HEROES",
+                "empresa": "RED ELÉCTRICA DEL SUR S.A.",
+                "lat": -17.99972,
+                "lng": -70.31637,
+                "distancia_km": 15.07,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 70,
+                "demanda_total_mva": 38.133,
+                "disponible_total_mva": 31.867,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T0002",
+                        "capacidad_total_mva": 70,
+                        "demanda_total_mva": 38.133,
+                        "disponible_total_mva": 31.867,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "TOMASIRI",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -17.84713,
+                "lng": -70.5439,
+                "distancia_km": 18.1,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 3,
+                "demanda_total_mva": 1.8297,
+                "disponible_total_mva": 1.1703,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TOM-01",
+                        "capacidad_total_mva": 3,
+                        "demanda_total_mva": 1.8297,
+                        "disponible_total_mva": 1.1703,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PARQUE INDUSTRIAL",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -17.99061,
+                "lng": -70.232,
+                "distancia_km": 19.8,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 170,
+                "demanda_total_mva": 207.3611,
+                "disponible_total_mva": -37.3611,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T4-103",
+                        "capacidad_total_mva": 90,
+                        "demanda_total_mva": 131.2627,
+                        "disponible_total_mva": -41.2627,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T41-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 39.8654,
+                        "disponible_total_mva": 0.1346,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T42-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 36.233,
+                        "disponible_total_mva": 3.767,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "TACNA",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -18.02537,
+                "lng": -70.27161,
+                "distancia_km": 19.88,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 50,
+                "demanda_total_mva": 27.1976,
+                "disponible_total_mva": 22.8024,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TAC-02",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 11.1414,
+                        "disponible_total_mva": 13.8586,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "TAC-03",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 16.0562,
+                        "disponible_total_mva": 8.9438,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 3,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 2,
+            "fuentes": {
+                "SET OSINERGMIN": 733,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "TACNA SOLAR",
+                "TACNA SOLAR",
+                "TACNA SOLAR"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales",
+                "Tacna"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: TACNA SOLAR, TACNA SOLAR, TACNA SOLAR",
+            "La zona cruza información externa registrada: Limites departamentales, Tacna",
+            "Relieve estimado: medio, con variacion aproximada de 521 m; requiere revisar pendientes y accesos.",
+            "SET con disponibilidad referencial cercana: LOS HEROES (31.867 MVA libres), TOMASIRI (1.1703 MVA libres), TACNA (22.8024 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-15 14:44:25\nÁrea: 148.3872 km2\nDemanda usada: 18346 kW (manual)\nTrámite recomendado: Concesión de distribución\nViabilidad: Media (58\/100)\nRelieve: medio, con variacion aproximada de 521 m; requiere revisar pendientes y accesos. Elevación min\/max: 545\/1066 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":3,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":2,\"fuentes\":{\"SET OSINERGMIN\":733,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- TACNA SOLAR (TACNA SOLAR S.A.C.), 13.93 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LOS HEROES (RED ELÉCTRICA DEL SUR S.A.), 15.07 km, cap. 70 MVA, demanda 38.133 MVA, disponible 31.867 MVA, estado Disponible.\n- TOMASIRI (ELECTROSUR S.A), 18.1 km, cap. 3 MVA, demanda 1.8297 MVA, disponible 1.1703 MVA, estado Disponible.\n- PARQUE INDUSTRIAL (ELECTROSUR S.A), 19.8 km, cap. 170 MVA, demanda 207.3611 MVA, disponible -37.3611 MVA, estado Sobrecarga.\n- TACNA (ELECTROSUR S.A), 19.88 km, cap. 50 MVA, demanda 27.1976 MVA, disponible 22.8024 MVA, estado Disponible.\nRazones:\n- Hay SET cercanas o dentro del polígono: TACNA SOLAR, TACNA SOLAR, TACNA SOLAR\n- La zona cruza información externa registrada: Limites departamentales, Tacna\n- Relieve estimado: medio, con variacion aproximada de 521 m; requiere revisar pendientes y accesos.\n- SET con disponibilidad referencial cercana: LOS HEROES (31.867 MVA libres), TOMASIRI (1.1703 MVA libres), TACNA (22.8024 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente."
+    },
+    "polygon": [
+        [
+            -17.859877985609845,
+            -70.4268264770508
+        ],
+        [
+            -17.859877985609845,
+            -70.42751312255861
+        ],
+        [
+            -17.860204960088495,
+            -70.42922973632814
+        ],
+        [
+            -17.862493764603343,
+            -70.43712615966798
+        ],
+        [
+            -17.8638016396685,
+            -70.44090270996095
+        ],
+        [
+            -17.864455573592977,
+            -70.44261932373048
+        ],
+        [
+            -17.86739824648332,
+            -70.44296264648439
+        ],
+        [
+            -17.871321734550644,
+            -70.44433593750001
+        ],
+        [
+            -17.874264293752276,
+            -70.44433593750001
+        ],
+        [
+            -17.877206804218584,
+            -70.44433593750001
+        ],
+        [
+            -17.8798223281583,
+            -70.44433593750001
+        ],
+        [
+            -17.884726331725243,
+            -70.4433059692383
+        ],
+        [
+            -17.888976358591464,
+            -70.44158935546876
+        ],
+        [
+            -17.89420702119896,
+            -70.43849945068361
+        ],
+        [
+            -17.89976443128674,
+            -70.43506622314455
+        ],
+        [
+            -17.90532166727671,
+            -70.43163299560548
+        ],
+        [
+            -17.909898083805565,
+            -70.42785644531251
+        ],
+        [
+            -17.915128129472368,
+            -70.42201995849611
+        ],
+        [
+            -17.919377427938844,
+            -70.4161834716797
+        ],
+        [
+            -17.922319190259753,
+            -70.40863037109376
+        ],
+        [
+            -17.923953481553177,
+            -70.40245056152345
+        ],
+        [
+            -17.92428033800254,
+            -70.39489746093751
+        ],
+        [
+            -17.92689516788402,
+            -70.38459777832033
+        ],
+        [
+            -17.92918311236222,
+            -70.37429809570314
+        ],
+        [
+            -17.930817340320093,
+            -70.36193847656251
+        ],
+        [
+            -17.93179786985505,
+            -70.35335540771486
+        ],
+        [
+            -17.932124711826717,
+            -70.34580230712892
+        ],
+        [
+            -17.932124711826717,
+            -70.3389358520508
+        ],
+        [
+            -17.932124711826717,
+            -70.33035278320314
+        ],
+        [
+            -17.930490495935082,
+            -70.32485961914064
+        ],
+        [
+            -17.926568316259964,
+            -70.31490325927736
+        ],
+        [
+            -17.919050562443694,
+            -70.30563354492189
+        ],
+        [
+            -17.91251312592813,
+            -70.29773712158205
+        ],
+        [
+            -17.90760989030591,
+            -70.29327392578126
+        ],
+        [
+            -17.90074513264287,
+            -70.28915405273439
+        ],
+        [
+            -17.89420702119896,
+            -70.2843475341797
+        ],
+        [
+            -17.887668668854058,
+            -70.28057098388673
+        ],
+        [
+            -17.881130075684478,
+            -70.27816772460939
+        ],
+        [
+            -17.87459124176645,
+            -70.27576446533205
+        ],
+        [
+            -17.87066782588817,
+            -70.27542114257814
+        ],
+        [
+            -17.867071285234616,
+            -70.27542114257814
+        ],
+        [
+            -17.86216679433367,
+            -70.27645111083986
+        ],
+        [
+            -17.856935188246727,
+            -70.2785110473633
+        ],
+        [
+            -17.85333836978658,
+            -70.28125762939455
+        ],
+        [
+            -17.85072245613425,
+            -70.28537750244142
+        ],
+        [
+            -17.846798513539248,
+            -70.29224395751955
+        ],
+        [
+            -17.843201490150175,
+            -70.30014038085939
+        ],
+        [
+            -17.8409124374173,
+            -70.30941009521486
+        ],
+        [
+            -17.838623355250206,
+            -70.31936645507814
+        ],
+        [
+            -17.83731529508352,
+            -70.3279495239258
+        ],
+        [
+            -17.836334243652274,
+            -70.33859252929689
+        ],
+        [
+            -17.835680206361907,
+            -70.34923553466798
+        ],
+        [
+            -17.835680206361907,
+            -70.36056518554689
+        ],
+        [
+            -17.836007225307387,
+            -70.3718948364258
+        ],
+        [
+            -17.836661261396596,
+            -70.37979125976564
+        ],
+        [
+            -17.83796932636811,
+            -70.38631439208986
+        ],
+        [
+            -17.83960439406866,
+            -70.39112091064455
+        ],
+        [
+            -17.843201490150175,
+            -70.39627075195314
+        ],
+        [
+            -17.845817514370328,
+            -70.39901733398439
+        ],
+        [
+            -17.848433500136686,
+            -70.40588378906251
+        ],
+        [
+            -17.850068471711154,
+            -70.41172027587892
+        ],
+        [
+            -17.85333836978658,
+            -70.42236328125001
+        ],
+        [
+            -17.85399234218923,
+            -70.42613983154298
+        ],
+        [
+            -17.854973296285124,
+            -70.42922973632814
+        ],
+        [
+            -17.854973296285124,
+            -70.43060302734376
+        ],
+        [
+            -17.85562726267684,
+            -70.43060302734376
+        ],
+        [
+            -17.8562812266641,
+            -70.43025970458986
+        ],
+        [
+            -17.856608207755986,
+            -70.42957305908205
+        ],
+        [
+            -17.85726216813629,
+            -70.42922973632814
+        ],
+        [
+            -17.85758914742468,
+            -70.42922973632814
+        ],
+        [
+            -17.85791612611193,
+            -70.42888641357423
+        ],
+        [
+            -17.858570081682778,
+            -70.42819976806642
+        ]
+    ],
+    "meta": {
+        "project": "Evaluación preliminar de zona eléctrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf"
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 866.6433,
+        "centro": {
+            "lat": -8.95851,
+            "lng": -74.596228
+        },
+        "demanda_kw_estimada": 25000,
+        "demanda_kw_usada": 1070,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 47,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 156,
+            "max_m": 323,
+            "promedio_m": 190,
+            "rango_m": 167,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 167 m."
+        },
+        "sets_cercanas": [],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 0,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 2,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales",
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "La zona cruza informacion externa registrada: Limites departamentales, Limites departamentales",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 167 m.",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-11 21:45:37\nArea: 866.6433 km2\nDemanda usada: 1070 kW (manual)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (47\/100)\nRelieve: bajo a moderado, con variacion aproximada de 167 m. Elevacion min\/max: 156\/323 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":0,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":2,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nRazones:\n- La zona cruza informacion externa registrada: Limites departamentales, Limites departamentales\n- Relieve estimado: bajo a moderado, con variacion aproximada de 167 m.\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": false,
+            "model": "gpt-5.4-mini",
+            "message": "OpenAI no respondio correctamente.",
+            "http_code": 401,
+            "error": ""
+        }
+    },
+    "polygon": [
+        [
+            -8.811935,
+            -74.645433
+        ],
+        [
+            -8.767835,
+            -74.559687
+        ],
+        [
+            -8.8683,
+            -74.446808
+        ],
+        [
+            -8.978566,
+            -74.459704
+        ],
+        [
+            -9.069561,
+            -74.504717
+        ],
+        [
+            -9.111683,
+            -74.579818
+        ],
+        [
+            -9.082315,
+            -74.701071
+        ],
+        [
+            -9.023264,
+            -74.731098
+        ],
+        [
+            -8.913135,
+            -74.737716
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

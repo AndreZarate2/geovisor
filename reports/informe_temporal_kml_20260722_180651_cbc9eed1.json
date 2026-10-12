@@ -1,0 +1,368 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "linea",
+        "nombre": "COMPAÑIA MINERA SANTA LUISA S.A.",
+        "longitud_km": 1.531,
+        "punto_inicio": {
+            "lat": -9.9017,
+            "lng": -76.9418,
+            "referencia": "-9.9017, -76.9418 | SET cercana: HUALLANCA NUEVA a 0 km",
+            "set_cercana": {
+                "nombre": "HUALLANCA NUEVA",
+                "fuente": "SET OSINERGMIN",
+                "lat": -9.90174,
+                "lng": -76.94181,
+                "distancia_km": 0
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -9.895022,
+            "lng": -76.933682,
+            "referencia": "-9.895022, -76.933682 | SET cercana: VIZCARRA a 0.1 km",
+            "set_cercana": {
+                "nombre": "VIZCARRA",
+                "fuente": "SET OSINERGMIN",
+                "lat": -9.89452,
+                "lng": -76.93292,
+                "distancia_km": 0.1
+            },
+            "concesiones": []
+        },
+        "punto_medio": {
+            "lat": -9.9015,
+            "lng": -76.9363,
+            "referencia": "-9.9015, -76.9363 | SET cercana: HUALLANCA NUEVA a 0.6 km",
+            "set_cercana": {
+                "nombre": "HUALLANCA NUEVA",
+                "fuente": "SET OSINERGMIN",
+                "lat": -9.90174,
+                "lng": -76.94181,
+                "distancia_km": 0.6
+            },
+            "concesiones": []
+        },
+        "especificacion": {
+            "tipo_linea": "Distribución",
+            "tension_kv": 22.9,
+            "terna": "Simple terna"
+        },
+        "tecnico": {
+            "conductor_referencial": "AAAC\/ACSR 70-150 mm2 para distribución; validar ampacidad, caída de tensión y cortocircuito.",
+            "estructura_referencial": "Postes CAC\/metálicos con retenciones en cambios de dirección.",
+            "riesgos": [
+                "Ruta preliminar sin alertas críticas en las capas cargadas; requiere validación de campo."
+            ]
+        },
+        "hallazgos": {
+            "concesiones": [],
+            "lt": [
+                {
+                    "nombre": "LT VIZCARRA-HUALLANCA NUEVA",
+                    "fuente": "LT OSINERGMIN"
+                },
+                {
+                    "nombre": "LT VIZCARRA-CONOCOCHA",
+                    "fuente": "LT OSINERGMIN"
+                },
+                {
+                    "nombre": "LT VIZCARRA-HUALLANCA NUEVA",
+                    "fuente": "LT OSINERGMIN"
+                },
+                {
+                    "nombre": "LT VIZCARRA-CONOCOCHA",
+                    "fuente": "LT OSINERGMIN"
+                },
+                {
+                    "nombre": "LT VIZCARRA-HUALLANCA NUEVA",
+                    "fuente": "LT local"
+                }
+            ],
+            "mt": [],
+            "sed": [],
+            "sets": [
+                {
+                    "nombre": "HUALLANCA NUEVA",
+                    "distancia_km": 0,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUALLANCA NUEVA",
+                    "distancia_km": 0,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUALLANCA NUEVA",
+                    "distancia_km": 0,
+                    "fuente": "SET local"
+                },
+                {
+                    "nombre": "HUALLANCA EXISTENTE",
+                    "distancia_km": 0.08,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUALLANCA EXISTENTE",
+                    "distancia_km": 0.08,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUALLANCA EXISTENTE",
+                    "distancia_km": 0.08,
+                    "fuente": "SET local"
+                },
+                {
+                    "nombre": "VIZCARRA",
+                    "distancia_km": 0.1,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "VIZCARRA",
+                    "distancia_km": 0.1,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "VIZCARRA",
+                    "distancia_km": 0.1,
+                    "fuente": "SET local"
+                },
+                {
+                    "nombre": "HUANZALA",
+                    "distancia_km": 7.63,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUANZALA",
+                    "distancia_km": 7.63,
+                    "fuente": "SET OSINERGMIN"
+                },
+                {
+                    "nombre": "HUANZALA",
+                    "distancia_km": 7.63,
+                    "fuente": "SET local"
+                }
+            ],
+            "predios": [],
+            "cultural": [
+                {
+                    "nombre": "Limites departamentales",
+                    "fuente": "Limites departamentales"
+                }
+            ],
+            "ambiental": [],
+            "productivo": [],
+            "externas": [
+                {
+                    "nombre": "Sitios prioritarios nacionales",
+                    "fuente": "Sitios prioritarios nacionales"
+                }
+            ]
+        },
+        "descargas_atmosfericas": {
+            "status": "success",
+            "fuente": "OSINERGMIN CERAUNICO - Descargas atmosfericas",
+            "anio": 2025,
+            "unidad": "rayos totales por km2\/año",
+            "muestras": 8,
+            "min": 0,
+            "promedio": 0.63,
+            "max": 1,
+            "nivel": "muy bajo",
+            "comentario": "Exposicion baja; mantener criterios normativos de proteccion.",
+            "clase_maxima": "1",
+            "clases": [
+                {
+                    "clase": "0",
+                    "nivel": "sin registro",
+                    "conteo": 3,
+                    "porcentaje": 37.5
+                },
+                {
+                    "clase": "1",
+                    "nivel": "muy bajo",
+                    "conteo": 5,
+                    "porcentaje": 62.5
+                }
+            ],
+            "niveles": [
+                {
+                    "nivel": "muy bajo",
+                    "conteo": 5,
+                    "porcentaje": 62.5
+                },
+                {
+                    "nivel": "sin registro",
+                    "conteo": 3,
+                    "porcentaje": 37.5
+                }
+            ],
+            "puntos": [
+                {
+                    "lat": -9.9017,
+                    "lng": -76.9418,
+                    "valor": 1,
+                    "nivel": "muy bajo",
+                    "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+                },
+                {
+                    "lat": -9.902,
+                    "lng": -76.9404,
+                    "valor": 1,
+                    "nivel": "muy bajo",
+                    "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+                },
+                {
+                    "lat": -9.9014,
+                    "lng": -76.9398,
+                    "valor": 1,
+                    "nivel": "muy bajo",
+                    "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+                },
+                {
+                    "lat": -9.901,
+                    "lng": -76.9386,
+                    "valor": 1,
+                    "nivel": "muy bajo",
+                    "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+                },
+                {
+                    "lat": -9.9015,
+                    "lng": -76.9363,
+                    "valor": 1,
+                    "nivel": "muy bajo",
+                    "comentario": "Exposicion baja; mantener criterios normativos de proteccion."
+                },
+                {
+                    "lat": -9.8994,
+                    "lng": -76.9334,
+                    "valor": 0,
+                    "nivel": "sin registro",
+                    "comentario": "Sin registro relevante de rayos en el punto consultado segun CERAUNICO."
+                }
+            ]
+        },
+        "restricciones": {
+            "items": [
+                {
+                    "tipo": "Patrimonio\/CIRA",
+                    "nivel": "alto",
+                    "detalle": "Se detectan capas culturales o CIRA cercanas\/intersectadas; requiere revision arqueologica."
+                },
+                {
+                    "tipo": "Descargas atmosfericas CERAUNICO",
+                    "nivel": "bajo",
+                    "detalle": "Densidad maxima referencial: 1 rayos\/km2\/año; nivel muy bajo; Exposicion baja; mantener criterios normativos de proteccion."
+                }
+            ],
+            "comentario": "Afectaciones preliminares identificadas con capas cargadas."
+        },
+        "redes_distribucion": {
+            "mt_intersecta": 0,
+            "sed_cercanas": 0,
+            "lt_intersecta": 5,
+            "muestras_mt": [],
+            "muestras_sed": [],
+            "comentario": "No se identificaron redes MT\/SED con las capas cargadas."
+        },
+        "visita_campo": {
+            "dias_recomendados": 1,
+            "ratio": "1 dia base por cada 25 km de ruta, + ajustes por restricciones, accesos e interferencias.",
+            "actividades": [
+                "Reconocimiento de inicio, fin, accesos, cruces y puntos de posible conexion.",
+                "Validacion de interferencias con redes existentes, predios y servidumbres.",
+                "Revision visual de restricciones culturales, ambientales y pendientes criticas."
+            ]
+        },
+        "coordenadas_muestra": [
+            [
+                -9.9017,
+                -76.9418
+            ],
+            [
+                -9.902,
+                -76.9404
+            ],
+            [
+                -9.9014,
+                -76.9398
+            ],
+            [
+                -9.901,
+                -76.9386
+            ],
+            [
+                -9.9015,
+                -76.9363
+            ],
+            [
+                -9.8994,
+                -76.9334
+            ],
+            [
+                -9.8969,
+                -76.9334
+            ],
+            [
+                -9.8950224,
+                -76.9336816
+            ]
+        ],
+        "_analysis_cache": {
+            "key": "23e98cda12dc8eb0f191e6ded2b236b58d8800c9",
+            "hit": true,
+            "created_at": "2026-07-22T17:59:51-05:00"
+        }
+    },
+    "analysis_cache_key": "23e98cda12dc8eb0f191e6ded2b236b58d8800c9",
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                -9.9017,
+                -76.9418
+            ],
+            [
+                -9.902,
+                -76.9404
+            ],
+            [
+                -9.9014,
+                -76.9398
+            ],
+            [
+                -9.901,
+                -76.9386
+            ],
+            [
+                -9.9015,
+                -76.9363
+            ],
+            [
+                -9.8994,
+                -76.9334
+            ],
+            [
+                -9.8969,
+                -76.9334
+            ],
+            [
+                -9.8950224,
+                -76.9336816
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "invitado",
+        "name": "COMPAÑIA MINERA SANTA LUISA S.A.",
+        "line_type": "distribucion",
+        "voltage_kv": 22.9,
+        "circuit": "simple",
+        "template": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-07-22 18:06:51",
+        "preserve_template_body": true,
+        "report_kind": "temp_line"
+    }
+}

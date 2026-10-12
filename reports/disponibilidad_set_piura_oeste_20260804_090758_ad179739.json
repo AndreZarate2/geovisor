@@ -1,0 +1,1282 @@
+{
+    "status": "success",
+    "subestacion": {
+        "codigo": "S00212",
+        "nombre": "PIURA OESTE"
+    },
+    "empresa_consulta": "RED DE ENERGÍA DEL PERÚ S.A.",
+    "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+    "archivos_quinceminutales": [
+        "RED DE ENERGIA DEL PERU.xlsx"
+    ],
+    "hojas": [
+        "RED DE ENERGIA DEL PERU.xlsx::REP_2025P2_MedicionTransformado",
+        "RED DE ENERGIA DEL PERU.xlsx::REP_2025P3_MedicionTransformado"
+    ],
+    "filas": [
+        {
+            "transformador": "T117-261",
+            "transformador_mapa": "T117-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0002",
+            "tension_kv": "220",
+            "tension_transformador_kv": "220",
+            "potencia_transformador_mva": "100",
+            "capacidad_mva": 100,
+            "capacidad_total_mva": 260,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 79.43,
+            "demanda_max_mw": 72.373,
+            "factor_potencia": 0.9112,
+            "fecha_maxima": "2025-05-06 15:00",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": 20.57,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T117-261",
+            "transformador_mapa": "T117-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0084",
+            "tension_kv": "60",
+            "tension_transformador_kv": "60",
+            "potencia_transformador_mva": "100",
+            "capacidad_mva": 100,
+            "capacidad_total_mva": 260,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 63.6486,
+            "demanda_max_mw": 58.9571,
+            "factor_potencia": 0.9263,
+            "fecha_maxima": "2025-05-06 12:45",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": 36.3514,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T117-261",
+            "transformador_mapa": "T117-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0172",
+            "tension_kv": "10",
+            "tension_transformador_kv": "10",
+            "potencia_transformador_mva": "60",
+            "capacidad_mva": 60,
+            "capacidad_total_mva": 260,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Terciaria",
+            "capacidad_nota": "Potencia nominal por barra (Terciaria)",
+            "demanda_max_mva": 21.8819,
+            "demanda_max_mw": 21.1584,
+            "factor_potencia": 0.9669,
+            "fecha_maxima": "2025-05-15 19:45",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": 38.1181,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T15-261",
+            "transformador_mapa": "T15-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0002",
+            "tension_kv": "220",
+            "tension_transformador_kv": "220",
+            "potencia_transformador_mva": "40",
+            "capacidad_mva": 40,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 42.8913,
+            "demanda_max_mw": 39.4529,
+            "factor_potencia": 0.9198,
+            "fecha_maxima": "2025-10-25 15:15",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": -2.8913,
+            "estado": "Sobrecarga",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T15-261",
+            "transformador_mapa": "T15-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0084",
+            "tension_kv": "60",
+            "tension_transformador_kv": "60",
+            "potencia_transformador_mva": "40",
+            "capacidad_mva": 40,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 40.9012,
+            "demanda_max_mw": 38.5077,
+            "factor_potencia": 0.9415,
+            "fecha_maxima": "2025-10-25 15:15",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": -0.9012,
+            "estado": "Sobrecarga",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T32-261",
+            "transformador_mapa": "T32-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0002",
+            "tension_kv": "220",
+            "tension_transformador_kv": "220",
+            "potencia_transformador_mva": "40",
+            "capacidad_mva": 40,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 0,
+            "demanda_max_mw": 0,
+            "factor_potencia": null,
+            "fecha_maxima": "2025-05-01 00:15",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": 40,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T32-261",
+            "transformador_mapa": "T32-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "B0084",
+            "tension_kv": "60",
+            "tension_transformador_kv": "60",
+            "potencia_transformador_mva": "40",
+            "capacidad_mva": 40,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 0,
+            "demanda_max_mw": 0,
+            "factor_potencia": null,
+            "fecha_maxima": "2025-05-01 00:15",
+            "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+            "disponible_mva": 40,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T15-261",
+            "transformador_mapa": "T15-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "Sin medicion 10 kV",
+            "tension_kv": "10",
+            "tension_transformador_kv": "10",
+            "potencia_transformador_mva": "24",
+            "capacidad_mva": 24,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Terciaria",
+            "capacidad_nota": "Terciaria 10 kV sin medicion quinceminutal",
+            "demanda_max_mva": null,
+            "demanda_max_mw": null,
+            "factor_potencia": null,
+            "fecha_maxima": null,
+            "archivo_quinceminutal": null,
+            "disponible_mva": null,
+            "estado": "Sin medicion",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "sin_medicion_quinceminutal": true,
+            "empresa_fuente_capacidad": "REP"
+        },
+        {
+            "transformador": "T32-261",
+            "transformador_mapa": "T32-261",
+            "empresa_capacidad": "Red de Energía del Perú",
+            "subestacion_capacidad": "PIURA OESTE",
+            "barra": "Sin medicion 10 kV",
+            "tension_kv": "10",
+            "tension_transformador_kv": "10",
+            "potencia_transformador_mva": "24",
+            "capacidad_mva": 24,
+            "capacidad_total_mva": 104,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Terciaria",
+            "capacidad_nota": "Terciaria 10 kV sin medicion quinceminutal",
+            "demanda_max_mva": null,
+            "demanda_max_mw": null,
+            "factor_potencia": null,
+            "fecha_maxima": null,
+            "archivo_quinceminutal": null,
+            "disponible_mva": null,
+            "estado": "Sin medicion",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "sin_medicion_quinceminutal": true,
+            "empresa_fuente_capacidad": "REP"
+        }
+    ],
+    "resumen_transformadores": [
+        {
+            "transformador": "T117-261",
+            "transformador_mapa": "T117-261",
+            "capacidad_total_mva": 260,
+            "demanda_total_mva": 164.9605,
+            "disponible_total_mva": 95.0395,
+            "estado": "Disponible",
+            "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+        },
+        {
+            "transformador": "T15-261",
+            "transformador_mapa": "T15-261",
+            "capacidad_total_mva": 104,
+            "demanda_total_mva": 83.7925,
+            "disponible_total_mva": 20.2075,
+            "estado": "Disponible",
+            "criterio": "Incluye devanados sin medicion quinceminutal; se conserva su capacidad nominal"
+        },
+        {
+            "transformador": "T32-261",
+            "transformador_mapa": "T32-261",
+            "capacidad_total_mva": 104,
+            "demanda_total_mva": 0,
+            "disponible_total_mva": 104,
+            "estado": "Disponible",
+            "criterio": "Incluye devanados sin medicion quinceminutal; se conserva su capacidad nominal"
+        }
+    ],
+    "transformadores_maestro": [
+        {
+            "codigo_transformador": "T117-261",
+            "subestacion": "PIURA OESTE",
+            "empresa": "Red de Energía del Perú"
+        },
+        {
+            "codigo_transformador": "T15-261",
+            "subestacion": "PIURA OESTE",
+            "empresa": "Red de Energía del Perú"
+        },
+        {
+            "codigo_transformador": "T32-261",
+            "subestacion": "PIURA OESTE",
+            "empresa": "Red de Energía del Perú"
+        }
+    ],
+    "barras_maestro": [
+        {
+            "codigo_barra": "B0002",
+            "nombre_barra": "Piura Oeste",
+            "tension": "220"
+        },
+        {
+            "codigo_barra": "B0084",
+            "nombre_barra": "Piura Oeste",
+            "tension": "60"
+        },
+        {
+            "codigo_barra": "B0172",
+            "nombre_barra": "Piura Oeste",
+            "tension": "10"
+        }
+    ],
+    "capacidad_excel_transformadores": [
+        {
+            "empresa": "REP",
+            "empresa_norm": "rep",
+            "subestacion": "PIURA OESTE",
+            "subestacion_norm": "piura oeste",
+            "codigo": "T15-261",
+            "codigo_norm": "t15 261",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 40,
+                    "potencia_texto": "40"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 40,
+                    "potencia_texto": "40"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 24,
+                    "potencia_texto": "24"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "REP",
+            "empresa_norm": "rep",
+            "subestacion": "PIURA OESTE",
+            "subestacion_norm": "piura oeste",
+            "codigo": "T32-261",
+            "codigo_norm": "t32 261",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 40,
+                    "potencia_texto": "40"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 40,
+                    "potencia_texto": "40"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 24,
+                    "potencia_texto": "24"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "REP",
+            "empresa_norm": "rep",
+            "subestacion": "PIURA OESTE",
+            "subestacion_norm": "piura oeste",
+            "codigo": "T117-261",
+            "codigo_norm": "t117 261",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 100,
+                    "potencia_texto": "100"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 100,
+                    "potencia_texto": "100"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 60,
+                    "potencia_texto": "60"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        }
+    ],
+    "capacidad_mapa_sein": {
+        "id_se": "195",
+        "nombre": "PIURA OESTE",
+        "empresa": "REP",
+        "tension": "220",
+        "lat": "-5.169177",
+        "lng": "-80.699148",
+        "transformadores": [
+            {
+                "codigo": "T15-261",
+                "tipo": "Trifasico",
+                "anio_poc": "1995",
+                "tension_kv": "220\/60\/10",
+                "potencia_mva": "50\/50\/30",
+                "fuente": "MapaSEIN OSINERGMIN"
+            },
+            {
+                "codigo": "T32-261",
+                "tipo": "",
+                "anio_poc": "1997",
+                "tension_kv": "220\/60\/10",
+                "potencia_mva": "50\/50\/30",
+                "fuente": "MapaSEIN OSINERGMIN"
+            },
+            {
+                "codigo": "T83-261",
+                "tipo": "Trifasico",
+                "anio_poc": "2010",
+                "tension_kv": "220\/60\/10",
+                "potencia_mva": "100\/100\/60",
+                "fuente": "MapaSEIN OSINERGMIN"
+            },
+            {
+                "codigo": "T117-261",
+                "tipo": "Trifasico",
+                "anio_poc": "2019",
+                "tension_kv": "220\/60\/10",
+                "potencia_mva": "100\/100\/60",
+                "fuente": "MapaSEIN OSINERGMIN"
+            }
+        ],
+        "nombre_norm": "piura oeste",
+        "empresa_norm": "rep"
+    },
+    "consumo_serie": [],
+    "consumo_mensual": [
+        {
+            "periodo": "2025-05",
+            "mes": "Mayo 2025",
+            "fecha": "2025-05-06 15:00",
+            "mva": 235.8541,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-06",
+            "mes": "Junio 2025",
+            "fecha": "2025-06-12 15:00",
+            "mva": 196.8194,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-07",
+            "mes": "Julio 2025",
+            "fecha": "2025-07-02 12:45",
+            "mva": 179.7494,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-08",
+            "mes": "Agosto 2025",
+            "fecha": "2025-08-26 12:15",
+            "mva": 158.587,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-09",
+            "mes": "Setiembre 2025",
+            "fecha": "2025-09-15 13:45",
+            "mva": 186.2006,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-10",
+            "mes": "Octubre 2025",
+            "fecha": "2025-10-21 15:45",
+            "mva": 212.5001,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-11",
+            "mes": "Noviembre 2025",
+            "fecha": "2025-11-15 13:00",
+            "mva": 185.1077,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-12",
+            "mes": "Diciembre 2025",
+            "fecha": "2025-12-02 15:00",
+            "mva": 212.9577,
+            "archivos": [
+                "RED DE ENERGIA DEL PERU.xlsx"
+            ]
+        }
+    ],
+    "consumo_mensual_por_archivo": [
+        {
+            "archivo": "RED DE ENERGIA DEL PERU.xlsx",
+            "mensual": [
+                {
+                    "periodo": "2025-05",
+                    "mes": "Mayo 2025",
+                    "fecha": "2025-05-06 15:00",
+                    "mva": 235.8541
+                },
+                {
+                    "periodo": "2025-06",
+                    "mes": "Junio 2025",
+                    "fecha": "2025-06-12 15:00",
+                    "mva": 196.8194
+                },
+                {
+                    "periodo": "2025-07",
+                    "mes": "Julio 2025",
+                    "fecha": "2025-07-02 12:45",
+                    "mva": 179.7494
+                },
+                {
+                    "periodo": "2025-08",
+                    "mes": "Agosto 2025",
+                    "fecha": "2025-08-26 12:15",
+                    "mva": 158.587
+                },
+                {
+                    "periodo": "2025-09",
+                    "mes": "Setiembre 2025",
+                    "fecha": "2025-09-15 13:45",
+                    "mva": 186.2006
+                },
+                {
+                    "periodo": "2025-10",
+                    "mes": "Octubre 2025",
+                    "fecha": "2025-10-21 15:45",
+                    "mva": 212.5001
+                },
+                {
+                    "periodo": "2025-11",
+                    "mes": "Noviembre 2025",
+                    "fecha": "2025-11-15 13:00",
+                    "mva": 185.1077
+                },
+                {
+                    "periodo": "2025-12",
+                    "mes": "Diciembre 2025",
+                    "fecha": "2025-12-02 15:00",
+                    "mva": 212.9577
+                }
+            ]
+        }
+    ],
+    "ultimo_registro": {
+        "fecha": "2025-12-31 23:45",
+        "mva": 120.9413,
+        "archivo": "RED DE ENERGIA DEL PERU.xlsx"
+    },
+    "medicion_quinceminutal": "ok",
+    "mensaje_medicion": null,
+    "mensaje": null,
+    "pdf": {
+        "archivo": "UNIFILAR_ABRIL_2026.pdf",
+        "url": "uploads\/pdf\/UNIFILAR_ABRIL_2026.pdf",
+        "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+        "busqueda": "PIURA OESTE"
+    },
+    "pit": {
+        "status": "success",
+        "message": "",
+        "file": "Anexos_Informe PIT_Public. Jul_2026.xlsx",
+        "file_mtime": "2026-08-03T10:56:32",
+        "sheets_scanned": 8,
+        "total_matches": 15,
+        "criterio": "PIT filtrado por nombre explicito de SET\/instalacion y empresa cuando esta disponible; se excluyen coincidencias bajas.",
+        "departamento_consulta": "PIURA",
+        "summary": {
+            "1": 6,
+            "4": 1,
+            "En servicio": 7,
+            "Sin estado": 1
+        },
+        "future_transformer": true,
+        "future_transformers": [
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 46,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "14",
+                "elemento": "Transformador de Potencia 220\/60\/10kV-100 MVA",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "TP-220060010-100CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 100,
+                "potencias_mva": [
+                    100
+                ],
+                "tension_kv": "220\/60\/10",
+                "tensiones_kv": [
+                    "220\/60\/10",
+                    "220"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 19 (R.M. 220-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-05-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            }
+        ],
+        "matches": [
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 323,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Transformador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBTR",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 324,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Acoplamiento 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBLA",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 325,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBAL",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 326,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBAL",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 327,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBAL",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 2",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                "pit_etiqueta": "PIT 2021-2025",
+                "fila": 328,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "5",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT \"Piura Oeste\"",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COMCISBAL",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "N° 001-2022-ENOSA",
+                "anio_previsto": "2025",
+                "anio_reprogramado": "2025",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-03-15",
+                "fecha_puesta_servicio": "2022-01-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 45,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "14",
+                "elemento": "Celda de Transformador 220 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-220COU1C1ESBTR4",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "220",
+                "tensiones_kv": [
+                    "220"
+                ],
+                "spec_source": "texto",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 19 (R.M. 220-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-05-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 46,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "14",
+                "elemento": "Transformador de Potencia 220\/60\/10kV-100 MVA",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "TP-220060010-100CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 100,
+                "potencias_mva": [
+                    100
+                ],
+                "tension_kv": "220\/60\/10",
+                "tensiones_kv": [
+                    "220\/60\/10",
+                    "220"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 19 (R.M. 220-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-05-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 47,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "14",
+                "elemento": "Celda de Transformador 60 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-060COU1C1ESBTR3",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 19 (R.M. 220-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-05-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 48,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "14",
+                "elemento": "Celda de Transformador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COU1MCISBTR1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 19 (R.M. 220-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-05-14",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 63,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "18",
+                "elemento": "Celda de Línea 60 kV a SET Grau",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-060COU1C1ESBLI2",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "4",
+                "estado_raw": "4",
+                "avance": "4",
+                "acta": "",
+                "anio_previsto": "2018",
+                "anio_reprogramado": "2018",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 85,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "A",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COU1MCISBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "APES 001-2022-ENOSA",
+                "anio_previsto": "2018",
+                "anio_reprogramado": "2018",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-11-30",
+                "fecha_puesta_servicio": "2022-11-08",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                "pit_etiqueta": "PIT 2017-2021",
+                "fila": 92,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "A",
+                "elemento": "Celda de Alimentador 10 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COU1MCISBAL1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "10",
+                "tensiones_kv": [
+                    "10"
+                ],
+                "spec_source": "texto",
+                "estado": "1",
+                "estado_raw": "1",
+                "avance": "1",
+                "acta": "APES 001-2022-ENOSA",
+                "anio_previsto": "2021",
+                "anio_reprogramado": "2021",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2022-11-30",
+                "fecha_puesta_servicio": "2022-11-08",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                "pit_etiqueta": "PIT 2013-2017",
+                "fila": 496,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "1",
+                "proyecto": "",
+                "elemento": "Celda de Acoplamiento",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT PIURA OESTE",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-010COU1MCISBLA1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "APES 02-2015-ENOSA",
+                "anio_previsto": "2013",
+                "anio_reprogramado": "2013",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "2016-03-21",
+                "fecha_puesta_servicio": "2015-03-01",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 6",
+                "pit_titulo": "DECRETO DE URGENCIA N° 048-2021 - ANEXO 1 - RELACIÓN DE PROYECTOS",
+                "pit_etiqueta": "Relacion de proyectos - DU 048-2021",
+                "fila": 123,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion"
+                ],
+                "empresa": "Electronoroeste",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "departamento_consulta": "PIURA",
+                "area_demanda": "",
+                "proyecto": "",
+                "elemento": "Celda de Línea 60 kV a SET Grau",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT\/MT Piura Oeste",
+                "subestacion_norm": "PIURA OESTE",
+                "modulo": "CE-060COU1C1ESBLI2",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2018",
+                "anio_reprogramado": "2018",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            }
+        ],
+        "comentario": "La SET aparece con sobrecarga en el analisis de demanda, pero el PIT registra transformador futuro asociado: Transformador de Potencia 220\/60\/10kV-100 MVA - 1 MVA - 220\/60\/10 kV - anio 2017 - 1 Verificar cronograma, titular y puesta en servicio antes de tomar decision de conexion."
+    },
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "Piura"
+        ],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-08-04 09:07:58",
+    "template": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

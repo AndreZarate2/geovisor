@@ -1,0 +1,1342 @@
+{
+    "title": "Informe del Asistente IA territorial",
+    "question": "Dame la lista de atributos de lo que puedes elaborar en la plataforma",
+    "answer": "Puedo responder con la informacion local del geovisor y generar PDF, pero no pude completar la consulta con OpenAI en este momento. Detalle tecnico: No hay claves de OpenAI configuradas en variables de entorno..\nPuede pedirme graficar zonas por departamento o ciudad, evaluar generacion y distribucion, o exportar un informe PDF.",
+    "generated_at": "2026-06-15 15:13:16",
+    "user": "admin",
+    "opportunities": [
+        {
+            "nombre": "Zona sugerida - TUMBES \/ QUEBRADA GRANDE",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -3.623305,
+            "lng": -80.303423,
+            "departamento": "TUMBES",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -3.687084,
+                    "lng": -80.312576
+                },
+                {
+                    "lat": -3.649617,
+                    "lng": -80.347858
+                },
+                {
+                    "lat": -3.606324,
+                    "lng": -80.369078
+                },
+                {
+                    "lat": -3.588565,
+                    "lng": -80.335683
+                },
+                {
+                    "lat": -3.577732,
+                    "lng": -80.289479
+                },
+                {
+                    "lat": -3.592412,
+                    "lng": -80.250289
+                },
+                {
+                    "lat": -3.629528,
+                    "lng": -80.248182
+                },
+                {
+                    "lat": -3.664308,
+                    "lng": -80.270402
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 19,
+            "capas_externas_cercanas": 4,
+            "evidencia_productiva": 7,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "QUEBRADA GRANDE",
+                    "distancia_km": 6.95,
+                    "area_ha": 337.9
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "CERRO BLANCO",
+                    "distancia_km": 7.45,
+                    "area_ha": 882.3
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "TUTUMO",
+                    "distancia_km": 7.54,
+                    "area_ha": 2001.14
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "NUEVA ESPERANZA",
+                    "distancia_km": 8.49,
+                    "area_ha": 1220.71
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "CRUZ BLANCA",
+                    "distancia_km": 9.76,
+                    "area_ha": 149.56
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 6.17,
+            "demanda_kw_referencia": 25000,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "TUMBES",
+                "empresa": "ELECTRONOROESTE",
+                "lat": -3.575508,
+                "lng": -80.447313,
+                "distancia_km": 16.8,
+                "capacidad_total_mva": 162,
+                "demanda_total_mva": 52.8491,
+                "disponible_total_mva": 109.1509,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "TUMBES",
+                    "empresa": "ELECTRONOROESTE",
+                    "distancia_km": 16.8,
+                    "disponible_total_mva": 109.1509
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 83,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 71,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 38,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - ZORRITOS \/ UÑA DE GATO",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -3.534227,
+            "lng": -80.131071,
+            "departamento": "TUMBES",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -3.600039,
+                    "lng": -80.128339
+                },
+                {
+                    "lat": -3.597989,
+                    "lng": -80.175135
+                },
+                {
+                    "lat": -3.549562,
+                    "lng": -80.186254
+                },
+                {
+                    "lat": -3.510845,
+                    "lng": -80.180834
+                },
+                {
+                    "lat": -3.498326,
+                    "lng": -80.16146
+                },
+                {
+                    "lat": -3.477389,
+                    "lng": -80.127927
+                },
+                {
+                    "lat": -3.46688,
+                    "lng": -80.079041
+                },
+                {
+                    "lat": -3.524735,
+                    "lng": -80.058998
+                },
+                {
+                    "lat": -3.557843,
+                    "lng": -80.053482
+                },
+                {
+                    "lat": -3.60982,
+                    "lng": -80.092771
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 20,
+            "capas_externas_cercanas": 2,
+            "evidencia_productiva": 2,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "UÑA DE GATO",
+                    "distancia_km": 9.61,
+                    "area_ha": 401.42
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "CUCHARETA BAJA",
+                    "distancia_km": 10.6,
+                    "area_ha": 424.72
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 7.06,
+            "demanda_kw_referencia": 25000,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "ZORRITOS",
+                "empresa": "ELECTRONOROESTE",
+                "lat": -3.672197,
+                "lng": -80.661933,
+                "distancia_km": 60.9,
+                "capacidad_total_mva": 279.6,
+                "demanda_total_mva": 183.3161,
+                "disponible_total_mva": 96.2839,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "ZORRITOS",
+                    "empresa": "ELECTRONOROESTE",
+                    "distancia_km": 60.9,
+                    "disponible_total_mva": 96.2839
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 83,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 69,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 38,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - LOMERA \/ CHANCAYLLO",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -11.379876,
+            "lng": -77.323988,
+            "departamento": "LIMA",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -11.393877,
+                    "lng": -77.374717
+                },
+                {
+                    "lat": -11.357092,
+                    "lng": -77.354795
+                },
+                {
+                    "lat": -11.340029,
+                    "lng": -77.317488
+                },
+                {
+                    "lat": -11.356924,
+                    "lng": -77.278181
+                },
+                {
+                    "lat": -11.396224,
+                    "lng": -77.292917
+                },
+                {
+                    "lat": -11.426194,
+                    "lng": -77.312255
+                },
+                {
+                    "lat": -11.415234,
+                    "lng": -77.343474
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 20,
+            "capas_externas_cercanas": 2,
+            "evidencia_productiva": 3,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "CHANCAYLLO",
+                    "distancia_km": 5.84,
+                    "area_ha": 1605.51
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "RETES NATURALES",
+                    "distancia_km": 9.99,
+                    "area_ha": 2888.2
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "LA ESPERANZA",
+                    "distancia_km": 10.04,
+                    "area_ha": 3636.42
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4.68,
+            "demanda_kw_referencia": 25000,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "LOMERA",
+                "empresa": "CONENHUA",
+                "lat": -11.43339,
+                "lng": -77.274687,
+                "distancia_km": 8,
+                "capacidad_total_mva": 175,
+                "demanda_total_mva": 112.0515,
+                "disponible_total_mva": 62.9485,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "LOMERA",
+                    "empresa": "CONENHUA",
+                    "distancia_km": 8,
+                    "disponible_total_mva": 62.9485
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 83,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 69,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 38,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - LOS HEROES \/ CALANA",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -17.998939,
+            "lng": -70.121709,
+            "departamento": "TACNA",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -17.966676,
+                    "lng": -70.095053
+                },
+                {
+                    "lat": -17.991442,
+                    "lng": -70.08919
+                },
+                {
+                    "lat": -18.017406,
+                    "lng": -70.087898
+                },
+                {
+                    "lat": -18.047879,
+                    "lng": -70.100587
+                },
+                {
+                    "lat": -18.048852,
+                    "lng": -70.130779
+                },
+                {
+                    "lat": -18.02118,
+                    "lng": -70.155591
+                },
+                {
+                    "lat": -17.997303,
+                    "lng": -70.163629
+                },
+                {
+                    "lat": -17.970905,
+                    "lng": -70.155381
+                },
+                {
+                    "lat": -17.956194,
+                    "lng": -70.134446
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 19,
+            "capas_externas_cercanas": 0,
+            "evidencia_productiva": 2,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "CALANA",
+                    "distancia_km": 6.83,
+                    "area_ha": 1008.05
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "POCOLLAY",
+                    "distancia_km": 9.99,
+                    "area_ha": 502.68
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4.5,
+            "demanda_kw_referencia": 25000,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "LOS HEROES",
+                "empresa": "ELECTROSUR",
+                "lat": -17.99981,
+                "lng": -70.316443,
+                "distancia_km": 20.6,
+                "capacidad_total_mva": 70,
+                "demanda_total_mva": 38.133,
+                "disponible_total_mva": 31.867,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "LOS HEROES",
+                    "empresa": "ELECTROSUR",
+                    "distancia_km": 20.6,
+                    "disponible_total_mva": 31.867
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 91,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 69,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 38,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - PUNO \/ SALLIHUA CALLEJON, CENTRO POBLADO ICHU",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -15.773823,
+            "lng": -69.952776,
+            "departamento": "PUNO",
+            "macro_region": "sierra",
+            "polygon": [
+                {
+                    "lat": -15.733621,
+                    "lng": -69.946205
+                },
+                {
+                    "lat": -15.738735,
+                    "lng": -69.917757
+                },
+                {
+                    "lat": -15.778698,
+                    "lng": -69.91067
+                },
+                {
+                    "lat": -15.804922,
+                    "lng": -69.928275
+                },
+                {
+                    "lat": -15.812124,
+                    "lng": -69.954416
+                },
+                {
+                    "lat": -15.798221,
+                    "lng": -69.97713
+                },
+                {
+                    "lat": -15.77488,
+                    "lng": -69.992508
+                },
+                {
+                    "lat": -15.747155,
+                    "lng": -69.973979
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 20,
+            "capas_externas_cercanas": 5,
+            "evidencia_productiva": 28,
+            "fuentes_productivas": [
+                "PRODUCE acuicultura continental"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "SALLIHUA CALLEJON, CENTRO POBLADO ICHU",
+                    "distancia_km": 8.57,
+                    "area_ha": 2
+                },
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "SALLIHUA CALLEJON, CENTRO POBLADO ICHU",
+                    "distancia_km": 8.66,
+                    "area_ha": 2
+                },
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "SECTOR WIRAJHOCHINCA, CENTRO POBLADO ICHU",
+                    "distancia_km": 8.85,
+                    "area_ha": 2
+                },
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "PARCIALIDAD SALLIHUA CALLEJON, CENTRO POBLADO ICHU",
+                    "distancia_km": 8.94,
+                    "area_ha": 2
+                },
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "CENTRO POBLADO ICHU",
+                    "distancia_km": 9.13,
+                    "area_ha": 1.5
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4.5,
+            "demanda_kw_referencia": 24728,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "PUNO",
+                "empresa": "REDESUR",
+                "lat": -15.831677,
+                "lng": -70.051618,
+                "distancia_km": 12.4,
+                "capacidad_total_mva": 52,
+                "demanda_total_mva": 22.9085,
+                "disponible_total_mva": 29.0915,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "PUNO",
+                    "empresa": "REDESUR",
+                    "distancia_km": 12.4,
+                    "disponible_total_mva": 29.0915
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "hidro",
+                "biomasa",
+                "eolica",
+                "termica"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 85,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 79,
+                    "prioridad": "Alta",
+                    "razon": "Buena opcion preliminar si existe caudal y desnivel aprovechable cerca de la zona.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 63,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 63,
+                    "prioridad": "Media",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - CHANCAY \/ PASAMAYO",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -11.658942,
+            "lng": -77.165176,
+            "departamento": "LIMA",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -11.650055,
+                    "lng": -77.206902
+                },
+                {
+                    "lat": -11.62628,
+                    "lng": -77.191499
+                },
+                {
+                    "lat": -11.62849,
+                    "lng": -77.151692
+                },
+                {
+                    "lat": -11.640425,
+                    "lng": -77.123988
+                },
+                {
+                    "lat": -11.673905,
+                    "lng": -77.137329
+                },
+                {
+                    "lat": -11.696839,
+                    "lng": -77.166284
+                },
+                {
+                    "lat": -11.687871,
+                    "lng": -77.188601
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 20,
+            "capas_externas_cercanas": 3,
+            "evidencia_productiva": 4,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola",
+                "PRODUCE acuicultura continental"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "PASAMAYO",
+                    "distancia_km": 8.39,
+                    "area_ha": 939.23
+                },
+                {
+                    "fuente": "PRODUCE acuicultura continental",
+                    "tipo": "acuicola",
+                    "nombre": "CHACRA Y MAR",
+                    "distancia_km": 8.42,
+                    "area_ha": 0.01
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "LAS SALINAS",
+                    "distancia_km": 9.99,
+                    "area_ha": 593.85
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "BOZA - AUCALLAMA",
+                    "distancia_km": 10.5,
+                    "area_ha": 2531.07
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4.5,
+            "demanda_kw_referencia": 21511,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "CHANCAY",
+                "empresa": "ENEL DISTRIBUCIÓN PERÚ",
+                "lat": -11.582577,
+                "lng": -77.260319,
+                "distancia_km": 13.4,
+                "capacidad_total_mva": 65,
+                "demanda_total_mva": 39.6927,
+                "disponible_total_mva": 25.3073,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "CHANCAY",
+                    "empresa": "ENEL DISTRIBUCIÓN PERÚ",
+                    "distancia_km": 13.4,
+                    "disponible_total_mva": 25.3073
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 83,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 70,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 41,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - CORRALES \/ PUERTO EL CURA ESTE",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -3.558196,
+            "lng": -80.36224,
+            "departamento": "TUMBES",
+            "macro_region": "costa",
+            "polygon": [
+                {
+                    "lat": -3.54835,
+                    "lng": -80.332287
+                },
+                {
+                    "lat": -3.569909,
+                    "lng": -80.332873
+                },
+                {
+                    "lat": -3.584791,
+                    "lng": -80.358486
+                },
+                {
+                    "lat": -3.586385,
+                    "lng": -80.382772
+                },
+                {
+                    "lat": -3.569196,
+                    "lng": -80.402444
+                },
+                {
+                    "lat": -3.536637,
+                    "lng": -80.391204
+                },
+                {
+                    "lat": -3.522948,
+                    "lng": -80.36588
+                },
+                {
+                    "lat": -3.523269,
+                    "lng": -80.344039
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 20,
+            "capas_externas_cercanas": 3,
+            "evidencia_productiva": 10,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "PUERTO EL CURA ESTE",
+                    "distancia_km": 2.77,
+                    "area_ha": 703.14
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "ALAN GARCIA",
+                    "distancia_km": 3.08,
+                    "area_ha": 913.61
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "QUEBRADA GRANDE",
+                    "distancia_km": 4.37,
+                    "area_ha": 337.9
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "QUEBRADA EL PADRE",
+                    "distancia_km": 4.98,
+                    "area_ha": 566.75
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "PUERTO EL CURA OESTE",
+                    "distancia_km": 5.94,
+                    "area_ha": 633.54
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4,
+            "demanda_kw_referencia": 13758,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "CORRALES",
+                "empresa": "ELECTRONOROESTE",
+                "lat": -3.605308,
+                "lng": -80.490547,
+                "distancia_km": 15.2,
+                "capacidad_total_mva": 26,
+                "demanda_total_mva": 9.8136,
+                "disponible_total_mva": 16.1864,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "CORRALES",
+                    "empresa": "ELECTRONOROESTE",
+                    "distancia_km": 15.2,
+                    "disponible_total_mva": 16.1864
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "eolica",
+                "biomasa",
+                "termica",
+                "hidro"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 83,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 78,
+                    "prioridad": "Alta",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 73,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 38,
+                    "prioridad": "Baja",
+                    "razon": "En selva baja o costa plana suele requerir estudios de caudal y salto; prioridad preliminar moderada o baja.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        },
+        {
+            "nombre": "Zona sugerida - PALLASCA \/ HUAROSACAPE",
+            "fuente": "Disponibilidad cacheada",
+            "lat": -8.287577,
+            "lng": -77.951863,
+            "departamento": "ANCASH",
+            "macro_region": "sierra",
+            "polygon": [
+                {
+                    "lat": -8.251167,
+                    "lng": -77.966726
+                },
+                {
+                    "lat": -8.248592,
+                    "lng": -77.938606
+                },
+                {
+                    "lat": -8.267643,
+                    "lng": -77.907392
+                },
+                {
+                    "lat": -8.294977,
+                    "lng": -77.914183
+                },
+                {
+                    "lat": -8.327342,
+                    "lng": -77.926167
+                },
+                {
+                    "lat": -8.319658,
+                    "lng": -77.957644
+                },
+                {
+                    "lat": -8.303687,
+                    "lng": -77.989955
+                },
+                {
+                    "lat": -8.270713,
+                    "lng": -77.995707
+                }
+            ],
+            "score": 100,
+            "viabilidad": "Alta",
+            "lineas_cercanas": 8,
+            "capas_externas_cercanas": 4,
+            "evidencia_productiva": 7,
+            "fuentes_productivas": [
+                "MIDAGRI superficie agricola"
+            ],
+            "muestras_productivas": [
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "HUAROSACAPE",
+                    "distancia_km": 3.98,
+                    "area_ha": 441.23
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "HUACASCHUQUE",
+                    "distancia_km": 5.61,
+                    "area_ha": 303.38
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "TABLA CHACA",
+                    "distancia_km": 6.44,
+                    "area_ha": 633.62
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "LACABAMBA",
+                    "distancia_km": 6.49,
+                    "area_ha": 901.95
+                },
+                {
+                    "fuente": "MIDAGRI superficie agricola",
+                    "tipo": "agricola",
+                    "nombre": "PALLASCA",
+                    "distancia_km": 6.49,
+                    "area_ha": 819.93
+                }
+            ],
+            "en_concesion_existente": false,
+            "radio_referencia_km": 4.5,
+            "demanda_kw_referencia": 11954,
+            "tramite_recomendado": "Concesión de distribución",
+            "set_referencia": {
+                "nombre": "PALLASCA",
+                "empresa": "HIDRANDINA",
+                "lat": -8.252918,
+                "lng": -78.000775,
+                "distancia_km": 6.6,
+                "capacidad_total_mva": 20.5,
+                "demanda_total_mva": 6.4366,
+                "disponible_total_mva": 14.0634,
+                "estado": "Disponible"
+            },
+            "sets_disponibles": [
+                {
+                    "nombre": "PALLASCA",
+                    "empresa": "HIDRANDINA",
+                    "distancia_km": 6.6,
+                    "disponible_total_mva": 14.0634
+                }
+            ],
+            "modo_suministro": "distribucion_desde_set_disponible",
+            "fuente_generacion_recomendada": "solar",
+            "fuentes_generacion_alternativas": [
+                "solar",
+                "hidro",
+                "biomasa",
+                "eolica",
+                "termica"
+            ],
+            "alternativas_generacion": [
+                {
+                    "fuente": "solar",
+                    "nombre": "Solar fotovoltaica",
+                    "score": 77,
+                    "prioridad": "Alta",
+                    "razon": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red.",
+                    "condicion": "Validar radiacion, area disponible, servidumbre y punto de conexion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "hidro",
+                    "nombre": "Hidroeléctrica",
+                    "score": 76,
+                    "prioridad": "Alta",
+                    "razon": "Buena opcion preliminar si existe caudal y desnivel aprovechable cerca de la zona.",
+                    "condicion": "Validar caudal, salto bruto\/neto, permisos de agua, ambiente y zona de captacion.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "biomasa",
+                    "nombre": "Biomasa",
+                    "score": 71,
+                    "prioridad": "Media",
+                    "razon": "Alternativa asociada a residuos agrícolas, agroindustriales o biomasa local; depende de volumen constante y logística.",
+                    "condicion": "Cuantificar residuos, humedad, transporte, estacionalidad y contrato de abastecimiento.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "eolica",
+                    "nombre": "Eólica",
+                    "score": 71,
+                    "prioridad": "Media",
+                    "razon": "Alternativa posible en costa, lomas o crestas andinas; requiere medicion anemometrica.",
+                    "condicion": "Instalar medicion de viento y revisar accesos para transporte de equipos.",
+                    "solicitada": false
+                },
+                {
+                    "fuente": "termica",
+                    "nombre": "Térmica\/respaldo",
+                    "score": 45,
+                    "prioridad": "Baja",
+                    "razon": "Opcion de respaldo o solucion aislada cuando no hay SET cercana o el recurso renovable no cubre continuidad.",
+                    "condicion": "Revisar combustible, costos operativos, emisiones, permisos y uso solo como respaldo\/hibrido.",
+                    "solicitada": false
+                }
+            ],
+            "razon_generacion": "Buena alternativa por potencial solar nacional y facilidad modular; requiere evaluar radiacion, sombra y acceso a red. Como existe SET disponible, evaluar generación como suministro complementario o proyecto híbrido con distribución local.",
+            "razon": "Polígono orgánico generado alrededor de evidencia productiva MIDAGRI\/PRODUCE, fuera de concesiones vigentes\/en trámite cargadas, cercano a SET con disponibilidad e infraestructura eléctrica. También incluye evaluación preliminar de generación local complementaria."
+        }
+    ],
+    "viewer": {
+        "capas_activas": [
+            {
+                "id": "SET_Operacion",
+                "nombre": "SET en Operacion",
+                "grupo": "",
+                "tipo": "point",
+                "proveedor": "archivo"
+            },
+            {
+                "id": "LT_Operacionm",
+                "nombre": "LT en Operacion",
+                "grupo": "",
+                "tipo": "line",
+                "proveedor": "archivo"
+            },
+            {
+                "id": "MIDAGRI_Departamentos",
+                "nombre": "Limites departamentales",
+                "grupo": "",
+                "tipo": "polygon",
+                "proveedor": "archivo"
+            }
+        ],
+        "total_capas_activas": 3,
+        "vista_mapa": {
+            "zoom": 13,
+            "centro": {
+                "lat": -17.862111746188074,
+                "lng": -70.60277938842775
+            },
+            "bounds": {
+                "norte": -17.807859041095902,
+                "sur": -17.916347901375264,
+                "este": -70.47094345092775,
+                "oeste": -70.73461532592775
+            }
+        },
+        "capas_indexadas": 1700,
+        "tiene_poligono_actual": false
+    },
+    "web": {
+        "enabled": true,
+        "available": false,
+        "summary": "La conexion a internet del asistente requiere OpenAI web_search, pero no hay claves configuradas en OPENAI_API_KEYS, OPENAI_API_KEY, OPENAI_API_KEY_1 u OPENAI_API_KEY_2. Se entrego respuesta local con la data del geovisor."
+    },
+    "sources": []
+}

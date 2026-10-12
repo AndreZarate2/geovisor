@@ -1,0 +1,301 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 192.7812,
+        "centro": {
+            "lat": -12.841275,
+            "lng": -76.388245
+        },
+        "demanda_kw_estimada": 23464,
+        "demanda_kw_usada": 23464,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 27,
+            "nivel": "Baja"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 232,
+            "max_m": 1123,
+            "promedio_m": 562,
+            "rango_m": 891,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 891 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "SAN VICENTE",
+                "empresa": "LUZ DEL SUR S.A.A.",
+                "lat": -13.074754,
+                "lng": -76.366017,
+                "distancia_km": 26.07,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "LUZ DEL SUR.xlsx",
+                "capacidad_total_mva": 50,
+                "demanda_total_mva": 80.1538,
+                "disponible_total_mva": -30.1538,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "CN-TRF1",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 25.0508,
+                        "disponible_total_mva": -0.0508,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "CN-TRF2",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 55.103,
+                        "disponible_total_mva": -30.103,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "CANTERA",
+                "empresa": "LUZ DEL SUR S.A.A.",
+                "lat": -13.061189,
+                "lng": -76.302656,
+                "distancia_km": 26.15,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "LUZ DEL SUR.xlsx",
+                "capacidad_total_mva": 75,
+                "demanda_total_mva": 75.9991,
+                "disponible_total_mva": -0.9991,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "CA-TRA1",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 29.2808,
+                        "disponible_total_mva": -4.2808,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "CA-TRA2",
+                        "capacidad_total_mva": 50,
+                        "demanda_total_mva": 46.7183,
+                        "disponible_total_mva": 3.2817,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "SET local",
+                "empresa": "",
+                "lat": -13.061189,
+                "lng": -76.302656,
+                "distancia_km": 26.15,
+                "dentro": false,
+                "fuente": "SET local",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: SET local"
+            },
+            {
+                "nombre": "LA CANTERA",
+                "empresa": "LUZ DEL SUR S.A.A.",
+                "lat": -13.061177,
+                "lng": -76.30254,
+                "distancia_km": 26.16,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "LUZ DEL SUR.xlsx",
+                "capacidad_total_mva": 75,
+                "demanda_total_mva": 75.9991,
+                "disponible_total_mva": -0.9991,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "CA-TRA1",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 29.2808,
+                        "disponible_total_mva": -4.2808,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "CA-TRA2",
+                        "capacidad_total_mva": 50,
+                        "demanda_total_mva": 46.7183,
+                        "disponible_total_mva": 3.2817,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "ASIA",
+                "empresa": "LUZ DEL SUR S.A.A.",
+                "lat": -12.714097,
+                "lng": -76.608028,
+                "distancia_km": 27.71,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "LUZ DEL SUR.xlsx",
+                "capacidad_total_mva": 328.33,
+                "demanda_total_mva": 107.0154,
+                "disponible_total_mva": 221.3146,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "AS-TRA1",
+                        "capacidad_total_mva": 328.33,
+                        "demanda_total_mva": 107.0154,
+                        "disponible_total_mva": 221.3146,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 0,
+            "lineas_intersectan": 4,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 3,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "Media tension": 1000,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "API externa: Prediccion agricola Piura": 194,
+                "API externa: Predios Olmos": 129,
+                "API externa: Predios Moquegua": 1000
+            }
+        },
+        "muestras": {
+            "sets": [],
+            "lineas": [
+                "LT ASIA-CANTERA",
+                "LT CHILCA- INDEPENDENCIA",
+                "LT local",
+                "LT local"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [
+                "Concesion OSINERGMIN",
+                "DISTRIBUCION LIMA SUR",
+                "DISTRIBUCION CAÑETE"
+            ],
+            "externas": []
+        },
+        "razones": [
+            "Cruzan o tocan lineas de transmision relevantes: LT ASIA-CANTERA, LT CHILCA- INDEPENDENCIA, LT local",
+            "Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.",
+            "Relieve estimado: alto, con variacion aproximada de 891 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: ASIA (221.3146 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-05-29 17:57:09\nArea: 192.7812 km2\nDemanda usada: 23464 kW (manual)\nTramite recomendado: Concesion de distribucion\nViabilidad: Baja (27\/100)\nRelieve: alto, con variacion aproximada de 891 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 232\/1123 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":0,\"lineas_intersectan\":4,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":3,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"Media tension\":1000,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"API externa: Prediccion agricola Piura\":194,\"API externa: Predios Olmos\":129,\"API externa: Predios Moquegua\":1000}}\nSET cercanas:\n- SAN VICENTE (LUZ DEL SUR S.A.A.), 26.07 km, cap. 50 MVA, demanda 80.1538 MVA, disponible -30.1538 MVA, estado Sobrecarga.\n- CANTERA (LUZ DEL SUR S.A.A.), 26.15 km, cap. 75 MVA, demanda 75.9991 MVA, disponible -0.9991 MVA, estado Sobrecarga.\n- SET local (sin empresa), 26.15 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LA CANTERA (LUZ DEL SUR S.A.A.), 26.16 km, cap. 75 MVA, demanda 75.9991 MVA, disponible -0.9991 MVA, estado Sobrecarga.\n- ASIA (LUZ DEL SUR S.A.A.), 27.71 km, cap. 328.33 MVA, demanda 107.0154 MVA, disponible 221.3146 MVA, estado Disponible.\nRazones:\n- Cruzan o tocan lineas de transmision relevantes: LT ASIA-CANTERA, LT CHILCA- INDEPENDENCIA, LT local\n- Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.\n- Relieve estimado: alto, con variacion aproximada de 891 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: ASIA (221.3146 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "## Informe ejecutivo: decisión entre concesión de distribución o convenio municipal\n\n### 1) Conclusión ejecutiva\n**La zona se orienta claramente a _concesión de distribución_, no a convenio municipal**, porque la **demanda usada es 23,464 kW**, muy por encima del **umbral de 500 kW**.  \nAdemás, el análisis geoespacial muestra **cruces con líneas de transmisión** y **superposición con concesiones vigentes o en trámite**, lo que obliga a una revisión regulatoria y de titularidad antes de cualquier decisión final.\n\n**Nivel de viabilidad actual:** **Baja (27\/100)**.\n\n---\n\n## 2) Hallazgos principales\n\n### 2.1 Demanda eléctrica y umbral regulatorio\n- **Demanda estimada\/usada:** 23,464 kW\n- **Umbral de referencia:** 500 kW\n\n**Resultado:**  \nLa demanda **supera ampliamente** el umbral. Por criterio técnico-regulatorio, esto **descarta el enfoque de convenio municipal** como alternativa principal y **sustenta una ruta de concesión de distribución**.\n\n---\n\n### 2.2 SET cercanas, capacidad y disponibilidad\nNo hay SET dentro del polígono ni se reportan SET realmente adyacentes en sentido inmediato. Las más cercanas están a **26–28 km**, lo que limita la utilidad de conexión directa simple.\n\n**SET cercanas reportadas:**\n- **SAN VICENTE** – 26.07 km  \n  - Capacidad total: **50 MVA**\n  - Demanda total: **80.1538 MVA**\n  - Disponible: **-30.1538 MVA**\n  - Estado: **Sobrecarga**\n- **CANTERA** – 26.15 km  \n  - Capacidad total: **75 MVA**\n  - Demanda total: **75.9991 MVA**\n  - Disponible: **-0.9991 MVA**\n  - Estado: **Sobrecarga**\n- **LA CANTERA** – 26.16 km  \n  - Capacidad total: **75 MVA**\n  - Demanda total: **75.9991 MVA**\n  - Disponible: **-0.9991 MVA**\n  - Estado: **Sobrecarga**\n- **ASIA** – 27.71 km  \n  - Capacidad total: **328.33 MVA**\n  - Demanda total: **107.0154 MVA**\n  - Disponible: **221.3146 MVA**\n  - Estado: **Disponible**\n\n**Lectura técnica:**\n- Las SET más próximas de la zona aparecen **sobrecargadas**.\n- **ASIA** sí muestra **holgura importante** y es la **mejor referencia de disponibilidad** entre las cercanas.\n- Sin embargo, **la distancia es relevante** y no reemplaza un estudio de alimentadores, servidumbres y puntos de conexión.\n\n**Disponibilidad eléctrica referencial:**  \n- **Limitada en las SET más cercanas**\n- **Positivamente disponible en ASIA**, pero con distancia significativa\n\n---\n\n### 2.3 Líneas y cruces\nEl indicador reporta:\n- **Líneas intersecan:** 4\n- **MT interseca:** 0\n- **SED dentro:** 0\n\n**Líneas mencionadas:**\n- **LT ASIA-CANTERA**\n- **LT CHILCA-INDEPENDENCIA**\n- **LT local**\n- **LT local**\n\n**Interpretación:**\n- Hay **interferencia o proximidad con líneas de transmisión relevantes**.\n- Esto puede implicar:\n  - restricciones de uso del suelo,\n  - necesidad de servidumbres,\n  - coordinación con titulares de infraestructura,\n  - mayor complejidad para trazos de red.\n\n---\n\n### 2.4 Concesiones y trámites\nEl sistema reporta:\n- **Concesiones intersectan: 3**\n- **Concesiones identificadas:**\n  - **Concesion OSINERGMIN**\n  - **DISTRIBUCION LIMA SUR**\n  - **DISTRIBUCION CAÑETE**\n\nAdemás, el texto indica:\n- **“Existe superposición con concesión vigente o en trámite; revisar titularidad y expediente.”**\n\n**Lectura regulatoria:**\n- La zona **no está libre de conflicto territorial-regulatorio**.\n- Antes de decidir concesión de distribución, debe verificarse:\n  - si el polígono cae dentro de un ámbito concesionado,\n  - si hay derechos superpuestos,\n  - el estado de expedientes en trámite,\n  - la compatibilidad con la planificación eléctrica y territorial.\n\n---\n\n### 2.5 Relieve y accesibilidad\n**Relieve reportado:**\n- Mínimo: **232 m**\n- Máximo: **1123 m**\n- Promedio: **562 m**\n- Rango: **891 m**\n- Riesgo: **alto**\n\n**Impacto técnico:**\n- El relieve es **muy variable**.\n- Puede encarecer:\n  - accesos,\n  - apertura de caminos,\n  - tendido de líneas,\n  - instalación de servidumbres,\n  - mantenimiento y operación.\n\n**Conclusión en relieve:**  \nEl terreno **eleva la complejidad y el costo de electrificación**, por lo que refuerza la cautela de la viabilidad.\n\n---\n\n### 2.6 Posible utilidad agrícola\nSe reportan capas externas en el sistema, pero:\n- **externas intersectan: 0**\n- **muestras externas: vacías**\n\n**Conclusión sobre uso agrícola:**\n- **No hay evidencia suficiente** en los datos entregados para afirmar utilidad agrícola, aptitud de suelos o priorización agroproductiva.\n- Aunque existen referencias a fuentes externas de predicción\/predios, **no se aportan valores georreferenciados para esta zona**.\n\nPor tanto, **no es posible sustentar una decisión por vocación agrícola con la información actual**.\n\n---\n\n## 3) Riesgos relevantes\n\n### Riesgo 1: Regulatorio y de titularidad\n- Superposición con concesiones vigentes o en trámite.\n- Puede impedir o condicionar la concesión.\n- Requiere revisión de expedientes y catastros oficiales.\n\n### Riesgo 2: Técnico-eléctrico\n- SET cercanas sobrecargadas.\n- Distancia de conexión no menor.\n- Posible necesidad de ampliaciones, nuevas líneas o refuerzos.\n\n### Riesgo 3: Ingeniería y costos\n- Relieve alto y variable.\n- Probable aumento de costos por servidumbres, accesos y tendido.\n\n### Riesgo"
+        }
+    },
+    "polygon": [
+        [
+            -12.802127634130157,
+            -76.42089843750001
+        ],
+        [
+            -12.807487007851737,
+            -76.43188476562501
+        ],
+        [
+            -12.823564445072128,
+            -76.46209716796876
+        ],
+        [
+            -12.863753543029683,
+            -76.47308349609376
+        ],
+        [
+            -12.895900187974187,
+            -76.47308349609376
+        ],
+        [
+            -12.898578888807252,
+            -76.44012451171876
+        ],
+        [
+            -12.909293405293251,
+            -76.38244628906251
+        ],
+        [
+            -12.914650491350866,
+            -76.33026123046876
+        ],
+        [
+            -12.890542700293034,
+            -76.30554199218751
+        ],
+        [
+            -12.844999430503087,
+            -76.29455566406251
+        ],
+        [
+            -12.82088494347866,
+            -76.29455566406251
+        ],
+        [
+            -12.8128462676122,
+            -76.31378173828126
+        ],
+        [
+            -12.810166651979856,
+            -76.34674072265626
+        ],
+        [
+            -12.804807335233294,
+            -76.37695312500001
+        ],
+        [
+            -12.804807335233294,
+            -76.39892578125001
+        ],
+        [
+            -12.8128462676122,
+            -76.40991210937501
+        ],
+        [
+            -12.8128462676122,
+            -76.41540527343751
+        ],
+        [
+            -12.8128462676122,
+            -76.41815185546876
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

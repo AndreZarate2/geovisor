@@ -1,0 +1,174 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-2234",
+    "nombre_consulta": "LT TRUJILLO NORTE- GUADALUPE",
+    "empresa_consulta": "RED DE ENERGÍA DEL PERÚ S.A.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "REP",
+        "nombre_linea": "L-2234 -> De \"TRUJILLO NORTE\" a \"GUADALUPE\"",
+        "codigo_linea": "L-2234",
+        "tension_nominal_kv": 220,
+        "mva_nominal": 152,
+        "carga_mva": 139.87,
+        "carga_amperaje": 363.48,
+        "fac_uso_pot": 92.02,
+        "fecha_maxima_demanda": "2025-12-29",
+        "hora_maxima_demanda": "10:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "REP",
+        "nombre_linea": "L-2234 -> De \"TRUJILLO NORTE\" a \"GUADALUPE\"",
+        "codigo_linea": "L-2234",
+        "tension_nominal_kv": 220,
+        "mva_nominal": 152,
+        "carga_mva": 139.87,
+        "carga_amperaje": 363.48,
+        "fac_uso_pot": 92.02,
+        "fecha_maxima_demanda": "2025-12-29",
+        "hora_maxima_demanda": "10:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "maxima_registrada": {
+        "codigo_empresa": "REP",
+        "nombre_linea": "L-2234 -> De \"TRUJILLO NORTE\" a \"GUADALUPE\"",
+        "codigo_linea": "L-2234",
+        "tension_nominal_kv": 220,
+        "mva_nominal": 152,
+        "carga_mva": 150.46,
+        "carga_amperaje": 396.19,
+        "fac_uso_pot": 98.987,
+        "fecha_maxima_demanda": "2025-08-06",
+        "hora_maxima_demanda": "11:15:00",
+        "periodo": "08\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "ultima_es_maxima": false,
+    "mensaje_maxima": null,
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-29",
+            "mva": 60.25,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-15",
+            "mva": 121.2,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-13",
+            "mva": 57.15,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-20",
+            "mva": 94.75,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-09",
+            "mva": 124.22,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-28",
+            "mva": 83.93,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-28",
+            "mva": 126.33,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-06",
+            "mva": 150.46,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-11",
+            "mva": 136,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-08",
+            "mva": 137,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-22",
+            "mva": 70.41,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-29",
+            "mva": 139.87,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        }
+    ],
+    "registros": 12,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "La Libertad"
+        ],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-07-03 16:42:55",
+    "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "admin"
+}

@@ -1,0 +1,232 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 153.852,
+        "centro": {
+            "lat": -13.825653,
+            "lng": -71.678673
+        },
+        "demanda_kw_estimada": 18572,
+        "demanda_kw_usada": 18572,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 43,
+            "nivel": "Baja"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 3724,
+            "max_m": 4586,
+            "promedio_m": 4156.8,
+            "rango_m": 862,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "HUARO",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.68721,
+                "lng": -71.63852,
+                "distancia_km": 15.99,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO SUR ESTE.xlsx",
+                "capacidad_total_mva": 6,
+                "demanda_total_mva": 4.8689,
+                "disponible_total_mva": 1.1311,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T11 - 321",
+                        "capacidad_total_mva": 6,
+                        "demanda_total_mva": 4.8689,
+                        "disponible_total_mva": 1.1311,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "OROPEZA",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.59352,
+                "lng": -71.76672,
+                "distancia_km": 27.51,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO SUR ESTE.xlsx",
+                "capacidad_total_mva": 0,
+                "demanda_total_mva": 4.4762,
+                "disponible_total_mva": 0,
+                "estado": "Disponible",
+                "transformadores": []
+            },
+            {
+                "nombre": "PLAN MAESTRO",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.54737,
+                "lng": -71.86734,
+                "distancia_km": 37.05,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PLAN MAESTRO"
+            },
+            {
+                "nombre": "QUENCORO",
+                "empresa": "RED DE ENERGÍA DEL PERÚ S.A.",
+                "lat": -13.54636,
+                "lng": -71.90649,
+                "distancia_km": 39.63,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+                "capacidad_total_mva": 20,
+                "demanda_total_mva": 18.0293,
+                "disponible_total_mva": 1.9707,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T47-131",
+                        "capacidad_total_mva": 20,
+                        "demanda_total_mva": 18.0293,
+                        "disponible_total_mva": 1.9707,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "QUENCORO NUEVA",
+                "empresa": "ATN 3 S.A.",
+                "lat": -13.54851,
+                "lng": -71.910603,
+                "distancia_km": 39.72,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: QUENCORO NUEVA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 0,
+            "lineas_intersectan": 1,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [],
+            "lineas": [
+                "LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": []
+        },
+        "razones": [
+            "Cruzan o tocan lineas de transmision relevantes: LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA",
+            "Relieve estimado: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: HUARO (1.1311 MVA libres), QUENCORO (1.9707 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-08 17:15:05\nArea: 153.852 km2\nDemanda usada: 18572 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Baja (43\/100)\nRelieve: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 3724\/4586 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":0,\"lineas_intersectan\":1,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- HUARO (ELECTRO SUR ESTE S.A.A.), 15.99 km, cap. 6 MVA, demanda 4.8689 MVA, disponible 1.1311 MVA, estado Disponible.\n- OROPEZA (ELECTRO SUR ESTE S.A.A.), 27.51 km, cap. 0 MVA, demanda 4.4762 MVA, disponible 0 MVA, estado Disponible.\n- PLAN MAESTRO (ELECTRO SUR ESTE S.A.A.), 37.05 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- QUENCORO (RED DE ENERGÍA DEL PERÚ S.A.), 39.63 km, cap. 20 MVA, demanda 18.0293 MVA, disponible 1.9707 MVA, estado Disponible.\n- QUENCORO NUEVA (ATN 3 S.A.), 39.72 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Cruzan o tocan lineas de transmision relevantes: LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA\n- Relieve estimado: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: HUARO (1.1311 MVA libres), QUENCORO (1.9707 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": false,
+            "model": "gpt-5.4-mini",
+            "message": "OpenAI no respondio correctamente.",
+            "http_code": 429,
+            "error": ""
+        }
+    },
+    "polygon": [
+        [
+            -13.889965,
+            -71.653923
+        ],
+        [
+            -13.886408,
+            -71.699627
+        ],
+        [
+            -13.863871,
+            -71.729053
+        ],
+        [
+            -13.835834,
+            -71.745075
+        ],
+        [
+            -13.803108,
+            -71.737777
+        ],
+        [
+            -13.771406,
+            -71.719531
+        ],
+        [
+            -13.759059,
+            -71.678097
+        ],
+        [
+            -13.779994,
+            -71.649411
+        ],
+        [
+            -13.794207,
+            -71.617886
+        ],
+        [
+            -13.827788,
+            -71.603152
+        ],
+        [
+            -13.870548,
+            -71.631868
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

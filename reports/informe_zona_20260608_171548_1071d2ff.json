@@ -1,0 +1,230 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 153.852,
+        "centro": {
+            "lat": -13.825653,
+            "lng": -71.678673
+        },
+        "demanda_kw_estimada": 18572,
+        "demanda_kw_usada": 18572,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 43,
+            "nivel": "Baja"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 3724,
+            "max_m": 4586,
+            "promedio_m": 4156.8,
+            "rango_m": 862,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "HUARO",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.68721,
+                "lng": -71.63852,
+                "distancia_km": 15.99,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO SUR ESTE.xlsx",
+                "capacidad_total_mva": 6,
+                "demanda_total_mva": 4.8689,
+                "disponible_total_mva": 1.1311,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T11 - 321",
+                        "capacidad_total_mva": 6,
+                        "demanda_total_mva": 4.8689,
+                        "disponible_total_mva": 1.1311,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "OROPEZA",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.59352,
+                "lng": -71.76672,
+                "distancia_km": 27.51,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO SUR ESTE.xlsx",
+                "capacidad_total_mva": 0,
+                "demanda_total_mva": 4.4762,
+                "disponible_total_mva": 0,
+                "estado": "Disponible",
+                "transformadores": []
+            },
+            {
+                "nombre": "PLAN MAESTRO",
+                "empresa": "ELECTRO SUR ESTE S.A.A.",
+                "lat": -13.54737,
+                "lng": -71.86734,
+                "distancia_km": 37.05,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PLAN MAESTRO"
+            },
+            {
+                "nombre": "QUENCORO",
+                "empresa": "RED DE ENERGÍA DEL PERÚ S.A.",
+                "lat": -13.54636,
+                "lng": -71.90649,
+                "distancia_km": 39.63,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+                "capacidad_total_mva": 20,
+                "demanda_total_mva": 18.0293,
+                "disponible_total_mva": 1.9707,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T47-131",
+                        "capacidad_total_mva": 20,
+                        "demanda_total_mva": 18.0293,
+                        "disponible_total_mva": 1.9707,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "QUENCORO NUEVA",
+                "empresa": "ATN 3 S.A.",
+                "lat": -13.54851,
+                "lng": -71.910603,
+                "distancia_km": 39.72,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: QUENCORO NUEVA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 0,
+            "lineas_intersectan": 1,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [],
+            "lineas": [
+                "LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": []
+        },
+        "razones": [
+            "Cruzan o tocan lineas de transmision relevantes: LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA",
+            "Relieve estimado: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: HUARO (1.1311 MVA libres), QUENCORO (1.9707 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-08 17:15:36\nArea: 153.852 km2\nDemanda usada: 18572 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Baja (43\/100)\nRelieve: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 3724\/4586 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":0,\"lineas_intersectan\":1,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- HUARO (ELECTRO SUR ESTE S.A.A.), 15.99 km, cap. 6 MVA, demanda 4.8689 MVA, disponible 1.1311 MVA, estado Disponible.\n- OROPEZA (ELECTRO SUR ESTE S.A.A.), 27.51 km, cap. 0 MVA, demanda 4.4762 MVA, disponible 0 MVA, estado Disponible.\n- PLAN MAESTRO (ELECTRO SUR ESTE S.A.A.), 37.05 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- QUENCORO (RED DE ENERGÍA DEL PERÚ S.A.), 39.63 km, cap. 20 MVA, demanda 18.0293 MVA, disponible 1.9707 MVA, estado Disponible.\n- QUENCORO NUEVA (ATN 3 S.A.), 39.72 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Cruzan o tocan lineas de transmision relevantes: LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA\n- Relieve estimado: alto, con variacion aproximada de 862 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: HUARO (1.1311 MVA libres), QUENCORO (1.9707 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "Informe ejecutivo para decisión: concesión de distribución o convenio municipal\n\nConclusión ejecutiva\nLa zona no es dable para convenio municipal bajo el umbral solicitado, porque la demanda máxima usada es 18,572 kW, muy por encima de 500 kW. Con ese criterio, corresponde orientar el caso a concesión de distribución. La viabilidad global calculada es baja (43\/100), principalmente por relieve alto y por la complejidad de la conexión territorial y eléctrica.\n\nHallazgos principales\n1. Demanda eléctrica\nLa demanda estimada\/usada es 18,572 kW.\nEsta cifra supera ampliamente el umbral de 500 kW.\nPor criterio operativo, esto sostiene trámite de concesión de distribución y descarta la lógica de convenio municipal para un servicio de menor escala.\n\n2. SET cercanas y capacidad\nSe identifican subestaciones cercanas relevantes, aunque no hay SET dentro del polígono.\nHUARO, a 15.99 km, con 1.1311 MVA disponibles.\nQUENCORO, a 39.63 km, con 1.9707 MVA disponibles.\nOROPEZA, a 27.51 km, figura como disponible, pero con capacidad total reportada en 0 MVA, por lo que no puede tomarse como respaldo firme sin revisión adicional.\nPLAN MAESTRO y QUENCORO NUEVA no tienen dato maestro validado en esta base.\nEn conjunto, hay disponibilidad referencial en SET cercanas, pero no suficiente evidencia para afirmar holgura robusta para una demanda de 18.572 MW sin estudio de alimentación, refuerzos y expansión de redes.\n\n3. Líneas e intersecciones\nSe reporta intersección o contacto con una línea de transmisión relevante: LT MACHUPICCHU - QUENCORO - ONOCORA - TINTAYA.\nNo se reportan cruces de media tensión ni sedes dentro del área.\nEste cruce es importante porque puede condicionar servidumbres, restricciones de trazo, permisos y costos de conexión.\n\n4. Relieve\nEl relieve es alto.\nMínimo 3,724 m, máximo 4,586 m, promedio 4,156.8 m.\nRango altimétrico: 862 m.\nEl propio sistema lo califica como riesgo alto.\nEsto sugiere mayores costos y complejidad para accesos, tendido, postes\/estructuras, servidumbres y operación\/mantenimiento.\n\n5. Concesiones y trámites\nNo se reportan concesiones de distribución que intersecten la zona.\nTampoco se reportan concesiones en trámite ni externas intersectando el polígono.\nEl trámite recomendado por el sistema es concesión de distribución.\nEsto es coherente con la demanda superior al umbral y con la ausencia de una figura simple de convenio municipal.\n\n6. Posible utilidad agrícola\nSí aparecen capas externas de PRODUCE y catastro acuícola, pero en los datos recibidos no hay un cruce específico del polígono con áreas agrícolas o acuícolas que permita concluir utilidad agrícola directa.\nPor tanto, no es posible sustentar un pronunciamiento agrícola con esta información.\nSi se requiere ese punto, hace falta revisar capas de uso de suelo, suelos agrícolas, derechos de agua y compatibilidad territorial.\n\nDisponibilidad eléctrica\nLa disponibilidad eléctrica referencial cercana existe, pero es limitada:\nHUARO: 1.1311 MVA libres.\nQUENCORO: 1.9707 MVA libres.\nEn términos prácticos, esto no significa capacidad garantizada para atender la demanda total de 18,572 kW de la zona, sino solo una referencia preliminar de holgura en barras o transformadores reportados.\nDado el tamaño de la demanda, lo razonable es asumir que se requerirá evaluación de reforzamiento de red, posibles nuevas alimentaciones y verificación de capacidad de evacuación.\n\nRelieve\nEl relieve es uno de los factores más desfavorables del expediente.\nLa amplitud altimétrica de 862 m puede afectar:\ntrazado de redes,\ncostos de obras civiles,\ndistancias eléctricas y servidumbres,\naccesibilidad para construcción y mantenimiento.\nEste componente empuja la viabilidad a baja.\n\nConcesiones y trámites\nNo hay evidencia de una concesión ya consolidada dentro del polígono.\nNo se observan intersecciones con concesiones vigentes o en trámite en la base aportada.\nEl trámite recomendado es concesión de distribución.\nCon la demanda declarada, esa es la vía coherente regulatoriamente.\n\nRiesgos\nRiesgo eléctrico: medio-alto, por demanda elevada y capacidad referencial limitada en SET cercanas.\nRiesgo territorial: alto, por relieve y posible encarecimiento de servidumbres y accesos.\nRiesgo regulatorio: medio, porque se requiere sustento técnico-legal adicional para consolidar concesión.\nRiesgo de compatibilidad de trazo: alto, por cruce con línea de transmisión relevante.\n\nSiguiente paso recomendado\n1. Mantener la ruta de concesión de distribución y no avanzar con convenio municipal como figura principal.\n2. Solicitar estudio eléctrico de factibilidad y anteproyecto de conexión con evaluación de:\ncapacidad real de HUARO, QUENCORO y otras SET de influencia,\nalternativas de alimentación,\nnecesidad de refuerzos o nuevas obras.\n3. Levantar estudio de servidumbres y compatibilidad territorial por el relieve alto y el cruce con la línea de transmisión.\n4. Revisar en detalle si existe componente agrícola, acuícola o de uso de suelo que condicione permisos sectoriales.\n5. Validar la demanda estimada con información de usuarios, cargas y proyección de crecimiento, porque la decisión depende de que la demanda sustentada se mantenga por encima de 500 kW.\n\nDictamen final\nCon la información disponible, la zona es apta para ser evaluada como concesión de distribución, no como convenio municipal. Sin embargo, la viabilidad es baja y el expediente requiere ampliación técnica y legal antes de una decisión definitiva de otorgamiento."
+        }
+    },
+    "polygon": [
+        [
+            -13.889965,
+            -71.653923
+        ],
+        [
+            -13.886408,
+            -71.699627
+        ],
+        [
+            -13.863871,
+            -71.729053
+        ],
+        [
+            -13.835834,
+            -71.745075
+        ],
+        [
+            -13.803108,
+            -71.737777
+        ],
+        [
+            -13.771406,
+            -71.719531
+        ],
+        [
+            -13.759059,
+            -71.678097
+        ],
+        [
+            -13.779994,
+            -71.649411
+        ],
+        [
+            -13.794207,
+            -71.617886
+        ],
+        [
+            -13.827788,
+            -71.603152
+        ],
+        [
+            -13.870548,
+            -71.631868
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

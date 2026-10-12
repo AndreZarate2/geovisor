@@ -1,0 +1,447 @@
+{
+    "status": "success",
+    "subestacion": {
+        "codigo": "S00093",
+        "nombre": "CORRALES - LOMAS DE VIENTO"
+    },
+    "empresa_consulta": "ELECTRONOROESTE S.A.",
+    "archivo_quinceminutal": "ENOSA.xlsx",
+    "archivos_quinceminutales": [
+        "ENOSA.xlsx"
+    ],
+    "hojas": [
+        "ENOSA.xlsx::ELNO_2025P1_MedicionTransfo",
+        "ENOSA.xlsx::ELNO_2025P2_MedicionTransformad",
+        "ENOSA.xlsx::ELNO_2025P3_MedicionTransformad"
+    ],
+    "filas": [
+        {
+            "transformador": "1TP3029",
+            "transformador_mapa": "1TP3029",
+            "empresa_capacidad": "ENO",
+            "subestacion_capacidad": "SE Corrales",
+            "barra": "B0991",
+            "tension_kv": "10",
+            "tension_transformador_kv": "10",
+            "potencia_transformador_mva": "13",
+            "capacidad_mva": 13,
+            "capacidad_total_mva": 26,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 4.8625,
+            "demanda_max_mw": 4.4852,
+            "factor_potencia": 0.9224,
+            "fecha_maxima": "2025-12-27 11:45",
+            "archivo_quinceminutal": "ENOSA.xlsx",
+            "disponible_mva": 8.1375,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx"
+        },
+        {
+            "transformador": "1TP3029",
+            "transformador_mapa": "1TP3029",
+            "empresa_capacidad": "ENO",
+            "subestacion_capacidad": "SE Corrales",
+            "barra": "B1471",
+            "tension_kv": "33",
+            "tension_transformador_kv": "33",
+            "potencia_transformador_mva": "13",
+            "capacidad_mva": 13,
+            "capacidad_total_mva": 26,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 4.9511,
+            "demanda_max_mw": 4.4944,
+            "factor_potencia": 0.9078,
+            "fecha_maxima": "2025-12-27 11:30",
+            "archivo_quinceminutal": "ENOSA.xlsx",
+            "disponible_mva": 8.0489,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx"
+        }
+    ],
+    "resumen_transformadores": [
+        {
+            "transformador": "1TP3029",
+            "transformador_mapa": "1TP3029",
+            "capacidad_total_mva": 26,
+            "demanda_total_mva": 9.8136,
+            "disponible_total_mva": 16.1864,
+            "estado": "Disponible",
+            "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+        }
+    ],
+    "transformadores_maestro": [
+        {
+            "codigo_transformador": "1TP1018",
+            "subestacion": "CORRALES - LOMAS DE VIENTO",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3026",
+            "subestacion": "CORRALES - LOMAS DE VIENTO",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3028",
+            "subestacion": "CORRALES - LOMAS DE VIENTO",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3029",
+            "subestacion": "CORRALES - LOMAS DE VIENTO",
+            "empresa": "Electronoroeste"
+        }
+    ],
+    "barras_maestro": [],
+    "capacidad_excel_transformadores": [
+        {
+            "empresa": "CEV",
+            "empresa_norm": "cev",
+            "subestacion": "LOMAS",
+            "subestacion_norm": "lomas",
+            "codigo": "T3",
+            "codigo_norm": "t3",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 50,
+                    "potencia_texto": "50"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 22.9,
+                    "tension_texto": "22.9",
+                    "potencia_mva": 50,
+                    "potencia_texto": "50"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "SE Corrales",
+            "subestacion_norm": "se corrales",
+            "codigo": "1TP3029",
+            "codigo_norm": "1tp3029",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 33,
+                    "tension_texto": "33",
+                    "potencia_mva": 13,
+                    "potencia_texto": "13"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 13,
+                    "potencia_texto": "13"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "SE Corrales",
+            "subestacion_norm": "se corrales",
+            "codigo": "1TP3021",
+            "codigo_norm": "1tp3021",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 33,
+                    "tension_texto": "33",
+                    "potencia_mva": 4,
+                    "potencia_texto": "4"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 4,
+                    "potencia_texto": "4"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "LAS LOMAS",
+            "subestacion_norm": "las lomas",
+            "codigo": "1TP6048",
+            "codigo_norm": "1tp6048",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 15,
+                    "potencia_texto": "15"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        }
+    ],
+    "capacidad_mapa_sein": {
+        "id_se": "272",
+        "nombre": "CORRALES",
+        "empresa": "ELECTRONOROESTE",
+        "tension": "30",
+        "lat": "-3.605308",
+        "lng": "-80.490547",
+        "transformadores": [
+            {
+                "codigo": "1TP3029",
+                "tipo": "Trifasico",
+                "anio_poc": "",
+                "tension_kv": "33\/10",
+                "potencia_mva": "13",
+                "fuente": "MapaSEIN OSINERGMIN"
+            }
+        ],
+        "nombre_norm": "corrales",
+        "empresa_norm": "electronoroeste"
+    },
+    "consumo_serie": [],
+    "consumo_mensual": [
+        {
+            "periodo": "2025-01",
+            "mes": "Enero 2025",
+            "fecha": "2025-01-31 11:45",
+            "mva": 9.1949,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-02",
+            "mes": "Febrero 2025",
+            "fecha": "2025-02-24 20:00",
+            "mva": 9.5077,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-03",
+            "mes": "Marzo 2025",
+            "fecha": "2025-03-25 12:00",
+            "mva": 9.4649,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-04",
+            "mes": "Abril 2025",
+            "fecha": "2025-04-07 19:30",
+            "mva": 9.0654,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-05",
+            "mes": "Mayo 2025",
+            "fecha": "2025-05-17 13:15",
+            "mva": 8.8911,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-06",
+            "mes": "Junio 2025",
+            "fecha": "2025-06-12 12:00",
+            "mva": 8.93,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-07",
+            "mes": "Julio 2025",
+            "fecha": "2025-07-16 12:00",
+            "mva": 9.6493,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-08",
+            "mes": "Agosto 2025",
+            "fecha": "2025-08-29 11:45",
+            "mva": 9.3025,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-09",
+            "mes": "Setiembre 2025",
+            "fecha": "2025-09-24 12:00",
+            "mva": 9.0605,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-10",
+            "mes": "Octubre 2025",
+            "fecha": "2025-10-03 15:00",
+            "mva": 9.4455,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-11",
+            "mes": "Noviembre 2025",
+            "fecha": "2025-11-20 11:00",
+            "mva": 9.4058,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-12",
+            "mes": "Diciembre 2025",
+            "fecha": "2025-12-27 11:45",
+            "mva": 9.7949,
+            "archivos": [
+                "ENOSA.xlsx"
+            ]
+        }
+    ],
+    "consumo_mensual_por_archivo": [
+        {
+            "archivo": "ENOSA.xlsx",
+            "mensual": [
+                {
+                    "periodo": "2025-01",
+                    "mes": "Enero 2025",
+                    "fecha": "2025-01-31 11:45",
+                    "mva": 9.1949
+                },
+                {
+                    "periodo": "2025-02",
+                    "mes": "Febrero 2025",
+                    "fecha": "2025-02-24 20:00",
+                    "mva": 9.5077
+                },
+                {
+                    "periodo": "2025-03",
+                    "mes": "Marzo 2025",
+                    "fecha": "2025-03-25 12:00",
+                    "mva": 9.4649
+                },
+                {
+                    "periodo": "2025-04",
+                    "mes": "Abril 2025",
+                    "fecha": "2025-04-07 19:30",
+                    "mva": 9.0654
+                },
+                {
+                    "periodo": "2025-05",
+                    "mes": "Mayo 2025",
+                    "fecha": "2025-05-17 13:15",
+                    "mva": 8.8911
+                },
+                {
+                    "periodo": "2025-06",
+                    "mes": "Junio 2025",
+                    "fecha": "2025-06-12 12:00",
+                    "mva": 8.93
+                },
+                {
+                    "periodo": "2025-07",
+                    "mes": "Julio 2025",
+                    "fecha": "2025-07-16 12:00",
+                    "mva": 9.6493
+                },
+                {
+                    "periodo": "2025-08",
+                    "mes": "Agosto 2025",
+                    "fecha": "2025-08-29 11:45",
+                    "mva": 9.3025
+                },
+                {
+                    "periodo": "2025-09",
+                    "mes": "Setiembre 2025",
+                    "fecha": "2025-09-24 12:00",
+                    "mva": 9.0605
+                },
+                {
+                    "periodo": "2025-10",
+                    "mes": "Octubre 2025",
+                    "fecha": "2025-10-03 15:00",
+                    "mva": 9.4455
+                },
+                {
+                    "periodo": "2025-11",
+                    "mes": "Noviembre 2025",
+                    "fecha": "2025-11-20 11:00",
+                    "mva": 9.4058
+                },
+                {
+                    "periodo": "2025-12",
+                    "mes": "Diciembre 2025",
+                    "fecha": "2025-12-27 11:45",
+                    "mva": 9.7949
+                }
+            ]
+        }
+    ],
+    "ultimo_registro": {
+        "fecha": "2025-12-31 23:45",
+        "mva": 7.8846,
+        "archivo": "ENOSA.xlsx"
+    },
+    "medicion_quinceminutal": "ok",
+    "mensaje_medicion": null,
+    "mensaje": null,
+    "pdf": {
+        "archivo": "UNIFILAR_ABRIL_2026.pdf",
+        "url": "uploads\/pdf\/UNIFILAR_ABRIL_2026.pdf",
+        "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+        "busqueda": "CORRALES - LOMAS DE VIENTO"
+    },
+    "pit": {
+        "status": "no_data",
+        "message": "No se encontraron elementos PIT asociados a la subestacion consultada.",
+        "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+        "file_mtime": "2026-06-01T16:55:18",
+        "sheets_scanned": 8,
+        "total_matches": 0,
+        "criterio": "PIT filtrado por nombre explicito de SET\/instalacion y empresa cuando esta disponible; se excluyen coincidencias bajas.",
+        "departamento_consulta": "TUMBES",
+        "summary": [],
+        "future_transformer": false,
+        "future_transformers": [],
+        "matches": []
+    },
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "Tumbes"
+        ],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-07-02 14:59:22",
+    "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

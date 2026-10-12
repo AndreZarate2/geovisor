@@ -1,0 +1,137 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-1138",
+    "nombre_consulta": "LT CUTERVO-NUEVA JAEN",
+    "empresa_consulta": "ELECTRO ORIENTE S.A.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "EOR",
+        "nombre_linea": "L-1138 -> De \"SUBESTACION CUTERVO\" a \"NUEVA JAEN\"",
+        "codigo_linea": "L-1138",
+        "tension_nominal_kv": 138,
+        "mva_nominal": 50,
+        "carga_mva": 40.52,
+        "carga_amperaje": 174.37,
+        "fac_uso_pot": 81.04,
+        "fecha_maxima_demanda": "2025-12-17",
+        "hora_maxima_demanda": "19:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "EOR",
+        "nombre_linea": "L-1138 -> De \"SUBESTACION CUTERVO\" a \"NUEVA JAEN\"",
+        "codigo_linea": "L-1138",
+        "tension_nominal_kv": 138,
+        "mva_nominal": 50,
+        "carga_mva": 40.52,
+        "carga_amperaje": 174.37,
+        "fac_uso_pot": 81.04,
+        "fecha_maxima_demanda": "2025-12-17",
+        "hora_maxima_demanda": "19:30:00",
+        "periodo": "12\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "maxima_registrada": {
+        "codigo_empresa": "EOR",
+        "nombre_linea": "L-1138 -> De \"SUBESTACION CUTERVO\" a \"NUEVA JAEN\"",
+        "codigo_linea": "L-1138",
+        "tension_nominal_kv": 138,
+        "mva_nominal": 50,
+        "carga_mva": 40.54,
+        "carga_amperaje": 172.87,
+        "fac_uso_pot": 81.08,
+        "fecha_maxima_demanda": "2025-11-27",
+        "hora_maxima_demanda": "19:00:00",
+        "periodo": "11\/2025",
+        "observacion": "",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "ultima_es_maxima": false,
+    "mensaje_maxima": null,
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-16",
+            "mva": 29.94,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-11",
+            "mva": 29.14,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-10",
+            "mva": 32.11,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "80%"
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-22",
+            "mva": 33.33,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-18",
+            "mva": 35.26,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-24",
+            "mva": 38.91,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-27",
+            "mva": 40.54,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-17",
+            "mva": 40.52,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": ""
+        }
+    ],
+    "registros": 8,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [],
+        "contexto_departamento_activo": true,
+        "matches": []
+    },
+    "generated_at": "2026-06-16 19:41:03"
+}

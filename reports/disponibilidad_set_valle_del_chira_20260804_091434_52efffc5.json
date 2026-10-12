@@ -1,0 +1,390 @@
+{
+    "status": "success",
+    "subestacion": {
+        "codigo": "S00427",
+        "nombre": "Valle del Chira"
+    },
+    "empresa_consulta": "PUERTO MALDONADO TRANSMISORA DE ENERGIA SAC",
+    "archivo_quinceminutal": "PUERTO MALDONADO TRANSMISORA.xlsx",
+    "archivos_quinceminutales": [
+        "PUERTO MALDONADO TRANSMISORA.xlsx"
+    ],
+    "hojas": [
+        "PUERTO MALDONADO TRANSMISORA.xlsx::PMTE_2025P1_MedicionTransformad",
+        "PUERTO MALDONADO TRANSMISORA.xlsx::PMTE_2025P2_MedicionTransformad",
+        "PUERTO MALDONADO TRANSMISORA.xlsx::PMTE_2025P3_MedicionTransformad"
+    ],
+    "filas": [
+        {
+            "transformador": "TP-100",
+            "transformador_mapa": "TP-100",
+            "empresa_capacidad": "Puerto Maldonado Transmisora",
+            "subestacion_capacidad": "VALLE DEL CHIRA",
+            "barra": "B1626",
+            "tension_kv": "220",
+            "tension_transformador_kv": "220",
+            "potencia_transformador_mva": "65",
+            "capacidad_mva": 65,
+            "capacidad_total_mva": 149.5,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 57.7878,
+            "demanda_max_mw": 47.4295,
+            "factor_potencia": 0.8208,
+            "fecha_maxima": "2025-10-22 12:45",
+            "archivo_quinceminutal": "PUERTO MALDONADO TRANSMISORA.xlsx",
+            "disponible_mva": 7.2122,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "PMT"
+        },
+        {
+            "transformador": "TP-100",
+            "transformador_mapa": "TP-100",
+            "empresa_capacidad": "Puerto Maldonado Transmisora",
+            "subestacion_capacidad": "VALLE DEL CHIRA",
+            "barra": "B1627",
+            "tension_kv": "60",
+            "tension_transformador_kv": "60",
+            "potencia_transformador_mva": "65",
+            "capacidad_mva": 65,
+            "capacidad_total_mva": 149.5,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 54.9126,
+            "demanda_max_mw": 47.2985,
+            "factor_potencia": 0.8613,
+            "fecha_maxima": "2025-10-22 12:45",
+            "archivo_quinceminutal": "PUERTO MALDONADO TRANSMISORA.xlsx",
+            "disponible_mva": 10.0874,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "empresa_fuente_capacidad": "PMT"
+        },
+        {
+            "transformador": "TP-100",
+            "transformador_mapa": "TP-100",
+            "empresa_capacidad": "Puerto Maldonado Transmisora",
+            "subestacion_capacidad": "VALLE DEL CHIRA",
+            "barra": "Sin medicion 22.9 kV",
+            "tension_kv": "22.9",
+            "tension_transformador_kv": "22.9",
+            "potencia_transformador_mva": "19.5",
+            "capacidad_mva": 19.5,
+            "capacidad_total_mva": 149.5,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Terciaria",
+            "capacidad_nota": "Terciaria 22.9 kV sin medicion quinceminutal",
+            "demanda_max_mva": null,
+            "demanda_max_mw": null,
+            "factor_potencia": null,
+            "fecha_maxima": null,
+            "archivo_quinceminutal": null,
+            "disponible_mva": null,
+            "estado": "Sin medicion",
+            "fuente_capacidad": "EquiposTransformadores.xlsx",
+            "sin_medicion_quinceminutal": true,
+            "empresa_fuente_capacidad": "PMT"
+        }
+    ],
+    "resumen_transformadores": [
+        {
+            "transformador": "TP-100",
+            "transformador_mapa": "TP-100",
+            "capacidad_total_mva": 149.5,
+            "demanda_total_mva": 112.7004,
+            "disponible_total_mva": 36.7996,
+            "estado": "Disponible",
+            "criterio": "Incluye devanados sin medicion quinceminutal; se conserva su capacidad nominal"
+        }
+    ],
+    "transformadores_maestro": [
+        {
+            "codigo_transformador": "TP-100",
+            "subestacion": "VALLE DEL CHIRA",
+            "empresa": "Puerto Maldonado Transmisora"
+        }
+    ],
+    "barras_maestro": [
+        {
+            "codigo_barra": "B1626",
+            "nombre_barra": "Valle del Chira 220",
+            "tension": "220"
+        },
+        {
+            "codigo_barra": "B1627",
+            "nombre_barra": "Valle del Chira",
+            "tension": "60"
+        }
+    ],
+    "capacidad_excel_transformadores": [
+        {
+            "empresa": "PMT",
+            "empresa_norm": "pmt",
+            "subestacion": "VALLE DEL CHIRA",
+            "subestacion_norm": "valle del chira",
+            "codigo": "TP-100",
+            "codigo_norm": "tp 100",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 22.9,
+                    "tension_texto": "22.9",
+                    "potencia_mva": 19.5,
+                    "potencia_texto": "19.5"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        }
+    ],
+    "capacidad_mapa_sein": null,
+    "consumo_serie": [],
+    "consumo_mensual": [
+        {
+            "periodo": "2025-01",
+            "mes": "Enero 2025",
+            "fecha": "2025-01-28 11:30",
+            "mva": 83.5632,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-02",
+            "mes": "Febrero 2025",
+            "fecha": "2025-02-12 12:15",
+            "mva": 85.4782,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-03",
+            "mes": "Marzo 2025",
+            "fecha": "2025-03-27 11:45",
+            "mva": 110.9143,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-04",
+            "mes": "Abril 2025",
+            "fecha": "2025-04-16 12:30",
+            "mva": 106.2867,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-05",
+            "mes": "Mayo 2025",
+            "fecha": "2025-05-10 13:00",
+            "mva": 97.4552,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-06",
+            "mes": "Junio 2025",
+            "fecha": "2025-06-07 10:45",
+            "mva": 78.5963,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-07",
+            "mes": "Julio 2025",
+            "fecha": "2025-07-01 11:45",
+            "mva": 40.6971,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-08",
+            "mes": "Agosto 2025",
+            "fecha": "2025-08-08 12:15",
+            "mva": 55.1114,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-09",
+            "mes": "Setiembre 2025",
+            "fecha": "2025-09-13 12:30",
+            "mva": 83.0132,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-10",
+            "mes": "Octubre 2025",
+            "fecha": "2025-10-22 12:45",
+            "mva": 112.7004,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-11",
+            "mes": "Noviembre 2025",
+            "fecha": "2025-11-22 16:00",
+            "mva": 108.2061,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        },
+        {
+            "periodo": "2025-12",
+            "mes": "Diciembre 2025",
+            "fecha": "2025-12-02 11:45",
+            "mva": 104.2589,
+            "archivos": [
+                "PUERTO MALDONADO TRANSMISORA.xlsx"
+            ]
+        }
+    ],
+    "consumo_mensual_por_archivo": [
+        {
+            "archivo": "PUERTO MALDONADO TRANSMISORA.xlsx",
+            "mensual": [
+                {
+                    "periodo": "2025-01",
+                    "mes": "Enero 2025",
+                    "fecha": "2025-01-28 11:30",
+                    "mva": 83.5632
+                },
+                {
+                    "periodo": "2025-02",
+                    "mes": "Febrero 2025",
+                    "fecha": "2025-02-12 12:15",
+                    "mva": 85.4782
+                },
+                {
+                    "periodo": "2025-03",
+                    "mes": "Marzo 2025",
+                    "fecha": "2025-03-27 11:45",
+                    "mva": 110.9143
+                },
+                {
+                    "periodo": "2025-04",
+                    "mes": "Abril 2025",
+                    "fecha": "2025-04-16 12:30",
+                    "mva": 106.2867
+                },
+                {
+                    "periodo": "2025-05",
+                    "mes": "Mayo 2025",
+                    "fecha": "2025-05-10 13:00",
+                    "mva": 97.4552
+                },
+                {
+                    "periodo": "2025-06",
+                    "mes": "Junio 2025",
+                    "fecha": "2025-06-07 10:45",
+                    "mva": 78.5963
+                },
+                {
+                    "periodo": "2025-07",
+                    "mes": "Julio 2025",
+                    "fecha": "2025-07-01 11:45",
+                    "mva": 40.6971
+                },
+                {
+                    "periodo": "2025-08",
+                    "mes": "Agosto 2025",
+                    "fecha": "2025-08-08 12:15",
+                    "mva": 55.1114
+                },
+                {
+                    "periodo": "2025-09",
+                    "mes": "Setiembre 2025",
+                    "fecha": "2025-09-13 12:30",
+                    "mva": 83.0132
+                },
+                {
+                    "periodo": "2025-10",
+                    "mes": "Octubre 2025",
+                    "fecha": "2025-10-22 12:45",
+                    "mva": 112.7004
+                },
+                {
+                    "periodo": "2025-11",
+                    "mes": "Noviembre 2025",
+                    "fecha": "2025-11-22 16:00",
+                    "mva": 108.2061
+                },
+                {
+                    "periodo": "2025-12",
+                    "mes": "Diciembre 2025",
+                    "fecha": "2025-12-02 11:45",
+                    "mva": 104.2589
+                }
+            ]
+        }
+    ],
+    "ultimo_registro": {
+        "fecha": "2025-12-31 23:45",
+        "mva": 19.5995,
+        "archivo": "PUERTO MALDONADO TRANSMISORA.xlsx"
+    },
+    "medicion_quinceminutal": "ok",
+    "mensaje_medicion": null,
+    "mensaje": null,
+    "pdf": {
+        "archivo": "UNIFILAR_ABRIL_2026.pdf",
+        "url": "uploads\/pdf\/UNIFILAR_ABRIL_2026.pdf",
+        "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+        "busqueda": "Valle del Chira"
+    },
+    "pit": {
+        "status": "no_data",
+        "message": "No se encontraron elementos PIT asociados a la subestacion consultada.",
+        "file": "Anexos_Informe PIT_Public. Jul_2026.xlsx",
+        "file_mtime": "2026-08-03T10:56:32",
+        "sheets_scanned": 8,
+        "total_matches": 0,
+        "criterio": "PIT filtrado por nombre explicito de SET\/instalacion y empresa cuando esta disponible; se excluyen coincidencias bajas.",
+        "departamento_consulta": "PIURA",
+        "summary": [],
+        "future_transformer": false,
+        "future_transformers": [],
+        "matches": []
+    },
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "Piura"
+        ],
+        "contexto_departamento_activo": false,
+        "matches": []
+    },
+    "generated_at": "2026-08-04 09:14:34",
+    "template": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+    "template_pdf": "C:\\Users\\mzarate\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+    "author": "invitado"
+}

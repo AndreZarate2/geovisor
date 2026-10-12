@@ -1,0 +1,1 @@
+{"ok":true,"provider":"Open-Meteo Elevation API / Copernicus DEM","resolution_m":90,"profile":[{"lat":-7.628013,"lng":-79.41152,"distance_km":0,"elevation_m":43}],"min_m":43,"avg_m":43,"max_m":43,"ascent_m":0,"descent_m":0,"distance_km":0,"cache":false,"note":"Estimacion DEM; no reemplaza levantamiento topografico."}

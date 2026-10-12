@@ -1,0 +1,288 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 301.44,
+        "centro": {
+            "lat": -16.488882,
+            "lng": -72.295001
+        },
+        "demanda_kw_estimada": 25000,
+        "demanda_kw_usada": 25000,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 70,
+            "nivel": "Alta"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 948,
+            "max_m": 1216,
+            "promedio_m": 1111.8,
+            "rango_m": 268,
+            "riesgo": "medio",
+            "descripcion": "medio, con variacion aproximada de 268 m; requiere revisar pendientes y accesos."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PEDREGAL",
+                "empresa": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+                "lat": -16.43707,
+                "lng": -72.22727,
+                "distancia_km": 9.24,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "no_data",
+                "mensaje": "No se encontraron registros quinceminutales para esta subestacion."
+            },
+            {
+                "nombre": "C.S. MAJES",
+                "empresa": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+                "lat": -16.4371,
+                "lng": -72.22694,
+                "distancia_km": 9.26,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 34.5934,
+                "disponible_total_mva": 7.4066,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T95-161",
+                        "capacidad_total_mva": 42,
+                        "demanda_total_mva": 34.5934,
+                        "disponible_total_mva": 7.4066,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "MAJES",
+                "empresa": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+                "lat": -16.37199,
+                "lng": -72.16884,
+                "distancia_km": 18.71,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 42,
+                "demanda_total_mva": 34.5934,
+                "disponible_total_mva": 7.4066,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T95-161",
+                        "capacidad_total_mva": 42,
+                        "demanda_total_mva": 34.5934,
+                        "disponible_total_mva": 7.4066,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "CORIRE",
+                "empresa": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+                "lat": -16.28118,
+                "lng": -72.4521,
+                "distancia_km": 28.54,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 8,
+                "demanda_total_mva": 5.6019,
+                "disponible_total_mva": 2.3981,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T15-61",
+                        "capacidad_total_mva": 8,
+                        "demanda_total_mva": 5.6019,
+                        "disponible_total_mva": 2.3981,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "CAMANA",
+                "empresa": "SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.",
+                "lat": -16.61093,
+                "lng": -72.68752,
+                "distancia_km": 43.98,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 75,
+                "demanda_total_mva": 16.7104,
+                "disponible_total_mva": 58.2896,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T40-121B",
+                        "capacidad_total_mva": 75,
+                        "demanda_total_mva": 16.7104,
+                        "disponible_total_mva": 58.2896,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 8,
+            "lineas_intersectan": 6,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 733,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PEDREGAL",
+                "C.S. MAJES",
+                "PEDREGAL",
+                "C.S. MAJES",
+                "PEDREGAL",
+                "C.S. MAJES"
+            ],
+            "lineas": [
+                "LT OCOÑA-SAN JOSE",
+                "LT MARCONA (POROMA) - SOCABAYA NUEVA (YARABAMBA)",
+                "LT PEDREGAL-CAMANA",
+                "LT MARCONA (POROMA) - SOCABAYA NUEVA (YARABAMBA)",
+                "LT OCOÑA-SAN JOSE",
+                "LT PEDREGAL-CAMANA"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": []
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: PEDREGAL, C.S. MAJES, PEDREGAL",
+            "Cruzan o tocan líneas de transmisión relevantes: LT OCOÑA-SAN JOSE, LT MARCONA (POROMA) - SOCABAYA NUEVA (YARABAMBA), LT PEDREGAL-CAMANA",
+            "Relieve estimado: medio, con variacion aproximada de 268 m; requiere revisar pendientes y accesos.",
+            "SET con disponibilidad referencial cercana: C.S. MAJES (7.4066 MVA libres), MAJES (7.4066 MVA libres), CORIRE (2.3981 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-15 21:44:40\nÁrea: 301.44 km2\nDemanda usada: 25000 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Alta (70\/100)\nRelieve: medio, con variacion aproximada de 268 m; requiere revisar pendientes y accesos. Elevación min\/max: 948\/1216 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":8,\"lineas_intersectan\":6,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":733,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- PEDREGAL (SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.), 9.24 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- C.S. MAJES (SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.), 9.26 km, cap. 42 MVA, demanda 34.5934 MVA, disponible 7.4066 MVA, estado Disponible.\n- MAJES (SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.), 18.71 km, cap. 42 MVA, demanda 34.5934 MVA, disponible 7.4066 MVA, estado Disponible.\n- CORIRE (SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.), 28.54 km, cap. 8 MVA, demanda 5.6019 MVA, disponible 2.3981 MVA, estado Disponible.\n- CAMANA (SOCIEDAD ELÉCTRICA DEL SUR OESTE S.A.), 43.98 km, cap. 75 MVA, demanda 16.7104 MVA, disponible 58.2896 MVA, estado Disponible.\nRazones:\n- Hay SET cercanas o dentro del polígono: PEDREGAL, C.S. MAJES, PEDREGAL\n- Cruzan o tocan líneas de transmisión relevantes: LT OCOÑA-SAN JOSE, LT MARCONA (POROMA) - SOCABAYA NUEVA (YARABAMBA), LT PEDREGAL-CAMANA\n- Relieve estimado: medio, con variacion aproximada de 268 m; requiere revisar pendientes y accesos.\n- SET con disponibilidad referencial cercana: C.S. MAJES (7.4066 MVA libres), MAJES (7.4066 MVA libres), CORIRE (2.3981 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "AREQUIPA",
+        "punto_inicio": {
+            "lat": -16.37416,
+            "lng": -72.331547,
+            "referencia": "-16.37416, -72.331547 | SET cercana: PEDREGAL a 13.14 km",
+            "set_cercana": {
+                "nombre": "PEDREGAL",
+                "fuente": "SET OSINERGMIN",
+                "lat": -16.43707,
+                "lng": -72.22727,
+                "distancia_km": 13.14
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -16.379256,
+            "lng": -72.308605,
+            "referencia": "-16.379256, -72.308605 | SET cercana: PEDREGAL a 10.8 km",
+            "set_cercana": {
+                "nombre": "PEDREGAL",
+                "fuente": "SET en Operacion join",
+                "lat": -16.437072,
+                "lng": -72.227267,
+                "distancia_km": 10.8
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -16.3741599,
+                -72.331547
+            ],
+            [
+                -16.4695758,
+                -72.41425
+            ],
+            [
+                -16.5920353,
+                -72.3402408
+            ],
+            [
+                -16.5983049,
+                -72.293439
+            ],
+            [
+                -16.5620299,
+                -72.2677757
+            ],
+            [
+                -16.5081974,
+                -72.2347506
+            ],
+            [
+                -16.4657325,
+                -72.2206726
+            ],
+            [
+                -16.4506447,
+                -72.2437303
+            ],
+            [
+                -16.3792555,
+                -72.3086046
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "admin",
+        "name": "AREQUIPA",
+        "line_type": "",
+        "voltage_kv": "",
+        "circuit": "",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-15 21:44:41"
+    }
+}

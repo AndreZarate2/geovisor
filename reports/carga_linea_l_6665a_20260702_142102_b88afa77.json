@@ -1,0 +1,179 @@
+{
+    "status": "success",
+    "codigo_consulta": "L-6665A",
+    "nombre_consulta": "LT NUEVA ZORRITOS-TUMBES",
+    "empresa_consulta": "ELECTRONOROESTE S.A.",
+    "archivo": "Potencia Aparente LLTT_2025.csv",
+    "ultima": {
+        "codigo_empresa": "ENO",
+        "nombre_linea": "L-6665A -> De \"Nueva Zorritos\" a \"TUMBES 1\"",
+        "codigo_linea": "L-6665A",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 56.57,
+        "carga_mva": 24.01,
+        "carga_amperaje": 231.04,
+        "fac_uso_pot": 42.443,
+        "fecha_maxima_demanda": "2025-12-23",
+        "hora_maxima_demanda": "19:30:00",
+        "periodo": "12\/2025",
+        "observacion": "AMPCAR calculado.",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "operativa": {
+        "codigo_empresa": "ENO",
+        "nombre_linea": "L-6665A -> De \"Nueva Zorritos\" a \"TUMBES 1\"",
+        "codigo_linea": "L-6665A",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 56.57,
+        "carga_mva": 24.01,
+        "carga_amperaje": 231.04,
+        "fac_uso_pot": 42.443,
+        "fecha_maxima_demanda": "2025-12-23",
+        "hora_maxima_demanda": "19:30:00",
+        "periodo": "12\/2025",
+        "observacion": "AMPCAR calculado.",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "maxima_registrada": {
+        "codigo_empresa": "ENO",
+        "nombre_linea": "L-6665A -> De \"Nueva Zorritos\" a \"TUMBES 1\"",
+        "codigo_linea": "L-6665A",
+        "tension_nominal_kv": 60,
+        "mva_nominal": 56.57,
+        "carga_mva": 37.72,
+        "carga_amperaje": 362.96,
+        "fac_uso_pot": 66.678,
+        "fecha_maxima_demanda": "2025-04-01",
+        "hora_maxima_demanda": "19:45:00",
+        "periodo": "04\/2025",
+        "observacion": "AMPCAR calculado.",
+        "estado_operativo": "valida",
+        "registro_valido": true
+    },
+    "ultima_es_maxima": false,
+    "mensaje_maxima": null,
+    "excluidos_recientes": [],
+    "alerta": null,
+    "serie": [
+        {
+            "periodo": "01\/2025",
+            "fecha": "2025-01-31",
+            "mva": 36.45,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "02\/2025",
+            "fecha": "2025-02-03",
+            "mva": 36.96,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "03\/2025",
+            "fecha": "2025-03-20",
+            "mva": 37.57,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "04\/2025",
+            "fecha": "2025-04-01",
+            "mva": 37.72,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "05\/2025",
+            "fecha": "2025-05-02",
+            "mva": 33.74,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "06\/2025",
+            "fecha": "2025-06-04",
+            "mva": 32.54,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "07\/2025",
+            "fecha": "2025-07-18",
+            "mva": 32.98,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "08\/2025",
+            "fecha": "2025-08-27",
+            "mva": 33.27,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "09\/2025",
+            "fecha": "2025-09-09",
+            "mva": 34.9,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "10\/2025",
+            "fecha": "2025-10-09",
+            "mva": 34.93,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-22",
+            "mva": 24.02,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "11\/2025",
+            "fecha": "2025-11-22",
+            "mva": 24.02,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        },
+        {
+            "periodo": "12\/2025",
+            "fecha": "2025-12-23",
+            "mva": 24.01,
+            "valido": true,
+            "estado_operativo": "valida",
+            "observacion": "AMPCAR calculado."
+        }
+    ],
+    "registros": 13,
+    "criterio": "Carga principal tomada del ultimo registro operativo valido; registros abiertos, fuera de servicio o dudosos quedan como alerta.",
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "criterio": "PT filtrado por coincidencia explicita de nombre\/codigo de SET o LT; proyectos nuevos solo por departamento consultado.",
+        "departamentos_consulta": [
+            "Tumbes"
+        ],
+        "contexto_departamento_activo": true,
+        "matches": []
+    },
+    "generated_at": "2026-07-02 14:21:02"
+}

@@ -1,0 +1,299 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 182.123,
+        "centro": {
+            "lat": -17.872384,
+            "lng": -70.615272
+        },
+        "demanda_kw_estimada": 22755,
+        "demanda_kw_usada": 22755,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 67,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 254,
+            "max_m": 459,
+            "promedio_m": 372.5,
+            "rango_m": 205,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 205 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "TOMASIRI",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -17.84713,
+                "lng": -70.5439,
+                "distancia_km": 8.06,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 3,
+                "demanda_total_mva": 1.8297,
+                "disponible_total_mva": 1.1703,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TOM-01",
+                        "capacidad_total_mva": 3,
+                        "demanda_total_mva": 1.8297,
+                        "disponible_total_mva": 1.1703,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "TACNA SOLAR",
+                "empresa": "TACNA SOLAR S.A.C.",
+                "lat": -17.99496,
+                "lng": -70.33275,
+                "distancia_km": 32.85,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: TACNA SOLAR"
+            },
+            {
+                "nombre": "LOS HEROES",
+                "empresa": "RED ELÉCTRICA DEL SUR S.A.",
+                "lat": -17.99972,
+                "lng": -70.31637,
+                "distancia_km": 34.65,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 70,
+                "demanda_total_mva": 38.133,
+                "disponible_total_mva": 31.867,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T0002",
+                        "capacidad_total_mva": 70,
+                        "demanda_total_mva": 38.133,
+                        "disponible_total_mva": 31.867,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "YARADA",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -18.17434,
+                "lng": -70.46779,
+                "distancia_km": 37.02,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 13,
+                "demanda_total_mva": 24.5784,
+                "disponible_total_mva": -11.5784,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "YAR-01",
+                        "capacidad_total_mva": 13,
+                        "demanda_total_mva": 24.5784,
+                        "disponible_total_mva": -11.5784,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    }
+                ]
+            },
+            {
+                "nombre": "TACNA",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -18.02537,
+                "lng": -70.27161,
+                "distancia_km": 40.14,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 50,
+                "demanda_total_mva": 27.1976,
+                "disponible_total_mva": 22.8024,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TAC-02",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 11.1414,
+                        "disponible_total_mva": 13.8586,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "TAC-03",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 16.0562,
+                        "disponible_total_mva": 8.9438,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 6,
+            "lineas_intersectan": 2,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 1,
+            "externas_intersectan": 2,
+            "fuentes": {
+                "SET OSINERGMIN": 733,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "TOMASIRI",
+                "TOMASIRI",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET",
+                "TOMASIRI"
+            ],
+            "lineas": [
+                "LT MONTALVO - LOS HÉROES",
+                "LT MONTALVO - LOS HÉROES"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [
+                "DISTRIBUCION TACNA - LA YARADA"
+            ],
+            "externas": [
+                "Limites departamentales",
+                "Tacna"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: TOMASIRI, TOMASIRI, Salidas MT desde SET",
+            "Cruzan o tocan líneas de transmisión relevantes: LT MONTALVO - LOS HÉROES, LT MONTALVO - LOS HÉROES",
+            "La zona cruza información externa registrada: Limites departamentales, Tacna",
+            "Existe superposición con concesión vigente o en trámite; revisar titularidad y expediente.",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 205 m.",
+            "SET con disponibilidad referencial cercana: TOMASIRI (1.1703 MVA libres), LOS HEROES (31.867 MVA libres), TACNA (22.8024 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-13 22:12:41\nÁrea: 182.1229 km2\nDemanda usada: 22755 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Media (67\/100)\nRelieve: bajo a moderado, con variacion aproximada de 205 m. Elevación min\/max: 254\/459 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":6,\"lineas_intersectan\":2,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":1,\"externas_intersectan\":2,\"fuentes\":{\"SET OSINERGMIN\":733,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- TOMASIRI (ELECTROSUR S.A), 8.06 km, cap. 3 MVA, demanda 1.8297 MVA, disponible 1.1703 MVA, estado Disponible.\n- TACNA SOLAR (TACNA SOLAR S.A.C.), 32.85 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LOS HEROES (RED ELÉCTRICA DEL SUR S.A.), 34.65 km, cap. 70 MVA, demanda 38.133 MVA, disponible 31.867 MVA, estado Disponible.\n- YARADA (ELECTROSUR S.A), 37.02 km, cap. 13 MVA, demanda 24.5784 MVA, disponible -11.5784 MVA, estado Sobrecarga.\n- TACNA (ELECTROSUR S.A), 40.14 km, cap. 50 MVA, demanda 27.1976 MVA, disponible 22.8024 MVA, estado Disponible.\nRazones:\n- Hay SET cercanas o dentro del polígono: TOMASIRI, TOMASIRI, Salidas MT desde SET\n- Cruzan o tocan líneas de transmisión relevantes: LT MONTALVO - LOS HÉROES, LT MONTALVO - LOS HÉROES\n- La zona cruza información externa registrada: Limites departamentales, Tacna\n- Existe superposición con concesión vigente o en trámite; revisar titularidad y expediente.\n- Relieve estimado: bajo a moderado, con variacion aproximada de 205 m.\n- SET con disponibilidad referencial cercana: TOMASIRI (1.1703 MVA libres), LOS HEROES (31.867 MVA libres), TACNA (22.8024 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "PROPUESTA CONCESION TACNA 2",
+        "punto_inicio": {
+            "lat": -17.951803,
+            "lng": -70.726886,
+            "referencia": "-17.951803, -70.726886 | SET cercana: TOMASIRI a 22.59 km",
+            "set_cercana": {
+                "nombre": "TOMASIRI",
+                "fuente": "SET OSINERGMIN",
+                "lat": -17.84713,
+                "lng": -70.5439,
+                "distancia_km": 22.59
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -17.841134,
+            "lng": -70.722812,
+            "referencia": "-17.841134, -70.722812 | SET cercana: TOMASIRI a 18.95 km",
+            "set_cercana": {
+                "nombre": "TOMASIRI",
+                "fuente": "SET en Operacion join",
+                "lat": -17.847129,
+                "lng": -70.543899,
+                "distancia_km": 18.95
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -17.9518026,
+                -70.7268857
+            ],
+            [
+                -17.9477242,
+                -70.6306188
+            ],
+            [
+                -17.8802739,
+                -70.5848621
+            ],
+            [
+                -17.8672239,
+                -70.5828388
+            ],
+            [
+                -17.8585686,
+                -70.5696564
+            ],
+            [
+                -17.8427672,
+                -70.5558749
+            ],
+            [
+                -17.8385649,
+                -70.5605985
+            ],
+            [
+                -17.8233962,
+                -70.6033041
+            ],
+            [
+                -17.8411343,
+                -70.7228117
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "admin",
+        "name": "PROPUESTA CONCESION TACNA 2",
+        "line_type": "distribucion",
+        "voltage_kv": 22.9,
+        "circuit": "simple",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-13 22:12:42"
+    }
+}

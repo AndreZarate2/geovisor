@@ -1,0 +1,375 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 33.1096,
+        "centro": {
+            "lat": -8.444365,
+            "lng": -74.505262
+        },
+        "demanda_kw_estimada": 5173,
+        "demanda_kw_usada": 5173,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 65,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 141,
+            "max_m": 153,
+            "promedio_m": 148.1,
+            "rango_m": 12,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 12 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PUCALLPA EUC",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.38515,
+                "lng": -74.54855,
+                "distancia_km": 8.13,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: PUCALLPA EUC"
+            },
+            {
+                "nombre": "PUCALLPA",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.38515,
+                "lng": -74.54855,
+                "distancia_km": 8.13,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO UCAYALI.xlsx",
+                "capacidad_total_mva": 88,
+                "demanda_total_mva": 85.548,
+                "disponible_total_mva": 2.452,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TPTR05",
+                        "capacidad_total_mva": 30,
+                        "demanda_total_mva": 38.6793,
+                        "disponible_total_mva": -8.6793,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "TPTR06",
+                        "capacidad_total_mva": 58,
+                        "demanda_total_mva": 46.8687,
+                        "disponible_total_mva": 11.1313,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "MANANTAY",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.41724,
+                "lng": -74.5789,
+                "distancia_km": 8.64,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: MANANTAY"
+            },
+            {
+                "nombre": "PUCALLPA",
+                "empresa": "INTERCONEXIÓN ELÉCTRICA ISA PERÚ S.A.",
+                "lat": -8.40023,
+                "lng": -74.61561,
+                "distancia_km": 13.09,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTRO UCAYALI.xlsx",
+                "capacidad_total_mva": 113,
+                "demanda_total_mva": 85.548,
+                "disponible_total_mva": 27.452,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TPTR05",
+                        "capacidad_total_mva": 58,
+                        "demanda_total_mva": 38.6793,
+                        "disponible_total_mva": 19.3207,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "TPTR06",
+                        "capacidad_total_mva": 55,
+                        "demanda_total_mva": 46.8687,
+                        "disponible_total_mva": 8.1313,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "PARQUE INDUSTRIAL",
+                "empresa": "ELECTRO UCAYALI S.A.",
+                "lat": -8.39962,
+                "lng": -74.61552,
+                "distancia_km": 13.11,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 155,
+                "demanda_total_mva": 207.3611,
+                "disponible_total_mva": -52.3611,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T4-103",
+                        "capacidad_total_mva": 75,
+                        "demanda_total_mva": 131.2627,
+                        "disponible_total_mva": -56.2627,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "T41-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 39.8654,
+                        "disponible_total_mva": 0.1346,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T42-31",
+                        "capacidad_total_mva": 40,
+                        "demanda_total_mva": 36.233,
+                        "disponible_total_mva": 3.767,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 20,
+            "lineas_intersectan": 0,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "YARINA",
+                "PUCALLPA EUC",
+                "PUCALLPA",
+                "PARQUE INDUSTRIAL",
+                "MANANTAY",
+                "PUCALLPA"
+            ],
+            "lineas": [],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: YARINA, PUCALLPA EUC, PUCALLPA",
+            "La zona cruza información externa registrada: Limites departamentales",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 12 m.",
+            "SET con disponibilidad referencial cercana: PUCALLPA (2.452 MVA libres), PUCALLPA (27.452 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-12 14:59:13\nÁrea: 33.1096 km2\nDemanda usada: 5173 kW (manual)\nTrámite recomendado: Concesión de distribución\nViabilidad: Media (65\/100)\nRelieve: bajo a moderado, con variacion aproximada de 12 m. Elevación min\/max: 141\/153 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":20,\"lineas_intersectan\":0,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- PUCALLPA EUC (ELECTRO UCAYALI S.A.), 8.13 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- PUCALLPA (ELECTRO UCAYALI S.A.), 8.13 km, cap. 88 MVA, demanda 85.548 MVA, disponible 2.452 MVA, estado Disponible.\n- MANANTAY (ELECTRO UCAYALI S.A.), 8.64 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- PUCALLPA (INTERCONEXIÓN ELÉCTRICA ISA PERÚ S.A.), 13.09 km, cap. 113 MVA, demanda 85.548 MVA, disponible 27.452 MVA, estado Disponible.\n- PARQUE INDUSTRIAL (ELECTRO UCAYALI S.A.), 13.11 km, cap. 155 MVA, demanda 207.3611 MVA, disponible -52.3611 MVA, estado Sobrecarga.\nRazones:\n- Hay SET cercanas o dentro del polígono: YARINA, PUCALLPA EUC, PUCALLPA\n- La zona cruza información externa registrada: Limites departamentales\n- Relieve estimado: bajo a moderado, con variacion aproximada de 12 m.\n- SET con disponibilidad referencial cercana: PUCALLPA (2.452 MVA libres), PUCALLPA (27.452 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente."
+    },
+    "polygon": [
+        [
+            -8.434337884404293,
+            -74.51442718505861
+        ],
+        [
+            -8.434677493838242,
+            -74.51442718505861
+        ],
+        [
+            -8.435017102973703,
+            -74.51614379882814
+        ],
+        [
+            -8.436035928589,
+            -74.52060699462892
+        ],
+        [
+            -8.438413177908556,
+            -74.52541351318361
+        ],
+        [
+            -8.440790412595627,
+            -74.52850341796876
+        ],
+        [
+            -8.446903234572893,
+            -74.53159332275392
+        ],
+        [
+            -8.451657584713066,
+            -74.53193664550783
+        ],
+        [
+            -8.455732695321213,
+            -74.53159332275392
+        ],
+        [
+            -8.46048693657175,
+            -74.52884674072267
+        ],
+        [
+            -8.464561953798608,
+            -74.52404022216798
+        ],
+        [
+            -8.46795776854124,
+            -74.51854705810548
+        ],
+        [
+            -8.469316086049092,
+            -74.51271057128908
+        ],
+        [
+            -8.470674398762005,
+            -74.50584411621095
+        ],
+        [
+            -8.471353553320132,
+            -74.49863433837892
+        ],
+        [
+            -8.471353553320132,
+            -74.49073791503908
+        ],
+        [
+            -8.470334821033353,
+            -74.48215484619142
+        ],
+        [
+            -8.465920283290561,
+            -74.47357177734376
+        ],
+        [
+            -8.456751466241656,
+            -74.46636199951173
+        ],
+        [
+            -8.448261626306905,
+            -74.46189880371095
+        ],
+        [
+            -8.441809222981169,
+            -74.46121215820314
+        ],
+        [
+            -8.436375536530365,
+            -74.46155548095705
+        ],
+        [
+            -8.432979443683774,
+            -74.4643020629883
+        ],
+        [
+            -8.428224863563976,
+            -74.47185516357423
+        ],
+        [
+            -8.426866401361979,
+            -74.47700500488283
+        ],
+        [
+            -8.424828699112437,
+            -74.48524475097658
+        ],
+        [
+            -8.423809843962406,
+            -74.50035095214845
+        ],
+        [
+            -8.423470224982811,
+            -74.51202392578126
+        ],
+        [
+            -8.425168316899477,
+            -74.51786041259767
+        ],
+        [
+            -8.42890409287538,
+            -74.52163696289064
+        ],
+        [
+            -8.431960610009778,
+            -74.52335357666017
+        ],
+        [
+            -8.43365866464094,
+            -74.52335357666017
+        ],
+        [
+            -8.435017102973703,
+            -74.52335357666017
+        ],
+        [
+            -8.437054751517428,
+            -74.52335357666017
+        ],
+        [
+            -8.438073571758682,
+            -74.52266693115236
+        ],
+        [
+            -8.438413177908556,
+            -74.52232360839845
+        ]
+    ],
+    "meta": {
+        "project": "Evaluación preliminar de zona eléctrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf"
+    }
+}

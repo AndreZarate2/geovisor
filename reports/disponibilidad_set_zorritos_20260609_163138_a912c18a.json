@@ -1,0 +1,760 @@
+{
+    "status": "success",
+    "subestacion": {
+        "codigo": "S00316",
+        "nombre": "ZORRITOS"
+    },
+    "empresa_consulta": "ELECTRONOROESTE S.A.",
+    "archivo_quinceminutal": "ENOSA.xlsx",
+    "hojas": [
+        "ELNO_2025P1_MedicionTransfo",
+        "ELNO_2025P2_MedicionTransformad",
+        "ELNO_2025P3_MedicionTransformad"
+    ],
+    "filas": [
+        {
+            "transformador": "1TP3019",
+            "transformador_mapa": "1TP3019",
+            "empresa_capacidad": "ENO",
+            "subestacion_capacidad": "ZORRITOS",
+            "barra": "B0228",
+            "tension_kv": "33",
+            "tension_transformador_kv": "33",
+            "potencia_transformador_mva": "5",
+            "capacidad_mva": 5,
+            "capacidad_total_mva": 5,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 2.4383,
+            "demanda_max_mw": 2.367,
+            "factor_potencia": 0.9708,
+            "fecha_maxima": "2025-02-24 16:00",
+            "disponible_mva": 2.5617,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx"
+        },
+        {
+            "transformador": "1TP3019",
+            "transformador_mapa": "1TP3019",
+            "empresa_capacidad": null,
+            "subestacion_capacidad": null,
+            "barra": "B0963",
+            "tension_kv": "22.9",
+            "tension_transformador_kv": "33\/23",
+            "potencia_transformador_mva": "5",
+            "capacidad_mva": 5,
+            "capacidad_total_mva": 5,
+            "capacidad_modo": "shared_total",
+            "lado_transformador": null,
+            "capacidad_nota": "Total compartido del transformador",
+            "demanda_max_mva": 2.4383,
+            "demanda_max_mw": 2.367,
+            "factor_potencia": 0.9708,
+            "fecha_maxima": "2025-02-24 16:00",
+            "disponible_mva": null,
+            "estado": "Ver resumen",
+            "fuente_capacidad": "MapaSEIN OSINERGMIN"
+        },
+        {
+            "transformador": "1TP3028-R",
+            "transformador_mapa": "1TP3028",
+            "empresa_capacidad": "ENO",
+            "subestacion_capacidad": "ZORRITOS",
+            "barra": "B0228",
+            "tension_kv": "33",
+            "tension_transformador_kv": "33",
+            "potencia_transformador_mva": "0.8",
+            "capacidad_mva": 0.8,
+            "capacidad_total_mva": 1.6,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Primaria",
+            "capacidad_nota": "Potencia nominal por barra (Primaria)",
+            "demanda_max_mva": 0.467,
+            "demanda_max_mw": 0.4618,
+            "factor_potencia": 0.9889,
+            "fecha_maxima": "2025-12-31 21:15",
+            "disponible_mva": 0.333,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx"
+        },
+        {
+            "transformador": "1TP3028-R",
+            "transformador_mapa": "1TP3028",
+            "empresa_capacidad": "ENO",
+            "subestacion_capacidad": "ZORRITOS",
+            "barra": "B1487",
+            "tension_kv": "10",
+            "tension_transformador_kv": "10",
+            "potencia_transformador_mva": "0.8",
+            "capacidad_mva": 0.8,
+            "capacidad_total_mva": 1.6,
+            "capacidad_modo": "excel_per_winding",
+            "lado_transformador": "Secundaria",
+            "capacidad_nota": "Potencia nominal por barra (Secundaria)",
+            "demanda_max_mva": 0.467,
+            "demanda_max_mw": 0.4618,
+            "factor_potencia": 0.9889,
+            "fecha_maxima": "2025-12-31 21:15",
+            "disponible_mva": 0.333,
+            "estado": "Disponible",
+            "fuente_capacidad": "EquiposTransformadores.xlsx"
+        }
+    ],
+    "resumen_transformadores": [
+        {
+            "transformador": "1TP3019",
+            "transformador_mapa": "1TP3019",
+            "capacidad_total_mva": 5,
+            "demanda_total_mva": 4.8766,
+            "disponible_total_mva": 0.1234,
+            "estado": "Disponible",
+            "criterio": "Capacidad total compartida entre barras"
+        },
+        {
+            "transformador": "1TP3028-R",
+            "transformador_mapa": "1TP3028",
+            "capacidad_total_mva": 1.6,
+            "demanda_total_mva": 0.934,
+            "disponible_total_mva": 0.666,
+            "estado": "Disponible",
+            "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+        }
+    ],
+    "transformadores_maestro": [
+        {
+            "codigo_transformador": "1TP3019",
+            "subestacion": "ZORRITOS",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3020",
+            "subestacion": "ZORRITOS",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3022",
+            "subestacion": "ZORRITOS",
+            "empresa": "Electronoroeste"
+        },
+        {
+            "codigo_transformador": "1TP3028-R",
+            "subestacion": "ZORRITOS",
+            "empresa": "Electronoroeste"
+        }
+    ],
+    "barras_maestro": [
+        {
+            "codigo_barra": "B0083",
+            "nombre_barra": "Zorritos",
+            "tension": "220"
+        },
+        {
+            "codigo_barra": "B0168",
+            "nombre_barra": "Zorritos",
+            "tension": "60"
+        },
+        {
+            "codigo_barra": "B0201",
+            "nombre_barra": "Nueva Zorritos",
+            "tension": "60"
+        },
+        {
+            "codigo_barra": "B0228",
+            "nombre_barra": "Zorritos",
+            "tension": "33"
+        },
+        {
+            "codigo_barra": "B0963",
+            "nombre_barra": "Zorritos",
+            "tension": "22.9"
+        },
+        {
+            "codigo_barra": "B1487",
+            "nombre_barra": "ZORRITOS",
+            "tension": "10"
+        }
+    ],
+    "capacidad_excel_transformadores": [
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "ZORRITOS",
+            "subestacion_norm": "zorritos",
+            "codigo": "1TP3019",
+            "codigo_norm": "1tp3019",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 33,
+                    "tension_texto": "33",
+                    "potencia_mva": 5,
+                    "potencia_texto": "5"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "ZORRITOS",
+            "subestacion_norm": "zorritos",
+            "codigo": "1TP3020",
+            "codigo_norm": "1tp3020",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 33,
+                    "tension_texto": "33",
+                    "potencia_mva": 0.4,
+                    "potencia_texto": "0.4"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 10.5,
+                    "tension_texto": "10.5",
+                    "potencia_mva": 0.4,
+                    "potencia_texto": "0.4"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "ENO",
+            "empresa_norm": "eno",
+            "subestacion": "ZORRITOS",
+            "subestacion_norm": "zorritos",
+            "codigo": "1TP3028",
+            "codigo_norm": "1tp3028",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 33,
+                    "tension_texto": "33",
+                    "potencia_mva": 0.8,
+                    "potencia_texto": "0.8"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 0.8,
+                    "potencia_texto": "0.8"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "REP",
+            "empresa_norm": "rep",
+            "subestacion": "ZORRITOS",
+            "subestacion_norm": "zorritos",
+            "codigo": "T33-261",
+            "codigo_norm": "t33 261",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 10,
+                    "tension_texto": "10",
+                    "potencia_mva": 13,
+                    "potencia_texto": "13"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        },
+        {
+            "empresa": "REP",
+            "empresa_norm": "rep",
+            "subestacion": "ZORRITOS",
+            "subestacion_norm": "zorritos",
+            "codigo": "T116-262",
+            "codigo_norm": "t116 262",
+            "devanados": [
+                {
+                    "lado": "Primaria",
+                    "tension_kv": 220,
+                    "tension_texto": "220",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Secundaria",
+                    "tension_kv": 60,
+                    "tension_texto": "60",
+                    "potencia_mva": 65,
+                    "potencia_texto": "65"
+                },
+                {
+                    "lado": "Terciaria",
+                    "tension_kv": 22.9,
+                    "tension_texto": "22.9",
+                    "potencia_mva": 13,
+                    "potencia_texto": "13"
+                }
+            ],
+            "hoja": "EquiposTransformadores"
+        }
+    ],
+    "capacidad_mapa_sein": {
+        "id_se": "321",
+        "nombre": "ZORRITOS",
+        "empresa": "ELECTRONOROESTE",
+        "tension": "30",
+        "lat": "-3.672197",
+        "lng": "-80.661933",
+        "transformadores": [
+            {
+                "codigo": "1TP3019",
+                "tipo": "Autotransformador",
+                "anio_poc": "1999",
+                "tension_kv": "33\/23",
+                "potencia_mva": "5",
+                "fuente": "MapaSEIN OSINERGMIN"
+            },
+            {
+                "codigo": "1TP3028",
+                "tipo": "Trifasico",
+                "anio_poc": "2004",
+                "tension_kv": "33\/10.5",
+                "potencia_mva": "0.8",
+                "fuente": "MapaSEIN OSINERGMIN"
+            },
+            {
+                "codigo": "",
+                "tipo": "Trifasico",
+                "anio_poc": "",
+                "tension_kv": "220\/60\/23",
+                "potencia_mva": "15\/12\/10",
+                "fuente": "MapaSEIN OSINERGMIN"
+            }
+        ],
+        "nombre_norm": "zorritos",
+        "empresa_norm": "electronoroeste"
+    },
+    "consumo_serie": [],
+    "consumo_mensual": [
+        {
+            "periodo": "2025-01",
+            "mes": "Enero 2025",
+            "fecha": "2025-01-04 19:30",
+            "mva": 4.2107
+        },
+        {
+            "periodo": "2025-02",
+            "mes": "Febrero 2025",
+            "fecha": "2025-02-24 16:00",
+            "mva": 5.6204
+        },
+        {
+            "periodo": "2025-03",
+            "mes": "Marzo 2025",
+            "fecha": "2025-03-01 20:00",
+            "mva": 4.5508
+        },
+        {
+            "periodo": "2025-04",
+            "mes": "Abril 2025",
+            "fecha": "2025-04-19 21:00",
+            "mva": 4.5493
+        },
+        {
+            "periodo": "2025-05",
+            "mes": "Mayo 2025",
+            "fecha": "2025-05-03 19:30",
+            "mva": 4.2954
+        },
+        {
+            "periodo": "2025-06",
+            "mes": "Junio 2025",
+            "fecha": "2025-06-03 13:00",
+            "mva": 3.5575
+        },
+        {
+            "periodo": "2025-07",
+            "mes": "Julio 2025",
+            "fecha": "2025-07-26 19:30",
+            "mva": 3.7623
+        },
+        {
+            "periodo": "2025-08",
+            "mes": "Agosto 2025",
+            "fecha": "2025-08-26 19:30",
+            "mva": 3.7623
+        },
+        {
+            "periodo": "2025-09",
+            "mes": "Setiembre 2025",
+            "fecha": "2025-09-09 19:30",
+            "mva": 3.9068
+        },
+        {
+            "periodo": "2025-10",
+            "mes": "Octubre 2025",
+            "fecha": "2025-10-11 19:15",
+            "mva": 3.9961
+        },
+        {
+            "periodo": "2025-11",
+            "mes": "Noviembre 2025",
+            "fecha": "2025-11-08 19:15",
+            "mva": 3.8664
+        },
+        {
+            "periodo": "2025-12",
+            "mes": "Diciembre 2025",
+            "fecha": "2025-12-31 21:00",
+            "mva": 4.0608
+        }
+    ],
+    "ultimo_registro": {
+        "fecha": "2025-12-31 23:45",
+        "mva": 3.5757
+    },
+    "pdf": {
+        "archivo": "UNIFILAR_ABRIL_2026.pdf",
+        "url": "uploads\/pdf\/UNIFILAR_ABRIL_2026.pdf",
+        "nota": "PDF unifilar disponible como referencia visual. El plano es grafico y no entrega texto confiable para recorte automatico.",
+        "busqueda": "ZORRITOS"
+    },
+    "pit": {
+        "status": "success",
+        "message": "",
+        "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+        "file_mtime": "2026-06-01T16:55:18",
+        "sheets_scanned": 8,
+        "total_matches": 8,
+        "summary": {
+            "En servicio": 4,
+            "En ejecucion de obra fisica": 2,
+            "Sin estado": 2
+        },
+        "future_transformer": false,
+        "future_transformers": [],
+        "matches": [
+            {
+                "anexo": "Anexo 3",
+                "fila": 41,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular_anterior"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "proyecto": "13",
+                "elemento": "Celda de Transformador 220 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT Zorritos",
+                "subestacion_norm": "ZORRITOS",
+                "modulo": "CE-220COR1C1ESBTR3",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "220",
+                "tensiones_kv": [
+                    "220"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 18 (R.M. 029-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-02-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "fila": 42,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular_anterior"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "proyecto": "13",
+                "elemento": "Transformador de Potencia 220\/60\/23kV-65MVA",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT Zorritos",
+                "subestacion_norm": "ZORRITOS",
+                "modulo": "TP-220060023-065CO1E",
+                "tipo_elemento": "transformador",
+                "potencia_mva": 65,
+                "potencias_mva": [
+                    65
+                ],
+                "tension_kv": "220\/60\/23",
+                "tensiones_kv": [
+                    "220\/60\/23",
+                    "220"
+                ],
+                "spec_source": "texto\/modulo",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 18 (R.M. 029-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-02-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "fila": 43,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular_anterior"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "proyecto": "13",
+                "elemento": "Celda de Transformador 60 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT Zorritos",
+                "subestacion_norm": "ZORRITOS",
+                "modulo": "CE-060COR1C1ESBTR2",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 18 (R.M. 029-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-02-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 3",
+                "fila": 44,
+                "coincidencia": "fuerte",
+                "matched_fields": [
+                    "instalacion",
+                    "titular_anterior"
+                ],
+                "empresa": "REP",
+                "empresa_anterior": "ENOSA",
+                "empresa_norm": "REP",
+                "proyecto": "13",
+                "elemento": "Celda de Transformador 23 kV",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT Zorritos",
+                "subestacion_norm": "ZORRITOS",
+                "modulo": "CE-023COR1C1ESBTR1",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "23",
+                "tensiones_kv": [
+                    "23"
+                ],
+                "spec_source": "texto",
+                "estado": "En servicio",
+                "estado_raw": "En servicio",
+                "avance": "En servicio",
+                "acta": "No aplica en el marco del PIT. Pertenece al proyecto Ampliación N° 18 (R.M. 029-2017-MEM\/DM). Contrato de ETECEN-ETESUR",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "2019-02-16",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "fila": 964,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "elemento",
+                    "titular"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "proyecto": "",
+                "elemento": "Línea, 60 kV, Nueva Zorritos - Tumbes, 24 km",
+                "elementos": "",
+                "instalacion": "LÍNEA",
+                "subestacion_norm": "LINEA",
+                "modulo": "LT-060COR0PMS0C5240A",
+                "tipo_elemento": "linea",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 4",
+                "fila": 966,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "ENOSA",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "proyecto": "",
+                "elemento": "Celda de Línea",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT NUEVA ZORRITOS",
+                "subestacion_norm": "NUEVA ZORRITOS",
+                "modulo": "CE-060COR1C1ESBLI2",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "En ejecucion de obra fisica",
+                "estado_raw": "En proceso",
+                "avance": "En ejecucion de obra fisica",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": ""
+            },
+            {
+                "anexo": "Anexo 6",
+                "fila": 82,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "elemento",
+                    "titular"
+                ],
+                "empresa": "Electronoroeste",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "proyecto": "",
+                "elemento": "Línea, 60 kV, Nueva Zorritos - Tumbes, 24 km",
+                "elementos": "",
+                "instalacion": "LÍNEA",
+                "subestacion_norm": "LINEA",
+                "modulo": "LT-060COR0PMS0C5240A",
+                "tipo_elemento": "linea",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "60",
+                "tensiones_kv": [
+                    "60"
+                ],
+                "spec_source": "texto",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            },
+            {
+                "anexo": "Anexo 6",
+                "fila": 84,
+                "coincidencia": "medio",
+                "matched_fields": [
+                    "instalacion",
+                    "titular"
+                ],
+                "empresa": "Electronoroeste",
+                "empresa_anterior": "",
+                "empresa_norm": "ELECTRONOROESTE",
+                "proyecto": "",
+                "elemento": "Celda de Línea",
+                "elementos": "",
+                "instalacion": "SET MAT\/AT NUEVA ZORRITOS",
+                "subestacion_norm": "NUEVA ZORRITOS",
+                "modulo": "CE-060COR1C1ESBLI2",
+                "tipo_elemento": "celda",
+                "potencia_mva": null,
+                "potencias_mva": [],
+                "tension_kv": "",
+                "tensiones_kv": [],
+                "spec_source": "",
+                "estado": "Sin estado",
+                "estado_raw": "",
+                "avance": "Sin estado",
+                "acta": "",
+                "anio_previsto": "2017",
+                "anio_reprogramado": "2017",
+                "fecha_reprogramada": "",
+                "fecha_suscripcion": "",
+                "fecha_puesta_servicio": "",
+                "fecha_baja": "",
+                "fecha_solicitud": "",
+                "comentario": "-"
+            }
+        ]
+    },
+    "pt_coes": {
+        "status": "no_data",
+        "message": "No se detectaron anteproyectos PT COES asociados.",
+        "file_count": 24,
+        "matches": []
+    },
+    "generated_at": "2026-06-09 16:31:38"
+}

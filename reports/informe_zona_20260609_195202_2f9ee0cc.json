@@ -1,0 +1,239 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 59.6698,
+        "centro": {
+            "lat": -8.285472,
+            "lng": -77.949548
+        },
+        "demanda_kw_estimada": 8360,
+        "demanda_kw_usada": 8360,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 67,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 3132,
+            "max_m": 4419,
+            "promedio_m": 3643.9,
+            "rango_m": 1287,
+            "riesgo": "alto",
+            "descripcion": "alto, con variacion aproximada de 1287 m; puede encarecer accesos, servidumbres y tendido."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PALLASCA",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -8.25607,
+                "lng": -77.99363,
+                "distancia_km": 5.85,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 20.5,
+                "demanda_total_mva": 6.4366,
+                "disponible_total_mva": 14.0634,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TP-6015",
+                        "capacidad_total_mva": 20.5,
+                        "demanda_total_mva": 6.4366,
+                        "disponible_total_mva": 14.0634,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "MANTA",
+                "empresa": "PERUANA DE INVERSIONES EN ENERGÍA RENOVABLES S.A.",
+                "lat": -8.63433,
+                "lng": -77.90332,
+                "distancia_km": 39.12,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: MANTA"
+            },
+            {
+                "nombre": "Salidas MT desde SET",
+                "empresa": "",
+                "lat": -8.6571,
+                "lng": -77.910285,
+                "distancia_km": 41.55,
+                "dentro": false,
+                "fuente": "Salidas MT desde SET",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: Salidas MT desde SET"
+            },
+            {
+                "nombre": "LA PAMPA",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -8.65718,
+                "lng": -77.91014,
+                "distancia_km": 41.56,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 3,
+                "demanda_total_mva": 0.4083,
+                "disponible_total_mva": 2.5917,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TP-6014",
+                        "capacidad_total_mva": 3,
+                        "demanda_total_mva": 0.4083,
+                        "disponible_total_mva": 2.5917,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "LA PAMPA",
+                "empresa": "PERUANA DE INVERSIONES EN ENERGÍA RENOVABLES S.A.",
+                "lat": -8.65718,
+                "lng": -77.91014,
+                "distancia_km": 41.56,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 3,
+                "demanda_total_mva": 0.4083,
+                "disponible_total_mva": 2.5917,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TP-6014",
+                        "capacidad_total_mva": 3,
+                        "demanda_total_mva": 0.4083,
+                        "disponible_total_mva": 2.5917,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 10,
+            "lineas_intersectan": 2,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "Salidas MT desde SET": 3000,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PALLASCA",
+                "PALLASCA",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET",
+                "Salidas MT desde SET"
+            ],
+            "lineas": [
+                "LT S.E. LA PAMPA-S.E. PALLASCA",
+                "LT S.E. LA PAMPA-S.E. PALLASCA"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: PALLASCA, PALLASCA, Salidas MT desde SET",
+            "Cruzan o tocan lineas de transmision relevantes: LT S.E. LA PAMPA-S.E. PALLASCA, LT S.E. LA PAMPA-S.E. PALLASCA",
+            "La zona cruza informacion externa registrada: Limites departamentales",
+            "Relieve estimado: alto, con variacion aproximada de 1287 m; puede encarecer accesos, servidumbres y tendido.",
+            "SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres), LA PAMPA (2.5917 MVA libres), LA PAMPA (2.5917 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-09 19:51:48\nArea: 59.6698 km2\nDemanda usada: 8360 kW (estimada por capas)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (67\/100)\nRelieve: alto, con variacion aproximada de 1287 m; puede encarecer accesos, servidumbres y tendido. Elevacion min\/max: 3132\/4419 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":10,\"lineas_intersectan\":2,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"Salidas MT desde SET\":3000,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- PALLASCA (HIDRANDINA S.A.), 5.85 km, cap. 20.5 MVA, demanda 6.4366 MVA, disponible 14.0634 MVA, estado Disponible.\n- MANTA (PERUANA DE INVERSIONES EN ENERGÍA RENOVABLES S.A.), 39.12 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- Salidas MT desde SET (sin empresa), 41.55 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LA PAMPA (HIDRANDINA S.A.), 41.56 km, cap. 3 MVA, demanda 0.4083 MVA, disponible 2.5917 MVA, estado Disponible.\n- LA PAMPA (PERUANA DE INVERSIONES EN ENERGÍA RENOVABLES S.A.), 41.56 km, cap. 3 MVA, demanda 0.4083 MVA, disponible 2.5917 MVA, estado Disponible.\nRazones:\n- Hay SET cercanas o dentro del poligono: PALLASCA, PALLASCA, Salidas MT desde SET\n- Cruzan o tocan lineas de transmision relevantes: LT S.E. LA PAMPA-S.E. PALLASCA, LT S.E. LA PAMPA-S.E. PALLASCA\n- La zona cruza informacion externa registrada: Limites departamentales\n- Relieve estimado: alto, con variacion aproximada de 1287 m; puede encarecer accesos, servidumbres y tendido.\n- SET con disponibilidad referencial cercana: PALLASCA (14.0634 MVA libres), LA PAMPA (2.5917 MVA libres), LA PAMPA (2.5917 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente.",
+        "ai": {
+            "enabled": true,
+            "model": "gpt-5.4-mini",
+            "texto": "Informe ejecutivo para decisión regulatoria y territorial\n\nConclusión ejecutiva\nCon la información disponible, la zona sí se orienta a concesión de distribución y no a convenio municipal, porque la demanda estimada usada es 8,360 kW, muy por encima del umbral de 500 kW. Además, existen SET cercanas con capacidad disponible y la zona es cruzada por líneas de transmisión relevantes. Sin embargo, el relieve es alto y la evidencia legal-territorial no muestra concesiones intersecadas, por lo que todavía no basta para cerrar una decisión definitiva sin validación técnica y legal de campo.\n\nHallazgos principales\n\n1) Criterio de umbral de 500 kW\nLa demanda usada es 8,360 kW.\nEsto supera ampliamente el umbral de 500 kW.\nPor criterio, el caso corresponde a concesión de distribución.\nUn convenio municipal solo sería consistente si la demanda sustentada fuera menor a 500 kW, lo que aquí no ocurre con los datos disponibles.\n\n2) Disponibilidad eléctrica y SET cercanas\nSET cercanas relevantes:\nPALLASCA, de HIDRANDINA S.A., a 5.85 km.\nCapacidad total: 20.5 MVA.\nDemanda total: 6.4366 MVA.\nDisponible: 14.0634 MVA.\nEstado: Disponible.\n\nLA PAMPA, de HIDRANDINA S.A., a 41.56 km.\nCapacidad total: 3 MVA.\nDemanda total: 0.4083 MVA.\nDisponible: 2.5917 MVA.\nEstado: Disponible.\n\nTambién aparecen registros de MANTA y “Salidas MT desde SET”, pero el sistema reporta error de maestro o falta de coincidencia, por lo que no deben tomarse como base firme para decisión.\n\nLectura técnica:\nSí existe disponibilidad referencial cercana, especialmente en PALLASCA.\nNo obstante, la capacidad disponible debe confirmarse con factibilidad formal de alimentación, porque la distancia, la configuración de red y el punto exacto de conexión no están completamente definidos en esta ficha.\n\n3) Líneas y conexión eléctrica\nSe registran 2 líneas de transmisión que intersectan o tocan la zona.\nLa línea más relevante es LT S.E. LA PAMPA - S.E. PALLASCA.\nEsto refuerza que la zona tiene relación con infraestructura eléctrica existente y potencial de alimentación.\n\nLectura técnica:\nLa presencia de líneas cercanas o intersectantes es favorable para un esquema de concesión, aunque no sustituye la evaluación de capacidad de red, servidumbres y punto de entrega.\n\n4) Concesiones y trámites\nNo se identifican concesiones intersectando el polígono.\nNo se identifican SED dentro del polígono.\nNo se reportan trámites de concesión en conflicto dentro del área.\n\nLectura regulatoria:\nNo hay un obstáculo aparente por superposición directa con concesiones registradas en esta muestra.\nEso favorece que el trámite se encamine como concesión de distribución si el expediente técnico y legal lo sustenta.\n\n5) Relieve\nEl relieve fue clasificado como alto.\nElevación mínima: 3,132 m.\nElevación máxima: 4,419 m.\nPromedio: 3,643.9 m.\nRango: 1,287 m.\n\nRiesgo asociado:\nAlto.\nPuede encarecer accesos, servidumbres, tendido, construcción y mantenimiento.\nTambién puede incrementar la complejidad de expansión de red y tiempos de ejecución.\n\nLectura territorial:\nEl relieve no impide por sí solo la electrificación, pero sí eleva el costo y la dificultad operativa.\nEn una decisión entre concesión o convenio municipal, este factor no cambia el criterio del umbral, pero sí eleva el requerimiento de sustento técnico-económico.\n\n6) Posible utilidad agrícola\nHay capas externas cargadas, pero en la información proporcionada no se reporta una capa agrícola específica útil para clasificar la aptitud agrícola de la zona.\nSí se registran capas externas de límites departamentales y algunas fuentes PRODUCE, pero no hay un resultado expreso de uso agrícola para este polígono.\n\nConclusión sobre utilidad agrícola:\nNo es posible afirmar una utilidad agrícola concreta con esta data.\nSi se desea usar este argumento para desarrollo territorial o priorización de electrificación productiva, hace falta revisar capas agrícolas específicas, predios y uso del suelo.\n\nRiesgos identificados\n\nRiesgo 1: Relieve alto\nPuede elevar el costo de infraestructura y dificultar el tendido.\n\nRiesgo 2: Dependencia de demanda estimada por capas\nLa demanda de 8,360 kW es estimada, no una demanda medida o formalmente sustentada.\nPara decisión regulatoria final, debe validarse con memoria de carga, padrón de usuarios, proyección de crecimiento y delimitación de centro poblado o área de expansión.\n\nRiesgo 3: Ambigüedad de algunas SET listadas\nExisten registros con error de maestro para MANTA y “Salidas MT desde SET”.\nNo deben usarse como soporte principal.\n\nRiesgo 4: La disponibilidad eléctrica es referencial\nAunque PALLASCA y LA PAMPA muestran capacidad libre, falta confirmar factibilidad de conexión real, nivel de tensión, distancia efectiva, servidumbre y criterios operativos.\n\nDisponibilidad eléctrica\nSí hay disponibilidad referencial cercana.\nLa más sólida es PALLASCA, con 14.0634 MVA libres.\nEsto sugiere que, en principio, la red podría atender la zona o permitir una solución de expansión, sujeto a estudios posteriores.\n\nRelieve\nEl relieve es una condicionante fuerte.\nZona de alta montaña o sierra alta, con variación importante.\nEsto tiende a favorecer esquemas de inversión con mayor formalidad técnica, como concesión, antes que un convenio municipal simplificado.\n\nConcesiones y trámite recomendado\nEl trámite recomendado por el sistema es concesión de distribución.\nCon la demanda estimada de 8,360 kW, este resultado es coherente con el umbral de 500 kW.\nNo se observan concesiones intersecadas que bloqueen de manera evidente la propuesta en la información entregada.\n\nJuicio ejecutivo\nLa zona es dable para concesión de distribución, con viabilidad media.\nNo parece adecuada para convenio municipal bajo el criterio del umbral, porque la demanda estimada es muy superior a 500 kW.\nLa decisión favorable a concesión está respaldada por:\ndemanda alta,\nSET cercana con disponibilidad,\nlíneas de transmisión presentes,\nausencia de concesiones intersectadas,\ny necesidad de una estructura formal de expansión.\n\nSiguientes pasos\n1) Validar la demanda\nConfirmar la demanda con sustento de usuarios,"
+        }
+    },
+    "polygon": [
+        [
+            -8.251167,
+            -77.966726
+        ],
+        [
+            -8.248592,
+            -77.938606
+        ],
+        [
+            -8.267643,
+            -77.907392
+        ],
+        [
+            -8.294977,
+            -77.914183
+        ],
+        [
+            -8.327342,
+            -77.926167
+        ],
+        [
+            -8.319658,
+            -77.957644
+        ],
+        [
+            -8.303687,
+            -77.989955
+        ],
+        [
+            -8.270713,
+            -77.995707
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

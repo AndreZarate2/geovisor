@@ -1,0 +1,82 @@
+{
+  "verified_at": "2026-06-24 11:30:00 -05:00",
+  "root": "C:/Users/cvc/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C/web cvc/Codex/mapa",
+  "status": "actualizado_en_carpeta_principal",
+  "summary": {
+    "code_changes_saved_in_root": true,
+    "hardcoded_temp_workspace_paths_found": false,
+    "data_folder_size_mb": 4482.04,
+    "uploads_folder_size_mb": 3500.62,
+    "cache_folder_size_mb": 663.23,
+    "reports_folder_size_mb": 2.21
+  },
+  "core_data": [
+    {
+      "type": "geojson_layers",
+      "folder": "data/geojson",
+      "files": 11,
+      "notes": "Incluye SET, LT, concesiones vigentes/tramite y capas rurales/definitivas separadas."
+    },
+    {
+      "type": "source_archives",
+      "folder": "data/source_archives",
+      "files": 5,
+      "notes": "Incluye Mayo_2026.zip, PT COES 2027-2036.zip, Departamento.zip, Acuicultura.zip y CULTURA.kmz."
+    },
+    {
+      "type": "set_master",
+      "file": "uploads/excel/DATOS DE SUB ESTACIONES MAESTRO.xlsx",
+      "present": true
+    },
+    {
+      "type": "transformer_capacity",
+      "file": "uploads/excel/EquiposTransformadores.xlsx",
+      "present": true,
+      "managed_in_excel_manifest": true
+    },
+    {
+      "type": "pit",
+      "file": "uploads/excel/PIT/Anexos_Informe PIT_Public. Abr_2026.xlsx",
+      "present": true
+    },
+    {
+      "type": "line_load",
+      "file": "uploads/excel/lineas/Potencia Aparente LLTT_2025.csv",
+      "present": true
+    },
+    {
+      "type": "transmission_lines_source",
+      "folder": "data/shapes/Transmision",
+      "file": "data/geojson/LT_Operacionm.geojson",
+      "features": 955,
+      "present": true,
+      "notes": "Regenerado desde Linea_transmision.shp con atributos completos. Incluye L-2234 y L-2235."
+    },
+    {
+      "type": "quinceminutales",
+      "folder": "uploads/excel/QUINCEMINUTALES EXCEL",
+      "present": true,
+      "indexed_cache_files": 31
+    },
+    {
+      "type": "report_templates",
+      "folder": "uploads/templates",
+      "files": [
+        "zona_reporte.docx",
+        "zona_reporte.pdf"
+      ],
+      "present": true
+    }
+  ],
+  "cache_status": {
+    "line_load_index": "cache/line_load_index.json",
+    "line_load_index_recent": true,
+    "quinceminute_indexes_recent": true,
+    "generation_layer_cache": "cache/osinergmin_generacion.geojson"
+  },
+  "recommendations": [
+    "Usar Gestionar datos y capas para reemplazar Excel, PIT, PT, plantillas y GeoJSON sin mover archivos manualmente.",
+    "Si se reemplaza algun Excel o GeoJSON fuera de la plataforma, limpiar o regenerar caches desde la misma plataforma.",
+    "Mantener la carpeta .vscode/chrome-debug-profile fuera de copias de respaldo pesadas si solo se requiere transportar la plataforma."
+  ]
+}

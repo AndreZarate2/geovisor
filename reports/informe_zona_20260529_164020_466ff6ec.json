@@ -1,0 +1,234 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "polygon",
+        "area_km2": 17.8792,
+        "centro": {
+            "lat": -17.968369,
+            "lng": -70.316443
+        },
+        "demanda_kw_estimada": 3046,
+        "demanda_kw_usada": 25000,
+        "demanda_origen": "manual",
+        "tramite_recomendado": "Concesion de distribucion",
+        "viabilidad": {
+            "score": 61,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 690,
+            "max_m": 844,
+            "promedio_m": 763.8,
+            "rango_m": 154,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 154 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "TACNA SOLAR",
+                "empresa": "TACNA SOLAR S.A.C.",
+                "lat": -17.99496,
+                "lng": -70.33275,
+                "distancia_km": 3.42,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: TACNA SOLAR"
+            },
+            {
+                "nombre": "LOS HEROES",
+                "empresa": "RED ELÉCTRICA DEL SUR S.A.",
+                "lat": -17.999723,
+                "lng": -70.316368,
+                "distancia_km": 3.49,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 70,
+                "demanda_total_mva": 38.133,
+                "disponible_total_mva": 31.867,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "T0002",
+                        "capacidad_total_mva": 70,
+                        "demanda_total_mva": 38.133,
+                        "disponible_total_mva": 31.867,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "TACNA",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -18.025369,
+                "lng": -70.271612,
+                "distancia_km": 7.92,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ELECTROSUR.xlsx",
+                "capacidad_total_mva": 35,
+                "demanda_total_mva": 27.1976,
+                "disponible_total_mva": 7.8024,
+                "estado": "Disponible",
+                "transformadores": [
+                    {
+                        "transformador": "TAC-02",
+                        "capacidad_total_mva": 10,
+                        "demanda_total_mva": 11.1414,
+                        "disponible_total_mva": -1.1414,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad total compartida entre barras"
+                    },
+                    {
+                        "transformador": "TAC-03",
+                        "capacidad_total_mva": 25,
+                        "demanda_total_mva": 16.0562,
+                        "disponible_total_mva": 8.9438,
+                        "estado": "Disponible",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "PARQUE INDUSTRIAL",
+                "empresa": "ELECTROSUR S.A",
+                "lat": -17.990613,
+                "lng": -70.232001,
+                "distancia_km": 9.27,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "SEAL.xlsx",
+                "capacidad_total_mva": 54,
+                "demanda_total_mva": 207.3611,
+                "disponible_total_mva": -153.3611,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "T4-103",
+                        "capacidad_total_mva": 30,
+                        "demanda_total_mva": 131.2627,
+                        "disponible_total_mva": -101.2627,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "T41-31",
+                        "capacidad_total_mva": 10,
+                        "demanda_total_mva": 39.8654,
+                        "disponible_total_mva": -29.8654,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    },
+                    {
+                        "transformador": "T42-31",
+                        "capacidad_total_mva": 14,
+                        "demanda_total_mva": 36.233,
+                        "disponible_total_mva": -22.233,
+                        "estado": "Sobrecarga",
+                        "criterio": "Capacidad por barra\/tension"
+                    }
+                ]
+            },
+            {
+                "nombre": "CALANA",
+                "empresa": "EMPRESA DE GENERACIÓN ELÉCTRICA DEL SUR S.A.",
+                "lat": -17.985652,
+                "lng": -70.205593,
+                "distancia_km": 11.88,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: CALANA"
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 14,
+            "lineas_intersectan": 6,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 1,
+            "externas_intersectan": 0,
+            "fuentes": {
+                "SET OSINERGMIN": 728,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "Media tension": 1000,
+                "SED": 3000,
+                "Concesion OSINERGMIN": 4198,
+                "Concesion vigente": 4915,
+                "Concesion en tramite": 3367,
+                "API externa: Prediccion agricola Piura": 194,
+                "API externa: Predios Olmos": 129,
+                "API externa: Predios Moquegua": 1000
+            }
+        },
+        "muestras": {
+            "sets": [
+                "TACNA",
+                "PARQUE INDUSTRIAL",
+                "CALANA",
+                "TACNA SOLAR",
+                "LOS HEROES",
+                "VIÑANI"
+            ],
+            "lineas": [
+                "LT TOMASIRI-LOS HEROES",
+                "LT MONTALVO - LOS HÉROES",
+                "LT MOQUEGUA-LOS HEROES",
+                "LT local",
+                "LT local",
+                "LT local"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [
+                "DISTRIBUCION TACNA - LA YARADA"
+            ],
+            "externas": []
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del poligono: TACNA, PARQUE INDUSTRIAL, CALANA",
+            "Cruzan o tocan lineas de transmision relevantes: LT TOMASIRI-LOS HEROES, LT MONTALVO - LOS HÉROES, LT MOQUEGUA-LOS HEROES",
+            "Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 154 m.",
+            "SET con disponibilidad referencial cercana: LOS HEROES (31.867 MVA libres), TACNA (7.8024 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesion."
+        ],
+        "criterio": "Concesion si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-05-29 16:40:20\nArea: 17.8792 km2\nDemanda usada: 25000 kW (manual)\nTramite recomendado: Concesion de distribucion\nViabilidad: Media (61\/100)\nRelieve: bajo a moderado, con variacion aproximada de 154 m. Elevacion min\/max: 690\/844 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":14,\"lineas_intersectan\":6,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":1,\"externas_intersectan\":0,\"fuentes\":{\"SET OSINERGMIN\":728,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"Media tension\":1000,\"SED\":3000,\"Concesion OSINERGMIN\":4198,\"Concesion vigente\":4915,\"Concesion en tramite\":3367,\"API externa: Prediccion agricola Piura\":194,\"API externa: Predios Olmos\":129,\"API externa: Predios Moquegua\":1000}}\nSET cercanas:\n- TACNA SOLAR (TACNA SOLAR S.A.C.), 3.42 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\n- LOS HEROES (RED ELÉCTRICA DEL SUR S.A.), 3.49 km, cap. 70 MVA, demanda 38.133 MVA, disponible 31.867 MVA, estado Disponible.\n- TACNA (ELECTROSUR S.A), 7.92 km, cap. 35 MVA, demanda 27.1976 MVA, disponible 7.8024 MVA, estado Disponible.\n- PARQUE INDUSTRIAL (ELECTROSUR S.A), 9.27 km, cap. 54 MVA, demanda 207.3611 MVA, disponible -153.3611 MVA, estado Sobrecarga.\n- CALANA (EMPRESA DE GENERACIÓN ELÉCTRICA DEL SUR S.A.), 11.88 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Hay SET cercanas o dentro del poligono: TACNA, PARQUE INDUSTRIAL, CALANA\n- Cruzan o tocan lineas de transmision relevantes: LT TOMASIRI-LOS HEROES, LT MONTALVO - LOS HÉROES, LT MOQUEGUA-LOS HEROES\n- Existe superposicion con concesion vigente o en tramite; revisar titularidad y expediente.\n- Relieve estimado: bajo a moderado, con variacion aproximada de 154 m.\n- SET con disponibilidad referencial cercana: LOS HEROES (31.867 MVA libres), TACNA (7.8024 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesion.\nNota: es un preanalisis con capas cargadas; no reemplaza estudio electrico, demanda sustentada ni revision legal del expediente."
+    },
+    "polygon": [
+        [
+            -17.949313,
+            -70.336476
+        ],
+        [
+            -17.949313,
+            -70.29641
+        ],
+        [
+            -17.987425,
+            -70.29641
+        ],
+        [
+            -17.987425,
+            -70.336476
+        ]
+    ],
+    "meta": {
+        "project": "Evaluacion preliminar de zona electrica",
+        "client": "",
+        "author": "admin",
+        "template": "C:\/Users\/mzarate\/OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\/ANDRE\/PLANTILLA PARA PRESENTAR RESUMENES TECNICOS\/PLANTILLA 1.docx"
+    }
+}

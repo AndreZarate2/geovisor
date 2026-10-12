@@ -1,0 +1,9 @@
+{
+    "title": "Prueba chat IA",
+    "question": "Dame un PDF de utilidades",
+    "answer": "Puedo analizar distribucion desde SET, generacion solar, eolica, hidroelectrica, biomasa y termica, concesiones, predios, agricultura y acuicultura.",
+    "web": {
+        "summary": "Busqueda web habilitada mediante OpenAI web_search cuando la API responde."
+    },
+    "opportunities": []
+}

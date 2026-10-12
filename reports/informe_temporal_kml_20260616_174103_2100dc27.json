@@ -1,0 +1,295 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 20.86,
+        "centro": {
+            "lat": -7.798596,
+            "lng": -79.348763
+        },
+        "demanda_kw_estimada": 3703,
+        "demanda_kw_usada": 3703,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 83,
+            "nivel": "Alta"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 9,
+            "max_m": 42,
+            "promedio_m": 25,
+            "rango_m": 33,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 33 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "PAIJAN",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.73638,
+                "lng": -79.29611,
+                "distancia_km": 9.03,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 4,
+                "demanda_total_mva": 6.131,
+                "disponible_total_mva": -2.131,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3009",
+                        "capacidad_total_mva": 4,
+                        "demanda_total_mva": 6.131,
+                        "disponible_total_mva": -2.131,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "MALABRIGO",
+                "empresa": "",
+                "lat": -7.708042,
+                "lng": -79.436019,
+                "distancia_km": 13.92,
+                "dentro": false,
+                "fuente": "SET proyectada",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 24,
+                "demanda_total_mva": 27.1041,
+                "disponible_total_mva": -3.1041,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3011",
+                        "capacidad_total_mva": 24,
+                        "demanda_total_mva": 27.1041,
+                        "disponible_total_mva": -3.1041,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "MALABRIGO",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.70589,
+                "lng": -79.43775,
+                "distancia_km": 14.23,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 24,
+                "demanda_total_mva": 27.1041,
+                "disponible_total_mva": -3.1041,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3011",
+                        "capacidad_total_mva": 24,
+                        "demanda_total_mva": 27.1041,
+                        "disponible_total_mva": -3.1041,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "CASAGRANDE 1",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.80231,
+                "lng": -79.19614,
+                "distancia_km": 16.82,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 4,
+                "demanda_total_mva": 7.4385,
+                "disponible_total_mva": -3.4385,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3007",
+                        "capacidad_total_mva": 4,
+                        "demanda_total_mva": 7.4385,
+                        "disponible_total_mva": -3.4385,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            },
+            {
+                "nombre": "CASAGRANDE 2",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.7546,
+                "lng": -79.17912,
+                "distancia_km": 19.32,
+                "dentro": false,
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 14,
+                "demanda_total_mva": 16.2544,
+                "disponible_total_mva": -2.2544,
+                "estado": "Sobrecarga",
+                "transformadores": [
+                    {
+                        "transformador": "TP-3008",
+                        "capacidad_total_mva": 14,
+                        "demanda_total_mva": 16.2544,
+                        "disponible_total_mva": -2.2544,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ]
+            }
+        ],
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 7,
+            "lineas_intersectan": 2,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 0,
+            "externas_intersectan": 1,
+            "fuentes": {
+                "SET OSINERGMIN": 733,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 947,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "osinergmin generacion": 898,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [
+                "PAIJAN",
+                "MALABRIGO",
+                "PAIJAN",
+                "MALABRIGO",
+                "MALABRIGO",
+                "PAIJAN"
+            ],
+            "lineas": [
+                "LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO",
+                "LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [],
+            "externas": [
+                "Limites departamentales"
+            ]
+        },
+        "razones": [
+            "Hay SET cercanas o dentro del polígono: PAIJAN, MALABRIGO, PAIJAN",
+            "Cruzan o tocan líneas de transmisión relevantes: LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO, LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO",
+            "La zona cruza información externa registrada: Limites departamentales",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 33 m.",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-16 17:41:02\nÁrea: 20.8597 km2\nDemanda usada: 3703 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Alta (83\/100)\nRelieve: bajo a moderado, con variacion aproximada de 33 m. Elevación min\/max: 9\/42 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":7,\"lineas_intersectan\":2,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":0,\"externas_intersectan\":1,\"fuentes\":{\"SET OSINERGMIN\":733,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":947,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"osinergmin generacion\":898,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- PAIJAN (HIDRANDINA S.A.), 9.03 km, cap. 4 MVA, demanda 6.131 MVA, disponible -2.131 MVA, estado Sobrecarga.\n- MALABRIGO (sin empresa), 13.92 km, cap. 24 MVA, demanda 27.1041 MVA, disponible -3.1041 MVA, estado Sobrecarga.\n- MALABRIGO (HIDRANDINA S.A.), 14.23 km, cap. 24 MVA, demanda 27.1041 MVA, disponible -3.1041 MVA, estado Sobrecarga.\n- CASAGRANDE 1 (HIDRANDINA S.A.), 16.82 km, cap. 4 MVA, demanda 7.4385 MVA, disponible -3.4385 MVA, estado Sobrecarga.\n- CASAGRANDE 2 (HIDRANDINA S.A.), 19.32 km, cap. 14 MVA, demanda 16.2544 MVA, disponible -2.2544 MVA, estado Sobrecarga.\nRazones:\n- Hay SET cercanas o dentro del polígono: PAIJAN, MALABRIGO, PAIJAN\n- Cruzan o tocan líneas de transmisión relevantes: LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO, LT S.E. SANTIAGO DE CAO-S.E. MALABRIGO\n- La zona cruza información externa registrada: Limites departamentales\n- Relieve estimado: bajo a moderado, con variacion aproximada de 33 m.\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "Polígono sin título",
+        "punto_inicio": {
+            "lat": -7.827112,
+            "lng": -79.365201,
+            "referencia": "-7.827112, -79.365201 | SET cercana: PAIJAN a 12.64 km",
+            "set_cercana": {
+                "nombre": "PAIJAN",
+                "fuente": "SET en Operacion join",
+                "lat": -7.736383,
+                "lng": -79.296108,
+                "distancia_km": 12.64
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -7.818056,
+            "lng": -79.375312,
+            "referencia": "-7.818056, -79.375312 | SET cercana: PAIJAN a 12.59 km",
+            "set_cercana": {
+                "nombre": "PAIJAN",
+                "fuente": "SET OSINERGMIN",
+                "lat": -7.73638,
+                "lng": -79.29611,
+                "distancia_km": 12.59
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -7.8271116,
+                -79.3652008
+            ],
+            [
+                -7.8065775,
+                -79.3199436
+            ],
+            [
+                -7.7906522,
+                -79.3207555
+            ],
+            [
+                -7.7857544,
+                -79.3354335
+            ],
+            [
+                -7.7809114,
+                -79.3400966
+            ],
+            [
+                -7.7864187,
+                -79.3581209
+            ],
+            [
+                -7.7932882,
+                -79.3752448
+            ],
+            [
+                -7.8180563,
+                -79.3753117
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "admin",
+        "name": "Polígono sin título",
+        "line_type": "",
+        "voltage_kv": "",
+        "circuit": "",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-16 17:41:03"
+    }
+}

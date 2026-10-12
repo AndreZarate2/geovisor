@@ -1,0 +1,1319 @@
+{
+    "analysis": {
+        "status": "success",
+        "tipo": "poligono",
+        "area_km2": 59.019,
+        "centro": {
+            "lat": -7.072032,
+            "lng": -79.533302
+        },
+        "demanda_kw_estimada": 7412,
+        "demanda_kw_usada": 7412,
+        "demanda_origen": "estimada por capas",
+        "tramite_recomendado": "Concesión de distribución",
+        "viabilidad": {
+            "score": 49,
+            "nivel": "Media"
+        },
+        "relieve": {
+            "status": "success",
+            "fuente": "Open-Meteo Elevation",
+            "min_m": 33,
+            "max_m": 97,
+            "promedio_m": 71.8,
+            "rango_m": 64,
+            "riesgo": "bajo",
+            "descripcion": "bajo a moderado, con variacion aproximada de 64 m."
+        },
+        "sets_cercanas": [
+            {
+                "nombre": "CAYALTI",
+                "empresa": "ELECTRONORTE S.A.",
+                "lat": -6.88409,
+                "lng": -79.56561,
+                "distancia_km": 12.22,
+                "distancia_centro_km": 21.2,
+                "dentro": false,
+                "ubicacion": "Fuera del poligono",
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "ENSA.xlsx",
+                "capacidad_total_mva": 14,
+                "demanda_total_mva": 15.6991,
+                "disponible_total_mva": -1.6991,
+                "estado": "Sobrecarga",
+                "medicion_quinceminutal": "ok",
+                "mensaje_medicion": null,
+                "transformadores": [
+                    {
+                        "transformador": "TP6010",
+                        "capacidad_total_mva": 14,
+                        "demanda_total_mva": 15.6991,
+                        "disponible_total_mva": -1.6991,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ],
+                "pit": {
+                    "status": "success",
+                    "message": "",
+                    "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+                    "total_matches": 3,
+                    "future_transformer": false,
+                    "future_transformers": [],
+                    "matches": [
+                        {
+                            "anexo": "Anexo 2",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2021 - 2025",
+                            "pit_etiqueta": "PIT 2021-2025",
+                            "fila": 526,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "ENSA",
+                            "empresa_anterior": "-",
+                            "empresa_norm": "ENSA",
+                            "departamento_consulta": "",
+                            "area_demanda": "2",
+                            "proyecto": "7",
+                            "elemento": "Celda de Linea 60 kV L-6053",
+                            "elementos": "",
+                            "instalacion": "SET AT\/MT\/MT \"Cayalti\"",
+                            "subestacion_norm": "CAYALTI",
+                            "modulo": "CE-060COC1ESBLI",
+                            "tipo_elemento": "celda",
+                            "potencia_mva": null,
+                            "potencias_mva": [],
+                            "tension_kv": "60",
+                            "tensiones_kv": [
+                                "60"
+                            ],
+                            "spec_source": "texto",
+                            "estado": "Retirado \/ baja",
+                            "estado_raw": "Retirado",
+                            "avance": "Retirado \/ baja",
+                            "acta": "",
+                            "anio_previsto": "2022",
+                            "anio_reprogramado": "2022",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "No",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 3",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                            "pit_etiqueta": "PIT 2017-2021",
+                            "fila": 154,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "ENSA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "ENSA",
+                            "departamento_consulta": "",
+                            "area_demanda": "2",
+                            "proyecto": "A",
+                            "elemento": "Celda Alimentador 23kV",
+                            "elementos": "",
+                            "instalacion": "SET AT\/MT Cayalti",
+                            "subestacion_norm": "CAYALTI",
+                            "modulo": "CE-023COR1C1ESBAL1",
+                            "tipo_elemento": "celda",
+                            "potencia_mva": null,
+                            "potencias_mva": [],
+                            "tension_kv": "23",
+                            "tensiones_kv": [
+                                "23"
+                            ],
+                            "spec_source": "texto",
+                            "estado": "En servicio",
+                            "estado_raw": "En servicio",
+                            "avance": "En servicio",
+                            "acta": "APES 002-2026-ELECTRONORTE",
+                            "anio_previsto": "2021",
+                            "anio_reprogramado": "2024",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "2026-03-19",
+                            "fecha_puesta_servicio": "2025-10-26",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 5",
+                            "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                            "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                            "fila": 124,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "ENSA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "ENSA",
+                            "departamento_consulta": "",
+                            "area_demanda": "2",
+                            "proyecto": "Una (01) Celda de Alimentador MT 23 kV en la SET Cayalti",
+                            "elemento": "Celda Alimentador 23kV",
+                            "elementos": "Celda Alimentador 23kV",
+                            "instalacion": "SET AT\/MT Cayalti",
+                            "subestacion_norm": "CAYALTI",
+                            "modulo": "CE-023COR1C1ESBAL1",
+                            "tipo_elemento": "celda",
+                            "potencia_mva": null,
+                            "potencias_mva": [],
+                            "tension_kv": "23",
+                            "tensiones_kv": [
+                                "23"
+                            ],
+                            "spec_source": "texto",
+                            "estado": "Sin estado",
+                            "estado_raw": "",
+                            "avance": "Sin estado",
+                            "acta": "",
+                            "anio_previsto": "",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "nombre": "CHEPEN",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.19429,
+                "lng": -79.43141,
+                "distancia_km": 14.32,
+                "distancia_centro_km": 17.64,
+                "dentro": false,
+                "ubicacion": "Fuera del poligono",
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "HIDRANDINA.xlsx",
+                "capacidad_total_mva": 52,
+                "demanda_total_mva": 34.9358,
+                "disponible_total_mva": 17.0642,
+                "estado": "Disponible",
+                "medicion_quinceminutal": "ok",
+                "mensaje_medicion": null,
+                "transformadores": [
+                    {
+                        "transformador": "TP-6032",
+                        "capacidad_total_mva": 52,
+                        "demanda_total_mva": 34.9358,
+                        "disponible_total_mva": 17.0642,
+                        "estado": "Disponible",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ],
+                "pit": {
+                    "status": "success",
+                    "message": "",
+                    "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+                    "total_matches": 1,
+                    "future_transformer": true,
+                    "future_transformers": [
+                        {
+                            "anexo": "Anexo 1",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2025-2029",
+                            "pit_etiqueta": "PIT 2025-2029",
+                            "fila": 246,
+                            "coincidencia": "fuerte",
+                            "matched_fields": [
+                                "instalacion",
+                                "titular"
+                            ],
+                            "empresa": "HIDRANDINA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "3",
+                            "elemento": "Transformador 30MVA 60\/23\/10 kV",
+                            "elementos": "",
+                            "instalacion": "SET AT\/MT CHEPEN",
+                            "subestacion_norm": "CHEPEN",
+                            "modulo": "TP-060MTMT-030SIE",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 30,
+                            "potencias_mva": [
+                                30
+                            ],
+                            "tension_kv": "60\/23\/10",
+                            "tensiones_kv": [
+                                "60\/23\/10",
+                                "60"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin avance",
+                            "estado_raw": "Sin Avance",
+                            "avance": "Sin avance",
+                            "acta": "",
+                            "anio_previsto": "2028",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        }
+                    ],
+                    "matches": [
+                        {
+                            "anexo": "Anexo 1",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2025-2029",
+                            "pit_etiqueta": "PIT 2025-2029",
+                            "fila": 246,
+                            "coincidencia": "fuerte",
+                            "matched_fields": [
+                                "instalacion",
+                                "titular"
+                            ],
+                            "empresa": "HIDRANDINA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "3",
+                            "elemento": "Transformador 30MVA 60\/23\/10 kV",
+                            "elementos": "",
+                            "instalacion": "SET AT\/MT CHEPEN",
+                            "subestacion_norm": "CHEPEN",
+                            "modulo": "TP-060MTMT-030SIE",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 30,
+                            "potencias_mva": [
+                                30
+                            ],
+                            "tension_kv": "60\/23\/10",
+                            "tensiones_kv": [
+                                "60\/23\/10",
+                                "60"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin avance",
+                            "estado_raw": "Sin Avance",
+                            "avance": "Sin avance",
+                            "acta": "",
+                            "anio_previsto": "2028",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        }
+                    ]
+                }
+            },
+            {
+                "nombre": "GUADALUPE",
+                "empresa": "RED DE ENERGÍA DEL PERÚ S.A.",
+                "lat": -7.30537,
+                "lng": -79.4581,
+                "distancia_km": 24.07,
+                "distancia_centro_km": 27.24,
+                "dentro": false,
+                "ubicacion": "Fuera del poligono",
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+                "capacidad_total_mva": 90,
+                "demanda_total_mva": 107.964,
+                "disponible_total_mva": -17.964,
+                "estado": "Sobrecarga",
+                "medicion_quinceminutal": "ok",
+                "mensaje_medicion": null,
+                "transformadores": [
+                    {
+                        "transformador": "T13-261",
+                        "capacidad_total_mva": 45,
+                        "demanda_total_mva": 50.9526,
+                        "disponible_total_mva": -5.9526,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T17-261",
+                        "capacidad_total_mva": 45,
+                        "demanda_total_mva": 57.0114,
+                        "disponible_total_mva": -12.0114,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ],
+                "pit": {
+                    "status": "success",
+                    "message": "",
+                    "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+                    "total_matches": 3,
+                    "future_transformer": true,
+                    "future_transformers": [
+                        {
+                            "anexo": "Anexo 3",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                            "pit_etiqueta": "PIT 2017-2021",
+                            "fila": 230,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "REP",
+                            "empresa_anterior": "HIDRANDINA (*)",
+                            "empresa_norm": "REP",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "30",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "2025-10-02",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin avance",
+                            "estado_raw": "Sin inicio",
+                            "avance": "Sin avance",
+                            "acta": "No aplicará en el marco del PIT. Pertenece al Proyecto Ampliación N° 23 (R.M. 430-2024-MINEM\/DM). Contrato de ETECEN-ETESUR",
+                            "anio_previsto": "2021",
+                            "anio_reprogramado": "2025",
+                            "fecha_reprogramada": "2025-10-02",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 5",
+                            "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                            "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                            "fila": 107,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "Hidrandina",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "Transformador 220\/60\/10 kV - 50MVA",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220\/60",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin estado",
+                            "estado_raw": "",
+                            "avance": "Sin estado",
+                            "acta": "",
+                            "anio_previsto": "",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": "-"
+                        }
+                    ],
+                    "matches": [
+                        {
+                            "anexo": "Anexo 3",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2017 - 2021",
+                            "pit_etiqueta": "PIT 2017-2021",
+                            "fila": 230,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "REP",
+                            "empresa_anterior": "HIDRANDINA (*)",
+                            "empresa_norm": "REP",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "30",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "2025-10-02",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin avance",
+                            "estado_raw": "Sin inicio",
+                            "avance": "Sin avance",
+                            "acta": "No aplicará en el marco del PIT. Pertenece al Proyecto Ampliación N° 23 (R.M. 430-2024-MINEM\/DM). Contrato de ETECEN-ETESUR",
+                            "anio_previsto": "2021",
+                            "anio_reprogramado": "2025",
+                            "fecha_reprogramada": "2025-10-02",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 4",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                            "pit_etiqueta": "PIT 2013-2017",
+                            "fila": 577,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "HIDRANDINA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "",
+                            "elemento": "Celda de Línea a Guadalupe 2",
+                            "elementos": "",
+                            "instalacion": "SET MAT\/AT GUADALUPE",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "CE-060COR1C1ESBLI2",
+                            "tipo_elemento": "celda",
+                            "potencia_mva": null,
+                            "potencias_mva": [],
+                            "tension_kv": "",
+                            "tensiones_kv": [],
+                            "spec_source": "",
+                            "estado": "En servicio",
+                            "estado_raw": "En servicio",
+                            "avance": "En servicio",
+                            "acta": "APES 001-2016-HIDRANDINA",
+                            "anio_previsto": "2013",
+                            "anio_reprogramado": "2013",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "2016-04-07",
+                            "fecha_puesta_servicio": "2016-01-07",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 5",
+                            "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                            "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                            "fila": 107,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion"
+                            ],
+                            "empresa": "Hidrandina",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "Transformador 220\/60\/10 kV - 50MVA",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220\/60",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin estado",
+                            "estado_raw": "",
+                            "avance": "Sin estado",
+                            "acta": "",
+                            "anio_previsto": "",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "nombre": "GUADALUPE 1",
+                "empresa": "HIDRANDINA S.A.",
+                "lat": -7.30635,
+                "lng": -79.45832,
+                "distancia_km": 24.17,
+                "distancia_centro_km": 27.34,
+                "dentro": false,
+                "ubicacion": "Fuera del poligono",
+                "fuente": "SET OSINERGMIN",
+                "status": "success",
+                "archivo_quinceminutal": "RED DE ENERGIA DEL PERU.xlsx",
+                "capacidad_total_mva": 90,
+                "demanda_total_mva": 107.964,
+                "disponible_total_mva": -17.964,
+                "estado": "Sobrecarga",
+                "medicion_quinceminutal": "ok",
+                "mensaje_medicion": null,
+                "transformadores": [
+                    {
+                        "transformador": "T13-261",
+                        "capacidad_total_mva": 45,
+                        "demanda_total_mva": 50.9526,
+                        "disponible_total_mva": -5.9526,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    },
+                    {
+                        "transformador": "T17-261",
+                        "capacidad_total_mva": 45,
+                        "demanda_total_mva": 57.0114,
+                        "disponible_total_mva": -12.0114,
+                        "estado": "Sobrecarga",
+                        "criterio": "Excel EquiposTransformadores: capacidad nominal por barra"
+                    }
+                ],
+                "pit": {
+                    "status": "success",
+                    "message": "",
+                    "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+                    "total_matches": 2,
+                    "future_transformer": true,
+                    "future_transformers": [
+                        {
+                            "anexo": "Anexo 5",
+                            "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                            "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                            "fila": 107,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion",
+                                "titular"
+                            ],
+                            "empresa": "Hidrandina",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "Transformador 220\/60\/10 kV - 50MVA",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220\/60",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin estado",
+                            "estado_raw": "",
+                            "avance": "Sin estado",
+                            "acta": "",
+                            "anio_previsto": "",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": "-"
+                        }
+                    ],
+                    "matches": [
+                        {
+                            "anexo": "Anexo 4",
+                            "pit_titulo": "PLAN DE INVERSIONES EN TRANSMISIÓN 2013 - 2017",
+                            "pit_etiqueta": "PIT 2013-2017",
+                            "fila": 577,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion",
+                                "titular"
+                            ],
+                            "empresa": "HIDRANDINA",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "",
+                            "elemento": "Celda de Línea a Guadalupe 2",
+                            "elementos": "",
+                            "instalacion": "SET MAT\/AT GUADALUPE",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "CE-060COR1C1ESBLI2",
+                            "tipo_elemento": "celda",
+                            "potencia_mva": null,
+                            "potencias_mva": [],
+                            "tension_kv": "",
+                            "tensiones_kv": [],
+                            "spec_source": "",
+                            "estado": "En servicio",
+                            "estado_raw": "En servicio",
+                            "avance": "En servicio",
+                            "acta": "APES 001-2016-HIDRANDINA",
+                            "anio_previsto": "2013",
+                            "anio_reprogramado": "2013",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "2016-04-07",
+                            "fecha_puesta_servicio": "2016-01-07",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": ""
+                        },
+                        {
+                            "anexo": "Anexo 5",
+                            "pit_titulo": "RESOLUCIÓN DIRECTORAL N° 0040-2022\/MINEM-DGE - LISTA DE PROYECTOS QUE CALIFICAN PARA EL MECANISMO DE MANIFESTACIÓN DE INTERÉS - ANEXO N° 1",
+                            "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                            "fila": 107,
+                            "coincidencia": "medio",
+                            "matched_fields": [
+                                "instalacion",
+                                "titular"
+                            ],
+                            "empresa": "Hidrandina",
+                            "empresa_anterior": "",
+                            "empresa_norm": "HIDRANDINA",
+                            "departamento_consulta": "",
+                            "area_demanda": "3",
+                            "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                            "elemento": "Transformador 220\/60\/10 kV - 50MVA",
+                            "elementos": "Transformador 220\/60\/10 kV - 50MVA",
+                            "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                            "subestacion_norm": "GUADALUPE",
+                            "modulo": "TP-220060010-050CO1E",
+                            "tipo_elemento": "transformador",
+                            "potencia_mva": 50,
+                            "potencias_mva": [
+                                50
+                            ],
+                            "tension_kv": "220\/60\/10",
+                            "tensiones_kv": [
+                                "220\/60\/10",
+                                "220\/60",
+                                "220"
+                            ],
+                            "spec_source": "texto\/modulo",
+                            "estado": "Sin estado",
+                            "estado_raw": "",
+                            "avance": "Sin estado",
+                            "acta": "",
+                            "anio_previsto": "",
+                            "anio_reprogramado": "",
+                            "fecha_reprogramada": "",
+                            "fecha_suscripcion": "",
+                            "fecha_puesta_servicio": "",
+                            "fecha_baja": "",
+                            "fecha_solicitud": "",
+                            "comentario": "-"
+                        }
+                    ]
+                }
+            },
+            {
+                "nombre": "ETEN",
+                "empresa": "PLANTA DE RESERVA FRÍA DE GENERACIÓN DE ETEN S.A.",
+                "lat": -6.88499,
+                "lng": -79.78926,
+                "distancia_km": 25.92,
+                "distancia_centro_km": 35.08,
+                "dentro": false,
+                "ubicacion": "Fuera del poligono",
+                "fuente": "SET OSINERGMIN",
+                "status": "error",
+                "mensaje": "No se encontro la subestacion en maestro: ETEN",
+                "pit": {
+                    "status": "no_data",
+                    "message": "No se encontraron elementos PIT asociados a la subestacion consultada.",
+                    "file": "Anexos_Informe PIT_Public. Abr_2026.xlsx",
+                    "total_matches": 0,
+                    "future_transformer": false,
+                    "future_transformers": [],
+                    "matches": []
+                }
+            }
+        ],
+        "pit": {
+            "status": "success",
+            "message": "",
+            "criterio": "PIT revisado por nombre explicito de SET cercana; se priorizan adquisiciones, ampliaciones o instalacion de transformadores y se reportan fechas disponibles.",
+            "set_rows": [
+                {
+                    "set": "CAYALTI",
+                    "empresa_set": "ELECTRONORTE S.A.",
+                    "distancia_km": 12.22,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2021-2025",
+                    "proyecto": "7",
+                    "elemento": "7 - Celda de Linea 60 kV L-6053 - CE-060COC1ESBLI",
+                    "instalacion": "SET AT\/MT\/MT \"Cayalti\"",
+                    "empresa": "ENSA",
+                    "tipo_elemento": "celda",
+                    "prioridad": "Elemento PIT",
+                    "estado": "Retirado \/ baja",
+                    "potencia_mva": null,
+                    "tension_kv": "60",
+                    "fecha": "",
+                    "fecha_detalle": "suscripcion: No | anio reprogramado: 2022 | anio previsto: 2022",
+                    "anio_previsto": "2022",
+                    "anio_reprogramado": "2022",
+                    "comentario": "",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "CAYALTI",
+                    "empresa_set": "ELECTRONORTE S.A.",
+                    "distancia_km": 12.22,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2017-2021",
+                    "proyecto": "A",
+                    "elemento": "A - Celda Alimentador 23kV - CE-023COR1C1ESBAL1",
+                    "instalacion": "SET AT\/MT Cayalti",
+                    "empresa": "ENSA",
+                    "tipo_elemento": "celda",
+                    "prioridad": "Elemento PIT",
+                    "estado": "En servicio",
+                    "potencia_mva": null,
+                    "tension_kv": "23",
+                    "fecha": "2025-10-26",
+                    "fecha_detalle": "puesta en servicio: 2025-10-26 | suscripcion: 2026-03-19 | anio reprogramado: 2024 | anio previsto: 2021",
+                    "anio_previsto": "2021",
+                    "anio_reprogramado": "2024",
+                    "comentario": "",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "CAYALTI",
+                    "empresa_set": "ELECTRONORTE S.A.",
+                    "distancia_km": 12.22,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                    "proyecto": "Una (01) Celda de Alimentador MT 23 kV en la SET Cayalti",
+                    "elemento": "Una (01) Celda de Alimentador MT 23 kV en la SET Cayalti - Celda Alimentador 23kV - Celda Alimentador 23kV - CE-023COR1C1ESBAL1",
+                    "instalacion": "SET AT\/MT Cayalti",
+                    "empresa": "ENSA",
+                    "tipo_elemento": "celda",
+                    "prioridad": "Elemento PIT",
+                    "estado": "Sin estado",
+                    "potencia_mva": null,
+                    "tension_kv": "23",
+                    "fecha": "",
+                    "fecha_detalle": "",
+                    "anio_previsto": "",
+                    "anio_reprogramado": "",
+                    "comentario": "-",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "CHEPEN",
+                    "empresa_set": "HIDRANDINA S.A.",
+                    "distancia_km": 14.32,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2025-2029",
+                    "proyecto": "3",
+                    "elemento": "3 - Transformador 30MVA 60\/23\/10 kV - TP-060MTMT-030SIE",
+                    "instalacion": "SET AT\/MT CHEPEN",
+                    "empresa": "HIDRANDINA",
+                    "tipo_elemento": "transformador",
+                    "prioridad": "Transformador futuro",
+                    "estado": "Sin avance",
+                    "potencia_mva": 30,
+                    "tension_kv": "60\/23\/10",
+                    "fecha": "",
+                    "fecha_detalle": "anio previsto: 2028",
+                    "anio_previsto": "2028",
+                    "anio_reprogramado": "",
+                    "comentario": "",
+                    "coincidencia": "fuerte"
+                },
+                {
+                    "set": "GUADALUPE",
+                    "empresa_set": "RED DE ENERGÍA DEL PERÚ S.A.",
+                    "distancia_km": 24.07,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2017-2021",
+                    "proyecto": "30",
+                    "elemento": "30 - Transformador 220\/60\/10 kV - 50MVA - 2025-10-02 - TP-220060010-050CO1E",
+                    "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                    "empresa": "REP",
+                    "tipo_elemento": "transformador",
+                    "prioridad": "Transformador futuro",
+                    "estado": "Sin avance",
+                    "potencia_mva": 50,
+                    "tension_kv": "220\/60\/10",
+                    "fecha": "",
+                    "fecha_detalle": "reprogramada: 2025-10-02 | anio reprogramado: 2025 | anio previsto: 2021",
+                    "anio_previsto": "2021",
+                    "anio_reprogramado": "2025",
+                    "comentario": "",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "GUADALUPE",
+                    "empresa_set": "RED DE ENERGÍA DEL PERÚ S.A.",
+                    "distancia_km": 24.07,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                    "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                    "elemento": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe - Transformador 220\/60\/10 kV - 50MVA - Transformador 220\/60\/10 kV - 50MVA - TP-220060010-050CO1E",
+                    "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                    "empresa": "Hidrandina",
+                    "tipo_elemento": "transformador",
+                    "prioridad": "Transformador futuro",
+                    "estado": "Sin estado",
+                    "potencia_mva": 50,
+                    "tension_kv": "220\/60\/10",
+                    "fecha": "",
+                    "fecha_detalle": "",
+                    "anio_previsto": "",
+                    "anio_reprogramado": "",
+                    "comentario": "-",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "GUADALUPE",
+                    "empresa_set": "RED DE ENERGÍA DEL PERÚ S.A.",
+                    "distancia_km": 24.07,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2013-2017",
+                    "proyecto": "",
+                    "elemento": "Celda de Línea a Guadalupe 2 - CE-060COR1C1ESBLI2",
+                    "instalacion": "SET MAT\/AT GUADALUPE",
+                    "empresa": "HIDRANDINA",
+                    "tipo_elemento": "celda",
+                    "prioridad": "Elemento PIT",
+                    "estado": "En servicio",
+                    "potencia_mva": null,
+                    "tension_kv": "",
+                    "fecha": "2016-01-07",
+                    "fecha_detalle": "puesta en servicio: 2016-01-07 | suscripcion: 2016-04-07 | anio reprogramado: 2013 | anio previsto: 2013",
+                    "anio_previsto": "2013",
+                    "anio_reprogramado": "2013",
+                    "comentario": "",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "GUADALUPE 1",
+                    "empresa_set": "HIDRANDINA S.A.",
+                    "distancia_km": 24.17,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "Manifestacion de interes - RD 0040-2022",
+                    "proyecto": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe",
+                    "elemento": "Un (01) Transformador de 220\/60 kV - 50 MVA a instalarse en SET Guadalupe - Transformador 220\/60\/10 kV - 50MVA - Transformador 220\/60\/10 kV - 50MVA - TP-220060010-050CO1E",
+                    "instalacion": "SET MAT\/AT\/MT Guadalupe",
+                    "empresa": "Hidrandina",
+                    "tipo_elemento": "transformador",
+                    "prioridad": "Transformador futuro",
+                    "estado": "Sin estado",
+                    "potencia_mva": 50,
+                    "tension_kv": "220\/60\/10",
+                    "fecha": "",
+                    "fecha_detalle": "",
+                    "anio_previsto": "",
+                    "anio_reprogramado": "",
+                    "comentario": "-",
+                    "coincidencia": "medio"
+                },
+                {
+                    "set": "GUADALUPE 1",
+                    "empresa_set": "HIDRANDINA S.A.",
+                    "distancia_km": 24.17,
+                    "ubicacion": "Fuera del poligono",
+                    "pit_etiqueta": "PIT 2013-2017",
+                    "proyecto": "",
+                    "elemento": "Celda de Línea a Guadalupe 2 - CE-060COR1C1ESBLI2",
+                    "instalacion": "SET MAT\/AT GUADALUPE",
+                    "empresa": "HIDRANDINA",
+                    "tipo_elemento": "celda",
+                    "prioridad": "Elemento PIT",
+                    "estado": "En servicio",
+                    "potencia_mva": null,
+                    "tension_kv": "",
+                    "fecha": "2016-01-07",
+                    "fecha_detalle": "puesta en servicio: 2016-01-07 | suscripcion: 2016-04-07 | anio reprogramado: 2013 | anio previsto: 2013",
+                    "anio_previsto": "2013",
+                    "anio_reprogramado": "2013",
+                    "comentario": "",
+                    "coincidencia": "medio"
+                }
+            ]
+        },
+        "indicadores": {
+            "sets_dentro": 0,
+            "sets_cercanas": 0,
+            "lineas_intersectan": 4,
+            "mt_intersecta": 0,
+            "sed_dentro": 0,
+            "concesiones_intersectan": 1,
+            "externas_intersectan": 3,
+            "fuentes": {
+                "SET OSINERGMIN": 733,
+                "SET local": 728,
+                "SET proyectada": 66,
+                "LT OSINERGMIN": 947,
+                "LT local": 955,
+                "Concesión OSINERGMIN": 4198,
+                "Concesión vigente": 4915,
+                "Concesión en trámite": 3367,
+                "Limites departamentales": 25,
+                "Ica": 43,
+                "Lambayeque": 38,
+                "Madre_De_Dios": 11,
+                "Moquegua": 21,
+                "Tacna": 27,
+                "Tumbes": 13,
+                "PRODUCE AreasDerechosAcuicolas": 1000,
+                "PRODUCE AreasDisponibles": 310,
+                "PRODUCE AreasPotencialesAcuicultura": 16,
+                "PRODUCE BancosNaturalesEspecies": 300,
+                "osinergmin generacion": 898,
+                "SET en Operacion join": 1012,
+                "LT Proyectadas": 103,
+                "API externa: PRODUCE - Catastro Acuicola Nacional": 2319,
+                "API externa: Predios": 441
+            }
+        },
+        "muestras": {
+            "sets": [],
+            "lineas": [
+                "LT GUADALUPE-REQUE",
+                "LT GUADALUPE-REQUE",
+                "LT GUADALUPE-REQUE",
+                "LT GUADALUPE-REQUE"
+            ],
+            "mt": [],
+            "sed": [],
+            "concesiones": [
+                "Concesión OSINERGMIN"
+            ],
+            "externas": [
+                "Limites departamentales",
+                "Limites departamentales",
+                "Lambayeque"
+            ]
+        },
+        "razones": [
+            "Cruzan o tocan líneas de transmisión relevantes: LT GUADALUPE-REQUE, LT GUADALUPE-REQUE, LT GUADALUPE-REQUE",
+            "La zona cruza información externa registrada: Limites departamentales, Limites departamentales, Lambayeque",
+            "Existe superposición con concesión vigente o en trámite; revisar titularidad y expediente.",
+            "Relieve estimado: bajo a moderado, con variacion aproximada de 64 m.",
+            "SET con disponibilidad referencial cercana: CHEPEN (17.0642 MVA libres).",
+            "La demanda usada supera 500 kW, por lo que orienta a concesión.",
+            "El PIT registra elementos asociados a SET cercanas: CAYALTI - 7 - Celda de Linea 60 kV L-6053 - CE-060COC1ESBLI (suscripcion: No | anio reprogramado: 2022 | anio previsto: 2022)."
+        ],
+        "criterio": "Concesión si la demanda sustentada es mayor a 500 kW; convenio municipal si es menor a 500 kW.",
+        "informe_texto": "Informe de viabilidad de zona\nFecha: 2026-06-26 16:52:43\nÁrea: 59.019 km2\nDemanda usada: 7412 kW (estimada por capas)\nTrámite recomendado: Concesión de distribución\nViabilidad: Media (49\/100)\nRelieve: bajo a moderado, con variacion aproximada de 64 m. Elevación min\/max: 33\/97 m.\nIndicadores: {\"sets_dentro\":0,\"sets_cercanas\":0,\"lineas_intersectan\":4,\"mt_intersecta\":0,\"sed_dentro\":0,\"concesiones_intersectan\":1,\"externas_intersectan\":3,\"fuentes\":{\"SET OSINERGMIN\":733,\"SET local\":728,\"SET proyectada\":66,\"LT OSINERGMIN\":947,\"LT local\":955,\"Concesión OSINERGMIN\":4198,\"Concesión vigente\":4915,\"Concesión en trámite\":3367,\"Limites departamentales\":25,\"Ica\":43,\"Lambayeque\":38,\"Madre_De_Dios\":11,\"Moquegua\":21,\"Tacna\":27,\"Tumbes\":13,\"PRODUCE AreasDerechosAcuicolas\":1000,\"PRODUCE AreasDisponibles\":310,\"PRODUCE AreasPotencialesAcuicultura\":16,\"PRODUCE BancosNaturalesEspecies\":300,\"osinergmin generacion\":898,\"SET en Operacion join\":1012,\"LT Proyectadas\":103,\"API externa: PRODUCE - Catastro Acuicola Nacional\":2319,\"API externa: Predios\":441}}\nSET cercanas:\n- CAYALTI (ELECTRONORTE S.A.), 12.22 km, cap. 14 MVA, demanda 15.6991 MVA, disponible -1.6991 MVA, estado Sobrecarga.\n- CHEPEN (HIDRANDINA S.A.), 14.32 km, cap. 52 MVA, demanda 34.9358 MVA, disponible 17.0642 MVA, estado Disponible.\n- GUADALUPE (RED DE ENERGÍA DEL PERÚ S.A.), 24.07 km, cap. 90 MVA, demanda 107.964 MVA, disponible -17.964 MVA, estado Sobrecarga.\n- GUADALUPE 1 (HIDRANDINA S.A.), 24.17 km, cap. 90 MVA, demanda 107.964 MVA, disponible -17.964 MVA, estado Sobrecarga.\n- ETEN (PLANTA DE RESERVA FRÍA DE GENERACIÓN DE ETEN S.A.), 25.92 km, cap. s\/d MVA, demanda s\/d MVA, disponible s\/d MVA, estado s\/d.\nRazones:\n- Cruzan o tocan líneas de transmisión relevantes: LT GUADALUPE-REQUE, LT GUADALUPE-REQUE, LT GUADALUPE-REQUE\n- La zona cruza información externa registrada: Limites departamentales, Limites departamentales, Lambayeque\n- Existe superposición con concesión vigente o en trámite; revisar titularidad y expediente.\n- Relieve estimado: bajo a moderado, con variacion aproximada de 64 m.\n- SET con disponibilidad referencial cercana: CHEPEN (17.0642 MVA libres).\n- La demanda usada supera 500 kW, por lo que orienta a concesión.\n- El PIT registra elementos asociados a SET cercanas: CAYALTI - 7 - Celda de Linea 60 kV L-6053 - CE-060COC1ESBLI (suscripcion: No | anio reprogramado: 2022 | anio previsto: 2022).\nNota: es un preanálisis con capas cargadas; no reemplaza estudio eléctrico, demanda sustentada ni revisión legal del expediente.",
+        "nombre": "Propuesta Lambayeque",
+        "punto_inicio": {
+            "lat": -7.023555,
+            "lng": -79.600008,
+            "referencia": "-7.023555, -79.600008 | SET cercana: CAYALTI a 15.97 km",
+            "set_cercana": {
+                "nombre": "CAYALTI",
+                "fuente": "SET en Operacion join",
+                "lat": -6.884092,
+                "lng": -79.565615,
+                "distancia_km": 15.97
+            },
+            "concesiones": []
+        },
+        "punto_fin": {
+            "lat": -6.994301,
+            "lng": -79.574078,
+            "referencia": "-6.994301, -79.574078 | SET cercana: CAYALTI a 12.29 km",
+            "set_cercana": {
+                "nombre": "CAYALTI",
+                "fuente": "SET OSINERGMIN",
+                "lat": -6.88409,
+                "lng": -79.56561,
+                "distancia_km": 12.29
+            },
+            "concesiones": []
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                -7.0235546,
+                -79.6000079
+            ],
+            [
+                -7.0243081,
+                -79.5993201
+            ],
+            [
+                -7.0241203,
+                -79.5990717
+            ],
+            [
+                -7.0241679,
+                -79.5990444
+            ],
+            [
+                -7.0243593,
+                -79.5992592
+            ],
+            [
+                -7.0676193,
+                -79.5620912
+            ],
+            [
+                -7.0688219,
+                -79.5610648
+            ],
+            [
+                -7.0697682,
+                -79.5600243
+            ],
+            [
+                -7.0707655,
+                -79.558537
+            ],
+            [
+                -7.0849347,
+                -79.5368423
+            ],
+            [
+                -7.0826587,
+                -79.5349995
+            ],
+            [
+                -7.089118,
+                -79.525156
+            ],
+            [
+                -7.0869446,
+                -79.5215599
+            ],
+            [
+                -7.0867919,
+                -79.5214569
+            ],
+            [
+                -7.0700084,
+                -79.5321123
+            ],
+            [
+                -7.0759775,
+                -79.5418766
+            ],
+            [
+                -7.0755825,
+                -79.5420969
+            ],
+            [
+                -7.0754881,
+                -79.5419668
+            ],
+            [
+                -7.0757727,
+                -79.5418339
+            ],
+            [
+                -7.0725305,
+                -79.5366331
+            ],
+            [
+                -7.0723236,
+                -79.5367628
+            ],
+            [
+                -7.0722604,
+                -79.5366553
+            ],
+            [
+                -7.0724717,
+                -79.5365052
+            ],
+            [
+                -7.060089,
+                -79.5166137
+            ],
+            [
+                -7.0621685,
+                -79.515314
+            ],
+            [
+                -7.0622008,
+                -79.5153605
+            ],
+            [
+                -7.0601505,
+                -79.5166424
+            ],
+            [
+                -7.0699253,
+                -79.5319287
+            ],
+            [
+                -7.0867746,
+                -79.5213489
+            ],
+            [
+                -7.0805021,
+                -79.5112015
+            ],
+            [
+                -7.0802468,
+                -79.5113577
+            ],
+            [
+                -7.0802002,
+                -79.5112749
+            ],
+            [
+                -7.0805473,
+                -79.5111024
+            ],
+            [
+                -7.0869689,
+                -79.5211805
+            ],
+            [
+                -7.0905488,
+                -79.5190168
+            ],
+            [
+                -7.0912028,
+                -79.5200114
+            ],
+            [
+                -7.0910641,
+                -79.5201936
+            ],
+            [
+                -7.0904311,
+                -79.5191934
+            ],
+            [
+                -7.0870711,
+                -79.5213024
+            ],
+            [
+                -7.0899099,
+                -79.5257417
+            ],
+            [
+                -7.0913272,
+                -79.5267044
+            ],
+            [
+                -7.0941519,
+                -79.521604
+            ],
+            [
+                -7.0931585,
+                -79.5199058
+            ],
+            [
+                -7.096111,
+                -79.5180667
+            ],
+            [
+                -7.0945232,
+                -79.5161445
+            ],
+            [
+                -7.0951343,
+                -79.5150268
+            ],
+            [
+                -7.0951425,
+                -79.5150116
+            ],
+            [
+                -7.0947684,
+                -79.514357
+            ],
+            [
+                -7.0842525,
+                -79.5064305
+            ],
+            [
+                -7.0745333,
+                -79.4966306
+            ],
+            [
+                -7.0604616,
+                -79.5076841
+            ],
+            [
+                -7.0477451,
+                -79.5117987
+            ],
+            [
+                -7.0337782,
+                -79.5211901
+            ],
+            [
+                -6.9943007,
+                -79.5740779
+            ]
+        ]
+    },
+    "meta": {
+        "project": "Informe técnico temporal KML\/KMZ",
+        "author": "invitado",
+        "name": "Propuesta Lambayeque",
+        "line_type": "",
+        "voltage_kv": "",
+        "circuit": "",
+        "template": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.docx",
+        "template_pdf": "C:\\Users\\cvc\\OneDrive - CONSORCIO ELECTRICO DE VILLACURI S.A.C\\web cvc\\Codex\\mapa\/uploads\/templates\/zona_reporte.pdf",
+        "generated_at": "2026-06-26 16:52:44"
+    }
+}
